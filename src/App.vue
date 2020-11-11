@@ -1,12 +1,17 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+    <HeaderHome />
   </div>
 </template>
+
+<script>
+import HeaderHome from "./layouts/Header/HeaderHome";
+export default {
+  components: {
+    HeaderHome: HeaderHome
+  }
+};
+</script>
 
 <style lang="scss">
 #app {
