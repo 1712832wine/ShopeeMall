@@ -52,6 +52,6 @@ body {
   background-position: 50%;
   overflow: hidden;
   cursor: pointer;
-  transform: translate(65px, 106px);
+  transform: translate(74px, 106px);
 }
 </style>

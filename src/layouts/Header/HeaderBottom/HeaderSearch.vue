@@ -1,8 +1,8 @@
 <template>
-  <div class="navbar__search--box">
-    <div class="navbar__searchbar">
-      <div class="navbar__searchbar--main">
-        <form class="navbar__searchbar--input">
+  <div class="navbar-shop__search--box">
+    <div class="navbar-shop__searchbar">
+      <div class="navbar-shop__searchbar--main">
+        <form class="navbar-shop__searchbar--input">
           <input
             type="text"
             placeholder="Giảm đến 50%"
@@ -11,11 +11,14 @@
           />
         </form>
       </div>
-      <button type="button" class="btn btn-solid-primary btn-size btn-inline">
+      <button
+        type="button"
+        class="button button-solid-primary button-size button-inline"
+      >
         <i class="fa fa-search" aria-hidden="true"></i>
       </button>
     </div>
-    <div class="navbar__searchbar--suggest">
+    <div class="navbar-shop__searchbar--suggest">
       <div class="suggest-wrap">
         <a href="#/">Sandal Nữ</a>
         <a href="#/">Hoodie Nam</a>
@@ -34,5 +37,4 @@
 export default {};
 </script>
 
-<style lang="scss">
-</style>
+<style lang="scss"></style>

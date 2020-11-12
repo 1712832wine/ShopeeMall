@@ -122,6 +122,9 @@ export default {
   mounted: function() {
     this.setTimeSlide(this.count);
   },
+  destroyed: function() {
+    this.setTimeSlide();
+  },
   methods: {
     handleNext: function() {
       if (this.count < 14) {

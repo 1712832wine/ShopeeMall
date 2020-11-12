@@ -1,12 +1,12 @@
 <template>
-  <div class="navbar navbar__sticky">
+  <div class="navbar-shop navbar-shop__sticky">
     <HeaderTop />
     <HeaderBottom />
   </div>
 </template>
 
 <script>
-import HeaderTop from "./HederTop/HeaderTop";
+import HeaderTop from "./HeaderTop/HeaderTop";
 import HeaderBottom from "./HeaderBottom/HeaderBottom";
 export default {
   components: {
@@ -16,6 +16,6 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scope>
 @import "./style-Header.scss";
 </style>

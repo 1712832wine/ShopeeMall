@@ -1,20 +1,20 @@
 <template>
-  <div class="navbar__bottom">
-    <div class="container navbar__range">
-      <div class="navbar__search--wrapper">
-        <a href="#/" class="navbar__logo">
+  <div class="navbar-shop__bottom">
+    <div class="container__nav navbar-shop__range">
+      <div class="navbar-shop__search--wrapper">
+        <a href="#/" class="navbar-shop__logo">
           <i class="fa fa-shopping-bag" aria-hidden="true"></i>
           <span>Shoppe</span>
         </a>
         <HeaderSearch />
-        <div class="navbar__cart">
-          <div class="navbar__cart--position">
-            <div class="navbar__cart--icon">
+        <div class="navbar-shop__cart">
+          <div class="navbar-shop__cart--position">
+            <div class="navbar-shop__cart--icon">
               <i class="fa fa-shopping-cart" aria-hidden="true"></i>
             </div>
           </div>
-          <div class="navbar__cart--position isdisplay">
-            <div class="navbar__cart--icon">
+          <div class="navbar-shop__cart--position isdisplay">
+            <div class="navbar-shop__cart--icon">
               <i class="fa fa-user-o" aria-hidden="true"></i>
             </div>
           </div>
@@ -28,10 +28,9 @@
 import HeaderSearch from "./HeaderSearch";
 export default {
   components: {
-    HeaderSearch: HeaderSearch,
-  },
+    HeaderSearch: HeaderSearch
+  }
 };
 </script>
 
-<style lang="scss">
-</style>
+<style lang="scss"></style>

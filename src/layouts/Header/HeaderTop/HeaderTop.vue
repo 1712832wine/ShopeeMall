@@ -1,8 +1,8 @@
 <template>
-  <div class="navbar__top">
-    <div class="container navbar__range navbar__display">
+  <div class="navbar-shop__top">
+    <div class="container__nav navbar-shop__range navbar-shop__display">
       <HeaderTopLeft />
-      <div class="navbar__space"></div>
+      <div class="navbar-shop__space"></div>
       <HeaderTopRight />
     </div>
   </div>
@@ -15,10 +15,9 @@ import HeaderTopRight from "./HeaderTopRight";
 export default {
   components: {
     HeaderTopLeft: HeaderTopLeft,
-    HeaderTopRight: HeaderTopRight,
-  },
+    HeaderTopRight: HeaderTopRight
+  }
 };
 </script>
 
-<style lang="scss">
-</style>
+<style lang="scss"></style>

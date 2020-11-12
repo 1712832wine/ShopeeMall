@@ -1,9 +1,9 @@
 <template>
   <div class="banner banner-background">
-    <div class="container">
+    <div class="container-banner">
       <div class="section-banner">
         <div class="section-banner--full">
-          <div class="container">
+          <div class="container-banner">
             <div class="section-banner__wrapper">
               <BannerSlide />
               <div class="home-banner__left">
