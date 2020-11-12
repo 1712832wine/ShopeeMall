@@ -1,14 +1,17 @@
 <template>
   <div id="app">
     <HeaderHome />
+    <BannerHome />
   </div>
 </template>
 
 <script>
 import HeaderHome from "./layouts/Header/HeaderHome";
+import BannerHome from "./components/Banner/BannerHome";
 export default {
   components: {
-    HeaderHome: HeaderHome
+    HeaderHome: HeaderHome,
+    BannerHome: BannerHome
   }
 };
 </script>
