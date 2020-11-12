@@ -12,13 +12,18 @@
 }
 
 .banner {
-    transform: translateY(105px);
+    transform: translateY(75px);
     min-width: 1200px;
     padding-bottom: 0px;
     margin: 0px auto 4.375rem;
+    &-background {
+        background: #fff;
+        height: 350px;
+    }
 }
 
 .container {
+    padding-top: 15px;
     width: 1200px;
     margin-right: auto;
     margin-left: auto;

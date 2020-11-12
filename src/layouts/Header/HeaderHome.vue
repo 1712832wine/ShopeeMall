@@ -11,8 +11,8 @@ import HeaderBottom from "./HeaderBottom/HeaderBottom";
 export default {
   components: {
     HeaderTop: HeaderTop,
-    HeaderBottom: HeaderBottom,
-  },
+    HeaderBottom: HeaderBottom
+  }
 };
 </script>
 

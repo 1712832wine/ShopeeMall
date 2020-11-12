@@ -2,12 +2,14 @@
   <div id="app">
     <HeaderHome />
     <BannerHome />
+    <div class="large-banner"></div>
   </div>
 </template>
 
 <script>
 import HeaderHome from "./layouts/Header/HeaderHome";
 import BannerHome from "./components/Banner/BannerHome";
+
 export default {
   components: {
     HeaderHome: HeaderHome,
@@ -17,6 +19,9 @@ export default {
 </script>
 
 <style lang="scss">
+body {
+  background-color: #f5f5f5;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -36,5 +41,17 @@ export default {
       color: #42b983;
     }
   }
+}
+
+.large-banner {
+  background-image: url("./assets/images/banners/large-banner.jpg");
+  margin-top: 20px;
+  height: 110px;
+  width: 1200px;
+  background-size: cover;
+  background-position: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  transform: translate(65px, 106px);
 }
 </style>

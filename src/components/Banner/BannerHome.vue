@@ -1,5 +1,5 @@
 <template>
-  <div class="banner">
+  <div class="banner banner-background">
     <div class="container">
       <div class="section-banner">
         <div class="section-banner--full">
@@ -23,6 +23,7 @@
             </div>
           </div>
           <!-- campaign -->
+          <CampaignList />
         </div>
       </div>
     </div>
@@ -31,9 +32,11 @@
 
 <script>
 import BannerSlide from "./BannerSlide";
+import CampaignList from "../campaign/CampaignList";
 export default {
   components: {
-    BannerSlide: BannerSlide
+    BannerSlide: BannerSlide,
+    CampaignList: CampaignList
   }
 };
 </script>
