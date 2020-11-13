@@ -16,6 +16,5 @@ export default {
 };
 </script>
 
-<style lang="scss" scope>
-@import "./style-Header.scss";
+<style lang="scss" scope src="./style-Header.scss">
 </style>

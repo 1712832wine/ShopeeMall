@@ -1,0 +1,30 @@
+{
+    "list__footerbottom__top": [
+        { "id": 0, "name": "CHÍNH SÁCH BẢO MẬT", "link": "#" },
+        { "id": 1, "name": "QUY CHẾ HOẠT ĐỘNG", "link": "#" },
+        { "id": 2, "name": "CHÍNH SÁCH VẬN CHUYỂN", "link": "#" },
+        { "id": 3, "name": "CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN", "link": "#" },
+    ],
+    "footerbottom__imgs": [{
+            "id": 0,
+            "link": "https://www.youtube.com/",
+            "class": { "img1-cut": true, "img12-size": true },
+        },
+        {
+            "id": 1,
+            "link": "https://www.google.com.vn/?hl=vi",
+            "class": { "img1-cut": true, "img12-size": true },
+        },
+        {
+            "id": 2,
+            "link": "https://www.facebook.com/",
+            "class": { "img3-cut": true, "img3-size": true },
+        }
+    ],
+    "company": "Công ty TNHH Shopee",
+    "paragraphs": {
+        "line1": "Địa chỉ: Tầng 28, Tòa nhà trung tâm Lotte Hà Nội, 54 Liễu Giai, phường Cống Vị, Quận Ba Đình, Hà Nội. Tổng đài hỗ trợ: 19001221 - Email:cskh@hotro.shopee.vn",
+        "line2": "Mã số doanh nghiệp: 0106773786 do Sở Kế hoạch Đầu tư TP Hà Nội cấp lần đầu ngày 10/02/2015",
+        "line3": "© 2015 - Bản quyền thuộc về Công ty TNHH Shopee"
+    }
+}

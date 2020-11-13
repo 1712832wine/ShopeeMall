@@ -4,6 +4,11 @@
     <BannerHome />
 
     <div class="large-banner"></div>
+<br>
+<br>
+<br>
+<br>
+<br>
     <FooterHome />
   </div>
 </template>
@@ -16,7 +21,7 @@ export default {
   components: {
     HeaderHome: HeaderHome,
     BannerHome: BannerHome,
-    FooterHome: FooterHome
+    FooterHome: FooterHome,
   }
 };
 </script>
@@ -29,7 +34,6 @@ body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
 
@@ -49,6 +53,7 @@ body {
 .large-banner {
   background-image: url("./assets/images/banners/large-banner.jpg");
   margin-top: 20px;
+
   height: 110px;
   width: 1200px;
   background-size: cover;

@@ -41,6 +41,5 @@ export default {
 };
 </script>
 
-<style lang="scss">
-@import "./Style-Banner.scss";
+<style lang="scss" scope src="./Style-Banner.scss">
 </style>

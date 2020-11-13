@@ -37,4 +37,4 @@
 export default {};
 </script>
 
-<style lang="scss"></style>
+<style  lang="scss" scope src="../style-Header.scss"></style>

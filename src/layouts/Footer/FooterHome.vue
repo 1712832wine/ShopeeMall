@@ -1,6 +1,6 @@
 <template>
   <div class="Footer">
-    <div class="container">
+    <div class="mycontainer">
       <FooterTop></FooterTop>
       <FooterNav></FooterNav>
     </div>
@@ -26,4 +26,6 @@ export default {
 };
 </script>
 
-<style scoped src="./Footer.css"></style>
+<style lang="scss" scoped src="./Footer.scss">
+
+</style>

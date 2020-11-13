@@ -476,4 +476,4 @@ export default {
 };
 </script>
 
-<style scoped src="../Footer.css"></style>
+<style lang="scss" scoped src="../Footer.scss"></style>

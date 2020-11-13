@@ -1,0 +1,133 @@
+$fontcolor: rgba(0, 0, 0, .54);
+$fontsize: .75rem;
+$fontweight: 700;
+$headingsize: .875rem;
+$colorhover: orangered;
+.fontsize {
+    font-size: $fontsize;
+}
+
+.mycontainer {
+    width: 75rem;
+    margin: auto;
+    background-color: #f5f5f5;
+}
+
+ul {
+    padding-inline-start: 0px;
+}
+
+
+/* footertop */
+
+.footertop {
+    display: block;
+    background-color: #fff;
+    padding-top: 3.75rem;
+    border-top: 4px solid #ee4d2d;
+    border-bottom: 1px solid rgba(0, 0, 0, .09);
+}
+
+.shopee-footer-section__heading {
+    margin: 0;
+    line-height: 1.7;
+    font-size: $headingsize;
+    font-weight: $fontweight;
+}
+
+.shopee-footer-section__content {
+    font-size: $fontsize;
+    color: $fontcolor;
+    line-height: 1.4;
+    margin: .625rem 0 0;
+    text-align: justify;
+    padding-bottom: 1.875rem;
+    /deep/ a {
+        font-weight: 700;
+        color: $fontcolor;
+        text-decoration: underline;
+        &:hover {
+            color: $colorhover;
+        }
+    }
+}
+
+///////
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+// p {
+//     display: block;
+//     margin-block-start: 1em;
+//     margin-block-end: 1em;
+//     margin-inline-start: 0px;
+//     margin-inline-end: 0px;
+//     color: blue;
+//     a {
+//         /* cursor: pointer; */
+//     }
+// }
+// a {
+//     /* cursor: pointer; */
+//     font-weight: 700;
+//     color: rgba(0, 0, 0, .54);
+// }
+// p>>>a:hover {
+//     color: orangered;
+// }
+// a:hover {
+//     color: orangered;
+// }
+
+/* footernav */
+
+.footer-nav {
+    padding-bottom: 3rem;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+.flex-between {
+    display: flex;
+    flex-direction: row;
+}
+
+ul {
+    list-style-type: none;
+    li {
+        margin-top: 1rem;
+        a {
+            // text-decoration: none;
+            font-size: 1rem;
+            color: rgba(0, 0, 0, .54) !important;
+        }
+    }
+}
+
+
+/**/
+
+
+/*footer category*/
+
+.bg-footercategory {
+    background-color: rgb(224, 224, 235);
+}
+
+.footer-vn-visa-png {
+    background-size: 1376.3636363636363% 634.4827586206897%;
+    background-position: 70.37037037037037% 30.967741935483872%;
+}
+
+.footer-vn-background {
+    background-image: url(../../assets/images/logos/logos.png);
+}
