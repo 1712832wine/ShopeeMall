@@ -2,18 +2,21 @@
   <div id="app">
     <HeaderHome />
     <BannerHome />
+
     <div class="large-banner"></div>
+    <FooterHome />
   </div>
 </template>
 
 <script>
 import HeaderHome from "./layouts/Header/HeaderHome";
 import BannerHome from "./components/Banner/BannerHome";
-
+import FooterHome from "./layouts/Footer/FooterHome.vue";
 export default {
   components: {
     HeaderHome: HeaderHome,
-    BannerHome: BannerHome
+    BannerHome: BannerHome,
+    FooterHome: FooterHome
   }
 };
 </script>
