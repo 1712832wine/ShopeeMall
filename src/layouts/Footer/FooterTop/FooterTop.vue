@@ -9,11 +9,10 @@
 <script>
 import reports from "../../../Data/footertopData.json";
 export default {
-  data: function () {
+  data: function() {
     return reports;
-  },
+  }
 };
 </script>
 
-<style lang ="scss" scoped src="../Footer.scss">
-</style>
+<style lang="scss" scoped src="../Footer.scss"></style>

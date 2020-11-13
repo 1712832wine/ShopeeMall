@@ -1,15 +1,10 @@
 <template>
   <div class="footerbottom">
-    <p>
-      <List :data="list__footerbottom__top"></List>
-    </p>
+    <List :data="list__footerbottom__top" class="footerbottom__list"></List>
 
-    <div class="flex" v-for="image in footerbottom__imgs" :key="image.id">
-      <a :href="image.link">
-        <div
-          :class="image.class"
-          class="img-url flex-item"
-        ></div>
+    <div class="flex">
+      <a :href="image.link" v-for="image in footerbottom__imgs" :key="image.id">
+        <div :class="image.class" class="img-url flex-item"></div>
       </a>
     </div>
 
@@ -20,22 +15,23 @@
 
 <script>
 import List from "../FooterList.vue";
-import footerbottomData from "../../../Data/footertopData.json"
+import footerbottomData from "../../../Data/footerbottomData.json";
 export default {
   components: {
-    List,
+    List
   },
-  data: function () {
-    return 
-  },
+  data: function() {
+    return footerbottomData;
+  }
 };
 </script>
 
 <style scoped>
 .footerbottom {
-  background: rgb(245, 245, 245);
+  background: #f5f5f5;
   padding: 2.625rem 0px 2.3125rem;
 }
+.footerbottom__list,
 p {
   text-align: center;
   color: rgba(0, 0, 0, 0.54);
@@ -72,6 +68,7 @@ ul >>> a:hover {
 /* flex */
 .flex {
   display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 .flex-item {

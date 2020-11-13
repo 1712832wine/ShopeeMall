@@ -3,22 +3,22 @@
         { "id": 0, "name": "CHÍNH SÁCH BẢO MẬT", "link": "#" },
         { "id": 1, "name": "QUY CHẾ HOẠT ĐỘNG", "link": "#" },
         { "id": 2, "name": "CHÍNH SÁCH VẬN CHUYỂN", "link": "#" },
-        { "id": 3, "name": "CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN", "link": "#" },
+        { "id": 3, "name": "CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN", "link": "#" }
     ],
     "footerbottom__imgs": [{
             "id": 0,
             "link": "https://www.youtube.com/",
-            "class": { "img1-cut": true, "img12-size": true },
+            "class": { "img1-cut": true, "img12-size": true }
         },
         {
             "id": 1,
             "link": "https://www.google.com.vn/?hl=vi",
-            "class": { "img1-cut": true, "img12-size": true },
+            "class": { "img1-cut": true, "img12-size": true }
         },
         {
             "id": 2,
             "link": "https://www.facebook.com/",
-            "class": { "img3-cut": true, "img3-size": true },
+            "class": { "img3-cut": true, "img3-size": true }
         }
     ],
     "company": "Công ty TNHH Shopee",

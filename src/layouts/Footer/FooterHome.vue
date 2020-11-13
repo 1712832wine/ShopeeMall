@@ -21,11 +21,9 @@ export default {
     FooterTop,
     FooterNav,
     FooterCategory,
-    FooterBottom,
+    FooterBottom
   }
 };
 </script>
 
-<style lang="scss" scoped src="./Footer.scss">
-
-</style>
+<style lang="scss" scoped src="./Footer.scss"></style>

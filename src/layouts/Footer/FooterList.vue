@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  props: ["data"],
+  props: ["data"]
 };
 </script>
 
@@ -34,7 +34,8 @@ export default {
   a {
     color: rgba(0, 0, 0, 0.54);
     text-decoration: none;
-    :hover {
+
+    &:hover {
       text-decoration: none;
       color: orangered;
     }

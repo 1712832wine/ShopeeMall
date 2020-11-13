@@ -5,7 +5,7 @@
         <h3>
           <a :href="item.link">{{ item.name }}</a>
         </h3>
-        <List :list="item.items"></List>
+        <List :data="item.items"></List>
       </li>
     </ul>
   </div>

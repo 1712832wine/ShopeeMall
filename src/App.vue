@@ -4,11 +4,11 @@
     <BannerHome />
 
     <div class="large-banner"></div>
-<br>
-<br>
-<br>
-<br>
-<br>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
     <FooterHome />
   </div>
 </template>
@@ -21,7 +21,7 @@ export default {
   components: {
     HeaderHome: HeaderHome,
     BannerHome: BannerHome,
-    FooterHome: FooterHome,
+    FooterHome: FooterHome
   }
 };
 </script>

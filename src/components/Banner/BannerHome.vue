@@ -41,5 +41,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scope src="./Style-Banner.scss">
-</style>
+<style lang="scss" scope src="./Style-Banner.scss"></style>

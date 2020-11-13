@@ -16,5 +16,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scope src="./style-Header.scss">
-</style>
+<style lang="scss" scoped src="./style-Header.scss"></style>
