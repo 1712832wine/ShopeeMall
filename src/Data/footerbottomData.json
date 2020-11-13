@@ -1,9 +1,9 @@
 {
     "list__footerbottom__top": [
-        { "id": 0, "name": "CHÍNH SÁCH BẢO MẬT", "link": "#" },
-        { "id": 1, "name": "QUY CHẾ HOẠT ĐỘNG", "link": "#" },
-        { "id": 2, "name": "CHÍNH SÁCH VẬN CHUYỂN", "link": "#" },
-        { "id": 3, "name": "CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN", "link": "#" }
+        { "id": 0, "title": "CHÍNH SÁCH BẢO MẬT", "link": "#" },
+        { "id": 1, "title": "QUY CHẾ HOẠT ĐỘNG", "link": "#" },
+        { "id": 2, "title": "CHÍNH SÁCH VẬN CHUYỂN", "link": "#" },
+        { "id": 3, "title": "CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN", "link": "#" }
     ],
     "footerbottom__imgs": [{
             "id": 0,

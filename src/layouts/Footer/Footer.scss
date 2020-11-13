@@ -80,6 +80,10 @@ h2 {
     width: 25%;
 }
 
+.flex-item20 {
+    width: 20%;
+}
+
 ul {
     list-style-type: none;
     li {
@@ -108,11 +112,123 @@ h2 {
     background-color: rgb(224, 224, 235);
 }
 
+.footer-vn-size {
+    width: 55px;
+    height: 29px;
+}
+
+._14m_66 {
+    width: 3.4375rem;
+    height: 1.8125rem;
+    margin-bottom: .5rem;
+    margin-right: .5rem;
+    overflow: hidden;
+}
+
 .footer-vn-visa-png {
     background-size: 1376.3636363636363% 634.4827586206897%;
     background-position: 70.37037037037037% 30.967741935483872%;
 }
 
+.footer-vn-mastercard-png {
+    background-size: 1376.3636363636363% 634.4827586206897%;
+    background-position: 45.01424501424501% 6.451612903225806%;
+}
+
+.footer-vn-jcb-png {
+    background-size: 1376.3636363636363% 800%;
+    background-position: 37.60683760683761% 36.64596273291925%;
+}
+
+.footer-vn-amex-png {
+    background-size: 1514% 836.3636363636364%;
+    background-position: 11.315417256011315% 6.172839506172839%;
+}
+
+.footer-vn-vn_cod_footer-png {
+    background-size: 1514% 634.4827586206897%;
+    background-position: 59.264497878359265% 55.483870967741936%;
+}
+
+.footer-vn-vn_installment_footer-png {
+    background-size: 1376.3636363636363% 634.4827586206897%;
+    background-position: 69.65811965811966% 62.58064516129032%;
+}
+
+.footer-vn-air-pay-png {
+    background-size: 1892.5% 353.84615384615387%;
+    background-position: 1.394700139470014% 7.575757575757576%;
+}
+
+// 
+.footer-vn-shopee-express-png {
+    background-size: 681.981981981982% 1022.2222222222222%;
+    background-position: 60.526315789473685% 6.024096385542169%;
+}
+
+.footer-vn-ghtk-png {
+    background-size: 1376.3636363636363% 1022.2222222222222%;
+    background-position: 19.515669515669515% 61.44578313253012%;
+}
+
+.footer-vn-ghn-png {
+    background-size: 1376.3636363636363% 634.4827586206897%;
+    background-position: 8.831908831908832% 65.80645161290323%;
+}
+
+.footer-vn-viettel_post-png {
+    background-size: 1376.3636363636363% 1022.2222222222222%;
+    background-position: 59.686609686609685% 28.91566265060241%;
+}
+
+.footer-vn-vnpost-png {
+    background-size: 1376.3636363636363% 681.4814814814815%;
+    background-position: 95.86894586894587% 47.77070063694268%;
+}
+
+.footer-vn-vn_jnt_footer-png {
+    background-size: 1376.3636363636363% 1150%;
+    background-position: 74.35897435897436% 5.9523809523809526%;
+}
+
+.footer-vn-grab_express-png {
+    background-size: 564.9253731343283% 634.4827586206897%;
+    background-position: 26.003210272873194% 6.451612903225806%;
+}
+
+.footer-vn-vn_now-png {
+    background-size: 850.561797752809% 262.85714285714283%;
+    background-position: 84.4311377245509% 100%;
+}
+
+.footer-vn-ninja-van-png {
+    background-size: 1261.6666666666667% 707.6923076923077%;
+    background-position: 48.63701578192253% 37.34177215189873%;
+}
+
+.footer-vn-best-express-png {
+    background-size: 1051.388888888889% 613.3333333333334%;
+    background-position: 10.218978102189782% 33.76623376623377%;
+}
+
 .footer-vn-background {
     background-image: url(../../assets/images/logos/logos.png);
+}
+
+.bg-qr {
+    background-image: url(../../assets/images/qr-code-shoppe-footer.png)no-repeat center center fixed;
+    width: 3rem;
+    height: 3rem;
+}
+
+.bg-appstore {
+    background-image: url(../../assets/images/logos/appstore.png)no-repeat center center fixed;
+    width: auto;
+    height: 3rem;
+}
+
+.bg-googleplay {
+    background-image: url(../../assets/images/logos/googleplay.png)no-repeat center center fixed;
+    width: auto;
+    height: 3rem;
 }

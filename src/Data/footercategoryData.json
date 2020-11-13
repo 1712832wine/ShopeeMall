@@ -1,13 +1,236 @@
 {
-    "footerData": [{
+    "customer": {
         "id": 1,
-        "title": "column1",
-        "heading": "Chăm sóc khách hàng",
-        "list": ["Trung tâm trợ giúp", "Shopee Blog"]
-    }, {
+        "name": "CHĂM SÓC KHÁCH HÀNG",
+        "items": [{
+                "id": 1,
+                "name": "Trung tâm trợ giúp",
+                "link": "#"
+            },
+            {
+                "id": 2,
+                "name": "Shopee blog",
+                "link": "#"
+            },
+            {
+                "id": 3,
+                "name": "Shopee mall",
+                "link": "#"
+            },
+            {
+                "id": 4,
+                "name": "Hướng dẫn mua hàng",
+                "link": "#"
+            },
+            {
+                "id": 5,
+                "name": "Hướng dẫn bán hàng",
+                "link": "#"
+            },
+            {
+                "id": 6,
+                "name": "Thanh toán",
+                "link": "#"
+            },
+            {
+                "id": 7,
+                "name": "Shopee xu",
+                "link": "#"
+            },
+            {
+                "id": 8,
+                "name": "Vận chuyển",
+                "link": "#"
+            },
+            {
+                "id": 9,
+                "name": "Trả hàng & hoàn tiền",
+                "link": "#"
+            },
+            {
+                "id": 10,
+                "name": "Chăm sóc khách hàng",
+                "link": "#"
+            },
+            {
+                "id": 11,
+                "name": "Chính sách bảo hành",
+                "link": "#"
+            }
+        ]
+    },
+    "about": {
         "id": 2,
-        "title": "column2",
-        "heading": "Chăm sóc khách hàng",
-        "list": ["Trung tâm trợ giúp", "Shopee Blog"]
-    }]
+        "name": "VỀ SHOPEE",
+        "items": [{
+                "id": 1,
+                "name": "Giới thiệu về shopee Việt Nam",
+                "link": "#"
+            },
+            {
+                "id": 2,
+                "name": "Tuyển dụng",
+                "link": "#"
+            },
+            {
+                "id": 3,
+                "name": "Điều khoản shopee",
+                "link": "#"
+            },
+            {
+                "id": 4,
+                "name": "Chính sách bảo mật",
+                "link": "#"
+            },
+            {
+                "id": 5,
+                "name": "Chính hãng",
+                "link": "#"
+            },
+            {
+                "id": 6,
+                "name": "Kênh người bán",
+                "link": "#"
+            },
+            {
+                "id": 7,
+                "name": "Flash sale",
+                "link": "#"
+            },
+            {
+                "id": 8,
+                "name": "Chương trình tiếp thị liên kết shopee",
+                "link": "#"
+            },
+            {
+                "id": 9,
+                "name": "Liên hệ với truyền thông",
+                "link": "#"
+            }
+        ]
+    },
+    "payment": {
+        "id": 3,
+        "title": "THANH TOÁN",
+        "items": [{
+                "id": 1,
+                "png": "footer-vn-visa-png"
+            },
+            {
+                "id": 2,
+                "png": "footer-vn-mastercard-png"
+            },
+            {
+                "id": 3,
+                "png": "footer-vn-amex-png"
+            },
+            {
+                "id": 4,
+                "png": "footer-vn-vn_cod_footer-png"
+            },
+            {
+                "id": 5,
+                "png": "footer-vn-jcb-png"
+            },
+            {
+                "id": 6,
+                "png": "footer-vn-vn_installment_footer-png"
+            },
+            {
+                "id": 7,
+                "png": "footer-vn-air-pay-png"
+            }
+        ]
+    },
+    "transport": {
+        "id": 4,
+        "title": "ĐƠN VỊ VẬN CHUYỂN",
+        "items": [{
+                "id": 1,
+                "png": "footer-vn-shopee-express-png"
+            },
+            {
+                "id": 2,
+                "png": "footer-vn-ghtk-png"
+            },
+            {
+                "id": 3,
+                "png": "footer-vn-ghn-png"
+            },
+            {
+                "id": 4,
+                "png": "footer-vn-viettel_post-png"
+            },
+            {
+                "id": 5,
+                "png": "footer-vn-vnpost-png"
+            },
+            {
+                "id": 6,
+                "png": "footer-vn-vn_jnt_footer-png"
+            },
+            {
+                "id": 7,
+                "png": "footer-vn-grab_express-png"
+            },
+            {
+                "id": 8,
+                "png": "footer-vn-vn_now-png"
+            },
+            {
+                "id": 9,
+                "png": "footer-vn-ninja-van-png"
+            },
+            {
+                "id": 10,
+                "png": "footer-vn-best-express-png"
+            }
+        ]
+    },
+    "network": {
+        "id": 4,
+        "name": "THEO DÕI CHÚNG TÔI TRÊN",
+        "items": [{
+                "id": 1,
+                "name": "Facebook",
+                "link": "#",
+                "icon": "fa fa-facebook-official"
+            },
+            {
+                "id": 2,
+                "name": "Instagram",
+                "link": "#",
+                "icon": "fa fa-instagram"
+            },
+            {
+                "id": 3,
+                "name": "Linkedln",
+                "link": "#",
+                "icon": "fa fa-linkedin-square"
+            }
+        ]
+    },
+    "download": {
+        "id": 5,
+        "name": "TẢI ỨNG DỤNG SHOPEE",
+        "items": [{
+                "id": 1,
+                "name": "Facebook",
+                "link": "#",
+                "icon": "fa fa-facebook-official"
+            },
+            {
+                "id": 2,
+                "name": "Instagram",
+                "link": "#",
+                "icon": "fa fa-instagram"
+            },
+            {
+                "id": 3,
+                "name": "Linkedln",
+                "link": "#",
+                "icon": "fa fa-linkedin-square"
+            }
+        ]
+    }
 }

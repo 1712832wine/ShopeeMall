@@ -1,17 +1,19 @@
 <template>
   <div>
-
+    <h3>{{ data.title }}</h3>
+    <!-- <li class="_14m_66"><div class="footer-vn-background footer-vn-visa-png" ></div></li> -->
+    <div class="flex-between flex-wrap">
+      <div v-for="item in data.items" :key="item.id" class="footer-vn-background footer-vn-size" :class="item.png" ></div>
+    </div>
+   
   </div>
 </template>
 
 <script>
-import List from "./FooterCategoryList.vue";
 export default {
-  components: {
-    List
-  },
-  props: ["data"]
+  props: ["data"],
 };
 </script>
 
-<style lang="scss" scoped src="../Footer.scss"></style>
+<style lang="scss" scoped src="../Footer.scss">
+</style>

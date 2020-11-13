@@ -1,10 +1,5 @@
 <template>
-  <div>
-    <h3>
-      {{ data.name }}
-    </h3>
-    <List :list="data.items"></List>
-  </div>
+  
 </template>
 
 <script>

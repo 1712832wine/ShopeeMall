@@ -3,7 +3,7 @@
     <ul>
       <li v-for="item in data" :key="item.id">
         <h3>
-          <a :href="item.link">{{ item.name }}</a>
+          <a :href="item.link">{{ item.title }}</a>
         </h3>
         <List :data="item.items"></List>
       </li>
