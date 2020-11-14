@@ -1,22 +1,22 @@
 /* eslint-disable prettier/prettier */
-import Vue from 'vue';
-import VueRouter from 'vue-router';
-import HeaderHome from '../layouts/Header/HeaderHome.vue';
+import Vue from "vue";
+import VueRouter from "vue-router";
+import Home from "../pages/Home.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/',
-    name: 'Home',
-    component: HeaderHome,
-  },
+    path: "/",
+    name: "Home",
+    component: Home
+  }
 ];
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: "history",
   base: process.env.BASE_URL,
-  routes,
+  routes
 });
 
 export default router;

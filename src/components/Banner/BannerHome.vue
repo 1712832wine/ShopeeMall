@@ -5,17 +5,11 @@
         <div class="section-banner--full">
           <div class="container-banner">
             <div class="section-banner__wrapper">
-              <BannerSlide />
+              <banner-slide />
               <div class="home-banner__left">
-                <a href="#">
+                <a v-for="i in 2" :key="`banner-left${i}`" href="#">
                   <img
-                    src="../../assets/images/banners/banner-left-1.jpg"
-                    alt=""
-                  />
-                </a>
-                <a href="#">
-                  <img
-                    src="../../assets/images/banners/banner-left-2.png"
+                    :src="`/assets/images/banners/banner-left-${i}.jpg`"
                     alt=""
                   />
                 </a>
@@ -23,7 +17,7 @@
             </div>
           </div>
           <!-- campaign -->
-          <CampaignList />
+          <campaign-list />
         </div>
       </div>
     </div>
@@ -35,12 +29,12 @@ import BannerSlide from "./BannerSlide";
 import CampaignList from "../campaign/CampaignList";
 export default {
   components: {
-    BannerSlide: BannerSlide,
-    CampaignList: CampaignList
+    "banner-slide": BannerSlide,
+    "campaign-list": CampaignList
   }
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "./Style-Banner.scss";
 </style>

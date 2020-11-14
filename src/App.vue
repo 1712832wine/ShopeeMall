@@ -1,21 +1,11 @@
 <template>
   <div id="app">
-    <HeaderHome />
-    <BannerHome />
-    <div class="large-banner"></div>
+    <router-view />
   </div>
 </template>
 
 <script>
-import HeaderHome from "./layouts/Header/HeaderHome";
-import BannerHome from "./components/Banner/BannerHome";
-
-export default {
-  components: {
-    HeaderHome: HeaderHome,
-    BannerHome: BannerHome
-  }
-};
+export default {};
 </script>
 
 <style lang="scss">

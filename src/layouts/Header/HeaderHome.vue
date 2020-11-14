@@ -1,17 +1,24 @@
 <template>
   <div class="navbar-shop navbar-shop__sticky">
-    <HeaderTop />
-    <HeaderBottom />
+    <header-top :data="dataTop" />
+    <header-bottom :data="dataBottom" />
   </div>
 </template>
 
 <script>
 import HeaderTop from "./HeaderTop/HeaderTop";
 import HeaderBottom from "./HeaderBottom/HeaderBottom";
+import headerData from "../../data/headerData.json";
 export default {
+  data: function() {
+    return {
+      dataTop: headerData.vn.top,
+      dataBottom: headerData.vn.bottom
+    };
+  },
   components: {
-    HeaderTop: HeaderTop,
-    HeaderBottom: HeaderBottom
+    "header-top": HeaderTop,
+    "header-bottom": HeaderBottom
   }
 };
 </script>
