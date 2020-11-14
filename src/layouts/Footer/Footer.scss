@@ -46,6 +46,9 @@ ul {
         color: $fontcolor;
         text-decoration: underline;
         &:hover {
+            i {
+                color: $fontcolor !important;
+            }
             color: $colorhover;
         }
     }
@@ -74,6 +77,18 @@ h2 {
 .flex-between {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
 }
 
 .flex-item25 {
@@ -90,7 +105,7 @@ ul {
         margin-top: 1rem;
         a {
             text-decoration: none;
-            font-weight: 700;
+            // font-weight: 700;
             font-size: 1rem;
             color: rgba(0, 0, 0, .54);
             &:hover {
@@ -107,6 +122,21 @@ h2 {
 
 
 /*footer category*/
+
+p {
+    color: $fontcolor;
+}
+
+h3 {
+    margin-top: 1rem;
+    font-size: $fontsize;
+    font-weight: $fontweight;
+}
+
+.footercategory {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
 
 .bg-footercategory {
     background-color: rgb(224, 224, 235);
@@ -213,6 +243,7 @@ h2 {
 
 .footer-vn-background {
     background-image: url(../../assets/images/logos/logos.png);
+    margin: 0.2rem;
 }
 
 .bg-qr {
@@ -231,4 +262,33 @@ h2 {
     background-image: url(../../assets/images/logos/googleplay.png)no-repeat center center fixed;
     width: auto;
     height: 3rem;
+}
+
+.mBTmjQ {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    align-content: center;
+    vertical-align: center;
+}
+
+.qr-size {
+    border: .0625rem solid rgba(0, 0, 0, .09);
+    height: 5.25rem;
+    width: 5.25rem;
+}
+
+.appstore-size {
+    margin-left: .8125rem;
+    height: 1.25rem;
+}
+
+.nohover {
+    a {
+        &:hover {
+            color: $fontcolor !important;
+        }
+    }
 }

@@ -1,111 +1,111 @@
 {
     "customer": {
         "id": 1,
-        "name": "CHĂM SÓC KHÁCH HÀNG",
+        "title": "CHĂM SÓC KHÁCH HÀNG",
         "items": [{
                 "id": 1,
-                "name": "Trung tâm trợ giúp",
-                "link": "#"
+                "title": "Trung tâm trợ giúp",
+                "url": "#"
             },
             {
                 "id": 2,
-                "name": "Shopee blog",
-                "link": "#"
+                "title": "Shopee blog",
+                "url": "#"
             },
             {
                 "id": 3,
-                "name": "Shopee mall",
-                "link": "#"
+                "title": "Shopee mall",
+                "url": "#"
             },
             {
                 "id": 4,
-                "name": "Hướng dẫn mua hàng",
-                "link": "#"
+                "title": "Hướng dẫn mua hàng",
+                "url": "#"
             },
             {
                 "id": 5,
-                "name": "Hướng dẫn bán hàng",
-                "link": "#"
+                "title": "Hướng dẫn bán hàng",
+                "url": "#"
             },
             {
                 "id": 6,
-                "name": "Thanh toán",
-                "link": "#"
+                "title": "Thanh toán",
+                "url": "#"
             },
             {
                 "id": 7,
-                "name": "Shopee xu",
-                "link": "#"
+                "title": "Shopee xu",
+                "url": "#"
             },
             {
                 "id": 8,
-                "name": "Vận chuyển",
-                "link": "#"
+                "title": "Vận chuyển",
+                "url": "#"
             },
             {
                 "id": 9,
-                "name": "Trả hàng & hoàn tiền",
-                "link": "#"
+                "title": "Trả hàng & hoàn tiền",
+                "url": "#"
             },
             {
                 "id": 10,
-                "name": "Chăm sóc khách hàng",
-                "link": "#"
+                "title": "Chăm sóc khách hàng",
+                "url": "#"
             },
             {
                 "id": 11,
-                "name": "Chính sách bảo hành",
-                "link": "#"
+                "title": "Chính sách bảo hành",
+                "url": "#"
             }
         ]
     },
     "about": {
         "id": 2,
-        "name": "VỀ SHOPEE",
+        "title": "VỀ SHOPEE",
         "items": [{
                 "id": 1,
-                "name": "Giới thiệu về shopee Việt Nam",
-                "link": "#"
+                "title": "Giới thiệu về shopee Việt Nam",
+                "url": "#"
             },
             {
                 "id": 2,
-                "name": "Tuyển dụng",
-                "link": "#"
+                "title": "Tuyển dụng",
+                "url": "#"
             },
             {
                 "id": 3,
-                "name": "Điều khoản shopee",
-                "link": "#"
+                "title": "Điều khoản shopee",
+                "url": "#"
             },
             {
                 "id": 4,
-                "name": "Chính sách bảo mật",
-                "link": "#"
+                "title": "Chính sách bảo mật",
+                "url": "#"
             },
             {
                 "id": 5,
-                "name": "Chính hãng",
-                "link": "#"
+                "title": "Chính hãng",
+                "url": "#"
             },
             {
                 "id": 6,
-                "name": "Kênh người bán",
-                "link": "#"
+                "title": "Kênh người bán",
+                "url": "#"
             },
             {
                 "id": 7,
-                "name": "Flash sale",
-                "link": "#"
+                "title": "Flash sale",
+                "url": "#"
             },
             {
                 "id": 8,
-                "name": "Chương trình tiếp thị liên kết shopee",
-                "link": "#"
+                "title": "Chương trình tiếp thị liên kết shopee",
+                "url": "#"
             },
             {
                 "id": 9,
-                "name": "Liên hệ với truyền thông",
-                "link": "#"
+                "title": "Liên hệ với truyền thông",
+                "url": "#"
             }
         ]
     },
@@ -189,47 +189,75 @@
     },
     "network": {
         "id": 4,
-        "name": "THEO DÕI CHÚNG TÔI TRÊN",
+        "title": "THEO DÕI CHÚNG TÔI TRÊN",
         "items": [{
                 "id": 1,
-                "name": "Facebook",
-                "link": "#",
+                "title": "Facebook",
+                "url": "#",
                 "icon": "fa fa-facebook-official"
             },
             {
                 "id": 2,
-                "name": "Instagram",
-                "link": "#",
+                "title": "Instagram",
+                "url": "#",
                 "icon": "fa fa-instagram"
             },
             {
                 "id": 3,
-                "name": "Linkedln",
-                "link": "#",
+                "title": "linkedln",
+                "url": "#",
                 "icon": "fa fa-linkedin-square"
             }
         ]
     },
     "download": {
         "id": 5,
-        "name": "TẢI ỨNG DỤNG SHOPEE",
-        "items": [{
+        "title": "TẢI ỨNG DỤNG SHOPEE NGAY THÔI"
+
+    },
+    "categorybot": {
+        "paragraphleft": "© 2020 Shopee. Tất cả các quyền được bảo lưu.",
+        "title": "Quốc gia & khu vực:",
+        "nations": [{
                 "id": 1,
-                "name": "Facebook",
-                "link": "#",
-                "icon": "fa fa-facebook-official"
+                "title": "Singapore",
+                "url": "#"
             },
             {
                 "id": 2,
-                "name": "Instagram",
-                "link": "#",
-                "icon": "fa fa-instagram"
+                "title": "Indonesia",
+                "url": "#"
             },
             {
                 "id": 3,
-                "name": "Linkedln",
-                "link": "#",
-                "icon": "fa fa-linkedin-square"
+                "title": "Đài Loan",
+                "url": "#"
+            },
+            {
+                "id": 4,
+                "title": "Thái Lan",
+                "url": "#"
+            },
+            {
+                "id": 5,
+                "title": "Malaysia",
+                "url": "#"
+            },
+            {
+                "id": 6,
+                "title": "Việt Nam",
+                "url": "#"
+            },
+            {
+                "id": 7,
+                "title": "Philipine",
+                "url": "#"
+            },
+            {
+                "id": 8,
+                "title": "Brazil",
+                "url": "#"
+
             }
         ]
     }

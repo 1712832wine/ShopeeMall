@@ -1,7 +1,7 @@
 <template>
   <div>
     <h3>
-      {{ data.name }}
+      {{ data.title }}
     </h3>
     <List :list="data.items"></List>
   </div>
