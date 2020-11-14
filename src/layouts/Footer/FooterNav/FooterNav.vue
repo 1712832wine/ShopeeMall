@@ -7,7 +7,7 @@
         :data="column.data"
         v-for="column in columns"
         :key="column.id"
-        class="flex-item25"
+        class="flex-item20"
       >
       </FooterNavColumn>
     </div>
