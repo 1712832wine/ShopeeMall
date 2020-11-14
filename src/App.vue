@@ -2,18 +2,22 @@
   <div id="app">
     <HeaderHome />
     <BannerHome />
+
     <div class="large-banner"></div>
+
+     <CategoryProductList/>
   </div>
 </template>
 
 <script>
 import HeaderHome from "./layouts/Header/HeaderHome";
 import BannerHome from "./components/Banner/BannerHome";
-
+import CategoryProductList from './components/CategoryProductList/CategoryProductList'
 export default {
   components: {
     HeaderHome: HeaderHome,
-    BannerHome: BannerHome
+    BannerHome: BannerHome,
+    CategoryProductList:CategoryProductList,
   }
 };
 </script>
