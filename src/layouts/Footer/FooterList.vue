@@ -1,7 +1,7 @@
 <template>
   <ul class="menu">
     <li v-for="item in data" :key="item.id">
-      <a :href="item.link" class="font-size">{{ item.title }}</a>
+      <a :href="item.url" class="font-size">{{ item.title }}</a>
       <span class="fontsize"> | </span>
     </li>
   </ul>

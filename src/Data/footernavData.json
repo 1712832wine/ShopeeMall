@@ -5,304 +5,304 @@
             "data": [{
                     "id": 1,
                     "title": "THỜI TRANG NAM",
-                    "link": "#",
+                    "url": "#",
                     "items": [{
                             "id": 1,
                             "title": "Áo thun",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 2,
                             "title": "Áo sơ mi",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 3,
                             "title": "Áo khoác & Áo vest",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 4,
                             "title": "Áo nỉ/ Áo len",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 5,
                             "title": "Đồ bộ/ Đồ mặc nhà",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 6,
                             "title": "Đồ đôi",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 7,
                             "title": "Quần",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 8,
                             "title": "Balo/ Túi/ Ví",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 9,
                             "title": "Mắt kính",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 10,
                             "title": "Phụ kiện nam",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 11,
                             "title": "Đồ Trung Niên",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 12,
                             "title": "Trang Sức Nam",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 13,
                             "title": "Thắt Lưng",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 14,
                             "title": "Đồ lót",
-                            "link": "#"
+                            "url": "#"
                         }
                     ]
                 },
                 {
                     "id": 2,
                     "title": "NHÀ CỬA & ĐỜI SỐNG",
-                    "link": "#",
+                    "url": "#",
                     "items": [{
                             "id": 1,
                             "title": "Áo thun",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 2,
                             "title": "Áo sơ mi",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 3,
                             "title": "Áo khoác & Áo vest",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 4,
                             "title": "Áo nỉ/ Áo len",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 5,
                             "title": "Đồ bộ/ Đồ mặc nhà",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 6,
                             "title": "Đồ đôi",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 7,
                             "title": "Quần",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 8,
                             "title": "Balo/ Túi/ Ví",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 9,
                             "title": "Mắt kính",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 10,
                             "title": "Phụ kiện nam",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 11,
                             "title": "Đồ Trung Niên",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 12,
                             "title": "Trang Sức Nam",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 13,
                             "title": "Thắt Lưng",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 14,
                             "title": "Đồ lót",
-                            "link": "#"
+                            "url": "#"
                         }
                     ]
                 },
                 {
                     "id": 3,
                     "title": "THỜI TRANG NAM",
-                    "link": "#",
+                    "url": "#",
                     "items": [{
                             "id": 1,
                             "title": "Áo thun",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 2,
                             "title": "Áo sơ mi",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 3,
                             "title": "Áo khoác & Áo vest",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 4,
                             "title": "Áo nỉ/ Áo len",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 5,
                             "title": "Đồ bộ/ Đồ mặc nhà",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 6,
                             "title": "Đồ đôi",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 7,
                             "title": "Quần",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 8,
                             "title": "Balo/ Túi/ Ví",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 9,
                             "title": "Mắt kính",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 10,
                             "title": "Phụ kiện nam",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 11,
                             "title": "Đồ Trung Niên",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 12,
                             "title": "Trang Sức Nam",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 13,
                             "title": "Thắt Lưng",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 14,
                             "title": "Đồ lót",
-                            "link": "#"
+                            "url": "#"
                         }
                     ]
                 },
                 {
                     "id": 4,
                     "title": "NHÀ CỬA & ĐỜI SỐNG",
-                    "link": "#",
+                    "url": "#",
                     "items": [{
                             "id": 1,
                             "title": "Áo thun",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 2,
                             "title": "Áo sơ mi",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 3,
                             "title": "Áo khoác & Áo vest",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 4,
                             "title": "Áo nỉ/ Áo len",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 5,
                             "title": "Đồ bộ/ Đồ mặc nhà",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 6,
                             "title": "Đồ đôi",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 7,
                             "title": "Quần",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 8,
                             "title": "Balo/ Túi/ Ví",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 9,
                             "title": "Mắt kính",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 10,
                             "title": "Phụ kiện nam",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 11,
                             "title": "Đồ Trung Niên",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 12,
                             "title": "Trang Sức Nam",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 13,
                             "title": "Thắt Lưng",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 14,
                             "title": "Đồ lót",
-                            "link": "#"
+                            "url": "#"
                         }
                     ]
                 }
@@ -314,304 +314,304 @@
             "data": [{
                     "id": 1,
                     "title": "THỜI TRANG NAM",
-                    "link": "#",
+                    "url": "#",
                     "items": [{
                             "id": 1,
                             "title": "Áo thun",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 2,
                             "title": "Áo sơ mi",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 3,
                             "title": "Áo khoác & Áo vest",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 4,
                             "title": "Áo nỉ/ Áo len",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 5,
                             "title": "Đồ bộ/ Đồ mặc nhà",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 6,
                             "title": "Đồ đôi",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 7,
                             "title": "Quần",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 8,
                             "title": "Balo/ Túi/ Ví",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 9,
                             "title": "Mắt kính",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 10,
                             "title": "Phụ kiện nam",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 11,
                             "title": "Đồ Trung Niên",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 12,
                             "title": "Trang Sức Nam",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 13,
                             "title": "Thắt Lưng",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 14,
                             "title": "Đồ lót",
-                            "link": "#"
+                            "url": "#"
                         }
                     ]
                 },
                 {
                     "id": 2,
                     "title": "NHÀ CỬA & ĐỜI SỐNG",
-                    "link": "#",
+                    "url": "#",
                     "items": [{
                             "id": 1,
                             "title": "Áo thun",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 2,
                             "title": "Áo sơ mi",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 3,
                             "title": "Áo khoác & Áo vest",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 4,
                             "title": "Áo nỉ/ Áo len",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 5,
                             "title": "Đồ bộ/ Đồ mặc nhà",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 6,
                             "title": "Đồ đôi",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 7,
                             "title": "Quần",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 8,
                             "title": "Balo/ Túi/ Ví",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 9,
                             "title": "Mắt kính",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 10,
                             "title": "Phụ kiện nam",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 11,
                             "title": "Đồ Trung Niên",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 12,
                             "title": "Trang Sức Nam",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 13,
                             "title": "Thắt Lưng",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 14,
                             "title": "Đồ lót",
-                            "link": "#"
+                            "url": "#"
                         }
                     ]
                 },
                 {
                     "id": 3,
                     "title": "THỜI TRANG NAM",
-                    "link": "#",
+                    "url": "#",
                     "items": [{
                             "id": 1,
                             "title": "Áo thun",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 2,
                             "title": "Áo sơ mi",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 3,
                             "title": "Áo khoác & Áo vest",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 4,
                             "title": "Áo nỉ/ Áo len",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 5,
                             "title": "Đồ bộ/ Đồ mặc nhà",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 6,
                             "title": "Đồ đôi",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 7,
                             "title": "Quần",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 8,
                             "title": "Balo/ Túi/ Ví",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 9,
                             "title": "Mắt kính",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 10,
                             "title": "Phụ kiện nam",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 11,
                             "title": "Đồ Trung Niên",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 12,
                             "title": "Trang Sức Nam",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 13,
                             "title": "Thắt Lưng",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 14,
                             "title": "Đồ lót",
-                            "link": "#"
+                            "url": "#"
                         }
                     ]
                 },
                 {
                     "id": 4,
                     "title": "NHÀ CỬA & ĐỜI SỐNG",
-                    "link": "#",
+                    "url": "#",
                     "items": [{
                             "id": 1,
                             "title": "Áo thun",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 2,
                             "title": "Áo sơ mi",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 3,
                             "title": "Áo khoác & Áo vest",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 4,
                             "title": "Áo nỉ/ Áo len",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 5,
                             "title": "Đồ bộ/ Đồ mặc nhà",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 6,
                             "title": "Đồ đôi",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 7,
                             "title": "Quần",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 8,
                             "title": "Balo/ Túi/ Ví",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 9,
                             "title": "Mắt kính",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 10,
                             "title": "Phụ kiện nam",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 11,
                             "title": "Đồ Trung Niên",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 12,
                             "title": "Trang Sức Nam",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 13,
                             "title": "Thắt Lưng",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 14,
                             "title": "Đồ lót",
-                            "link": "#"
+                            "url": "#"
                         }
                     ]
                 }
@@ -623,304 +623,304 @@
             "data": [{
                     "id": 1,
                     "title": "THỜI TRANG NAM",
-                    "link": "#",
+                    "url": "#",
                     "items": [{
                             "id": 1,
                             "title": "Áo thun",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 2,
                             "title": "Áo sơ mi",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 3,
                             "title": "Áo khoác & Áo vest",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 4,
                             "title": "Áo nỉ/ Áo len",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 5,
                             "title": "Đồ bộ/ Đồ mặc nhà",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 6,
                             "title": "Đồ đôi",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 7,
                             "title": "Quần",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 8,
                             "title": "Balo/ Túi/ Ví",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 9,
                             "title": "Mắt kính",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 10,
                             "title": "Phụ kiện nam",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 11,
                             "title": "Đồ Trung Niên",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 12,
                             "title": "Trang Sức Nam",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 13,
                             "title": "Thắt Lưng",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 14,
                             "title": "Đồ lót",
-                            "link": "#"
+                            "url": "#"
                         }
                     ]
                 },
                 {
                     "id": 2,
                     "title": "NHÀ CỬA & ĐỜI SỐNG",
-                    "link": "#",
+                    "url": "#",
                     "items": [{
                             "id": 1,
                             "title": "Áo thun",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 2,
                             "title": "Áo sơ mi",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 3,
                             "title": "Áo khoác & Áo vest",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 4,
                             "title": "Áo nỉ/ Áo len",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 5,
                             "title": "Đồ bộ/ Đồ mặc nhà",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 6,
                             "title": "Đồ đôi",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 7,
                             "title": "Quần",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 8,
                             "title": "Balo/ Túi/ Ví",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 9,
                             "title": "Mắt kính",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 10,
                             "title": "Phụ kiện nam",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 11,
                             "title": "Đồ Trung Niên",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 12,
                             "title": "Trang Sức Nam",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 13,
                             "title": "Thắt Lưng",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 14,
                             "title": "Đồ lót",
-                            "link": "#"
+                            "url": "#"
                         }
                     ]
                 },
                 {
                     "id": 3,
                     "title": "THỜI TRANG NAM",
-                    "link": "#",
+                    "url": "#",
                     "items": [{
                             "id": 1,
                             "title": "Áo thun",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 2,
                             "title": "Áo sơ mi",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 3,
                             "title": "Áo khoác & Áo vest",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 4,
                             "title": "Áo nỉ/ Áo len",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 5,
                             "title": "Đồ bộ/ Đồ mặc nhà",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 6,
                             "title": "Đồ đôi",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 7,
                             "title": "Quần",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 8,
                             "title": "Balo/ Túi/ Ví",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 9,
                             "title": "Mắt kính",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 10,
                             "title": "Phụ kiện nam",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 11,
                             "title": "Đồ Trung Niên",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 12,
                             "title": "Trang Sức Nam",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 13,
                             "title": "Thắt Lưng",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 14,
                             "title": "Đồ lót",
-                            "link": "#"
+                            "url": "#"
                         }
                     ]
                 },
                 {
                     "id": 4,
                     "title": "NHÀ CỬA & ĐỜI SỐNG",
-                    "link": "#",
+                    "url": "#",
                     "items": [{
                             "id": 1,
                             "title": "Áo thun",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 2,
                             "title": "Áo sơ mi",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 3,
                             "title": "Áo khoác & Áo vest",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 4,
                             "title": "Áo nỉ/ Áo len",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 5,
                             "title": "Đồ bộ/ Đồ mặc nhà",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 6,
                             "title": "Đồ đôi",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 7,
                             "title": "Quần",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 8,
                             "title": "Balo/ Túi/ Ví",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 9,
                             "title": "Mắt kính",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 10,
                             "title": "Phụ kiện nam",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 11,
                             "title": "Đồ Trung Niên",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 12,
                             "title": "Trang Sức Nam",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 13,
                             "title": "Thắt Lưng",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 14,
                             "title": "Đồ lót",
-                            "link": "#"
+                            "url": "#"
                         }
                     ]
                 }
@@ -932,304 +932,304 @@
             "data": [{
                     "id": 1,
                     "title": "THỜI TRANG NAM",
-                    "link": "#",
+                    "url": "#",
                     "items": [{
                             "id": 1,
                             "title": "Áo thun",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 2,
                             "title": "Áo sơ mi",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 3,
                             "title": "Áo khoác & Áo vest",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 4,
                             "title": "Áo nỉ/ Áo len",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 5,
                             "title": "Đồ bộ/ Đồ mặc nhà",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 6,
                             "title": "Đồ đôi",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 7,
                             "title": "Quần",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 8,
                             "title": "Balo/ Túi/ Ví",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 9,
                             "title": "Mắt kính",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 10,
                             "title": "Phụ kiện nam",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 11,
                             "title": "Đồ Trung Niên",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 12,
                             "title": "Trang Sức Nam",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 13,
                             "title": "Thắt Lưng",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 14,
                             "title": "Đồ lót",
-                            "link": "#"
+                            "url": "#"
                         }
                     ]
                 },
                 {
                     "id": 2,
                     "title": "NHÀ CỬA & ĐỜI SỐNG",
-                    "link": "#",
+                    "url": "#",
                     "items": [{
                             "id": 1,
                             "title": "Áo thun",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 2,
                             "title": "Áo sơ mi",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 3,
                             "title": "Áo khoác & Áo vest",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 4,
                             "title": "Áo nỉ/ Áo len",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 5,
                             "title": "Đồ bộ/ Đồ mặc nhà",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 6,
                             "title": "Đồ đôi",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 7,
                             "title": "Quần",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 8,
                             "title": "Balo/ Túi/ Ví",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 9,
                             "title": "Mắt kính",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 10,
                             "title": "Phụ kiện nam",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 11,
                             "title": "Đồ Trung Niên",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 12,
                             "title": "Trang Sức Nam",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 13,
                             "title": "Thắt Lưng",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 14,
                             "title": "Đồ lót",
-                            "link": "#"
+                            "url": "#"
                         }
                     ]
                 },
                 {
                     "id": 3,
                     "title": "THỜI TRANG NAM",
-                    "link": "#",
+                    "url": "#",
                     "items": [{
                             "id": 1,
                             "title": "Áo thun",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 2,
                             "title": "Áo sơ mi",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 3,
                             "title": "Áo khoác & Áo vest",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 4,
                             "title": "Áo nỉ/ Áo len",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 5,
                             "title": "Đồ bộ/ Đồ mặc nhà",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 6,
                             "title": "Đồ đôi",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 7,
                             "title": "Quần",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 8,
                             "title": "Balo/ Túi/ Ví",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 9,
                             "title": "Mắt kính",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 10,
                             "title": "Phụ kiện nam",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 11,
                             "title": "Đồ Trung Niên",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 12,
                             "title": "Trang Sức Nam",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 13,
                             "title": "Thắt Lưng",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 14,
                             "title": "Đồ lót",
-                            "link": "#"
+                            "url": "#"
                         }
                     ]
                 },
                 {
                     "id": 4,
                     "title": "NHÀ CỬA & ĐỜI SỐNG",
-                    "link": "#",
+                    "url": "#",
                     "items": [{
                             "id": 1,
                             "title": "Áo thun",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 2,
                             "title": "Áo sơ mi",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 3,
                             "title": "Áo khoác & Áo vest",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 4,
                             "title": "Áo nỉ/ Áo len",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 5,
                             "title": "Đồ bộ/ Đồ mặc nhà",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 6,
                             "title": "Đồ đôi",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 7,
                             "title": "Quần",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 8,
                             "title": "Balo/ Túi/ Ví",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 9,
                             "title": "Mắt kính",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 10,
                             "title": "Phụ kiện nam",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 11,
                             "title": "Đồ Trung Niên",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 12,
                             "title": "Trang Sức Nam",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 13,
                             "title": "Thắt Lưng",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 14,
                             "title": "Đồ lót",
-                            "link": "#"
+                            "url": "#"
                         }
                     ]
                 }
@@ -1241,304 +1241,304 @@
             "data": [{
                     "id": 1,
                     "title": "THỜI TRANG NAM",
-                    "link": "#",
+                    "url": "#",
                     "items": [{
                             "id": 1,
                             "title": "Áo thun",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 2,
                             "title": "Áo sơ mi",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 3,
                             "title": "Áo khoác & Áo vest",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 4,
                             "title": "Áo nỉ/ Áo len",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 5,
                             "title": "Đồ bộ/ Đồ mặc nhà",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 6,
                             "title": "Đồ đôi",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 7,
                             "title": "Quần",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 8,
                             "title": "Balo/ Túi/ Ví",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 9,
                             "title": "Mắt kính",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 10,
                             "title": "Phụ kiện nam",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 11,
                             "title": "Đồ Trung Niên",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 12,
                             "title": "Trang Sức Nam",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 13,
                             "title": "Thắt Lưng",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 14,
                             "title": "Đồ lót",
-                            "link": "#"
+                            "url": "#"
                         }
                     ]
                 },
                 {
                     "id": 2,
                     "title": "NHÀ CỬA & ĐỜI SỐNG",
-                    "link": "#",
+                    "url": "#",
                     "items": [{
                             "id": 1,
                             "title": "Áo thun",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 2,
                             "title": "Áo sơ mi",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 3,
                             "title": "Áo khoác & Áo vest",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 4,
                             "title": "Áo nỉ/ Áo len",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 5,
                             "title": "Đồ bộ/ Đồ mặc nhà",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 6,
                             "title": "Đồ đôi",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 7,
                             "title": "Quần",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 8,
                             "title": "Balo/ Túi/ Ví",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 9,
                             "title": "Mắt kính",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 10,
                             "title": "Phụ kiện nam",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 11,
                             "title": "Đồ Trung Niên",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 12,
                             "title": "Trang Sức Nam",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 13,
                             "title": "Thắt Lưng",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 14,
                             "title": "Đồ lót",
-                            "link": "#"
+                            "url": "#"
                         }
                     ]
                 },
                 {
                     "id": 3,
                     "title": "THỜI TRANG NAM",
-                    "link": "#",
+                    "url": "#",
                     "items": [{
                             "id": 1,
                             "title": "Áo thun",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 2,
                             "title": "Áo sơ mi",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 3,
                             "title": "Áo khoác & Áo vest",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 4,
                             "title": "Áo nỉ/ Áo len",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 5,
                             "title": "Đồ bộ/ Đồ mặc nhà",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 6,
                             "title": "Đồ đôi",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 7,
                             "title": "Quần",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 8,
                             "title": "Balo/ Túi/ Ví",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 9,
                             "title": "Mắt kính",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 10,
                             "title": "Phụ kiện nam",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 11,
                             "title": "Đồ Trung Niên",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 12,
                             "title": "Trang Sức Nam",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 13,
                             "title": "Thắt Lưng",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 14,
                             "title": "Đồ lót",
-                            "link": "#"
+                            "url": "#"
                         }
                     ]
                 },
                 {
                     "id": 5,
                     "title": "NHÀ CỬA & ĐỜI SỐNG",
-                    "link": "#",
+                    "url": "#",
                     "items": [{
                             "id": 1,
                             "title": "Áo thun",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 2,
                             "title": "Áo sơ mi",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 3,
                             "title": "Áo khoác & Áo vest",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 4,
                             "title": "Áo nỉ/ Áo len",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 5,
                             "title": "Đồ bộ/ Đồ mặc nhà",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 6,
                             "title": "Đồ đôi",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 7,
                             "title": "Quần",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 8,
                             "title": "Balo/ Túi/ Ví",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 9,
                             "title": "Mắt kính",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 10,
                             "title": "Phụ kiện nam",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 11,
                             "title": "Đồ Trung Niên",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 12,
                             "title": "Trang Sức Nam",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 13,
                             "title": "Thắt Lưng",
-                            "link": "#"
+                            "url": "#"
                         },
                         {
                             "id": 14,
                             "title": "Đồ lót",
-                            "link": "#"
+                            "url": "#"
                         }
                     ]
                 }

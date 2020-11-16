@@ -3,7 +3,7 @@
     <List :data="list__footerbottom__top" class="footerbottom__list"></List>
 
     <div class="flex">
-      <a :href="image.link" v-for="image in footerbottom__imgs" :key="image.id">
+      <a :href="image.url" v-for="image in footerbottom__imgs" :key="image.id">
         <div :class="image.class" class="img-url flex-item"></div>
       </a>
     </div>

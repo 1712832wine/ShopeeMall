@@ -1,23 +1,23 @@
 {
     "list__footerbottom__top": [
-        { "id": 0, "title": "CHÍNH SÁCH BẢO MẬT", "link": "#" },
-        { "id": 1, "title": "QUY CHẾ HOẠT ĐỘNG", "link": "#" },
-        { "id": 2, "title": "CHÍNH SÁCH VẬN CHUYỂN", "link": "#" },
-        { "id": 3, "title": "CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN", "link": "#" }
+        { "id": 0, "title": "CHÍNH SÁCH BẢO MẬT", "url": "#" },
+        { "id": 1, "title": "QUY CHẾ HOẠT ĐỘNG", "url": "#" },
+        { "id": 2, "title": "CHÍNH SÁCH VẬN CHUYỂN", "url": "#" },
+        { "id": 3, "title": "CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN", "url": "#" }
     ],
     "footerbottom__imgs": [{
             "id": 0,
-            "link": "https://www.youtube.com/",
+            "url": "https://www.youtube.com/",
             "class": { "img1-cut": true, "img12-size": true }
         },
         {
             "id": 1,
-            "link": "https://www.google.com.vn/?hl=vi",
+            "url": "https://www.google.com.vn/?hl=vi",
             "class": { "img1-cut": true, "img12-size": true }
         },
         {
             "id": 2,
-            "link": "https://www.facebook.com/",
+            "url": "https://www.facebook.com/",
             "class": { "img3-cut": true, "img3-size": true }
         }
     ],
