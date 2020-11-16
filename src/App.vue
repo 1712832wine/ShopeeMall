@@ -1,15 +1,14 @@
 <template>
   <div id="app">
-    <HeaderHome />
-    <BannerHome />
-
+      <HeaderHome />
+    <BannerHome />  
     <div class="large-banner"></div>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <FooterHome />
+
+
+    <FooterHome class="paddingtop"/>
+   
+   
+
   </div>
 </template>
 
@@ -35,6 +34,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+  font-size: 12px;
 }
 
 #nav {
@@ -61,5 +61,8 @@ body {
   overflow: hidden;
   cursor: pointer;
   transform: translate(74px, 106px);
+}
+.paddingtop{
+  padding-top:8rem;  
 }
 </style>

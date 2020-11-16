@@ -3,6 +3,10 @@ $fontsize: .75rem;
 $fontweight: 700;
 $headingsize: .875rem;
 $colorhover: orangered;
+.Footer {
+    display: block;
+}
+
 .fontsize {
     font-size: $fontsize;
 }
@@ -139,7 +143,7 @@ h3 {
 }
 
 .bg-footercategory {
-    background-color: rgb(224, 224, 235);
+    background-color: #fbfbfb;
 }
 
 .footer-vn-size {
