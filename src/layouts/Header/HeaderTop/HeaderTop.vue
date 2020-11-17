@@ -1,9 +1,9 @@
 <template>
   <div class="navbar-shop__top">
     <div class="container__nav navbar-shop__range navbar-shop__display">
-      <HeaderTopLeft />
+      <header-top-left :data="data.left" />
       <div class="navbar-shop__space"></div>
-      <HeaderTopRight />
+      <header-top-right :data="data.right" />
     </div>
   </div>
 </template>
@@ -13,11 +13,12 @@ import HeaderTopLeft from "./HeaderTopLeft";
 import HeaderTopRight from "./HeaderTopRight";
 
 export default {
+  props: ["data"],
   components: {
-    HeaderTopLeft: HeaderTopLeft,
-    HeaderTopRight: HeaderTopRight
+    "header-top-left": HeaderTopLeft,
+    "header-top-right": HeaderTopRight
   }
 };
 </script>
 
-<style lang="scss" scope src="../style-Header.scss"></style>
+<style lang="scss" scoped></style>

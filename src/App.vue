@@ -1,32 +1,17 @@
 <template>
   <div id="app">
-    <HeaderHome />
-    <BannerHome />  
-    <div class="large-banner"></div>
-
-    <refund-xtra/>
-    <FooterHome class="paddingtop"/>
+    <router-view />
   </div>
 </template>
 
 <script>
-import HeaderHome from "./layouts/Header/HeaderHome";
-import BannerHome from "./components/Banner/BannerHome";
-import RefundXtra from "./components/RefundXtra/RefundXtra.vue"
-import FooterHome from "./layouts/Footer/FooterHome.vue";
-export default {
-  components: {
-    HeaderHome: HeaderHome,
-    BannerHome: BannerHome,
-    FooterHome: FooterHome,
-    "refund-xtra": RefundXtra,
-  }
-};
+export default {};
 </script>
 
 <style lang="scss">
 body {
-  background-color: #f5f5f5 !important;
+  background-color: #f5f5f5f5 !important;
+  font-size: 0.875rem !important;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

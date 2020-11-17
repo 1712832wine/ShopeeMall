@@ -6,7 +6,7 @@
           <i class="fa fa-shopping-bag" aria-hidden="true"></i>
           <span>Shoppe</span>
         </a>
-        <HeaderSearch />
+        <header-search :data="data" />
         <div class="navbar-shop__cart">
           <div class="navbar-shop__cart--position">
             <div class="navbar-shop__cart--icon">
@@ -27,10 +27,11 @@
 <script>
 import HeaderSearch from "./HeaderSearch";
 export default {
+  props: ["data"],
   components: {
-    HeaderSearch: HeaderSearch
+    "header-search": HeaderSearch
   }
 };
 </script>
 
-<style lang="scss" scoped src="../style-Header.scss"></style>
+<style lang="scss" scoped></style>
