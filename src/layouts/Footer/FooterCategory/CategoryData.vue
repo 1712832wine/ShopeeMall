@@ -3,7 +3,7 @@
     <h3>
       {{ data.title }}
     </h3>
-    <List :list="data.items"></List>
+    <list-category :list="data.items"/>
   </div>
 </template>
 
@@ -11,10 +11,15 @@
 import List from "./FooterCategoryList.vue";
 export default {
   components: {
-    List,
+    "list-category":List,
   },
-  props: ["data"],
+  props: {data:{
+    type: Array,
+    required: true,
+  }},
 };
 </script>
 
-<style lang="scss" scoped src="../Footer.scss"></style>
+<style lang="scss" scoped >
+@import "../Footer.scss";
+</style>

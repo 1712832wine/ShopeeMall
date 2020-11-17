@@ -30,8 +30,15 @@
 
 <script>
 export default {
-  props: ["data"],
+  props: {
+  data: {
+    type: Array,
+    required: true,
+  }
+}
 };
 </script>
 
-<style lang="scss" scoped src="../Footer.scss"></style>
+<style lang="scss" scoped >
+@import "../Footer.scss"
+</style>

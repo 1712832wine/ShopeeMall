@@ -4,6 +4,7 @@
     <banner-home />
     <div class="large-banner"></div>
     <list-product />
+    <footer-home />
   </div>
 </template>
 
@@ -11,11 +12,13 @@
 import HeaderHome from "../layouts/Header/HeaderHome";
 import BannerHome from "../components/Banner/BannerHome";
 import ListProduct from "../components/Product/ListProduct";
+import FooterHome from "../layouts/Footer/FooterHome.vue"; 
 export default {
   components: {
     "header-home": HeaderHome,
     "banner-home": BannerHome,
-    "list-product": ListProduct
+    "list-product": ListProduct,
+    "footer-home": FooterHome,
   }
 };
 </script>

@@ -1,6 +1,6 @@
 <template>
   <div class="footerbottom">
-    <List :data="list__footerbottom__top" class="footerbottom__list"></List>
+    <list :data="list__footerbottom__top" class="footerbottom__list"/>
 
     <div class="flex">
       <a :href="image.url" v-for="image in footerbottom__imgs" :key="image.id">
@@ -15,10 +15,10 @@
 
 <script>
 import List from "../FooterList.vue";
-import footerbottomData from "../../../Data/footerbottomData.json";
+import footerbottomData from "../../../data/footerbottomData.json";
 export default {
   components: {
-    List
+    "list":List
   },
   data: function() {
     return footerbottomData;

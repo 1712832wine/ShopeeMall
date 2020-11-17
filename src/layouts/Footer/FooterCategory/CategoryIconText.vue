@@ -3,7 +3,7 @@
     <h3>{{ data.title }}</h3>
     <ul>
       <li v-for="item in data.items" :key="item.id">
-        <a :href="item.url"  class="flex">
+        <a :href="item.url" class="flex">
           <i :class="item.icon"></i>
           <p class="ml-2" style="line-height: 1em">{{ item.title }}</p>
         </a>
@@ -14,8 +14,15 @@
 
 <script>
 export default {
-  props: ["data"],
+  props: {
+    data: {
+      type: Array,
+      required: true,
+    },
+  },
 };
 </script>
 
-<style lang="scss" scoped src="../Footer.scss"></style>
+<style lang="scss" scoped>
+@import "../Footer.scss";
+</style>

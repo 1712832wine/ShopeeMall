@@ -1,13 +1,13 @@
 <template>
   <div class="Footer">
     <div class="mycontainer">
-      <FooterTop></FooterTop>
-      <FooterNav></FooterNav>
+      <footer-top />
+      <footer-nav />
     </div>
     <div class="bg-footercategory">
-      <FooterCategory></FooterCategory>
+      <footer-category />
     </div>
-    <FooterBottom></FooterBottom>
+    <footer-bottom />
   </div>
 </template>
 
@@ -18,12 +18,14 @@ import FooterCategory from "./FooterCategory/FooterCategory.vue";
 import FooterBottom from "./FooterBottom/FooterBottom.vue";
 export default {
   components: {
-    FooterTop,
-    FooterNav,
-    FooterCategory,
-    FooterBottom
-  }
+    "footer-top": FooterTop,
+    "footer-nav": FooterNav,
+    "footer-category": FooterCategory,
+    "footer-bottom": FooterBottom,
+  },
 };
 </script>
 
-<style lang="scss" scoped src="./Footer.scss"></style>
+<style lang="scss" scoped >
+@import "./Footer.scss"
+</style>

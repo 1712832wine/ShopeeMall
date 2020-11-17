@@ -8,7 +8,12 @@
 
 <script>
 export default {
-  props: ["list"]
+  props: {
+    list: {
+      type: Array,
+      required: true
+    }
+  }
 };
 </script>
 

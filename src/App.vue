@@ -2,6 +2,7 @@
   <div id="app">
     <router-view />
   </div>
+  
 </template>
 
 <script>
@@ -47,6 +48,6 @@ body {
   transform: translate(74px, 106px);
 }
 .paddingtop{
-  padding-top:8rem;  
+  padding-top: 8rem;  
 }
 </style>

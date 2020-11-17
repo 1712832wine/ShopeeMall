@@ -7,7 +7,7 @@
   </ul>
 </template>
 <script>
-import reports from "../../../Data/footertopData.json";
+import reports from "../../../data/footertopData.json";
 export default {
   data: function() {
     return reports;

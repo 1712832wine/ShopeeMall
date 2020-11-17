@@ -5,7 +5,7 @@
         <h3>
           <a :href="item.url">{{ item.title }}</a>
         </h3>
-        <List :data="item.items"></List>
+        <list-nav-column :data="item.items" />
       </li>
     </ul>
   </div>
@@ -15,9 +15,14 @@
 import List from "../FooterList.vue";
 export default {
   components: {
-    List
+    "list-nav-column": List,
   },
-  props: ["data"]
+  props: {
+    data: {
+      type: Array,
+      required: true,
+    },
+  },
 };
 </script>
 

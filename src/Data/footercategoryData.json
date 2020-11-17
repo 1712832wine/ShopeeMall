@@ -119,6 +119,7 @@
             {
                 "id": 2,
                 "png": "footer-vn-mastercard-png"
+
             },
             {
                 "id": 3,
@@ -127,6 +128,7 @@
             {
                 "id": 4,
                 "png": "footer-vn-vn_cod_footer-png"
+
             },
             {
                 "id": 5,
@@ -135,6 +137,7 @@
             {
                 "id": 6,
                 "png": "footer-vn-vn_installment_footer-png"
+
             },
             {
                 "id": 7,
@@ -187,6 +190,7 @@
             }
         ]
     },
+
     "network": {
         "id": 4,
         "title": "THEO DÕI CHÚNG TÔI TRÊN",
@@ -213,7 +217,6 @@
     "download": {
         "id": 5,
         "title": "TẢI ỨNG DỤNG SHOPEE NGAY THÔI"
-
     },
     "categorybot": {
         "paragraphleft": "© 2020 Shopee. Tất cả các quyền được bảo lưu.",
@@ -257,7 +260,6 @@
                 "id": 8,
                 "title": "Brazil",
                 "url": "#"
-
             }
         ]
     }

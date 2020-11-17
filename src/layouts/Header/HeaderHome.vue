@@ -23,4 +23,6 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped src="./style-Header.scss"></style>
+<style lang="scss">
+@import "./style-Header.scss";
+</style>

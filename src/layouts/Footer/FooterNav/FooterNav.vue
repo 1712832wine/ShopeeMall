@@ -1,25 +1,24 @@
 <template>
   <div>
     <h2>Danh mục</h2>
-
     <div class="flex-between footer-nav">
-      <FooterNavColumn
+      <footer-nav-column
         :data="column.data"
         v-for="column in columns"
         :key="column.id"
         class="flex-item20"
-      >
-      </FooterNavColumn>
+      />
     </div>
   </div>
 </template>
 
 <script>
-import Data from "../../../Data/footernavData.json";
+import Data from "../../../data/footernavData.json";
 import FooterNavColumn from "./FooterNavColumn.vue";
 export default {
   components: {
-    FooterNavColumn
+    "footer-nav-column":FooterNavColumn,
+
   },
   data: function() {
     return Data;
@@ -27,4 +26,6 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped src="../Footer.scss"></style>
+<style lang="scss" scoped>
+@import "../Footer.scss";
+</style>

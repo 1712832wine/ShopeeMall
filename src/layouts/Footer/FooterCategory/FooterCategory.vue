@@ -2,17 +2,17 @@
   <div class="mycontainer footercategory">
     <div class="flex-between ">
 
-      <ListData :data="customer" class="flex-item20"></ListData>
+      <list-data :data="customer" class="flex-item20"/>
 
-      <ListData :data="about" class="flex-item20"></ListData>
+      <list-data :data="about" class="flex-item20"/>
      
       <div class="flex-column flex-item20">
-        <ListImg :data="payment"></ListImg>
-        <ListImg :data="transport"></ListImg>
+        <list-img :data="payment"/>
+        <list-img :data="transport"/>
       </div>
 
-      <ListIconText :data="network" class="flex-item20"></ListIconText>
-      <QR :data="download" class="flex-item20"> </QR>
+      <list-icon-text :data="network" class="flex-item20" />
+      <qr :data="download" class="flex-item20"/>
      
     </div>
      <hr />
@@ -22,7 +22,7 @@
         <p>{{ categorybot.paragraphleft }}</p>
         <div class="flex-between" >
           <p>{{categorybot.title}}</p>
-          <List :data="categorybot.nations" class="no-hover"></List>
+          <list :data="categorybot.nations" class="no-hover" />
         </div>
        
       </div>
@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import FooterCategoryData from "../../../Data/footercategoryData.json";
+import FooterCategoryData from "../../../data/footercategoryData.json";
 import List from "../FooterList.vue";
 
 import ListData from "./CategoryData.vue";
@@ -39,11 +39,11 @@ import ListIconText from "./CategoryIconText.vue";
 import QR from "./CategoryQR.vue";
 export default {
   components: {
-    List,
-    ListData,
-    ListImg,
-    ListIconText,
-    QR,
+    "list":List,
+    "list-data":ListData,
+    "list-img":ListImg,
+    "list-icon-text":ListIconText,
+    "qr":QR,
   },
   data: function () {
     return {
@@ -59,4 +59,6 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped src="../Footer.scss"></style>
+<style lang="scss" scoped>
+@import "../Footer.scss";
+</style>
