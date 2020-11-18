@@ -14,7 +14,7 @@ export default {
     "list-category":List,
   },
   props: {data:{
-    type: Array,
+    type: Object,
     required: true,
   }},
 };
