@@ -10,7 +10,7 @@
 <script>
 import CategoryItem from "./CategoryItem";
 import CategoryPagination from "./CategoryPagination";
-import data from '../../Data/ListCategoryProductData.json'
+import data from '../../data/ListCategoryProductData.json'
 export default {
 	data() {
 		return {
@@ -19,14 +19,14 @@ export default {
 			
 		};
 	},
-	mounted: function(){
-		this.show();
-	},
-	methods: {
-		show: function(){
-			console.log(this.listProduct);
-		}
-	},
+	// mounted: function(){
+	// 	this.show();
+	// },
+	// methods: {
+	// 	show: function(){
+	// 		console.log(this.listProduct);
+	// 	}
+	// },
 	components: {
 		"category-item": CategoryItem,
 		"category-pagination": CategoryPagination

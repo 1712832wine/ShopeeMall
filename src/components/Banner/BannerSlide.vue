@@ -3,63 +3,25 @@
     <div class="slider">
       <div class="slides">
         <!--radio buttons start-->
-        <input type="radio" name="radio-btn" id="radio1" />
-        <input type="radio" name="radio-btn" id="radio2" />
-        <input type="radio" name="radio-btn" id="radio3" />
-        <input type="radio" name="radio-btn" id="radio4" />
-        <input type="radio" name="radio-btn" id="radio5" />
-        <input type="radio" name="radio-btn" id="radio6" />
-        <input type="radio" name="radio-btn" id="radio7" />
-        <input type="radio" name="radio-btn" id="radio8" />
-        <input type="radio" name="radio-btn" id="radio9" />
-        <input type="radio" name="radio-btn" id="radio10" />
-        <input type="radio" name="radio-btn" id="radio11" />
-        <input type="radio" name="radio-btn" id="radio12" />
-        <input type="radio" name="radio-btn" id="radio13" />
-        <input type="radio" name="radio-btn" id="radio14" />
+        <input
+          v-for="i in 14"
+          :key="i"
+          type="radio"
+          name="radio-btn"
+          :id="`radio${i}`"
+        />
         <!--radio buttons end-->
         <!--slide images start-->
-        <div class="slide first">
-          <img src="../../assets/images/banners/banner-1.jpg" alt="" />
-        </div>
-        <div class="slide">
-          <img src="../../assets/images/banners/banner-2.jpg" alt="" />
-        </div>
-        <div class="slide">
-          <img src="../../assets/images/banners/banner-3.jpg" alt="" />
-        </div>
-        <div class="slide">
-          <img src="../../assets/images/banners/banner-4.jpg" alt="" />
-        </div>
-        <div class="slide">
-          <img src="../../assets/images/banners/banner-5.jpg" alt="" />
-        </div>
-        <div class="slide">
-          <img src="../../assets/images/banners/banner-6.jpg" alt="" />
-        </div>
-        <div class="slide">
-          <img src="../../assets/images/banners/banner-7.png" alt="" />
-        </div>
-        <div class="slide">
-          <img src="../../assets/images/banners/banner-8.jpg" alt="" />
-        </div>
-        <div class="slide">
-          <img src="../../assets/images/banners/banner-9.jpg" alt="" />
-        </div>
-        <div class="slide">
-          <img src="../../assets/images/banners/banner-10.jpg" alt="" />
-        </div>
-        <div class="slide">
-          <img src="../../assets/images/banners/banner-11.jpg" alt="" />
-        </div>
-        <div class="slide">
-          <img src="../../assets/images/banners/banner-12.jpg" alt="" />
-        </div>
-        <div class="slide">
-          <img src="../../assets/images/banners/banner-13.jpg" alt="" />
-        </div>
-        <div class="slide">
-          <img src="../../assets/images/banners/banner-14.jpg" alt="" />
+        <div
+          v-for="i in 14"
+          :key="`a${i}`"
+          class="slide"
+          :class="{ first: i == 1 }"
+        >
+          <img
+            :src="`/assets/images/banners/banner-${i}.jpg`"
+            alt="`banner-${i}`"
+          />
         </div>
         <!--slide images end-->
         <!--automatic navigation start-->
@@ -152,4 +114,6 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+@import "./Style-Banner.scss";
+</style>

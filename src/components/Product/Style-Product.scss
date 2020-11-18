@@ -1,0 +1,154 @@
+@mixin flexbox(
+  $align: flex-start,
+  $justify: flex-start,
+  $wrap: nowrap,
+  $dir: row
+) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-wrap: $wrap;
+  flex-direction: $dir;
+}
+
+.product {
+  width: 16.66667%;
+  padding: 0 0.3125rem;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  &__wrapper {
+    a:hover {
+      outline: none;
+    }
+  }
+  a {
+    text-decoration: none;
+    background: transparent;
+  }
+  &__content {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+    display: block;
+    box-shadow: 0 0.0625rem 0.125rem 0 rgba(0, 0, 0, 0.1);
+    border-radius: 0.125rem;
+    background: #fff;
+    overflow: hidden;
+    border-bottom: 1px solid transparent;
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+    transition: transform 0.1s cubic-bezier(0.4, 0, 0.6, 1),
+      box-shadow 0.1s cubic-bezier(0.4, 0, 0.6, 1),
+      -webkit-transform 0.1s cubic-bezier(0.4, 0, 0.6, 1);
+    &--image {
+      width: 100%;
+      padding-top: 100%;
+      position: relative;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    &--text {
+      padding: 0.625rem;
+      overflow: hidden;
+    }
+    &--title {
+      line-height: 1.125rem;
+      height: 2.25rem;
+      .text-title {
+        text-align: left;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: inline-block;
+        word-wrap: break-word;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        height: inherit;
+      }
+    }
+    &--info {
+      align-items: baseline;
+      padding: 0.3125rem 0 0;
+      @include flexbox(center);
+      overflow: hidden;
+      height: 1.5rem;
+      line-height: 1.5rem;
+    }
+    &--price {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      -webkit-box-flex: 1;
+      flex-shrink: 0;
+      color: #ee4d2d;
+      -webkit-flex-grow: 1;
+      text-align: left;
+    }
+    &--currency-unit {
+      font-size: 0.75rem;
+      color: #ee4d2d;
+    }
+    &--number-price {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      font-size: 1rem;
+      color: #ee4d2d;
+    }
+    &--sold {
+      color: rgba(0, 0, 0, 0.54);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      margin-left: 0.3125rem;
+      font-size: 0.75rem;
+    }
+  }
+  &__content:hover {
+    border: 1px solid #ee4d2d;
+    z-index: 2;
+  }
+  &__card-hover {
+    opacity: 0;
+    position: absolute;
+    left: -0.0625rem;
+    top: -webkit-calc(100% - 0.125rem);
+    top: calc(100% - 0.125rem);
+    width: 190px;
+    height: 1.875rem;
+    background-color: #ee4d2d;
+    color: #fff;
+    text-align: center;
+    line-height: 1.875rem;
+    border: 1px solid #ee4d2d;
+    border-bottom-left-radius: 0.125rem;
+    border-bottom-right-radius: 0.125rem;
+    z-index: 1;
+  }
+}
+
+.hover-content {
+  overflow: visible;
+  border: 1px solid transparent;
+}
+
+.hover-content:hover {
+  box-shadow: 0 0.0625rem 20px 0 rgba(0, 0, 0, 0.05);
+  -webkit-transform: translateY(-0.0625rem);
+  transform: translateY(-0.0625rem);
+  z-index: 1;
+}
+
+.hover-content:hover .product__card-hover {
+  opacity: 1;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+}
