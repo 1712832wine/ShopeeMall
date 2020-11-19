@@ -3,6 +3,7 @@
     <header-home />
     <banner-home />
     <div class="large-banner"></div>
+    <shopee-mall />
     <list-product />
     <footer-home />
   </div>
@@ -12,14 +13,16 @@
 import HeaderHome from "../layouts/Header/HeaderHome";
 import BannerHome from "../components/Banner/BannerHome";
 import ListProduct from "../components/Product/ListProduct";
-import FooterHome from "../layouts/Footer/FooterHome.vue"; 
+import FooterHome from "../layouts/Footer/FooterHome.vue";
+import ShopeeMall from "../components/ShopeeMall/ShopeeMall.vue";
 export default {
   components: {
     "header-home": HeaderHome,
     "banner-home": BannerHome,
     "list-product": ListProduct,
     "footer-home": FooterHome,
-  }
+    "shopee-mall": ShopeeMall,
+  },
 };
 </script>
 

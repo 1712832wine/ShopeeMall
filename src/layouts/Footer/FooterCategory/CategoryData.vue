@@ -13,9 +13,10 @@ export default {
   components: {
     "list-category":List,
   },
-  props: {data:{
-    type: Array,
-    required: true,
+  props: {
+    data:{
+      type: Object,
+      required: true,
   }},
 };
 </script>
