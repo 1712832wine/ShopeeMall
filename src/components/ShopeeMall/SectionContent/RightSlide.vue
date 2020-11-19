@@ -1,6 +1,5 @@
 <template>
  <div class="section_content_right flex" id="translate"> 
-    <!-- > -->
     <div class="item" v-for="item in list_content" :key="item.id">
       <a :href="item.src">
         <div :style="style(item)"></div>
@@ -38,12 +37,10 @@ export default {
 <style lang="scss" scoped>
 
 .section_content_right {
-  
-  border: 1px solid blue;
+  padding-left: 6px;
+  padding-top:10px;
   height: 474px;
-  width: 804px;
- 
- 
+  width: 806px;
 }
 #translate{
  transform: translate(-120px,40px);
@@ -59,7 +56,7 @@ export default {
 $width: 12.5rem;
 $height: 50%;
 .item {
-  padding: 10px;
+  padding: 0 10px 10px 0;
   width: $width;
   height: $height;
   &__img {
