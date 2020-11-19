@@ -2,7 +2,9 @@
   <div class="sectionheader d-flex j-between center">
     <!-- list in the left -->
     <div class="d-flex">
-      <a :href="top.heading.url_left" class="headingtitle">{{ top.heading.title }}</a>
+      <a :href="top.heading.url_left" class="headingtitle">{{
+        top.heading.title
+      }}</a>
       <nav-top :data="top.shopeemall_top"></nav-top>
     </div>
     <!-- button "see more" in the right -->
@@ -10,7 +12,11 @@
       <div class="d-flex font_style center">
         {{ top.heading.more }}
         <div class="button">
-          <i class="fa fa-chevron-right btn_weight" aria-hidden="true" style="font-size: 10px"></i>
+          <i
+            class="fa fa-chevron-right btn_weight"
+            aria-hidden="true"
+            style="font-size: 10px"
+          ></i>
         </div>
       </div>
     </a>
@@ -24,12 +30,12 @@ export default {
   props: {
     top: {
       type: Object,
-      required: true,
-    },
+      required: true
+    }
   },
   components: {
-    "nav-top": ShopeeMall_TopList,
-  },
+    "nav-top": ShopeeMall_TopList
+  }
 };
 </script>
 

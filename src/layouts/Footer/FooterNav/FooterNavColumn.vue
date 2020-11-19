@@ -15,17 +15,17 @@
 import List from "../FooterList.vue";
 export default {
   components: {
-    "list-nav-column": List,
+    "list-nav-column": List
   },
   props: {
     data: {
       type: Array,
-      required: true,
-    },
-  },
+      required: true
+    }
+  }
 };
 </script>
 
-<style lang="scss" scoped >
+<style lang="scss" scoped>
 @import "../Footer.scss";
 </style>

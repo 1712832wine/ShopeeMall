@@ -24,6 +24,19 @@
         ]
     },
     "bottom": {
+        "carousel": [{
+            "id": 1,
+            "src": "https://cf.shopee.vn/file/33de3745bb00d683ce24c2b9443ac156",
+            "caption": "FirstSlide"
+        }, {
+            "id": 2,
+            "src": "https://cf.shopee.vn/file/33de3745bb00d683ce24c2b9443ac156",
+            "caption": "SecondSlide"
+        }, {
+            "id": 3,
+            "src": "https://cf.shopee.vn/file/33de3745bb00d683ce24c2b9443ac156",
+            "caption": "ThirdSlide"
+        }],
         "list_content": [{
                 "id": 1,
                 "title": "Ra mắt Aiken sạch khuẩn",
@@ -68,7 +81,7 @@
             },
             {
                 "id": 8,
-                "title": "Ra mắt Aiken sạch khuẩn",
+                "title": "Ra mắt ",
                 "img_src": "https://cf.shopee.vn/file/8d2c1d369465b363e1278b31b79ff7bf_xhdpi",
                 "src": "#"
             }

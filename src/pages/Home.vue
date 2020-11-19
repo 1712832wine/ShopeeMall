@@ -4,8 +4,11 @@
     <banner-home />
     <div class="large-banner"></div>
     <shopee-mall />
+
+    
     <list-product />
     <footer-home />
+
   </div>
 </template>
 
@@ -22,7 +25,9 @@ export default {
     "list-product": ListProduct,
     "footer-home": FooterHome,
     "shopee-mall": ShopeeMall,
+
   },
+
 };
 </script>
 

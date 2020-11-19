@@ -17,8 +17,7 @@ import Data from "../../../data/footernavData.json";
 import FooterNavColumn from "./FooterNavColumn.vue";
 export default {
   components: {
-    "footer-nav-column":FooterNavColumn,
-
+    "footer-nav-column": FooterNavColumn
   },
   data: function() {
     return Data;
