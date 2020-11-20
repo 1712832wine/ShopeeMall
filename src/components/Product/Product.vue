@@ -5,6 +5,24 @@
         <div class="product__content hover-content">
           <div class="product__content--image">
             <img :src="data.image" alt="" />
+            <div class="product__content--liked">
+              <div class="background-view">
+                <span class="text-like">Yêu thích</span>
+              </div>
+            </div>
+            <div
+              class="product__content--card-discount"
+              :class="{ active: data.discount != null }"
+            >
+              <div
+                class="discount__badge discount__badge--fix-width discount__badge--promotion"
+              >
+                <div class="discount__badge--promotion__label-wrapper">
+                  <span class="discount__number">{{ data.discount }}</span>
+                  <span class="discount__title">Giảm</span>
+                </div>
+              </div>
+            </div>
             <div class="overlay">
               <div class="overlay__image">
                 <img :src="data.overlay" alt="" />

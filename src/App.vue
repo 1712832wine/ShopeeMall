@@ -17,8 +17,8 @@ body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
+  font-size: 12px;
 }
 
 #nav {
@@ -37,6 +37,7 @@ body {
 .large-banner {
   background-image: url("./assets/images/banners/large-banner.jpg");
   margin-top: 20px;
+
   height: 110px;
   width: 1200px;
   background-size: cover;
@@ -44,5 +45,8 @@ body {
   overflow: hidden;
   cursor: pointer;
   transform: translate(74px, 106px);
+}
+.paddingtop {
+  padding-top: 8rem;
 }
 </style>

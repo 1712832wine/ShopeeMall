@@ -5,7 +5,9 @@
       <banner-home />
       <div class="large-banner"></div>
       <list-flash-sale />
+      <shopee-mall />
       <list-product />
+      <footer-home />
     </div>
   </div>
 </template>
@@ -13,14 +15,18 @@
 <script>
 import HeaderHome from "../layouts/Header/HeaderHome";
 import BannerHome from "../components/Banner/BannerHome";
-import ListProduct from "../components/Product/ListProduct";
 import ListFlashSale from "../components/FlashSale/ListFlashSale";
+import ListProduct from "../components/Product/ListProduct";
+import FooterHome from "../layouts/Footer/FooterHome.vue";
+import ShopeeMall from "../components/ShopeeMall/ShopeeMall.vue";
 export default {
   components: {
     "header-home": HeaderHome,
     "banner-home": BannerHome,
+    "list-flash-sale": ListFlashSale,
     "list-product": ListProduct,
-    "list-flash-sale": ListFlashSale
+    "shopee-mall": ShopeeMall,
+    "footer-home": FooterHome
   }
 };
 </script>
