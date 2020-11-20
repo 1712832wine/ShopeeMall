@@ -1,8 +1,8 @@
 <template>
 <div>
  <div class="section_content">
-   <left-image :carousel="bottom.carousel" class="size__img"/>
-   <right-carousel :carou="bottom.carou" class="size__content"/>
+   <left-carousel :carousel_left="bottom.carousel_left" class="size__left"/>
+   <right-carousel :carousel_right="bottom.carousel_right" class="size__right"/>
   </div>
 
 </div>
@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import LeftImage from "./LeftImage.vue";
+import LeftCarousel from "./LeftCarousel.vue";
 import  RightCarousel from "./RightCarousel.vue"
 export default {
   props: {
@@ -20,7 +20,7 @@ export default {
     },
   },
   components: {
-    "left-image": LeftImage,
+    "left-carousel": LeftCarousel,
     "right-carousel": RightCarousel
   },
 };
@@ -36,11 +36,11 @@ $height: 452px;
 // item
 .size{
   width: auto;
-  &__img {
+  &__left {
     width: 25rem;
     padding:10px 2px 10px 10px; 
   }
-  &__content{
+  &__right{
     height: inherit;
   }
 }

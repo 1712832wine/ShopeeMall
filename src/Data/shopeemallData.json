@@ -24,20 +24,20 @@
         ]
     },
     "bottom": {
-        "carousel": [{
+        "carousel_left": [{
             "id": 1,
             "src": "https://cf.shopee.vn/file/33de3745bb00d683ce24c2b9443ac156",
             "caption": "FirstSlide"
         }, {
             "id": 2,
-            "src": "https://cf.shopee.vn/file/33de3745bb00d683ce24c2b9443ac156",
+            "src": "https://cf.shopee.vn/file/c0fa33031ff7c6a6b1302708da976745",
             "caption": "SecondSlide"
         }, {
             "id": 3,
-            "src": "https://cf.shopee.vn/file/33de3745bb00d683ce24c2b9443ac156",
+            "src": "https://cf.shopee.vn/file/449d294bbf61d1cb8d92139294baffc7",
             "caption": "ThirdSlide"
         }],
-        "carou": [{
+        "carousel_right": [{
                 "id": 1,
                 "name": "slide-1",
                 "data": [{
@@ -100,6 +100,18 @@
                         "src": "#"
                     },
                     {
+                        "id": 6,
+                        "title": "Ưu đãi đến 40%",
+                        "img_src": "https://cf.shopee.vn/file/bba8f916738018660b6b2b7b9f9d7d6d_xhdpi",
+                        "src": "#"
+                    },
+                    {
+                        "id": 7,
+                        "title": "Mua là có quà",
+                        "img_src": "https://cf.shopee.vn/file/65e83f4ccc4dcfd7a5376de41e8d85f5_xhdpi",
+                        "src": "#"
+                    },
+                    {
                         "id": 2,
                         "title": "Quà xinh tặng bé",
                         "img_src": "https://cf.shopee.vn/file/cf979087d6b618cbb54bea4a71e0f8b0_xhdpi",
@@ -121,18 +133,6 @@
                         "id": 5,
                         "title": "Lưng khô thoáng",
                         "img_src": "https://cf.shopee.vn/file/88329d1eac50097e6c48375da25491c7_xhdpi",
-                        "src": "#"
-                    },
-                    {
-                        "id": 6,
-                        "title": "Ưu đãi đến 40%",
-                        "img_src": "https://cf.shopee.vn/file/bba8f916738018660b6b2b7b9f9d7d6d_xhdpi",
-                        "src": "#"
-                    },
-                    {
-                        "id": 7,
-                        "title": "Mua là có quà",
-                        "img_src": "https://cf.shopee.vn/file/65e83f4ccc4dcfd7a5376de41e8d85f5_xhdpi",
                         "src": "#"
                     },
                     {

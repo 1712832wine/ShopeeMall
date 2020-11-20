@@ -1,5 +1,5 @@
 <template>
- <div class="section_content_right flex" id="translate"> 
+  <div class="section_content_right flex" id="translate">
     <div class="item" v-for="item in list_content" :key="item.id">
       <a :href="item.src">
         <div :style="style(item)"></div>
@@ -15,11 +15,11 @@ export default {
     list_content: {
       type: Array,
       required: true,
-    }
+    },
   },
-  data: function() {
+  data: function () {
     return {
-      style: function(item) {
+      style: function (item) {
         return {
           backgroundImage: "url(" + item.img_src + ")",
           backgroundPosition: "center",
@@ -28,22 +28,21 @@ export default {
           width: "100%",
           height: "100%",
         };
-      }
+      },
     };
-  }
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-
 .section_content_right {
   padding-left: 6px;
-  padding-top:10px;
+  padding-top: 10px;
   height: 474px;
   width: 806px;
 }
-#translate{
- transform: translate(-120px,40px);
+#translate {
+  transform: translate(-120px, 40px);
 }
 .flex {
   display: flex;
@@ -64,11 +63,11 @@ $height: 50%;
     height: 80%;
   }
   &__text {
-    margin:2px;
+    margin: 2px;
     transform: translateY(-2.5rem);
     text-overflow: ellipsis;
-white-space: nowrap;
-overflow: hidden;
+    white-space: nowrap;
+    overflow: hidden;
     margin-right: 0;
     height: 27px;
     line-height: 27px;
