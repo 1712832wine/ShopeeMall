@@ -10,11 +10,11 @@
 <script>
 export default {
   props: {
-  data: {
-    type: Array,
-    required: true,
+    data: {
+      type: Array,
+      required: true
+    }
   }
-}
 };
 </script>
 
