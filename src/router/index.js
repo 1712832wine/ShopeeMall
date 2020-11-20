@@ -2,6 +2,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../pages/Home.vue";
+import ProductCategory from "../pages/ProductCategory"
 
 Vue.use(VueRouter);
 
@@ -10,6 +11,11 @@ const routes = [
     path: "/",
     name: "Home",
     component: Home
+  },
+  {
+    path: "/category",
+    name: "Category",
+    component: ProductCategory
   }
 ];
 
