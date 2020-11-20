@@ -7,8 +7,8 @@
       <list-flash-sale />
       <shopee-mall />
       <list-product />
-      <footer-home />
     </div>
+    <footer-home />
   </div>
 </template>
 
