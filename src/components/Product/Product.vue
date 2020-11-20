@@ -41,7 +41,7 @@
                   data.currency_unit
                 }}</span>
                 <span class="product__content--number-price">{{
-                  currencyFormattingCustom
+                  currencyFormatting(this.data.price)
                 }}</span>
               </div>
               <div class="product__content--sold">
@@ -57,7 +57,9 @@
 </template>
 
 <script>
+import helpFunction from "../../helpers/helpFunction";
 export default {
+  mixins: [helpFunction],
   props: {
     data: {
       type: Object,
@@ -65,10 +67,6 @@ export default {
     }
   },
   computed: {
-    currencyFormattingCustom: function() {
-      let priceFormat = (this.data.price / 100000).toFixed(0).replace(".", ",");
-      return priceFormat.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
-    },
     historicalSold: function() {
       let sold = this.data.historical_sold;
       let h_n;

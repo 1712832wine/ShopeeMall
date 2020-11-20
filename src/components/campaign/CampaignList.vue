@@ -6,7 +6,7 @@
 
 <script>
 import CampaignItem from "./CampaignItem";
-import campaign from "../../data/campaignData.json";
+import campaign from "../../data/CampaignData.json";
 export default {
   data: function() {
     return {

@@ -1,20 +1,21 @@
 <template>
   <div class="container-shop">
     <header-home />
-    <banner-home />
-    <div class="large-banner"></div>
-    <shopee-mall />
-
-    
-    <list-product />
-    <footer-home />
-
+    <div class="container-wrap">
+      <banner-home />
+      <div class="large-banner"></div>
+      <list-flash-sale />
+      <shopee-mall />
+      <list-product />
+      <footer-home />
+    </div>
   </div>
 </template>
 
 <script>
 import HeaderHome from "../layouts/Header/HeaderHome";
 import BannerHome from "../components/Banner/BannerHome";
+import ListFlashSale from "../components/FlashSale/ListFlashSale";
 import ListProduct from "../components/Product/ListProduct";
 import FooterHome from "../layouts/Footer/FooterHome.vue";
 import ShopeeMall from "../components/ShopeeMall/ShopeeMall.vue";
@@ -22,12 +23,11 @@ export default {
   components: {
     "header-home": HeaderHome,
     "banner-home": BannerHome,
+    "list-flash-sale": ListFlashSale,
     "list-product": ListProduct,
-    "footer-home": FooterHome,
     "shopee-mall": ShopeeMall,
-
-  },
-
+    "footer-home": FooterHome
+  }
 };
 </script>
 
@@ -45,6 +45,12 @@ export default {
   }
 }
 
+.container-wrap {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .large-banner {
   background-image: url("/assets/images/banners/large-banner.jpg");
   margin-top: 20px;
@@ -54,6 +60,6 @@ export default {
   background-position: 50%;
   overflow: hidden;
   cursor: pointer;
-  transform: translate(74px, 106px);
+  transform: translateY(106px);
 }
 </style>
