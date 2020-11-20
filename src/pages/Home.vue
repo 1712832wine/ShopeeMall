@@ -5,7 +5,7 @@
     <div class="large-banner"></div>
     <shopee-mall />
 
-    
+    <topsearch/>
     <list-product />
     <footer-home />
 
@@ -17,6 +17,7 @@ import HeaderHome from "../layouts/Header/HeaderHome";
 import BannerHome from "../components/Banner/BannerHome";
 import ListProduct from "../components/Product/ListProduct";
 import FooterHome from "../layouts/Footer/FooterHome.vue";
+import TopSearch from "../components/TopSearch/TopSearch.vue";
 import ShopeeMall from "../components/ShopeeMall/ShopeeMall.vue";
 export default {
   components: {
@@ -25,7 +26,7 @@ export default {
     "list-product": ListProduct,
     "footer-home": FooterHome,
     "shopee-mall": ShopeeMall,
-
+    "topsearch": TopSearch
   },
 
 };
