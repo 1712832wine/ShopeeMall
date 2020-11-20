@@ -8,7 +8,7 @@
 <script>
 import HeaderTop from "./HeaderTop/HeaderTop";
 import HeaderBottom from "./HeaderBottom/HeaderBottom";
-import headerData from "../../data/headerData.json";
+import headerData from "../../data/HeaderData.json";
 export default {
   data: function() {
     return {

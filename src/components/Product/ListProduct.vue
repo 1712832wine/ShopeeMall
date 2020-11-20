@@ -74,7 +74,7 @@
 
 <script>
 import Product from "./Product";
-import ProductData from "../../data/listProductData.json";
+import ProductData from "../../data/ListProductData.json";
 export default {
   data: function() {
     return {
