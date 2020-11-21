@@ -1,5 +1,5 @@
 <template>
-  <div class="search-trend__list">
+  <div class="search-trend">
     <div class="search-trend__wrapper">
       <div class="search-trend__header">
         <div class="search-trend__header--title">

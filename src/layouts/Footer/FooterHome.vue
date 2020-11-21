@@ -1,5 +1,5 @@
 <template>
-  <div class="Footer">
+  <footer class="Footer">
     <div class="mycontainer">
       <footer-top />
       <footer-nav />
@@ -8,7 +8,7 @@
       <footer-category />
     </div>
     <footer-bottom />
-  </div>
+  </footer>
 </template>
 
 <script>

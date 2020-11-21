@@ -1,37 +1,29 @@
 <template>
-  <div class="container-shop">
-    <header-home />
-    <div class="banner-background">
-      <div class="container-wrap ">
-        <banner-home />
-        <div class="large-banner"></div>
-        <list-flash-sale />
-        <shopee-mall />
-        <list-search-trend />
-        <list-product />
-      </div>
-      <footer-home />
+  <section class="container-shop">
+    <banner-home />
+    <div class="container-wrap">
+      <div class="large-banner"></div>
+      <list-flash-sale />
+      <shopee-mall />
+      <list-search-trend />
+      <list-product />
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
-import HeaderHome from "../layouts/Header/HeaderHome";
 import BannerHome from "../components/Banner/BannerHome";
 import ListFlashSale from "../components/FlashSale/ListFlashSale";
 import ShopeeMall from "../components/ShopeeMall/ShopeeMall.vue";
 import ListSearchTrend from "../components/SearchTrends/ListSearchTrend";
 import ListProduct from "../components/Product/ListProduct";
-import FooterHome from "../layouts/Footer/FooterHome.vue";
 export default {
   components: {
-    "header-home": HeaderHome,
     "banner-home": BannerHome,
     "list-flash-sale": ListFlashSale,
     "shopee-mall": ShopeeMall,
     "list-search-trend": ListSearchTrend,
-    "list-product": ListProduct,
-    "footer-home": FooterHome
+    "list-product": ListProduct
   }
 };
 </script>
@@ -65,6 +57,5 @@ export default {
   background-position: 50%;
   overflow: hidden;
   cursor: pointer;
-  transform: translateY(75px);
 }
 </style>

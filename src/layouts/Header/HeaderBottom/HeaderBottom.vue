@@ -2,7 +2,11 @@
   <div class="navbar-shop__bottom">
     <div class="container__nav navbar-shop__range">
       <div class="navbar-shop__search--wrapper">
-        <a href="#/" class="navbar-shop__logo">
+        <a
+          href="javascript:void(0)"
+          class="navbar-shop__logo"
+          @click="handleRouter"
+        >
           <i class="fa fa-shopping-bag" aria-hidden="true"></i>
           <span>Shoppe</span>
         </a>
@@ -30,6 +34,11 @@ export default {
   props: ["data"],
   components: {
     "header-search": HeaderSearch
+  },
+  methods: {
+    handleRouter: function() {
+      this.$router.push("/");
+    }
   }
 };
 </script>

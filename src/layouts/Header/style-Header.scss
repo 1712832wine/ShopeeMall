@@ -71,6 +71,7 @@
 
 .navbar-shop {
   background: linear-gradient(-180deg, #f53d2d, #f63);
+  font-size: 0.8125rem;
   a:hover {
     color: hsla(0, 0%, 100%, 0.7);
     text-decoration: none;
@@ -144,7 +145,7 @@
   }
   &__display {
     @include flexbox(center);
-    transform: translateY(-6px);
+    transform: translateY(-4px);
   }
   &__space {
     -webkit-box-flex: 1;
@@ -348,6 +349,7 @@
         width: 768px;
         height: 40px;
         color: #333;
+        font-size: 1rem;
       }
     }
     &--suggest {
