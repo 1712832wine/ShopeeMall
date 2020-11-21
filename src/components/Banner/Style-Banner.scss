@@ -12,13 +12,11 @@
 }
 
 .banner {
-  transform: translateY(75px);
   min-width: 1200px;
   padding-bottom: 0px;
-  margin: 0px auto 0rem;
+  margin-top: 70px;
   &-background {
     background: #fff;
-    height: 450px;
   }
 }
 
