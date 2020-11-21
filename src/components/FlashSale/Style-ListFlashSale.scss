@@ -28,7 +28,7 @@
 //---------------------------------------
 //Header
 .flash-sale {
-  transform: translateY(100px);
+  transform: translateY(60px);
   margin-top: 20px;
   position: relative;
   &__section {
@@ -119,6 +119,14 @@
     &--content {
       padding-top: 0;
     }
+  }
+  &:hover .carousel-arrow {
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+  }
+  &:hover i.fa {
+    font-size: 1rem !important;
   }
 }
 //-------------------------------------------------

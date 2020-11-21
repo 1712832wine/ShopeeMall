@@ -1,14 +1,17 @@
 <template>
   <div class="container-shop">
     <header-home />
-    <div class="container-wrap">
-      <banner-home />
-      <div class="large-banner"></div>
-      <list-flash-sale />
-      <shopee-mall />
-      <list-product />
+    <div class="banner-background">
+      <div class="container-wrap ">
+        <banner-home />
+        <div class="large-banner"></div>
+        <list-flash-sale />
+        <shopee-mall />
+        <list-search-trend />
+        <list-product />
+      </div>
+      <footer-home />
     </div>
-    <footer-home />
   </div>
 </template>
 
@@ -16,16 +19,18 @@
 import HeaderHome from "../layouts/Header/HeaderHome";
 import BannerHome from "../components/Banner/BannerHome";
 import ListFlashSale from "../components/FlashSale/ListFlashSale";
+import ShopeeMall from "../components/ShopeeMall/ShopeeMall.vue";
+import ListSearchTrend from "../components/SearchTrends/ListSearchTrend";
 import ListProduct from "../components/Product/ListProduct";
 import FooterHome from "../layouts/Footer/FooterHome.vue";
-import ShopeeMall from "../components/ShopeeMall/ShopeeMall.vue";
 export default {
   components: {
     "header-home": HeaderHome,
     "banner-home": BannerHome,
     "list-flash-sale": ListFlashSale,
-    "list-product": ListProduct,
     "shopee-mall": ShopeeMall,
+    "list-search-trend": ListSearchTrend,
+    "list-product": ListProduct,
     "footer-home": FooterHome
   }
 };
@@ -60,6 +65,6 @@ export default {
   background-position: 50%;
   overflow: hidden;
   cursor: pointer;
-  transform: translateY(106px);
+  transform: translateY(75px);
 }
 </style>

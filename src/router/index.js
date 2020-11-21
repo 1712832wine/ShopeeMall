@@ -1,8 +1,7 @@
-/* eslint-disable prettier/prettier */
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../pages/Home.vue";
-import ProductCategory from "../pages/ProductCategory"
+import ProductCategory from "../pages/ProductCategory";
 
 Vue.use(VueRouter);
 

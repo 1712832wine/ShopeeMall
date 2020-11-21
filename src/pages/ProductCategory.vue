@@ -1,20 +1,16 @@
 <template>
-<div> 
-    <category-product-list/>
-</div>
-
+  <div>
+    <category-product-list />
+  </div>
 </template>
 
 <script>
-import CategoryProductListVue from '../components/CategoryProductList/CategoryProductList.vue';
+import CategoryProductListVue from "../components/CategoryProductList/CategoryProductList.vue";
 export default {
-    components:{
-        "category-product-list":CategoryProductListVue,
-        
-    }
-}
+  components: {
+    "category-product-list": CategoryProductListVue
+  }
+};
 </script>
 
-<style >
-
-</style>
+<style></style>

@@ -1,7 +1,6 @@
 <template>
- <b-carousel
+  <b-carousel
     id="shopeemall__carousel-right"
-
     ref="myCarousel"
     :interval="0"
     controls
@@ -16,7 +15,6 @@
       <right-slide :list_content="item.data" />
     </b-carousel-slide>
   </b-carousel>
- 
 </template>
 
 <script>
@@ -25,23 +23,23 @@ export default {
   props: {
     carousel_right: {
       type: Array,
-      required: true,
-    },
+      required: true
+    }
   },
-  
+
   components: {
-    "right-slide": Slide,
+    "right-slide": Slide
   },
- 
+
   methods: {
     prev() {
       this.$refs.myCarousel.prev();
     },
     next() {
       this.$refs.myCarousel.next();
-    },
-  },
-}
+    }
+  }
+};
 </script>
 <style lang="scss" scoped>
 .slide {

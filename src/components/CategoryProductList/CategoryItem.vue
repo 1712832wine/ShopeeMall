@@ -7,14 +7,11 @@
         v-bind:key="item.tittleItem"
       >
         <div class="imageSingleProduct">
-          <ul >
-            <li >
-              <router-link
-			      	class="nav-link"
-			      	tag="a"
-            	to="/HomeCatalog"
+          <ul>
+            <li>
+              <router-link class="nav-link" tag="a" to="/HomeCatalog">
+                <img :src="item.src" /> {{ item.tittleItem }}</router-link
               >
-                 <img :src="item.src" /> {{ item.tittleItem }}</router-link>
             </li>
           </ul>
         </div>
@@ -26,13 +23,13 @@
 <script>
 export default {
   props: {
-      ListProduct: {
-      type: Array,
-    },
+    ListProduct: {
+      type: Array
+    }
   },
-  data:function() {
+  data: function() {
     return {};
-  },
+  }
 };
 </script>
 
