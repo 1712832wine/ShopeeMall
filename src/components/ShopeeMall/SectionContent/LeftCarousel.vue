@@ -17,9 +17,9 @@ export default {
   props: {
     carousel_left: {
       type: Array,
-      required: true,
-    },
-  },
+      required: true
+    }
+  }
 };
 </script>
 
@@ -35,7 +35,6 @@ export default {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-
   }
 
   .active {

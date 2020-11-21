@@ -41,12 +41,12 @@
 export default {
   props: {
     ListAnphabetical: {
-      type: Array,
-    },
+      type: Array
+    }
   },
   data: function() {
     return {};
-  },
+  }
 };
 </script>
 >

@@ -15,10 +15,10 @@
   transform: translateY(75px);
   min-width: 1200px;
   padding-bottom: 0px;
-  margin: 0px auto 4.375rem;
+  margin: 0px auto 0rem;
   &-background {
     background: #fff;
-    height: 350px;
+    height: 450px;
   }
 }
 
@@ -176,7 +176,7 @@
   border-radius: 4px;
   overflow: hidden;
   &__arrow {
-    top: 48%;
+    top: 42%;
     width: 800px;
     position: absolute;
     display: flex;
@@ -196,7 +196,7 @@
       -webkit-transition: opacity 0.3s ease;
       transition: opacity 0.3s ease;
       i {
-        margin-top: 20px;
+        margin-top: 22px;
         color: #fff;
       }
     }
@@ -217,7 +217,7 @@
       -webkit-transition: opacity 0.3s ease;
       transition: opacity 0.3s ease;
       i {
-        margin-top: 20px;
+        margin-top: 22px;
         color: #fff;
       }
     }
