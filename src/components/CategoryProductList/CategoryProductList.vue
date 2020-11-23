@@ -18,14 +18,6 @@ export default {
       listData: data.ListAnphabetical
     };
   },
-  // mounted: function(){
-  // 	this.show();
-  // },
-  // methods: {
-  // 	show: function(){
-  // 		console.log(this.listProduct);
-  // 	}
-  // },
   components: {
     "category-item": CategoryItem,
     "category-pagination": CategoryPagination
@@ -36,5 +28,6 @@ export default {
 <style lang="scss">
 .container {
   margin-top: 60px;
+  display: block;
 }
 </style>
