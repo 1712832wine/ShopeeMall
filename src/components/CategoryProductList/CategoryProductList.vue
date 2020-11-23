@@ -1,16 +1,16 @@
 <template>
-	<div>
-		<div class="container">
-			<category-item v-bind:ListProduct="listProduct" />
-			<category-pagination v-bind:ListAnphabetical="listData" />
-		</div>
-	</div>
+  <div>
+    <div class="container">
+      <category-item v-bind:ListProduct="listProduct" />
+      <category-pagination v-bind:ListAnphabetical="listData" />
+    </div>
+  </div>
 </template>
 
 <script>
 import CategoryItem from "./CategoryItem";
 import CategoryPagination from "./CategoryPagination";
-import data from '../../data/ListCategoryProductData.json'
+import data from "../../data/ListCategoryProductData.json";
 export default {
 	data() {
 		return {

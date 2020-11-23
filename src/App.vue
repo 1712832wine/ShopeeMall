@@ -2,7 +2,6 @@
   <div id="app">
     <router-view />
   </div>
-  
 </template>
 
 <script>
@@ -40,19 +39,7 @@ body {
   }
 }
 
-.large-banner {
-  background-image: url("./assets/images/banners/large-banner.jpg");
-  margin-top: 20px;
-
-  height: 110px;
-  width: 1200px;
-  background-size: cover;
-  background-position: 50%;
-  overflow: hidden;
-  cursor: pointer;
-  transform: translate(74px, 106px);
-}
-.paddingtop{
-  padding-top: 8rem;  
+.paddingtop {
+  padding-top: 8rem;
 }
 </style>

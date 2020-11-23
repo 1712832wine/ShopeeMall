@@ -13,13 +13,13 @@ export default {
   data: function() {
     return {
       dataTop: headerData.vn.top,
-      dataBottom: headerData.vn.bottom
+      dataBottom: headerData.vn.bottom,
     };
   },
   components: {
     "header-top": HeaderTop,
-    "header-bottom": HeaderBottom
-  }
+    "header-bottom": HeaderBottom,
+  },
 };
 </script>
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="Footer">
+  <footer class="Footer">
     <div class="mycontainer">
       <footer-top />
       <footer-nav />
@@ -8,7 +8,7 @@
       <footer-category />
     </div>
     <footer-bottom />
-  </div>
+  </footer>
 </template>
 
 <script>
@@ -21,11 +21,11 @@ export default {
     "footer-top": FooterTop,
     "footer-nav": FooterNav,
     "footer-category": FooterCategory,
-    "footer-bottom": FooterBottom,
-  },
+    "footer-bottom": FooterBottom
+  }
 };
 </script>
 
-<style lang="scss" scoped >
-@import "./Footer.scss"
+<style lang="scss" scoped>
+@import "./Footer.scss";
 </style>

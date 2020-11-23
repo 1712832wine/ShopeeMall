@@ -1,19 +1,16 @@
 <template>
-<div> 
-    <category-product-list/>
-</div>
-
+  <product-of-single-category/>
 </template>
 
 <script>
-import CategoryProductListVue from '../components/CategoryProductList/CategoryProductList.vue';
+import ProductOfSingleCategory from "../components/ProductOfSingleCategory/ProductOfSingleCategory"
 export default {
-    components:{
-        "category-product-list":CategoryProductListVue,
-    }
+components:{
+    "product-of-single-category":ProductOfSingleCategory
+}
 }
 </script>
 
-<style >
+<style lang="scss">
 
 </style>

@@ -3,13 +3,13 @@
     <h3>{{ data.tittle }}</h3>
     <div class="mBTmjQ flex-row">
       <a :href="data.url">
-           <img
-        src="../../../assets/images/qr-code-shoppe-footer.png"
-        alt="download_qr_code"
-        class="qr-size"
-      />
+        <img
+          src="../../../assets/images/qr-code-shoppe-footer.png"
+          alt="download_qr_code"
+          class="qr-size"
+        />
       </a>
-   
+
       <div class="_1zEa4X flex-column">
         <a :href="data.url">
           <img
@@ -31,14 +31,14 @@
 <script>
 export default {
   props: {
-  data: {
-    type: Object,
-    required: true,
+    data: {
+      type: Object,
+      required: true
+    }
   }
-}
 };
 </script>
 
-<style lang="scss" scoped >
-@import "../Footer.scss"
+<style lang="scss" scoped>
+@import "../Footer.scss";
 </style>
