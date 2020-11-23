@@ -23,12 +23,12 @@ export default {
   props: {
     carousel_right: {
       type: Array,
-      required: true,
-    },
+      required: true
+    }
   },
 
   components: {
-    "right-slide": Slide,
+    "right-slide": Slide
   },
 
   methods: {
@@ -37,8 +37,8 @@ export default {
     },
     next() {
       this.$refs.myCarousel.next();
-    },
-  },
+    }
+  }
 };
 </script>
 <style lang="scss" scoped>

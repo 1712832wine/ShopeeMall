@@ -10,9 +10,9 @@
 import TopSearchContentSlide from "./TopSearchContentSlide.vue";
 export default {
   components: {
-    "topsearch-content-slide": TopSearchContentSlide,
+    "topsearch-content-slide": TopSearchContentSlide
   },
-  props: { slides: { type: Array, required: true } },
+  props: { slides: { type: Array, required: true } }
 };
 </script>
 
