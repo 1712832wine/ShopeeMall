@@ -12,7 +12,6 @@
     <div class="title">{{ item.title }}</div>
   </div>
 </template>
-
 <script>
 export default {
   props: {
@@ -41,10 +40,11 @@ $size__img1: 224.31px;
 $size__img2: 109.67px;
 .topsearch__content__item {
   padding: 30px 30px 25px;
-  width: 33.33%;
+  // width: 399.98px;
   height: 324px;
   box-sizing: border-box;
-  border: 1px solid #000;
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  flex-grow: 1;
 }
 .flex-row {
   display: flex;

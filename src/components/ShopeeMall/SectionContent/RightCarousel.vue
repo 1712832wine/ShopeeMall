@@ -1,7 +1,6 @@
 <template>
- <b-carousel
+  <b-carousel
     id="shopeemall__carousel-right"
-
     ref="myCarousel"
     :interval="0"
     controls
@@ -16,7 +15,6 @@
       <right-slide :list_content="item.data" />
     </b-carousel-slide>
   </b-carousel>
- 
 </template>
 
 <script>
@@ -28,11 +26,11 @@ export default {
       required: true,
     },
   },
-  
+
   components: {
     "right-slide": Slide,
   },
- 
+
   methods: {
     prev() {
       this.$refs.myCarousel.prev();
@@ -41,7 +39,7 @@ export default {
       this.$refs.myCarousel.next();
     },
   },
-}
+};
 </script>
 <style lang="scss" scoped>
 .slide {
@@ -77,15 +75,17 @@ export default {
   height: 20px;
   border-radius: 50%;
   transform: translateX(-60px);
-  background-color: black;
+  background-color: #fff;
   background-size: 50% 50%;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5L4.25 4l2.5-2.5L5.25 0z'/%3e%3c/svg%3e");
 }
 /deep/ .carousel-control-next-icon {
   width: 20px;
   height: 20px;
   border-radius: 50%;
   transform: translateX(60px);
-  background-color: black;
+  background-color: #fff;
   background-size: 50% 50%;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e");
 }
 </style>

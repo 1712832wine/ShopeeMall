@@ -27,6 +27,7 @@ export default {
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 .title {
   font-size: 16px;

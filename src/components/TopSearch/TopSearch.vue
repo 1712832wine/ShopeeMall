@@ -2,7 +2,7 @@
   <div>
     <div id="topsearch">
       <topsearch-header :top="top" />
-      <topsearch-content :bottom="bottom" />
+      <topsearch-content :slides="slides" />
     </div>
   </div>
 </template>
@@ -29,9 +29,9 @@ export default {
   display: block;
   width: 75rem;
   height: auto;
+  background-color: #fff;
 
-  border: 1px solid #000;
   margin: auto;
-  transform: translateY(120px);
+  transform: translateY(140px);
 }
 </style>
