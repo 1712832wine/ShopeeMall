@@ -1,34 +1,33 @@
 <template>
-  <div class="container-shop">
-    <header-home />
+  <section class="container-shop">
     <banner-home />
-    <div class="large-banner"></div>
-    <shopee-mall />
-
-    <topsearch/>
-    <list-product />
-    <footer-home />
-
-  </div>
+    <div class="container-wrap">
+      <div class="large-banner"></div>
+      <list-flash-sale />
+      <shopee-mall />
+      <top-search />
+      <list-search-trend />
+      <list-product />
+    </div>
+  </section>
 </template>
 
 <script>
-import HeaderHome from "../layouts/Header/HeaderHome";
 import BannerHome from "../components/Banner/BannerHome";
-import ListProduct from "../components/Product/ListProduct";
-import FooterHome from "../layouts/Footer/FooterHome.vue";
+import ListFlashSale from "../components/FlashSale/ListFlashSale";
 import TopSearch from "../components/TopSearch/TopSearch.vue";
 import ShopeeMall from "../components/ShopeeMall/ShopeeMall.vue";
+import ListSearchTrend from "../components/SearchTrends/ListSearchTrend";
+import ListProduct from "../components/Product/ListProduct";
 export default {
   components: {
-    "header-home": HeaderHome,
     "banner-home": BannerHome,
-    "list-product": ListProduct,
-    "footer-home": FooterHome,
+    "list-flash-sale": ListFlashSale,
     "shopee-mall": ShopeeMall,
-    "topsearch": TopSearch
+    "list-search-trend": ListSearchTrend,
+    "list-product": ListProduct,
+    "top-search": TopSearch,
   },
-
 };
 </script>
 
@@ -46,6 +45,12 @@ export default {
   }
 }
 
+.container-wrap {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .large-banner {
   background-image: url("/assets/images/banners/large-banner.jpg");
   margin-top: 20px;
@@ -55,6 +60,5 @@ export default {
   background-position: 50%;
   overflow: hidden;
   cursor: pointer;
-  transform: translate(74px, 106px);
 }
 </style>

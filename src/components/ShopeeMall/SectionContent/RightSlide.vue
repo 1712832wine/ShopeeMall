@@ -14,23 +14,23 @@ export default {
   props: {
     list_content: {
       type: Array,
-      required: true,
-    },
+      required: true
+    }
   },
-  data: function () {
+  data: function() {
     return {
-      style: function (item) {
+      style: function(item) {
         return {
           backgroundImage: "url(" + item.img_src + ")",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           width: "100%",
-          height: "100%",
+          height: "100%"
         };
-      },
+      }
     };
-  },
+  }
 };
 </script>
 

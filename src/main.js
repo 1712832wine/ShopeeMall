@@ -7,7 +7,7 @@ import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 
-import VueRouter from "vue-router"
+import VueRouter from "vue-router";
 // import {routes} from  "./routes"
 // Install BootstrapVue
 Vue.use(BootstrapVue);
@@ -15,10 +15,7 @@ Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
 Vue.config.productionTip = false;
 
-Vue.use(VueRouter)
-// const rout =new VueRouter({
-//   routes
-// })
+Vue.use(VueRouter);
 
 new Vue({
   router,

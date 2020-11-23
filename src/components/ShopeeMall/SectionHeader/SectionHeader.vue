@@ -30,13 +30,12 @@ export default {
   props: {
     top: {
       type: Object,
-      required: true,
-    },
+      required: true
+    }
   },
   components: {
-    "nav-top": ShopeeMall_TopList,
-  },
- 
+    "nav-top": ShopeeMall_TopList
+  }
 };
 </script>
 

@@ -1,21 +1,31 @@
-/* eslint-disable prettier/prettier */
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../pages/Home.vue";
-import ProductCategory from "../pages/ProductCategory"
+import ProductCategory from "../pages/ProductCategory";
+import PublicRouter from "./PublicRouter.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
+    component: PublicRouter,
     path: "/",
-    name: "Home",
-    component: Home
+    children: [
+      {
+        path: "",
+        component: () => import("../pages/Home.vue")
+      }
+    ]
   },
   {
-    path: "/category",
-    name: "Category",
-    component: ProductCategory
+    component: PublicRouter,
+    path: "/all_category",
+    children: [
+      {
+        path: "",
+        name: "Category",
+        component: ProductCategory
+      }
+    ]
   }
 ];
 
