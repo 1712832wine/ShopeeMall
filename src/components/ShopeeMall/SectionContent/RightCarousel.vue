@@ -56,12 +56,12 @@ export default {
       z-index: 0;
     }
     /deep/ .carousel-control-prev-icon {
-      width: 50px;
-      height: 50px;
+      width: 40px;
+      height: 40px;
     }
     /deep/ .carousel-control-next-icon {
-      width: 50px;
-      height: 50px;
+      width: 40px;
+      height: 40px;
     }
   }
 }
