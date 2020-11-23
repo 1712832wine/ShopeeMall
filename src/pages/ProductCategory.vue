@@ -10,7 +10,6 @@ import CategoryProductListVue from '../components/CategoryProductList/CategoryPr
 export default {
     components:{
         "category-product-list":CategoryProductListVue,
-        
     }
 }
 </script>

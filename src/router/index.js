@@ -3,6 +3,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../pages/Home.vue";
 import ProductCategory from "../pages/ProductCategory"
+import ProductOfSingleCategory from "../pages/ProductSingleCategory"
 
 Vue.use(VueRouter);
 
@@ -16,7 +17,13 @@ const routes = [
     path: "/category",
     name: "Category",
     component: ProductCategory
+  },
+  {
+    path: "/productOfSingleCategory",
+    name: "ProductOfSingleCategory",
+    component:ProductOfSingleCategory
   }
+
 ];
 
 const router = new VueRouter({
