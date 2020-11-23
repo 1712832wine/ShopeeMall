@@ -1,16 +1,16 @@
 <template>
-  <product-of-single-category/>
+  <div>
+    <product-of-single-category />
+  </div>
 </template>
 
 <script>
-import ProductOfSingleCategory from "../components/ProductOfSingleCategory/ProductOfSingleCategory"
+import ProductOfSingleCategory from "../components/ProductOfSingleCategory/ProductOfSingleCategory";
 export default {
-components:{
-    "product-of-single-category":ProductOfSingleCategory
-}
-}
+  components: {
+    "product-of-single-category": ProductOfSingleCategory,
+  },
+};
 </script>
 
-<style lang="scss">
-
-</style>
+<style lang="scss"></style>
