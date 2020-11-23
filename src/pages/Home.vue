@@ -5,6 +5,7 @@
       <div class="large-banner"></div>
       <list-flash-sale />
       <shopee-mall />
+      <top-search />
       <list-search-trend />
       <list-product />
     </div>
@@ -14,6 +15,7 @@
 <script>
 import BannerHome from "../components/Banner/BannerHome";
 import ListFlashSale from "../components/FlashSale/ListFlashSale";
+import TopSearch from "../components/TopSearch/TopSearch.vue";
 import ShopeeMall from "../components/ShopeeMall/ShopeeMall.vue";
 import ListSearchTrend from "../components/SearchTrends/ListSearchTrend";
 import ListProduct from "../components/Product/ListProduct";
@@ -23,8 +25,9 @@ export default {
     "list-flash-sale": ListFlashSale,
     "shopee-mall": ShopeeMall,
     "list-search-trend": ListSearchTrend,
-    "list-product": ListProduct
-  }
+    "list-product": ListProduct,
+    "top-search": TopSearch,
+  },
 };
 </script>
 

@@ -8,18 +8,18 @@
 <script>
 import HeaderTop from "./HeaderTop/HeaderTop";
 import HeaderBottom from "./HeaderBottom/HeaderBottom";
-import headerData from "../../data/HeaderData.json";
+import headerData from "../../data/headerData.json";
 export default {
   data: function() {
     return {
       dataTop: headerData.vn.top,
-      dataBottom: headerData.vn.bottom
+      dataBottom: headerData.vn.bottom,
     };
   },
   components: {
     "header-top": HeaderTop,
-    "header-bottom": HeaderBottom
-  }
+    "header-bottom": HeaderBottom,
+  },
 };
 </script>
 
