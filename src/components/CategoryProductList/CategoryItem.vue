@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper_container">
-    <div class="container">
+    <div class="container" >
       <div
         class="singleProduct"
         v-for="item in ListProduct"
@@ -21,15 +21,18 @@
 </template>
 
 <script>
+import data from '../../data/ListCategoryProductData.json'
 export default {
   props: {
     ListProduct: {
       type: Array
     }
   },
-  data: function() {
-    return {};
-  }
+  data:function() {
+    return {
+      listProduct: data.ListProduct
+    };
+  },
 };
 </script>
 

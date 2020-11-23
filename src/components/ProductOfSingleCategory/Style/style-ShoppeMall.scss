@@ -1,0 +1,74 @@
+.shoppe-mall{
+    width: 100%;
+    height: 250px;
+    // border: 1px solid red;
+    background-color: white;
+    .header{
+        height: 20%;
+        line-height: 40px;
+        // border: 1px solid blue;
+        display: flex;
+        .header-left{
+            color: #d0011b;
+            cursor: pointer;
+            font-size: 18px;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+        .header-right{
+            margin-left: auto;
+            color:#d0011b;
+            font-size: 13px;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+     }
+       
+    .shoppeMallContent{
+        height: 80%;
+        
+     .list-shoppeMall-row{
+             padding-left: 0px;
+             display: flex;
+             flex-direction: row;
+         .list-shoppeMall-column{
+            display: flex;
+            flex-direction: column;
+            margin-left: 0px;
+            text-align: center;
+            width: 16.66%;
+            .branch-icon-top{
+                height: 100px;
+                list-style: none;
+                color: red;
+                border-right: 1px solid rgba(0,0,0,.05);
+                border-bottom: 1px solid rgba(0,0,0,.05);
+                .icon-image{
+                    // border:1px solid red;
+                    width:100%;
+                    height: 100%;
+                    text-align: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+            }
+            .branch-icon-bottom{
+                height: 100px;
+                list-style: none;
+                color: red;
+                border-right: 1px solid rgba(0,0,0,.05);
+                .icon-image{
+                    // border:1px solid red;
+                    width:100%;
+                    height: 100%;
+                    text-align: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+            }
+         }
+     }
+    }
+}

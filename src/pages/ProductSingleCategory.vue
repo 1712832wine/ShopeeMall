@@ -11,6 +11,6 @@ components:{
 }
 </script>
 
-<style lang="scss">
+<style lang="stylus">
 
 </style>

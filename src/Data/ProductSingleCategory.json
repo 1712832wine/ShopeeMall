@@ -1,0 +1,74 @@
+{
+  "ListShoppeMall": [
+    {
+      "id": 1,
+      "url_top": "https://cf.shopee.vn/file/03b216ad2dfbb3d09c1776cdb88c01cd",
+      "url_bottom": "https://cf.shopee.vn/file/d98cd9c737f38f62d8e7da6cd4304fbf"
+    },
+    {
+      "id": 2,
+      "url_top": "https://cf.shopee.vn/file/29368cca19355bc62304bb0400b14af7",
+      "url_bottom": "https://cf.shopee.vn/file/5ea0a1db8923aa293c842e0a123c4490"
+    },
+    {
+      "id": 3,
+      "url_top": "https://cf.shopee.vn/file/d98cd9c737f38f62d8e7da6cd4304fbf",
+      "url_bottom": "https://cf.shopee.vn/file/452af176b0e56548a0a78104bfe64d48"
+    },
+    {
+      "id": 4,
+      "url_top": "https://cf.shopee.vn/file/bc305025e03be2fdf686388bd8215a5b",
+      "url_bottom": "https://cf.shopee.vn/file/4dc63f68f910f3fd51107912c2b8c852"
+    },
+    {
+      "id": 5,
+      "url_top": "https://cf.shopee.vn/file/fb5724fb8f8be4cdf6be45b8c1c01889",
+      "url_bottom": "https://cf.shopee.vn/file/7560b3127aebe77c3340bb85d0a628f3"
+    },
+    {
+      "id": 6,
+      "url_top": "https://cf.shopee.vn/file/6d90553d0565f9b6ce35fa487c73e64c",
+      "url_bottom": "https://cf.shopee.vn/file/b719dd5ac727046582ea0a36a3e65cdb"
+    }
+  ],
+
+  "ListCategory": [
+    {
+      "nameCategory": "Bách hóa online",
+      "listNameCategory": [
+        { "nameSingleCategory": "Ăn vặt& Bánh kẹo" },
+        { "nameSingleCategory": "Đồ uống" },
+        { "nameSingleCategory": "Đồ hộp và Đóng gói" },
+        { "nameSingleCategory": "Nấu ăn & Làm bánh" }
+      ]
+    }
+  ],
+  "ListLocation": [
+    { "nameLocation": "TP. Hồ Chí Minh" },
+    { "nameLocation": "Hà Nội" },
+    { "nameLocation": "Thái Nguyên" },
+    { "nameLocation": "Vĩnh Phúc" },
+    { "nameLocation": "Hải Phòng" }
+  ],
+  "ListUnitTransport": [
+    { "nameUnitTransport": "Shopee Express" },
+    { "nameUnitTransport": "NowShip" },
+    { "nameUnitTransport": "Ninja Van" },
+    { "nameUnitTransport": "J&T Express" }
+  ],
+  "ListTypeShop":[
+    {"nameTypeShop":"Shopee Mall"},
+    {"nameTypeShop":"Shop yêu thích"},
+    {"nameTypeShop":"Xử lí đơn hàng bởi Shoppe"}
+  ],
+  "ListActiveProduct":[
+    {"nameActiveProduct":"Sản phẩm mới"},
+    {"nameActiveProduct":"Sản phẩm dã dùng"}
+  ],
+  "ListService":[
+    {"nameService":"Freeship Xtra"},
+    {"nameService":"Hoàn xu Xtra"},
+    {"nameService":"Đang giảm giá"},
+    {"nameService":"Miễn phí vận chuyển"}
+  ]
+}

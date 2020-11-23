@@ -1,6 +1,5 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import ProductCategory from "../pages/ProductCategory";
 import PublicRouter from "./PublicRouter.vue";
 
 Vue.use(VueRouter);
@@ -22,8 +21,17 @@ const routes = [
     children: [
       {
         path: "",
-        name: "Category",
-        component: ProductCategory
+        component: () => import("../pages/Category.vue")
+      }
+    ]
+  },
+  {
+    component: PublicRouter,
+    path: "/product_of_category",
+    children: [
+      {
+        path: "",
+        component: () => import("../pages/ProductCategory.vue")
       }
     ]
   }
