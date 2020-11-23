@@ -1,16 +1,16 @@
 <template>
   <div>
-    <category-product-list />
+    <large-banner />
   </div>
 </template>
 
 <script>
-import CategoryProductListVue from "../components/CategoryProductList/CategoryProductList.vue";
+import LargeBanner from "../components/Banner/LargeBanner";
 export default {
   components: {
-    "category-product-list": CategoryProductListVue
+    "large-banner": LargeBanner
   }
 };
 </script>
 
-<style></style>
+<style lang="scss" scoped></style>
