@@ -32,6 +32,6 @@ export default {
   background-color: #fff;
 
   margin: auto;
-  transform: translateY(140px);
+  margin-top: 1.25rem;
 }
 </style>
