@@ -30,7 +30,6 @@ export default {
 #topsales {
   margin-top: 1.5rem;
   box-sizing: border-box;
-  border: 1px solid black;
   &__heading {
     display: flex;
     justify-content: space-between;
