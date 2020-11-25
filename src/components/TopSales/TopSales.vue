@@ -2,7 +2,7 @@
   <div id="topsales">
     <div id="topsales__heading" class="flex-row">
       <h2 class="title">{{ heading.title }}</h2>
-      <a :href="seemore__href" class="seemore">
+      <a :href="heading.seemore__href" class="seemore">
         <span>{{ heading.seemore }}</span>
         <i class="fa fa-chevron-right icon" aria-hidden="true"></i>
       </a>
