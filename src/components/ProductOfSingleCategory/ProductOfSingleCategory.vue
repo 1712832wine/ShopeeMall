@@ -4,6 +4,7 @@
     <top-sales />
     <sale-from-restaurant />
     <brand-recommended />
+    <one-day-one-style />
     <div class="contain">
       <category-left
         v-bind:ListCategory="listCategory"
@@ -21,13 +22,16 @@
 </template>
 
 <script>
-import TopSales from "../TopSales/TopSales.vue";
+// data
 import data from "../../data/ProductSingleCategory.json";
+//component
+import TopSales from "../TopSales/TopSales.vue";
 import ShoppeMall from "./ShoppeMall";
 import CategoryLeft from "./CategoryLeft";
 import SaleFromRestaurant from "../SaleFromRestaurant/SaleFromRestaurant";
 import ListProductCategory from "../../components/Product/Category/ListProductCategory";
 import BrandRecommended from "../BrandRecommended/BrandRecommended.vue";
+import OneDayOneStyle from "../OneDayOneStyle/OneDayOneStyle.vue";
 export default {
   components: {
     "shoppe-mall": ShoppeMall,
@@ -36,6 +40,7 @@ export default {
     "list-product-category": ListProductCategory,
     "top-sales": TopSales,
     "brand-recommended": BrandRecommended,
+    "one-day-one-style": OneDayOneStyle,
   },
   data() {
     return {
