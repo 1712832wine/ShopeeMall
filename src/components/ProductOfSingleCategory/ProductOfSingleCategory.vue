@@ -3,6 +3,7 @@
     <shoppe-mall v-bind:ListShoppeMall="listShoppeMall" />
     <top-sales />
     <sale-from-restaurant />
+    <brand-recommended />
     <div class="contain">
       <category-left
         v-bind:ListCategory="listCategory"
@@ -26,13 +27,15 @@ import ShoppeMall from "./ShoppeMall";
 import CategoryLeft from "./CategoryLeft";
 import SaleFromRestaurant from "../SaleFromRestaurant/SaleFromRestaurant";
 import ListProductCategory from "../../components/Product/Category/ListProductCategory";
+import BrandRecommended from "../BrandRecommended/BrandRecommended.vue";
 export default {
   components: {
     "shoppe-mall": ShoppeMall,
     "category-left": CategoryLeft,
     "sale-from-restaurant": SaleFromRestaurant,
     "list-product-category": ListProductCategory,
-    "top-sales": TopSales
+    "top-sales": TopSales,
+    "brand-recommended": BrandRecommended,
   },
   data() {
     return {
@@ -42,9 +45,9 @@ export default {
       listUnitTransport: data.ListUnitTransport,
       listTypeShop: data.ListTypeShop,
       listActiveProduct: data.ListActiveProduct,
-      listService: data.ListService
+      listService: data.ListService,
     };
-  }
+  },
 };
 </script>
 
