@@ -6,16 +6,16 @@
 
 <script>
 import CampaignItem from "./CampaignItem";
-import campaign from "../../data/CampaignData.json";
+import campaign from "../../data/campaignData.json";
 export default {
   data: function() {
     return {
-      listItem: campaign.items
+      listItem: campaign.items,
     };
   },
   components: {
-    "campaign-item": CampaignItem
-  }
+    "campaign-item": CampaignItem,
+  },
 };
 </script>
 

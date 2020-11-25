@@ -11,8 +11,8 @@ import ProductOfSingleCategory from "../components/ProductOfSingleCategory/Produ
 export default {
   components: {
     "large-banner": LargeBanner,
-    "product-of-single-category": ProductOfSingleCategory
-  }
+    "product-of-single-category": ProductOfSingleCategory,
+  },
 };
 </script>
 

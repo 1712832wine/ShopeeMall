@@ -1,6 +1,7 @@
 <template>
-  <div class="container">
+  <div class="mycontainer">
     <shoppe-mall v-bind:ListShoppeMall="listShoppeMall" />
+    <top-sales />
     <div class="contain">
       <category-left
         v-bind:ListCategory="listCategory"
@@ -18,13 +19,15 @@
 </template>
 
 <script>
+import TopSales from "../TopSales/TopSales.vue";
 import data from "../../data/ProductSingleCategory.json";
 import ShoppeMall from "./ShoppeMall";
 import CategoryLeft from "./CategoryLeft";
 export default {
   components: {
     "shoppe-mall": ShoppeMall,
-    "category-left": CategoryLeft
+    "category-left": CategoryLeft,
+    "top-sales": TopSales,
   },
   data() {
     return {
@@ -34,14 +37,16 @@ export default {
       listUnitTransport: data.ListUnitTransport,
       listTypeShop: data.ListTypeShop,
       listActiveProduct: data.ListActiveProduct,
-      listService: data.ListService
+      listService: data.ListService,
     };
-  }
+  },
 };
 </script>
 
 <style lang="scss">
-.container {
+.mycontainer {
+  width: 1200px;
+  margin: auto;
   display: flex;
   flex-direction: column;
 }
