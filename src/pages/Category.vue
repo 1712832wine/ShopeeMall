@@ -7,10 +7,10 @@
 <script>
 import CategoryProductListVue from "../components/CategoryProductList/CategoryProductList.vue";
 export default {
-    components:{
-        "category-product-list":CategoryProductListVue,
-    }
-}
+  components: {
+    "category-product-list": CategoryProductListVue
+  }
+};
 </script>
 
 <style></style>

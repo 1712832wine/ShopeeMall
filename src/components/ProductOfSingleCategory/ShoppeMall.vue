@@ -9,25 +9,32 @@
     </div>
     <div class="shoppeMallContent">
       <ul class="list-shoppeMall-row">
-            <li class="list-shoppeMall-column" 
-                    v-for="item in ListShoppeMall"
-                    v-bind:key="item.id"
-            >
-                <div class="branch-icon-top"> 
-                    <a href="#" >
-                        <div class="icon-image"  v-bind:style="{ 'background-image': 'url(' + item.url_top + ')' }"> 
-                        </div>
-                    </a>
-                </div>
-                <div class="branch-icon-bottom"> 
-                    <a href="#" >
-                        <div class="icon-image"  v-bind:style="{ 'background-image': 'url(' + item.url_bottom + ')' }"> 
-                        </div>
-                    </a>
-                 </div>
-            </li>
-              
-            
+        <li
+          class="list-shoppeMall-column"
+          v-for="item in ListShoppeMall"
+          v-bind:key="item.id"
+        >
+          <div class="branch-icon-top">
+            <a href="#">
+              <div
+                class="icon-image"
+                v-bind:style="{
+                  'background-image': 'url(' + item.url_top + ')'
+                }"
+              ></div>
+            </a>
+          </div>
+          <div class="branch-icon-bottom">
+            <a href="#">
+              <div
+                class="icon-image"
+                v-bind:style="{
+                  'background-image': 'url(' + item.url_bottom + ')'
+                }"
+              ></div>
+            </a>
+          </div>
+        </li>
       </ul>
     </div>
   </div>
@@ -35,19 +42,19 @@
 
 <script>
 export default {
-    props:{
-        ListShoppeMall:{
-            type:Array,
-        }
-    },
-      data:function() {
-    return {};
+  props: {
+    ListShoppeMall: {
+      type: Array
+    }
   },
-    // data:function() {
-    //     return{
-    //                 url:"https://cf.shopee.vn/file/03b216ad2dfbb3d09c1776cdb88c01cd"
-    //     }
-    // }
+  data: function() {
+    return {};
+  }
+  // data:function() {
+  //     return{
+  //                 url:"https://cf.shopee.vn/file/03b216ad2dfbb3d09c1776cdb88c01cd"
+  //     }
+  // }
 };
 </script>
 

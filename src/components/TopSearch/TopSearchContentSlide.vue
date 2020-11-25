@@ -12,14 +12,14 @@
 import ContentItem from "./TopSearchContentItem.vue";
 export default {
   components: {
-    "topsearch-content-item": ContentItem,
+    "topsearch-content-item": ContentItem
   },
   props: {
     slide: {
       type: Object,
-      required: true,
-    },
-  },
+      required: true
+    }
+  }
 };
 </script>
 

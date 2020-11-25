@@ -10,6 +10,31 @@
             maxlength="128"
           />
         </form>
+        <div class="searchbar__selector" style="display: none;">
+          <div class="searchbar__drawer">
+            <div class="searchbar__selector--selected">
+              <div class="searchbar__selector--selected-label">
+                Trong Thời Trang Nam
+              </div>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </div>
+            <div class="searchbar__drawer--content">
+              <div class="searchbar__selector--options">
+                <div class="searchbar__selector--option">
+                  <div class="searchbar__selector--option-label">
+                    Trong Thời Trang Nam
+                  </div>
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                </div>
+                <div class="searchbar__selector--option">
+                  <div class="searchbar__selector--option-label">
+                    Trong Shopee
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <button
         type="button"
@@ -34,4 +59,6 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@import "./Styles/Style-HeaderSearch.scss";
+</style>

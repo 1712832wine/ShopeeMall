@@ -17,8 +17,8 @@ export default {
   props: {
     item: {
       type: Object,
-      required: true,
-    },
+      required: true
+    }
   },
   data: function() {
     return {
@@ -27,11 +27,11 @@ export default {
           backgroundImage: "url(" + item.imgs[index].url_img + ")",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
+          backgroundSize: "cover"
         };
-      },
+      }
     };
-  },
+  }
 };
 </script>
 
