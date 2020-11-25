@@ -7,21 +7,21 @@
         <i class="fa fa-chevron-right icon" aria-hidden="true"></i>
       </a>
     </div>
-    <topsales-content :content="content" :id_component="0" />
+    <topsales-content :content="content" :id_component="1" />
   </div>
 </template>
 
 <script>
 // DATA
-import topsales_data from "../../data/topsalesData.json";
+import onedayonestyle_data from "../../data/onedayonestyleData.json";
 //components
-import topsalescontent from "./TopSalesContent.vue";
+import topsalescontent from "../TopSales/TopSalesContent.vue";
 export default {
   components: {
     "topsales-content": topsalescontent,
   },
   data: function() {
-    return topsales_data.topsalesData;
+    return onedayonestyle_data.onedayonestyle_data;
   },
 };
 </script>

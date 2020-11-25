@@ -49,6 +49,10 @@ export default {
       type: Object,
       required: true,
     },
+    id_component: {
+      type: Object,
+      required: true,
+    },
   },
   data: function() {
     return {
@@ -59,15 +63,16 @@ export default {
   },
   computed: {
     number_slide: function() {
-      console.log("nu:", this.content.items.length + 1 - this.item_per_slide);
-      return 1;
+      return this.content.items.length + 1 - this.item_per_slide;
     },
   },
   methods: {
     handlePrev: function() {
       if (this.currentslide > 0) {
         this.currentslide -= 1;
-        var content = document.getElementsByClassName("content__translate")[0];
+        var content = document.getElementsByClassName("content__translate")[
+          this.id_component
+        ];
         content.style.transform =
           "translateX(" + this.size * this.currentslide + "px)";
       }
@@ -75,7 +80,9 @@ export default {
     handleNext: function() {
       if (this.currentslide < this.number_slide) {
         this.currentslide += 1;
-        var content = document.getElementsByClassName("content__translate")[0];
+        var content = document.getElementsByClassName("content__translate")[
+          this.id_component
+        ];
         content.style.transform =
           "translateX(-" + this.size * this.currentslide + "px)";
       }
