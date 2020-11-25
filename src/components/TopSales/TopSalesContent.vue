@@ -50,7 +50,7 @@ export default {
       required: true,
     },
     id_component: {
-      type: Object,
+      type: Number,
       required: true,
     },
   },
