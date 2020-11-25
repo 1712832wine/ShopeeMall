@@ -1,7 +1,8 @@
 <template>
-  <div class="mycontainer">
+  <div class="wrapper">
     <shoppe-mall v-bind:ListShoppeMall="listShoppeMall" />
     <top-sales />
+    <sale-from-restaurant />
     <div class="contain">
       <category-left
         v-bind:ListCategory="listCategory"
@@ -12,7 +13,7 @@
         v-bind:ListService="listService"
       />
       <div class="contain-product-right">
-        Đây là right
+        <list-product-category />
       </div>
     </div>
   </div>
@@ -23,11 +24,15 @@ import TopSales from "../TopSales/TopSales.vue";
 import data from "../../data/ProductSingleCategory.json";
 import ShoppeMall from "./ShoppeMall";
 import CategoryLeft from "./CategoryLeft";
+import SaleFromRestaurant from "../SaleFromRestaurant/SaleFromRestaurant";
+import ListProductCategory from "../../components/Product/Category/ListProductCategory";
 export default {
   components: {
     "shoppe-mall": ShoppeMall,
     "category-left": CategoryLeft,
-    "top-sales": TopSales,
+    "sale-from-restaurant": SaleFromRestaurant,
+    "list-product-category": ListProductCategory,
+    "top-sales": TopSales
   },
   data() {
     return {
@@ -37,18 +42,18 @@ export default {
       listUnitTransport: data.ListUnitTransport,
       listTypeShop: data.ListTypeShop,
       listActiveProduct: data.ListActiveProduct,
-      listService: data.ListService,
+      listService: data.ListService
     };
-  },
+  }
 };
 </script>
 
 <style lang="scss">
-.mycontainer {
+.wrapper {
   width: 1200px;
-  margin: auto;
   display: flex;
   flex-direction: column;
+  margin: auto;
 }
 .contain {
   display: flex;
@@ -59,6 +64,5 @@ export default {
 .contain-product-right {
   width: 80%;
   height: 1000px;
-  border: 1px solid black;
 }
 </style>
