@@ -1,6 +1,7 @@
 <template>
-  <div class="container">
+  <div class="wrapper">
     <shoppe-mall v-bind:ListShoppeMall="listShoppeMall" />
+    <sale-from-restaurant />
     <div class="contain">
       <category-left
         v-bind:ListCategory="listCategory"
@@ -11,7 +12,7 @@
         v-bind:ListService="listService"
       />
       <div class="contain-product-right">
-        Đây là right
+        <list-product-category />
       </div>
     </div>
   </div>
@@ -21,10 +22,14 @@
 import data from "../../data/ProductSingleCategory.json";
 import ShoppeMall from "./ShoppeMall";
 import CategoryLeft from "./CategoryLeft";
+import SaleFromRestaurant from "../SaleFromRestaurant/SaleFromRestaurant";
+import ListProductCategory from "../../components/Product/Category/ListProductCategory";
 export default {
   components: {
     "shoppe-mall": ShoppeMall,
-    "category-left": CategoryLeft
+    "category-left": CategoryLeft,
+    "sale-from-restaurant": SaleFromRestaurant,
+    "list-product-category": ListProductCategory
   },
   data() {
     return {
@@ -41,9 +46,11 @@ export default {
 </script>
 
 <style lang="scss">
-.container {
+.wrapper {
+  width: 1200px;
   display: flex;
   flex-direction: column;
+  margin: auto;
 }
 .contain {
   display: flex;
@@ -54,6 +61,5 @@ export default {
 .contain-product-right {
   width: 80%;
   height: 1000px;
-  border: 1px solid black;
 }
 </style>

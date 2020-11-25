@@ -3,7 +3,7 @@
     <banner-home />
     <div class="container-wrap">
       <div class="large-banner"></div>
-      <category-item :ListProduct="listProduct"/>
+      <category-item :ListProduct="listProduct" />
       <list-flash-sale />
       <shopee-mall />
       <top-search />
@@ -14,14 +14,14 @@
 </template>
 
 <script>
-import data from '../data/ListCategoryProductData.json';
+import data from "../data/ListCategoryProductData.json";
 import BannerHome from "../components/Banner/BannerHome";
 import ListFlashSale from "../components/FlashSale/ListFlashSale";
 import TopSearch from "../components/TopSearch/TopSearch.vue";
 import ShopeeMall from "../components/ShopeeMall/ShopeeMall.vue";
 import ListSearchTrend from "../components/SearchTrends/ListSearchTrend";
-import ListProduct from "../components/Product/ListProduct";
-import CategoryItem   from "../components/CategoryProductList/CategoryItem"
+import ListProduct from "../components/Product/Home/ListProduct";
+import CategoryItem from "../components/CategoryProductList/CategoryItem";
 export default {
   components: {
     "banner-home": BannerHome,
@@ -30,12 +30,12 @@ export default {
     "top-search": TopSearch,
     "list-search-trend": ListSearchTrend,
     "list-product": ListProduct,
-    "category-item":CategoryItem,
+    "category-item": CategoryItem
   },
-  data:function() {
+  data: function() {
     return {
-       listProduct: data.ListProduct
-    }
+      listProduct: data.ListProduct
+    };
   }
 };
 </script>
@@ -70,11 +70,11 @@ export default {
   overflow: hidden;
   cursor: pointer;
 }
-.container{
-    margin-top: 9rem !important;
-  }
-.container .singleProduct{
-         width:10% !important;
-        height: 9rem !important;
+.container {
+  margin-top: 9rem !important;
+}
+.container .singleProduct {
+  width: 10% !important;
+  height: 9rem !important;
 }
 </style>
