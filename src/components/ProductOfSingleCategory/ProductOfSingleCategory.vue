@@ -1,6 +1,7 @@
 <template>
   <div class="wrapper">
     <shoppe-mall v-bind:ListShoppeMall="listShoppeMall" />
+    <top-sales />
     <sale-from-restaurant />
     <div class="contain">
       <category-left
@@ -19,6 +20,7 @@
 </template>
 
 <script>
+import TopSales from "../TopSales/TopSales.vue";
 import data from "../../data/ProductSingleCategory.json";
 import ShoppeMall from "./ShoppeMall";
 import CategoryLeft from "./CategoryLeft";
@@ -29,7 +31,8 @@ export default {
     "shoppe-mall": ShoppeMall,
     "category-left": CategoryLeft,
     "sale-from-restaurant": SaleFromRestaurant,
-    "list-product-category": ListProductCategory
+    "list-product-category": ListProductCategory,
+    "top-sales": TopSales
   },
   data() {
     return {
