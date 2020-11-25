@@ -74,7 +74,7 @@
 
 <script>
 import Product from "./Product";
-import ProductData from "../../data/listProductData.json";
+import ProductData from "../../../data/listProductData.json";
 export default {
   data: function() {
     return {
@@ -90,5 +90,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "./Style-ListProduct.scss";
+@import "./Styles/Style-ListProduct.scss";
 </style>
