@@ -2,7 +2,8 @@
     "topsalesData": {
         "heading": {
             "title": "TOP SẢN PHẨM BÁN CHẠY",
-            "seemore": "Xem thêm"
+            "seemore": "Xem thêm",
+            "seemore__href": "#"
         },
         "content": {
             "items": [{

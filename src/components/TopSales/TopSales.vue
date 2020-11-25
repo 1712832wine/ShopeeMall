@@ -2,7 +2,7 @@
   <div id="topsales">
     <div id="topsales__heading" class="flex-row">
       <h2 class="title">{{ heading.title }}</h2>
-      <a href="" class="seemore">
+      <a :href="seemore__href" class="seemore">
         <span>{{ heading.seemore }}</span>
         <i class="fa fa-chevron-right icon" aria-hidden="true"></i>
       </a>
@@ -48,6 +48,9 @@ export default {
     align-items: center;
     padding: 5px 7px;
     color: rgb(238, 77, 45);
+    span {
+      font-size: 14px;
+    }
   }
   .icon {
     margin-left: 5px;
