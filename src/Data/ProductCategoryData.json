@@ -11,7 +11,7 @@
       "category_id": 78,
       "cmt_count": 4893,
       "ctime": 1539878256,
-      "currency": "VND",
+      "currency": "₫",
       "discount": "51%",
       "flag": 2,
       "historical_sold": 15513,
@@ -28,6 +28,7 @@
         "https://cf.shopee.vn/file/e0faa4b58902b3381cfc244895afb8bf",
         "https://cf.shopee.vn/file/8c8e11f22afce46647203ce7b9415ef1"
       ],
+      "label": "Yêu thích",
       "rating": {
         "rating_count": [4894, 41, 46, 152, 347, 4308],
         "rating_star": 4.8
@@ -35,13 +36,13 @@
       "item_id": 1589295236,
       "liked_count": 5196,
       "name": "Áo len nam cổ lọ màu mới nhất 2020",
-      "price": 9900000000,
+      "price": 10000000000,
       "price_before_discount": 20000000000,
-      "price_max": 9900000000,
+      "price_max": 10000000000,
       "price_max_before_discount": 20000000000,
-      "price_min": 9900000000,
+      "price_min": 10000000000,
       "price_min_before_discount": 20000000000,
-      "raw_discount": 51,
+      "raw_discount": 50,
       "shop_location": "Hà Nội",
       "shop_id": 38003654,
       "show_discount": 51,
@@ -86,7 +87,7 @@
       "category_id": 78,
       "cmt_count": 2572,
       "ctime": 1600858731,
-      "currency": "VND",
+      "currency": "₫",
       "discount": "32%",
       "flag": 2,
       "historical_sold": 10024,
@@ -103,6 +104,7 @@
         "https://cf.shopee.vn/file/81fbff22b9e83ec7ef4c1f377b1cecda",
         "https://cf.shopee.vn/file/08ccae27cdfd965ab581318f18d6df88"
       ],
+      "label": "Yêu thích",
       "rating": {
         "rating_count": [2572, 2, 3, 4, 75, 2488],
         "rating_star": 4.9
@@ -177,7 +179,7 @@
       "category_id": 78,
       "cmt_count": 902,
       "ctime": 1587365269,
-      "currency": "VND",
+      "currency": "₫",
       "discount": "40%",
       "flag": 2,
       "historical_sold": 2568,
@@ -192,6 +194,7 @@
         "https://cf.shopee.vn/file/b5236adcd8493beb3e840db42213e0eb",
         "https://cf.shopee.vn/file/140412dea9ecf4191c35c4e7f9275a73"
       ],
+      "label": "Yêu thích",
       "rating": {
         "rating_count": [902, 0, 2, 6, 15, 879],
         "rating_star": 4.9
@@ -225,7 +228,7 @@
       "category_id": 78,
       "cmt_count": 6726,
       "ctime": 1544063001,
-      "currency": "VND",
+      "currency": "₫",
       "discount": "48%",
       "flag": 2,
       "historical_sold": 10024,
@@ -242,6 +245,7 @@
         "https://cf.shopee.vn/file/fffdc5a853ac329f93862f6e876af578",
         "https://cf.shopee.vn/file/ccdd5af4f2bd7cb822efc44cdae0eb00"
       ],
+      "label": "Yêu thích",
       "rating": {
         "rating_count": [6729, 21, 26, 100, 274, 6308],
         "rating_star": 4.9
@@ -283,7 +287,7 @@
       "category_id": 78,
       "cmt_count": 2246,
       "ctime": 1596514357,
-      "currency": "VND",
+      "currency": "₫",
       "discount": "50%",
       "flag": 0,
       "historical_sold": 5152,
@@ -295,6 +299,7 @@
         "https://cf.shopee.vn/file/d32fd11502efe1d2c9066a6eef98184f",
         "https://cf.shopee.vn/file/3343efa2457c5f6ea1a954b1454cee48"
       ],
+      "label": "Yêu thích",
       "rating": {
         "rating_count": [2246, 13, 6, 31, 74, 2122],
         "rating_star": 4.9
@@ -340,7 +345,7 @@
       "category_id": 78,
       "cmt_count": 3633,
       "ctime": 1567826306,
-      "currency": "VND",
+      "currency": "₫",
       "discount": "48%",
       "flag": 2,
       "historical_sold": 13209,
@@ -357,6 +362,7 @@
         "https://cf.shopee.vn/file/85cef1f31d145acfb26220f9edd0ac52",
         "https://cf.shopee.vn/file/0a49d2d0bf8c12097593907dbe61c6f4"
       ],
+      "label": "Yêu thích",
       "rating": {
         "rating_count": [3633, 11, 11, 39, 179, 3393],
         "rating_star": 4.9
@@ -420,7 +426,7 @@
       "category_id": 78,
       "cmt_count": 1427,
       "ctime": 1547914447,
-      "currency": "VND",
+      "currency": "₫",
       "discount": "46%",
       "flag": 2,
       "historical_sold": 10680,
@@ -437,6 +443,7 @@
         "https://cf.shopee.vn/file/bc265ce06af3e02a20f8af029309fb9f",
         "https://cf.shopee.vn/file/e2f4c69203d675fcda5a69c003a128a7"
       ],
+      "label": "Yêu thích",
       "rating": {
         "rating_count": [1427, 7, 7, 16, 59, 1338],
         "rating_star": 4.9
@@ -517,7 +524,7 @@
       "category_id": 78,
       "cmt_count": 466,
       "ctime": 1588500472,
-      "currency": "VND",
+      "currency": "₫",
       "discount": "38%",
       "flag": 2,
       "historical_sold": 1610,
@@ -533,6 +540,7 @@
         "https://cf.shopee.vn/file/da8d57944c7f7effb0ed901b89257553",
         "https://cf.shopee.vn/file/911302c07bbc8643413a6f16a6cc0bad"
       ],
+      "label": "Yêu thích",
       "rating": {
         "rating_count": [466, 4, 1, 6, 5, 450],
         "rating_star": 4.9
@@ -584,7 +592,7 @@
       "category_id": 78,
       "cmt_count": 2807,
       "ctime": 1582535753,
-      "currency": "VND",
+      "currency": "₫",
       "discount": "10%",
       "flag": 2,
       "historical_sold": 7367,
@@ -601,6 +609,7 @@
         "https://cf.shopee.vn/file/df10da967199bfd509239216403eef63",
         "https://cf.shopee.vn/file/763c7e9fab667a7b16a2ab45914db2fa"
       ],
+      "label": "Yêu thích",
       "rating": {
         "rating_count": [2807, 11, 8, 35, 72, 2681],
         "rating_star": 4.9
@@ -668,7 +677,7 @@
       "category_id": 78,
       "cmt_count": 1426,
       "ctime": 1565795059,
-      "currency": "VND",
+      "currency": "₫",
       "discount": "50%",
       "flag": 2,
       "historical_sold": 3075,
@@ -685,6 +694,7 @@
         "https://cf.shopee.vn/file/a23d99fac3a81d8d2a43360702cc3628",
         "https://cf.shopee.vn/file/6f047bac32ba6d42eec8cebbaacfd9ac"
       ],
+      "label": "Yêu thích",
       "rating": {
         "rating_count": [1426, 6, 2, 24, 95, 1299],
         "rating_star": 4.8

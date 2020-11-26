@@ -15,7 +15,9 @@
         v-bind:ListService="listService"
       />
       <div class="contain-product-right">
-        <list-product-category />
+        <div class="shop-item-result">
+          <list-product-category />
+        </div>
       </div>
     </div>
   </div>
@@ -64,13 +66,19 @@ export default {
   margin: auto;
 }
 .contain {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  margin-top: 1rem;
+  margin-top: 1.875rem;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contain-product-right {
-  width: 80%;
+  width: 100%;
   height: 1000px;
 }
 </style>
