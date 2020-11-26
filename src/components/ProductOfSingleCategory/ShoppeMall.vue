@@ -25,10 +25,12 @@
                         </div>
                     </a>
                  </div>
-            </li>
-              
-            
+            </li>         
       </ul>
+     <div class="list-shoppeMall-rowChange">
+      <i class="fa fa-chevron-circle-left" @click="Back()" aria-hidden="true"></i>
+      <i class="fa fa-chevron-circle-right" @click="Next()" aria-hidden="true"></i>
+     </div>
     </div>
   </div>
 </template>
@@ -40,14 +42,26 @@ export default {
             type:Array,
         }
     },
+    methods:{
+      Next:function (){
+        var chuyen=0;
+        var chuyenSlide=document.getElementsByClassName("list-shoppeMall-row")[0];
+        var kichThuoc=document.getElementsByClassName("shoppeMallContent")[0].clientWidth;
+        chuyen+=kichThuoc;
+        chuyenSlide.style.marginLeft='-'+chuyen+"px";
+        chuyenSlide.style.li.display="block";
+      },
+       Back:function (){
+        var chuyen=0;
+        var chuyenSlide=document.getElementsByClassName("list-shoppeMall-row")[0];
+        var kichThuoc=document.getElementsByClassName("shoppeMallContent")[0].clientWidth;
+        chuyen-=kichThuoc;
+        chuyenSlide.style.marginLeft='-'+chuyen+"px";
+      }
+    },
       data:function() {
     return {};
   },
-    // data:function() {
-    //     return{
-    //                 url:"https://cf.shopee.vn/file/03b216ad2dfbb3d09c1776cdb88c01cd"
-    //     }
-    // }
 };
 </script>
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="mycontainer">
     <shoppe-mall v-bind:ListShoppeMall="listShoppeMall" />
     <div class="contain">
       <category-left v-bind:ListCategory="listCategory"
@@ -9,9 +9,7 @@
                     v-bind:ListActiveProduct="listActiveProduct"
                     v-bind:ListService="listService"
       />
-      <div class="contain-product-right">
-      Đây là right
-      </div>
+    <category-right/>
     </div>
   </div>
 </template>
@@ -19,11 +17,13 @@
 <script>
 import data from "../../data/ProductSingleCategory.json";
 import ShoppeMall from "./ShoppeMall";
-import CategoryLeft from "./CategoryLeft"
+import CategoryLeft from "./CategoryLeft";
+import CategoryRight from "./CategoryRight";
 export default {
   components: {
     "shoppe-mall": ShoppeMall,
     "category-left":CategoryLeft,
+    "category-right":CategoryRight,
   },
   data() {
     return {
@@ -40,9 +40,12 @@ export default {
 </script>
 
 <style lang="scss">
-.container {
+.mycontainer {
+  width: 1200px;
+  margin: auto;
   display: flex;
   flex-direction: column;
+  margin-top:10rem;
 }
 .contain {
   display: flex;
@@ -50,10 +53,4 @@ export default {
   margin-top: 1rem;
 }
 
-
-.contain-product-right {
-  width: 80%;
-  height: 1000px;
-  border: 1px solid black;
-}
 </style>
