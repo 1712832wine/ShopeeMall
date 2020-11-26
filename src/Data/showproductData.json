@@ -1,0 +1,92 @@
+{
+    "showproduct": {
+        "left": {
+            "image_and_slide": {
+                "image": "https://cf.shopee.vn/file/345416bea058bee08e689f6bb56805fc",
+                "image_overlay": "https://cf.shopee.vn/file/07417985b2b0867e29419f5a5dc62dc6",
+                "images": [
+                    "https://cf.shopee.vn/file/94d23e9008f15fcf2ad8681ec0cae873",
+                    "https://cf.shopee.vn/file/132051ca922349633d0ca42b420d6cc5_tn",
+                    "https://cf.shopee.vn/file/345416bea058bee08e689f6bb56805fc_tn",
+                    "https://cf.shopee.vn/file/a8cfcfed45753c9289723a972f45037c_tn",
+                    "https://cf.shopee.vn/file/4fb0a06a86d0edd8f0c5238d7bcf02e3_tn",
+                    "https://cf.shopee.vn/file/94d23e9008f15fcf2ad8681ec0cae873",
+                    "https://cf.shopee.vn/file/132051ca922349633d0ca42b420d6cc5_tn",
+                    "https://cf.shopee.vn/file/345416bea058bee08e689f6bb56805fc_tn"
+                ],
+                "describe": "Nhẫn đeo tay bằng thép không gỉ thời trang cá tính cho cặp đôi"
+            }
+        },
+        "add_on_deal_info": {
+            "add_on_deal_id": 1159515,
+            "add_on_deal_label": "Mua Kèm Deal Sốc",
+            "sub_type": 0
+        },
+        "brand": "No Brand",
+        "bundle_deal_info": null,
+        "category_id": 78,
+        "cmt_count": 4893,
+        "ctime": 1539878256,
+        "currency": "₫",
+        "discount": "51%",
+        "flag": 2,
+        "historical_sold": 15513,
+        "label": "Yêu thích",
+        "rating": {
+            "rating_count": [
+                4894,
+                41,
+                46,
+                152,
+                347,
+                4308
+            ],
+            "rating_star": 4.8
+        },
+        "item_id": 1589295236,
+        "liked_count": 5196,
+        "name": "Áo len nam cổ lọ màu mới nhất 2020",
+        "price": 10000000000,
+        "price_before_discount": 20000000000,
+        "price_max": 10000000000,
+        "price_max_before_discount": 20000000000,
+        "price_min": 10000000000,
+        "price_min_before_discount": 20000000000,
+        "raw_discount": 50,
+        "shop_location": "Hà Nội",
+        "shop_id": 38003654,
+        "show_discount": 51,
+        "sold": 4656,
+        "status": 1,
+        "stock": 496,
+        "tier_variations": [{
+                "images": [],
+                "name": "Màu",
+                "options": [
+                    "Đen",
+                    "Trắng",
+                    "Đỏ",
+                    "Xanh Than",
+                    "Xám đậm",
+                    "Cam",
+                    "Vàng Be",
+                    "Xanh Rêu"
+                ],
+                "properties": [],
+                "type": 0
+            },
+            {
+                "images": [],
+                "name": "Kích cỡ",
+                "options": [
+                    "M (45 - 60Kg)",
+                    "L (58 - 72 Kg)",
+                    "XL (68 - 82Kg)"
+                ],
+                "properties": [],
+                "type": 0
+            }
+        ],
+        "view_count": 195716
+    }
+}

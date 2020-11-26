@@ -1,7 +1,7 @@
 <template>
-  <div id="topsales-content">
+  <div id="topsales-content" ref="slide">
     <div class="content__wrap">
-      <div class="content__translate">
+      <div class="content__translate" ref="translate">
         <!-- items -->
         <top-sales-item
           v-for="item in content.items"
@@ -31,7 +31,7 @@
     <div
       class="button button-next"
       @click="handleNext()"
-      v-show="this.currentslide < this.number_slide"
+      v-show="this.currentslide < this.number_slide - 1"
     >
       <i class="fa fa-chevron-right" aria-hidden="true"></i>
     </div>
@@ -49,42 +49,39 @@ export default {
       type: Object,
       required: true,
     },
-    id_component: {
-      type: Number,
-      required: true,
-    },
   },
   data: function() {
     return {
       currentslide: 0,
       size: 198,
       item_per_slide: 6,
+      translate: 0,
     };
   },
   computed: {
     number_slide: function() {
-      return this.content.items.length + 1 - this.item_per_slide;
+      console.log(this.content.items.length + 2 - this.item_per_slide);
+      return this.content.items.length + 2 - this.item_per_slide;
     },
   },
   methods: {
     handlePrev: function() {
       if (this.currentslide > 0) {
         this.currentslide -= 1;
-        var content = document.getElementsByClassName("content__translate")[
-          this.id_component
-        ];
-        content.style.transform =
-          "translateX(" + this.size * this.currentslide + "px)";
+        this.translate -= this.size;
+        this.$refs.translate.style.transform =
+          "translateX(-" + this.translate + "px)";
       }
     },
     handleNext: function() {
-      if (this.currentslide < this.number_slide) {
+      console.log(this.currentslide);
+      console.log(this.number_slide - 1);
+      if (this.currentslide < this.number_slide - 1) {
+        console.log("tr");
         this.currentslide += 1;
-        var content = document.getElementsByClassName("content__translate")[
-          this.id_component
-        ];
-        content.style.transform =
-          "translateX(-" + this.size * this.currentslide + "px)";
+        this.translate += this.size;
+        this.$refs.translate.style.transform =
+          "translateX(-" + this.translate + "px)";
       }
     },
   },
