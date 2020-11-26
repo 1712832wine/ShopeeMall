@@ -1,12 +1,22 @@
 <template>
   <div class="row shop-item-result__items">
-    <product-category-item />
+    <product-category-item
+      v-for="product in listProduct"
+      :key="product.item_id"
+      :data="product"
+    />
   </div>
 </template>
 
 <script>
 import ProductCategoryItem from "./ProductCategoryItem";
+import data from "../../../data/ProductCategoryData.json";
 export default {
+  data: function() {
+    return {
+      listProduct: data.listProduct
+    };
+  },
   components: {
     "product-category-item": ProductCategoryItem
   }
