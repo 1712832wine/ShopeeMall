@@ -1,14 +1,19 @@
 <template>
   <div class="wrapper">
     <list-buy-more />
+    <div>
+      <shop-info />
+    </div>
   </div>
 </template>
 
 <script>
 import BuyMore from "../components/BuyMore/ListBuyMore";
+import ShopInfo from "../components/ShopInfo/ShopInfo";
 export default {
   components: {
-    "list-buy-more": BuyMore
+    "list-buy-more": BuyMore,
+    "shop-info": ShopInfo
   }
 };
 </script>
