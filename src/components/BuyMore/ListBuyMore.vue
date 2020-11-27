@@ -23,15 +23,6 @@
         >
           <buy-more-item />
         </div>
-        <!-- <div class="list-shock-deal__items--item-parent">
-          <buy-more-item />
-        </div>
-        <div class="list-shock-deal__items--item-parent">
-          <buy-more-item />
-        </div>
-        <div class="list-shock-deal__items--item-parent">
-          <buy-more-item />
-        </div> -->
       </div>
     </div>
     <div class="list-shock-deal__total">
