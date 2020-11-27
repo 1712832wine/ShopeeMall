@@ -30,11 +30,12 @@ const routes = [{
             component: () =>
                 import ("../pages/ProductCategory.vue")
         }]
-    }, {
+    },
+    {
         component: PublicRouter,
-        path: "/",
+        path: "/product_details/:id",
         children: [{
-            path: "/product_detail",
+            path: "",
             component: () =>
                 import ("../pages/ProductDetail.vue")
         }]
@@ -44,7 +45,10 @@ const routes = [{
 const router = new VueRouter({
     mode: "history",
     base: process.env.BASE_URL,
-    routes
+    routes,
+    scrollBehavior() {
+        return { x: 0, y: 0 };
+    }
 });
 
 export default router;

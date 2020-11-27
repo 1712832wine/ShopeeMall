@@ -1,7 +1,7 @@
 <template>
   <div class="column shop-item-result__item">
     <div>
-      <a href="#/">
+      <router-link tag="a" :to="`/product_details/${data.item_id}`">
         <div class="shop-item-result__item--wrapper">
           <div class="shop-item-result__item--image">
             <img
@@ -93,7 +93,7 @@
             <div class="content__info--address">{{ data.shop_location }}</div>
           </div>
         </div>
-      </a>
+      </router-link>
     </div>
   </div>
 </template>
