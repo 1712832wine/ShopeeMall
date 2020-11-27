@@ -1,5 +1,6 @@
 <template>
   <div class="wrapper">
+    <show-product />
     <list-buy-more />
     <div>
       <shop-info />
@@ -9,12 +10,14 @@
 
 <script>
 import BuyMore from "../components/BuyMore/ListBuyMore";
+import ShowProduct from "../components/ShowProduct/ShowProduct.vue";
 import ShopInfo from "../components/ShopInfo/ShopInfo";
 export default {
   components: {
+    "show-product": ShowProduct,
     "list-buy-more": BuyMore,
-    "shop-info": ShopInfo
-  }
+    "shop-info": ShopInfo,
+  },
 };
 </script>
 
