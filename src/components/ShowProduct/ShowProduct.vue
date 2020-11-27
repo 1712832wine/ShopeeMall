@@ -1,7 +1,7 @@
 <template>
   <div id="showproduct">
     <show-product-left :left="left" />
-    <show-product-right />
+    <show-product-right :right="right" />
   </div>
 </template>
 

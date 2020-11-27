@@ -51,6 +51,10 @@ export default {
     },
   },
   methods: {
+    callHidden: function() {
+      this.hidden_carousel = 1;
+      this.$emit("hiddenchanged", this.hidden_carousel);
+    },
     changeImage: function(item) {
       this.current_img = item;
       this.$emit("imgwaschanged", this.current_img);

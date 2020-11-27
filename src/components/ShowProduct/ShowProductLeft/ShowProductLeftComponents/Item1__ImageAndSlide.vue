@@ -1,36 +1,42 @@
 <template>
   <div class="image-and-slider">
     <!-- big image on the top -->
-    <div class="big-image-top">
-      <div
-        class="bg-image"
-        :style="'backgroundImage: url(' + this.current_img + ')'"
-      ></div>
-    </div>
+    <slot name="big-image">
+      <div class="big-image-top">
+        <div
+          class="bg-image"
+          :style="'backgroundImage: url(' + this.current_img + ')'"
+        ></div>
+      </div>
+    </slot>
+    <!-- slot for title in subitem__carousel hidden -->
+    <!-- it didn't show in detail pages -->
+
+    <slot name="mytitle"></slot>
+
     <!-- slider -->
-    <img-slider
-      :image_and_slide="image_and_slide"
-      @imgwaschanged="current_img = $event"
-    />
-    <!-- carousel hidden -->
-    <carousel-hidden
-      v-if="hidden_carousel"
-      :image_and_slide="image_and_slide"
-    />
+    <slot name="slider">
+      <img-slider
+        :image_and_slide="image_and_slide"
+        @imgwaschanged="current_img = $event"
+        @hiddenchanged="hidden_carousel = $event"
+      />
+    </slot>
   </div>
 </template>
 
 <script>
 import ImageSlider from "./SubItem__Slider.vue";
-import CarouselHidden from "./SubItem__CarouselHidden.vue";
+
 export default {
   data: function() {
     return {
       current_img: this.image_and_slide.image,
+      hidden_carousel: 0,
     };
   },
+
   components: {
-    "carousel-hidden": CarouselHidden,
     "img-slider": ImageSlider,
   },
   props: {
@@ -39,11 +45,13 @@ export default {
       required: true,
     },
   },
-
-  methods: {
-    callHidden: function() {
-      this.hidden_carousel = 1;
+  watch: {
+    hidden_carousel: function() {
+      this.$emit("hidden_carousel", this.hidden_carousel);
+      return this.hidden_carousel + 1;
     },
+  },
+  methods: {
     changeImage: function(item) {
       this.current_img = item;
     },

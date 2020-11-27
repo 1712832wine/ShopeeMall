@@ -1,49 +1,25 @@
 <template>
-  <div class="carousel_hidden">
-    <b-carousel
-      class="flex-item flex-item-1"
-      id="carousel-1"
-      v-model="slide"
-      :interval="4000"
-      controls
-      indicators
-      @sliding-start="onSlideStart"
-      @sliding-end="onSlideEnd"
-    >
-      <!-- Slides with image only -->
-      <b-carousel-slide
-        v-for="image in image_and_slide.images"
-        :key="image"
-        :img-src="image"
-      >
-        <div class="slide">
-          <div
-            class="bg-image"
-            :style="'backgroundImage: url(' + image + ')'"
-          ></div>
-        </div>
-      </b-carousel-slide>
-    </b-carousel>
-    <div class="flex-item flex-item-2">
-      <div class="title">
-        {{ image_and_slide.describe }}
+  <div>
+    <image-and-slide :image_and_slide="image_and_slide" class="carousel_hidden">
+      <template slot="big-image" class="flex-item"> </template>
+
+      <!-- <div class="flex-column flex-item"> -->
+      <div class="flex-collumn right">
+        <slot name="mytitle" class="title"><p>ahihi</p></slot>
+        <template slot="slider" class="slider"> </template>
       </div>
-      <div class="images">
-        <div v-for="item in image_and_slide.images" :key="item.id">
-          <div
-            :style="'backgroundImage: url(' + item + ')'"
-            class="bg-image img"
-            @mouseover="changeImage(item)"
-            @click="callHidden()"
-          ></div>
-        </div>
-      </div>
-    </div>
+
+      <!-- </div> -->
+    </image-and-slide>
   </div>
 </template>
 
 <script>
+import ImageAndSlide from "./Item1__ImageAndSlide.vue";
 export default {
+  components: {
+    "image-and-slide": ImageAndSlide,
+  },
   props: {
     image_and_slide: {
       type: Object,
@@ -55,12 +31,8 @@ export default {
 
 <style lang="scss" scoped>
 @import "../Style/Style__ShowProductLeft.scss";
-.slide {
-  width: 52.25rem;
-  height: 33.75rem;
-}
 .carousel_hidden {
-  display: flex;
+  display: flex !important;
   width: 52.25rem;
   height: 33.75rem;
   background: #fff;
@@ -69,10 +41,14 @@ export default {
   position: fixed;
   top: 10%;
   left: 25%;
+  padding: 15px 0 15px 15px;
 }
+.slide {
+  width: 52.25rem;
+  height: 33.75rem;
+}
+
 .flex-item {
   flex-grow: 1;
-  &-1 {
-  }
 }
 </style>
