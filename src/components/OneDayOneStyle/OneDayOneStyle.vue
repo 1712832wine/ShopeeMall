@@ -7,7 +7,7 @@
         <i class="fa fa-chevron-right icon" aria-hidden="true"></i>
       </a>
     </div>
-    <topsales-content :content="content" :id_component="1" />
+    <topsales-content :content="content" />
   </div>
 </template>
 

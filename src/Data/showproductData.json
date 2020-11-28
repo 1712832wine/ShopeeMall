@@ -1,0 +1,124 @@
+{
+    "showproduct": {
+        "left": {
+            "image_and_slide": {
+                "image": "https://cf.shopee.vn/file/345416bea058bee08e689f6bb56805fc",
+                "image_overlay": "https://cf.shopee.vn/file/07417985b2b0867e29419f5a5dc62dc6",
+                "images": [
+                    "https://cf.shopee.vn/file/94d23e9008f15fcf2ad8681ec0cae873",
+                    "https://cf.shopee.vn/file/132051ca922349633d0ca42b420d6cc5_tn",
+                    "https://cf.shopee.vn/file/345416bea058bee08e689f6bb56805fc_tn",
+                    "https://cf.shopee.vn/file/a8cfcfed45753c9289723a972f45037c_tn",
+                    "https://cf.shopee.vn/file/4fb0a06a86d0edd8f0c5238d7bcf02e3_tn",
+                    "https://cf.shopee.vn/file/94d23e9008f15fcf2ad8681ec0cae873",
+                    "https://cf.shopee.vn/file/132051ca922349633d0ca42b420d6cc5_tn",
+                    "https://cf.shopee.vn/file/345416bea058bee08e689f6bb56805fc_tn"
+                ],
+                "describe": "Nhẫn đeo tay bằng thép không gỉ thời trang cá tính cho cặp đôi"
+            },
+            "share": {
+                "title": "Chia sẻ: ",
+                "heard": "fa fa-heart-o",
+                "liked_link": "/login",
+                "liked_text": "Đã thích",
+                "liked_count": 3700,
+                "icons_url": "https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/cf2cbea564f70cc2c1e293c629729b6a.png",
+                "list_icon": [{
+                        "myclass": "sprite-product-sharing-fm",
+                        "href": "#"
+                    },
+                    {
+                        "myclass": "sprite-product-sharing-fb",
+                        "href": "#"
+                    },
+                    {
+                        "myclass": "sprite-product-sharing-gp",
+                        "href": "#"
+                    },
+                    {
+                        "myclass": "sprite-product-sharing-pinterest",
+                        "href": "#"
+                    },
+                    {
+                        "myclass": "sprite-product-sharing-twitter",
+                        "href": "#"
+                    }
+                ]
+            }
+        },
+        "right": {
+            "heading": {
+                "label": "Yêu thích",
+                "name": "Nhẫn đeo tay bằng thép không gỉ thời trang cá tính cho cặp đôi"
+            },
+            "rating": {
+                "rating_star": 4.9,
+                "evaluate": {
+                    "title": "Đánh giá",
+                    "nums": 598,
+                    "star_icon": {
+                        "full": "fa-star",
+                        "null": "fa-star-o",
+                        "haft": "fa-star-half-o"
+                    }
+                },
+                "sold": {
+                    "title": "Đã bán",
+                    "nums": 1700
+                }
+            },
+            "pricing": {
+                "price": 10000000000,
+                "price_before_discount": 20000000000,
+                "raw_discount": 50,
+                "commitment": {
+                    "img_url": "https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/d7cb3c110ef860cca3969ab0cd6c2ac9.png",
+                    "title": "Ở đâu rẻ hơn, Shopee hoàn tiền",
+                    "icon_question": "fa fa-question-circle-o"
+                }
+            },
+            "transport": {
+                "title": "Vận chuyển",
+                "domestic": {
+                    "content1": "Miễn Phí Vận Chuyển",
+                    "content2": "Miễn Phí Vận Chuyển khi đơn đạt giá trị tối thiểu",
+                    "icon": "https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/9d21899f3344277e34d40bfc08f60bc7.png"
+                },
+                "inter": {
+                    "icon_plane": "fa fa-plane",
+                    "from": "Vận Chuyển Từ",
+                    "place1": "Nước ngoài",
+                    "to": "tới ",
+                    "default": "Huyện Ba Vì, Hà Nội",
+                    "dropdown_icon": "fa fa-caret-down",
+                    "fee": "Phí vận chuyển",
+                    "fee_nums": 10000
+                }
+            },
+            "sizing": {
+                "title": "Size",
+                "sizes": [
+                    "size 6",
+                    "size 7",
+                    "size 8",
+                    "size 9"
+                ]
+            },
+            "numbers": {
+                "title": "Số lượng",
+                "number": 31366,
+                "icon_cart": "fa fa-cart-plus",
+                "add_to_cart": "Thêm vào giỏ hàng",
+                "buy": "Mua ngay"
+            },
+            "footer": {
+                "href": "#",
+                "img_url": "https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/bca2e6323e918c445dfe0279ebbc2c39.png",
+                "contents": {
+                    "item1": "Shopee Đảm Bảo",
+                    "item2": "3 Ngày Trả Hàng / Hoàn Tiền"
+                }
+            }
+        }
+    }
+}
