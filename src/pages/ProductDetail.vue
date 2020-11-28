@@ -4,6 +4,9 @@
     <list-buy-more />
     <div>
       <shop-info />
+      <div class="page-product__content">
+        <product-content-left />
+      </div>
     </div>
   </div>
 </template>
@@ -12,12 +15,14 @@
 import BuyMore from "../components/BuyMore/ListBuyMore";
 import ShowProduct from "../components/ShowProduct/ShowProduct.vue";
 import ShopInfo from "../components/ShopInfo/ShopInfo";
+import ProductContentLeft from "../components/ProductContentDetails/ProductContentLeft/ProductContentLeft";
 export default {
   components: {
     "show-product": ShowProduct,
     "list-buy-more": BuyMore,
     "shop-info": ShopInfo,
-  },
+    "product-content-left": ProductContentLeft
+  }
 };
 </script>
 
@@ -27,5 +32,13 @@ export default {
   margin: auto;
   margin-top: 140px;
   margin-bottom: 15px;
+}
+
+.page-product__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 </style>
