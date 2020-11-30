@@ -547,33 +547,6 @@
         border-color: #ee4d2d;
       }
     }
-    .selected {
-      color: #ee4d2d;
-      border-color: #ee4d2d;
-      &__tick {
-        width: 0.9375rem;
-        height: 0.9375rem;
-        position: absolute;
-        overflow: hidden;
-        right: 0;
-        bottom: 0;
-        i.fa-check {
-          position: absolute;
-          right: 0;
-          bottom: 0;
-          color: #fff;
-          font-size: 8px;
-        }
-        &::before {
-          border: 0.9375rem solid transparent;
-          border-bottom-color: #ee4d2d;
-          content: "";
-          position: absolute;
-          right: -0.9375rem;
-          bottom: 0;
-        }
-      }
-    }
   }
   &__quantity {
     display: -webkit-box;

@@ -55,53 +55,20 @@
           <div v-if="isShowForm === true" class="form-classification">
             <div class="form-classification__title">Phân loại hàng</div>
             <div class="form-classification__selection">
-              <div class="form-classification__selection-item">
+              <div
+                v-for="(item, index) in listData"
+                :key="index"
+                class="form-classification__selection-item"
+              >
                 <div class="selection-item__wrapper">
-                  <div class="selection-item__title">Màu</div>
+                  <div class="selection-item__title">{{ item.name }}</div>
                   <div class="selection-item__items">
-                    <button class="selection-item__items--item selected">
-                      Đen
-                      <div class="selected__tick">
-                        <i class="fa fa-check" aria-hidden="true"></i>
-                      </div>
-                    </button>
-                    <button class="selection-item__items--item">Trắng</button>
-                    <button class="selection-item__items--item">Đỏ</button>
-                    <button class="selection-item__items--item">
-                      Xanh Than
-                    </button>
-                    <button class="selection-item__items--item">
-                      Xám Nhạt
-                    </button>
-                    <button class="selection-item__items--item">
-                      Xám đậm
-                    </button>
-                    <button class="selection-item__items--item">Cam</button>
-                    <button class="selection-item__items--item">
-                      Vàng Be
-                    </button>
-                    <button class="selection-item__items--item">
-                      Xanh Rêu
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="form-classification__selection-item">
-                <div class="selection-item__wrapper">
-                  <div class="selection-item__title">Kích cỡ</div>
-                  <div class="selection-item__items">
-                    <button class="selection-item__items--item selected">
-                      M (45 - 60Kg)
-                      <div class="selected__tick">
-                        <i class="fa fa-check" aria-hidden="true"></i>
-                      </div>
-                    </button>
-                    <button class="selection-item__items--item">
-                      L (58 - 72 Kg)
-                    </button>
-                    <button class="selection-item__items--item">
-                      XL (68 - 82Kg)
-                    </button>
+                    <button-selected
+                      v-for="(itemData, index) in item.options"
+                      :key="index"
+                      :data="itemData"
+                      :isShow="isShow"
+                    />
                   </div>
                 </div>
               </div>
@@ -109,15 +76,15 @@
                 <div class="selection-item__wrapper">
                   <div class="selection-item__title">Số lượng</div>
                   <div class="selection-item__quantity">
-                    <button class="icon">
+                    <button @click="handleMinus()" class="icon">
                       <i class="fa fa-minus" aria-hidden="true"></i>
                     </button>
                     <input
                       class="selection-item__input-quantity icon"
                       type="text"
-                      value="1"
+                      :value="value"
                     />
-                    <button class="icon">
+                    <button @click="handlePlus()" class="icon">
                       <i class="fa fa-plus" aria-hidden="true"></i>
                     </button>
                   </div>
@@ -148,12 +115,30 @@
 </template>
 
 <script>
+import BuyItemData from "../../data/BuyItemData.json";
+import Button from "./Button";
 export default {
+  components: {
+    "button-selected": Button
+  },
   data: function() {
     return {
+      listData: BuyItemData.tier_variations,
       image: "https://cf.shopee.vn/file/1976c288f9236defb28f7268d6a5615f_tn",
-      isShowForm: false
+      isShowForm: false,
+      value: 1,
+      isShow: ""
     };
+  },
+  methods: {
+    handlePlus() {
+      this.value += 1;
+    },
+    handleMinus() {
+      if (this.value > 1) {
+        this.value -= 1;
+      }
+    }
   }
 };
 </script>

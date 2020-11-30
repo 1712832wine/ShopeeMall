@@ -22,14 +22,15 @@
           >
             <a href="#"> {{ item.nameSingleCategory }}</a>
           </li>
-          <h6></h6>
         </ul>
-        <div class="list-category-dropdown">
+        <div class="list-category-dropdown" @click="Open">
           <div class="list-category-dropdown-header">
             Thêm
-            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            <a href="#dropdown" data-toggle="collapse" ><i class="fa fa-chevron-down"  aria-hidden="true"></i> </a>
           </div>
-          <div class="list-category-dropdown-body"></div>
+          <div id="dropdown" class="panel-collapse collapse">
+           Tueej ok
+          </div>
         </div>
       </div>
     </div>
@@ -186,7 +187,16 @@ export default {
       type: Array
     }
   },
-  data: function() {
+  methods: {
+    Open:function(){
+      var element=document.getElementsByClassName("list-category-dropdown");
+      // element.style.height="auto";
+      // element.style.opacity="1";
+      element.style.color="red";
+    }
+  },
+
+  data: function () {
     return {};
   }
 };

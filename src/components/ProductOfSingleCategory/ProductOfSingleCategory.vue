@@ -65,6 +65,14 @@ export default {
   flex-direction: column;
   margin: auto;
 }
+
+.mycontainer {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top:10rem;
+}
 .contain {
   display: -webkit-box;
   display: -webkit-flex;
