@@ -102,14 +102,17 @@
                     "size 7",
                     "size 8",
                     "size 9"
-                ]
+                ],
+                "check_icon": "fa fa-check"
             },
             "numbers": {
                 "title": "Số lượng",
                 "number": 31366,
                 "icon_cart": "fa fa-cart-plus",
                 "add_to_cart": "Thêm vào giỏ hàng",
-                "buy": "Mua ngay"
+                "buy": "Mua ngay",
+                "href_add": "#",
+                "href_buy": "#"
             },
             "footer": {
                 "href": "#",

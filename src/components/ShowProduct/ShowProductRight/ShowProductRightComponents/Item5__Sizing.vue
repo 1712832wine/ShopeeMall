@@ -1,8 +1,21 @@
 <template>
   <div class="mp-container flex center">
     <span class="title">{{ sizing.title }}</span>
-    <button v-for="item in sizing.sizes" :key="item" class="button">
+    <button
+      v-for="(item, index) in sizing.sizes"
+      :key="item"
+      class="button"
+      @click="Click(index)"
+      :class="{ button_checked: index == IsChecked }"
+    >
       {{ item }}
+      <div class="checked" v-if="index == IsChecked">
+        <i
+          :class="sizing.check_icon"
+          class="checked_icon"
+          aria-hidden="true"
+        ></i>
+      </div>
     </button>
   </div>
 </template>
@@ -15,11 +28,20 @@ export default {
       required: true,
     },
   },
+  data: function() {
+    return { IsChecked: -1 };
+  },
+  methods: {
+    Click: function(index) {
+      this.IsChecked = index;
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 @import "../Style/Style__ShowProductRight.scss";
+$color: #ee4d2d;
 .button {
   cursor: pointer;
   min-width: 5rem;
@@ -36,8 +58,41 @@ export default {
   word-break: break-word;
   align-items: center;
   &:hover {
-    color: #ee4d2d;
-    border-color: #ee4d2d;
+    color: $color;
+    border-color: $color;
+  }
+  &_checked {
+    color: $color;
+    border-color: $color;
+  }
+}
+.checked {
+  color: #ee4d2d;
+  border-color: #ee4d2d;
+  width: 0.9375rem;
+  height: 0.9375rem;
+  position: absolute;
+  overflow: hidden;
+  right: 0;
+  bottom: 0;
+  .button:hover {
+    color: $color;
+    border-color: $color;
+  }
+  i.checked_icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    font-size: 8px;
+  }
+  &::before {
+    border: 0.9375rem solid transparent;
+    border-bottom-color: #ee4d2d;
+    content: "";
+    position: absolute;
+    right: -0.9375rem;
+    bottom: 0;
   }
 }
 </style>
