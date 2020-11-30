@@ -49,7 +49,9 @@
               </div>
             </div>
           </div>
-          <div class="product__card-hover">Tìm sản phẩm tương tự</div>
+          <slot name="find">
+            <div class="product__card-hover">Tìm sản phẩm tương tự</div>
+          </slot>
         </div>
       </a>
     </div>
@@ -63,8 +65,8 @@ export default {
   props: {
     data: {
       type: Object,
-      required: true
-    }
+      required: true,
+    },
   },
   computed: {
     historicalSold: function() {
@@ -75,8 +77,8 @@ export default {
         return Math.round(h_n * 100) / 100 + "K";
       }
       return sold;
-    }
-  }
+    },
+  },
 };
 </script>
 

@@ -7,7 +7,7 @@
         <i class="fa fa-chevron-right icon" aria-hidden="true"></i>
       </a>
     </div>
-    <topsales-content :content="content" />
+    <topsales-content :content="content" :size="198" />
   </div>
 </template>
 
@@ -18,11 +18,11 @@ import topsales_data from "../../data/topsalesData.json";
 import topsalescontent from "./TopSalesContent.vue";
 export default {
   components: {
-    "topsales-content": topsalescontent
+    "topsales-content": topsalescontent,
   },
   data: function() {
     return topsales_data.topsalesData;
-  }
+  },
 };
 </script>
 
