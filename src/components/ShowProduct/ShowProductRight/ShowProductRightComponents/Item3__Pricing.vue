@@ -33,12 +33,12 @@ export default {
   props: {
     pricing: {
       type: Object,
-      required: true,
+      required: true
     },
     data: function() {
       return { currency: "₫" };
-    },
-  },
+    }
+  }
 };
 </script>
 

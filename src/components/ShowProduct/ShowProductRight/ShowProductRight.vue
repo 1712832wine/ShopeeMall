@@ -23,8 +23,8 @@ export default {
   props: {
     right: {
       type: Object,
-      required: true,
-    },
+      required: true
+    }
   },
   components: {
     "right-heading": Heading,
@@ -33,8 +33,8 @@ export default {
     "right-transport": Transport,
     "right-sizing": Sizing,
     "right-numbers": Numbers,
-    "right-footer": Footer,
-  },
+    "right-footer": Footer
+  }
 };
 </script>
 

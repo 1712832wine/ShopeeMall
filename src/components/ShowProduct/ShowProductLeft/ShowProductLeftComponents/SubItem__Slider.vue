@@ -32,8 +32,8 @@ export default {
   props: {
     image_and_slide: {
       type: Object,
-      required: true,
-    },
+      required: true
+    }
   },
   data: function() {
     return {
@@ -42,13 +42,13 @@ export default {
       translate: 0,
       item_per_slide: 5,
       hidden_carousel: 0,
-      current_img: "",
+      current_img: ""
     };
   },
   computed: {
     number_slide: function() {
       return this.image_and_slide.images.length + 1 - this.item_per_slide;
-    },
+    }
   },
   methods: {
     callHidden: function() {
@@ -74,8 +74,8 @@ export default {
         this.$refs.translate.style.transform =
           "translateX(-" + this.translate + "px)";
       }
-    },
-  },
+    }
+  }
 };
 </script>
 

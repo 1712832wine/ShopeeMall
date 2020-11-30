@@ -21,8 +21,8 @@ export default {
   props: {
     left: {
       type: Object,
-      required: true,
-    },
+      required: true
+    }
   },
   data: function() {
     return { hidden_carousel: 0 };
@@ -30,8 +30,8 @@ export default {
   components: {
     "image-and-slide": ImageAndSlide,
     "share-bottom": Share,
-    "carousel-hidden": CarouselHidden,
-  },
+    "carousel-hidden": CarouselHidden
+  }
 };
 </script>
 

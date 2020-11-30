@@ -6,6 +6,7 @@
       <shop-info />
       <div class="page-product__content">
         <product-content-left />
+        <product-content-right />
       </div>
     </div>
   </div>
@@ -16,12 +17,14 @@ import BuyMore from "../components/BuyMore/ListBuyMore";
 import ShowProduct from "../components/ShowProduct/ShowProduct.vue";
 import ShopInfo from "../components/ShopInfo/ShopInfo";
 import ProductContentLeft from "../components/ProductContentDetails/ProductContentLeft/ProductContentLeft";
+import ProductContentRight from "../components/ProductContentDetails/ProductContentRight/ProductContentRight";
 export default {
   components: {
     "show-product": ShowProduct,
     "list-buy-more": BuyMore,
     "shop-info": ShopInfo,
-    "product-content-left": ProductContentLeft
+    "product-content-left": ProductContentLeft,
+    "product-content-right": ProductContentRight
   }
 };
 </script>

@@ -32,24 +32,24 @@ export default {
   data: function() {
     return {
       current_img: this.image_and_slide.image,
-      hidden_carousel: 0,
+      hidden_carousel: 0
     };
   },
 
   components: {
-    "img-slider": ImageSlider,
+    "img-slider": ImageSlider
   },
   props: {
     image_and_slide: {
       type: Object,
-      required: true,
-    },
+      required: true
+    }
   },
   watch: {
     hidden_carousel: function() {
       this.$emit("hidden_carousel", this.hidden_carousel);
       return this.hidden_carousel + 1;
-    },
+    }
   },
   methods: {
     changeImage: function(item) {
@@ -70,8 +70,8 @@ export default {
         this.$refs.translate.style.transform =
           "translateX(-" + this.translate + "px)";
       }
-    },
-  },
+    }
+  }
 };
 </script>
 
