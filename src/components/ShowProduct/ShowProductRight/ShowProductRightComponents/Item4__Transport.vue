@@ -52,7 +52,11 @@
             <!--start phí vận chuyển -->
             <div class="flex center" name="fee">
               <div class="transport-item">{{ transport.inter.fee }}</div>
-              <div name="number" class="dropdown">
+              <div
+                name="number"
+                class="dropdown"
+                @hover="transport - component"
+              >
                 {{ transport.inter.fee_nums }}
                 <i :class="transport.inter.dropdown_icon" aria-hidden="true">
                 </i>
@@ -67,7 +71,11 @@
 </template>
 
 <script>
+import TransportComponent from "./TransportComponent/TransportComponent.vue";
 export default {
+  components: {
+    "transport-component": TransportComponent,
+  },
   props: {
     transport: {
       type: Object,

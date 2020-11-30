@@ -15,13 +15,17 @@
     <!-- row1 -->
     <!--row2: button buy and add to cart -->
     <div class="flex center margintop-15">
-      <button class="button_type2 orange button_add" name="add_to_cart">
-        <i :class="numbers.icon_cart" aria-hidden="true" class="orange"></i>
-        {{ numbers.add_to_cart }}
-      </button>
-      <button class="button_type2 button_buy" name="buy">
-        {{ numbers.buy }}
-      </button>
+      <a :href="numbers.href_add">
+        <button class="button_type2 orange button_add" name="add_to_cart">
+          <i :class="numbers.icon_cart" aria-hidden="true" class="orange"></i>
+          {{ numbers.add_to_cart }}
+        </button>
+      </a>
+      <a :href="numbers.href_buy">
+        <button class="button_type2 button_buy" name="buy">
+          {{ numbers.buy }}
+        </button>
+      </a>
     </div>
     <!--row:2 end button buy and add to cart  -->
   </div>
