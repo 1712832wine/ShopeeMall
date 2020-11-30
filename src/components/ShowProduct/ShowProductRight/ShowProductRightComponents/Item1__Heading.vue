@@ -10,9 +10,9 @@ export default {
   props: {
     heading: {
       type: Object,
-      required: true,
-    },
-  },
+      required: true
+    }
+  }
 };
 </script>
 

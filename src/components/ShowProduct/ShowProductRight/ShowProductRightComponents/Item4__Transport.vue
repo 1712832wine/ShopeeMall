@@ -71,12 +71,12 @@ export default {
   props: {
     transport: {
       type: Object,
-      required: true,
+      required: true
     },
     data: function() {
       return { currency: "₫" };
-    },
-  },
+    }
+  }
 };
 </script>
 
