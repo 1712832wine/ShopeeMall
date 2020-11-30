@@ -29,6 +29,36 @@
       "id": 6,
       "url_top": "https://cf.shopee.vn/file/6d90553d0565f9b6ce35fa487c73e64c",
       "url_bottom": "https://cf.shopee.vn/file/b719dd5ac727046582ea0a36a3e65cdb"
+    },
+    {
+      "id": 7,
+      "url_top": "https://cf.shopee.vn/file/ee39f995ad6414cc6dc25b35de30eb9f",
+      "url_bottom": "https://cf.shopee.vn/file/6a7f8041304456669e173f4108d93ada"
+    },
+    {
+      "id": 8,
+      "url_top": "https://cf.shopee.vn/file/25425db5146c380b9a9a8851ecc1746f",
+      "url_bottom": "https://cf.shopee.vn/file/47befc7988bf420e7a32b3fb8bbbf27a"
+    },
+    {
+      "id": 9,
+      "url_top": "https://cf.shopee.vn/file/404be71e6b617f6bd9f3c3a4f187b455",
+      "url_bottom": "https://cf.shopee.vn/file/c422e8f7399025fee55c292a2d9df05d"
+    },
+    {
+      "id": 10,
+      "url_top": "https://cf.shopee.vn/file/1f735499892080ad5e66d220d939710a",
+      "url_bottom": "https://cf.shopee.vn/file/d7a479bfef4f0b4f478e31206b754b10"
+    },
+    {
+      "id": 11,
+      "url_top": "https://cf.shopee.vn/file/21508f8fd8aaf9465874045e15f1e8e0",
+      "url_bottom": "https://cf.shopee.vn/file/67afb2bc2714cbc6700d43b3684c65ce"
+    },
+    {
+      "id": 12,
+      "url_top": "https://cf.shopee.vn/file/b2f68e3ebfef7dfc64207538c75d404c",
+      "url_bottom": "https://cf.shopee.vn/file/b719dd5ac727046582ea0a36a3e65cdb"
     }
   ],
 
@@ -56,19 +86,19 @@
     { "nameUnitTransport": "Ninja Van" },
     { "nameUnitTransport": "J&T Express" }
   ],
-  "ListTypeShop":[
-    {"nameTypeShop":"Shopee Mall"},
-    {"nameTypeShop":"Shop yêu thích"},
-    {"nameTypeShop":"Xử lí đơn hàng bởi Shoppe"}
+  "ListTypeShop": [
+    { "nameTypeShop": "Shopee Mall" },
+    { "nameTypeShop": "Shop yêu thích" },
+    { "nameTypeShop": "Xử lí đơn hàng bởi Shoppe" }
   ],
-  "ListActiveProduct":[
-    {"nameActiveProduct":"Sản phẩm mới"},
-    {"nameActiveProduct":"Sản phẩm dã dùng"}
+  "ListActiveProduct": [
+    { "nameActiveProduct": "Sản phẩm mới" },
+    { "nameActiveProduct": "Sản phẩm dã dùng" }
   ],
-  "ListService":[
-    {"nameService":"Freeship Xtra"},
-    {"nameService":"Hoàn xu Xtra"},
-    {"nameService":"Đang giảm giá"},
-    {"nameService":"Miễn phí vận chuyển"}
+  "ListService": [
+    { "nameService": "Freeship Xtra" },
+    { "nameService": "Hoàn xu Xtra" },
+    { "nameService": "Đang giảm giá" },
+    { "nameService": "Miễn phí vận chuyển" }
   ]
 }

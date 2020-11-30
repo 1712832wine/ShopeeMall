@@ -21,7 +21,7 @@
           class="list-shock-deal__items--item-parent"
           :class="{ nopad: i === 1 }"
         >
-          <buy-more-item />
+          <buy-more-item :data="dataBuyMore" />
         </div>
       </div>
     </div>
@@ -57,7 +57,13 @@
 
 <script>
 import BuyMoreItem from "./BuyMoreItem";
+import BuyItemData from "../../data/BuyItemData.json";
 export default {
+  data() {
+    return {
+      dataBuyMore: BuyItemData
+    };
+  },
   components: {
     "buy-more-item": BuyMoreItem
   }
