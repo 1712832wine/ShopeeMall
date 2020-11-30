@@ -56,10 +56,11 @@ export default {
   color: rgba(0, 0, 0, 0.54);
 }
 .transport {
+  width: 400px;
   position: absolute;
   background-color: #fafafa;
   z-index: 101;
-  left: 275px;
+  left: 0px;
   padding: 0 1.75rem 0.9375rem;
   overflow-y: auto;
   max-height: 400px;

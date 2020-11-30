@@ -52,16 +52,22 @@
             <!--start phí vận chuyển -->
             <div class="flex center" name="fee">
               <div class="transport-item">{{ transport.inter.fee }}</div>
-              <div name="number" class="dropdown" @click="ChangeHover()">
+              <div
+                name="number"
+                class="dropdown"
+                @mouseover="ChangeHover()"
+                @mouseleave="ChangeHover()"
+              >
                 {{ addcurrency(transport.inter.fee_nums) }}
                 <i :class="transport.inter.dropdown_icon" aria-hidden="true">
                 </i>
+                <transport-component
+                  v-if="this.Ishover.ishover"
+                  :transport_component="transport.transport_component"
+                />
               </div>
             </div>
-            <transport-component
-              v-if="this.Ishover.ishover"
-              :transport_component="transport.transport_component"
-            />
+
             <provinces-component
               v-if="this.Isclick.isclick"
               :provinces="transport.provinces"
