@@ -93,6 +93,19 @@
                     "dropdown_icon": "fa fa-caret-down",
                     "fee": "Phí vận chuyển",
                     "fee_nums": 10000
+                },
+                "transport_component": {
+                    "title": "Vận chuyển nhanh quốc tế",
+                    "header": "Standard Express",
+                    "fee_nums": 10000,
+                    "receive": "nhận hàng vào ",
+                    "from": "6Th12",
+                    "to": "10Th12",
+                    "free": "Miễn phí vận chuyển",
+                    "for": "cho đơn hàng từ",
+                    "price_free": 50000,
+                    "reduce": "giảm tối đa",
+                    "price_reduce": 20000
                 }
             },
             "sizing": {
