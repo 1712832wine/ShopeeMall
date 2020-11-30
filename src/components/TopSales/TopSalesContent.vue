@@ -3,21 +3,26 @@
     <div class="content__wrap">
       <div class="content__translate" ref="translate">
         <!-- items -->
-        <top-sales-item
-          v-for="item in content.items"
-          :key="item.id"
-          :item="item"
-        />
-        <!-- seemore -->
-        <a :href="content.seemore.href">
-          <div class="seemore__item">
-            <button class="seemore__icon">
-              <i class="fa fa-chevron-right" aria-hidden="true"></i>
-            </button>
+        <slot name="items">
+          <top-sales-item
+            v-for="item in content.items"
+            :key="item.id"
+            :item="item"
+          />
+        </slot>
 
-            <span>{{ content.seemore.text }}</span>
-          </div>
-        </a>
+        <!-- seemore -->
+        <slot name="seemore">
+          <a :href="content.seemore.href">
+            <div class="seemore__item">
+              <button class="seemore__icon">
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+              </button>
+
+              <span>{{ content.seemore.text }}</span>
+            </div>
+          </a>
+        </slot>
       </div>
     </div>
     <!-- button controls -->
@@ -42,27 +47,34 @@
 import TopSalesItem from "./TopSalesItem.vue";
 export default {
   components: {
-    "top-sales-item": TopSalesItem
+    "top-sales-item": TopSalesItem,
   },
   props: {
     content: {
       type: Object,
-      required: true
-    }
+      required: true,
+    },
+    size: {
+      type: Number,
+      required: true,
+    },
+    seemore: {
+      type: Number,
+      default: 1,
+    },
   },
   data: function() {
     return {
       currentslide: 0,
-      size: 198,
+      // size: 198,
       item_per_slide: 6,
-      translate: 0
+      translate: 0,
     };
   },
   computed: {
     number_slide: function() {
-      console.log(this.content.items.length + 2 - this.item_per_slide);
-      return this.content.items.length + 2 - this.item_per_slide;
-    }
+      return this.content.items.length + this.seemore + 1 - this.item_per_slide;
+    },
   },
   methods: {
     handlePrev: function() {
@@ -74,17 +86,14 @@ export default {
       }
     },
     handleNext: function() {
-      console.log(this.currentslide);
-      console.log(this.number_slide - 1);
       if (this.currentslide < this.number_slide - 1) {
-        console.log("tr");
         this.currentslide += 1;
         this.translate += this.size;
         this.$refs.translate.style.transform =
           "translateX(-" + this.translate + "px)";
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -177,7 +186,7 @@ a {
   transition: all 0.1s cubic-bezier(0.4, 0, 0.6, 1);
   justify-content: center;
   align-items: center;
-  z-index: 100;
+  z-index: 10;
   outline: 0;
   &-next {
     right: 0;
