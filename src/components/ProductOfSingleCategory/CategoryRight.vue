@@ -7,9 +7,7 @@
           <div class="filter-sort-options__option">Mới nhất </div>
           <div class="filter-sort-options__option">Bán chạy </div>
           <div class="filter-sort-options__option ">
-            <div class="select-with-price">
-
-       
+            <div class="select-with-price"> 
                  <span>
                   Giá
                 </span>

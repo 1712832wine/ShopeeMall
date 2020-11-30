@@ -16,11 +16,11 @@ import TopSearchContent from "./TopSearchContent.vue";
 export default {
   components: {
     "topsearch-header": TopSearchHeader,
-    "topsearch-content": TopSearchContent,
+    "topsearch-content": TopSearchContent
   },
   data: function() {
     return topsearch_Data;
-  },
+  }
 };
 </script>
 

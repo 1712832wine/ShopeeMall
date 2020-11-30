@@ -17,12 +17,20 @@ export default {
   props: {
     data: {
       type: Object,
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 @import "../Footer.scss";
+a:hover {
+  &/deep/ p {
+    color: $colorhover;
+  }
+  i {
+    color: $fontcolor;
+  }
+}
 </style>

@@ -57,7 +57,7 @@
 </template>
 
 <script>
-import helpFunction from "../../helpers/helpFunction";
+import helpFunction from "../../../helpers/helpFunction";
 export default {
   mixins: [helpFunction],
   props: {
@@ -81,5 +81,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "./Style-Product.scss";
+@import "./Styles/Style-Product.scss";
 </style>

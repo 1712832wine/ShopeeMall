@@ -36,5 +36,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "./Style-Banner.scss";
+@import "./Styles/Style-Banner.scss";
 </style>

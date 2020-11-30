@@ -115,5 +115,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import "./Style-Banner.scss";
+@import "./Styles/Style-Banner.scss";
 </style>
