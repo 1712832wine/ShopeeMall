@@ -13,9 +13,9 @@ export default {
   props: {
     footer: {
       type: Object,
-      required: true,
-    },
-  },
+      required: true
+    }
+  }
 };
 </script>
 

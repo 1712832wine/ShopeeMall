@@ -15,11 +15,11 @@ import ShowProductRight from "./ShowProductRight/ShowProductRight.vue";
 export default {
   components: {
     "show-product-left": ShowProductLeft,
-    "show-product-right": ShowProductRight,
+    "show-product-right": ShowProductRight
   },
   data: function() {
     return ShowProductData.showproduct;
-  },
+  }
 };
 </script>
 

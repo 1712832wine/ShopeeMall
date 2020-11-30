@@ -18,11 +18,11 @@ import onedayonestyle_data from "../../data/onedayonestyleData.json";
 import topsalescontent from "../TopSales/TopSalesContent.vue";
 export default {
   components: {
-    "topsales-content": topsalescontent,
+    "topsales-content": topsalescontent
   },
   data: function() {
     return onedayonestyle_data.onedayonestyle_data;
-  },
+  }
 };
 </script>
 

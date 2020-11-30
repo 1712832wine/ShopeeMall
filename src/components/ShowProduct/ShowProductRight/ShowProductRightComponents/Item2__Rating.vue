@@ -36,8 +36,8 @@ export default {
   props: {
     rating: {
       type: Object,
-      required: true,
-    },
+      required: true
+    }
   },
   methods: {
     //Tính số ngôi sao
@@ -46,8 +46,8 @@ export default {
       // x > y
       else if (x - y >= 1) return this.rating.evaluate.star_icon.null;
       else return this.rating.evaluate.star_icon.haft;
-    },
-  },
+    }
+  }
 };
 </script>
 

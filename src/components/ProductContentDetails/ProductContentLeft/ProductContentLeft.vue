@@ -5,6 +5,8 @@
       <product-details :data="listDetail" />
       <product-description :data="listDescription" />
     </div>
+    <!-- Render product Assessment -->
+    <product-assessment />
   </div>
 </template>
 
@@ -12,10 +14,12 @@
 import ProductDetailsData from "../../../data/ProductDetailsData.json";
 import ProductDetails from "./ProductDetails/ProductDetails";
 import ProductDescription from "./ProductDetails/ProductDescription";
+import ProductAssessment from "./ProductAssessment/ProductAssessment";
 export default {
   components: {
     "product-details": ProductDetails,
-    "product-description": ProductDescription
+    "product-description": ProductDescription,
+    "product-assessment": ProductAssessment
   },
   data() {
     return {

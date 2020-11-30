@@ -18,14 +18,14 @@
 import ImageAndSlide from "./Item1__ImageAndSlide.vue";
 export default {
   components: {
-    "image-and-slide": ImageAndSlide,
+    "image-and-slide": ImageAndSlide
   },
   props: {
     image_and_slide: {
       type: Object,
-      required: true,
-    },
-  },
+      required: true
+    }
+  }
 };
 </script>
 

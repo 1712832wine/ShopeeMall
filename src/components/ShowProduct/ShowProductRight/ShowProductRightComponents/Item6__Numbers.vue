@@ -32,8 +32,8 @@ export default {
   props: {
     numbers: {
       type: Object,
-      required: true,
-    },
+      required: true
+    }
   },
   methods: {
     Dec: function() {
@@ -41,8 +41,8 @@ export default {
     },
     Inc: function() {
       this.$refs.input.value++;
-    },
-  },
+    }
+  }
 };
 </script>
 

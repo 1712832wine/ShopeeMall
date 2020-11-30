@@ -42,27 +42,27 @@
 import TopSalesItem from "./TopSalesItem.vue";
 export default {
   components: {
-    "top-sales-item": TopSalesItem,
+    "top-sales-item": TopSalesItem
   },
   props: {
     content: {
       type: Object,
-      required: true,
-    },
+      required: true
+    }
   },
   data: function() {
     return {
       currentslide: 0,
       size: 198,
       item_per_slide: 6,
-      translate: 0,
+      translate: 0
     };
   },
   computed: {
     number_slide: function() {
       console.log(this.content.items.length + 2 - this.item_per_slide);
       return this.content.items.length + 2 - this.item_per_slide;
-    },
+    }
   },
   methods: {
     handlePrev: function() {
@@ -83,8 +83,8 @@ export default {
         this.$refs.translate.style.transform =
           "translateX(-" + this.translate + "px)";
       }
-    },
-  },
+    }
+  }
 };
 </script>
 

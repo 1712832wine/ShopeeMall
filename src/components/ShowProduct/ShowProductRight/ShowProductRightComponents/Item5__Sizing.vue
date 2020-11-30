@@ -12,9 +12,9 @@ export default {
   props: {
     sizing: {
       type: Object,
-      required: true,
-    },
-  },
+      required: true
+    }
+  }
 };
 </script>
 
