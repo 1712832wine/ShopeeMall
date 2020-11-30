@@ -5,11 +5,11 @@
 </template>
 
 <script>
-// import ProductSingleCategory from './data/ProductSingleCategory.json'
+import ProductSingleCategory from './data/ProductSingleCategory.json'
 export default {
-  // created() {
-  //   console.log(ProductSingleCategory);
-  // },
+  created() {
+    console.log(ProductSingleCategory);
+  },
 };
 </script>
 
