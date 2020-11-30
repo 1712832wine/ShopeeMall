@@ -39,7 +39,7 @@
               <div class="transport-item">{{ transport.inter.from }}</div>
               {{ transport.inter.place1 }}
               <p class="margin-5">{{ transport.inter.to }}</p>
-              <div name="dropdown">
+              <div name="dropdown" @click="ChangeClick()">
                 <span class="dropdown" style="fontSize:14px">
                   {{ transport.inter.default }}
                   <i :class="transport.inter.dropdown_icon" aria-hidden="true">
@@ -55,13 +55,23 @@
               <div
                 name="number"
                 class="dropdown"
-                @hover="transport - component"
+                @mouseover="ChangeHover()"
+                @mouseleave="ChangeHover()"
               >
-                {{ transport.inter.fee_nums }}
+                {{ addcurrency(transport.inter.fee_nums) }}
                 <i :class="transport.inter.dropdown_icon" aria-hidden="true">
                 </i>
+                <transport-component
+                  v-if="this.Ishover.ishover"
+                  :transport_component="transport.transport_component"
+                />
               </div>
             </div>
+
+            <provinces-component
+              v-if="this.Isclick.isclick"
+              :provinces="transport.provinces"
+            />
             <!-- end phí vận chuyển -->
           </div>
         </div>
@@ -71,20 +81,36 @@
 </template>
 
 <script>
+import Help from "../../../../helpers/helpFunction.js";
 import TransportComponent from "./TransportComponent/TransportComponent.vue";
+import ProvincesComponent from "./ProvincesComponent/ProvincesComponent.vue";
 export default {
+  mixins: [Help],
   components: {
     "transport-component": TransportComponent,
+    "provinces-component": ProvincesComponent,
   },
   props: {
     transport: {
       type: Object,
-      required: true
+      required: true,
     },
-    data: function() {
-      return { currency: "₫" };
-    }
-  }
+  },
+  data: function() {
+    return {
+      currency: "₫",
+      Ishover: { ishover: false },
+      Isclick: { isclick: false },
+    };
+  },
+  methods: {
+    ChangeHover: function() {
+      this.$set(this.Ishover, "ishover", !this.Ishover.ishover);
+    },
+    ChangeClick: function() {
+      this.$set(this.Isclick, "isclick", !this.Isclick.isclick);
+    },
+  },
 };
 </script>
 
