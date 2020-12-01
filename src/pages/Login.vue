@@ -1,14 +1,14 @@
 <template>
   <div class="wrapper">
-    <!-- <main-login /> -->
+    <main-login />
   </div>
 </template>
 
 <script>
-// import MainLogin from "../components/Login/MainLogin";
+import MainLogin from "../components/Login/MainLogin";
 export default {
   components: {
-    // "main-login": MainLogin
+    "main-login": MainLogin
   }
 };
 </script>
