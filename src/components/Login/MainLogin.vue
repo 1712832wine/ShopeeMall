@@ -17,14 +17,13 @@
                 <b-form-input
                   id="input-1"
                   v-model="form.username"
+                  :state="handleInputText"
                   type="text"
                   required
                   placeholder="Email/Số điện thoại/Tên đăng nhập"
                 ></b-form-input>
               </div>
-              <b-form-valid-feedback :state="handleInputText(form.username)">
-              </b-form-valid-feedback>
-              <b-form-invalid-feedback :state="handleInputText(form.username)">
+              <b-form-invalid-feedback :state="handleInputText">
                 Vui lòng điền vào mục này.
               </b-form-invalid-feedback>
             </div>
@@ -33,6 +32,7 @@
                 <b-form-input
                   id="input-2"
                   v-model="form.password"
+                  :state="handlePassword"
                   :type="isShow === true ? 'text' : 'password'"
                   required
                   placeholder="Mật khẩu"
@@ -41,9 +41,7 @@
                   <b-icon icon="eye" variant="dark"></b-icon>
                 </div>
               </div>
-              <b-form-valid-feedback :state="handleInputText(form.password)">
-              </b-form-valid-feedback>
-              <b-form-invalid-feedback :state="handleInputText(form.password)">
+              <b-form-invalid-feedback :state="handlePassword">
                 Vui lòng điền vào mục này.
               </b-form-invalid-feedback>
             </div>
@@ -142,15 +140,23 @@ export default {
       isShow: false
     };
   },
+  computed: {
+    handleInputText() {
+      if (this.form.username !== "") return true;
+      if (this.form.username === "") return null;
+      return false;
+    },
+    handlePassword() {
+      if (this.form.password !== "") return true;
+      if (this.form.password === "") return null;
+      return false;
+    }
+  },
   methods: {
     handleInput() {
       if (this.form.username !== "" && this.form.password !== "") {
         return "enable";
       }
-      return false;
-    },
-    handleInputText(params) {
-      if (params !== "") return true;
       return false;
     }
   }

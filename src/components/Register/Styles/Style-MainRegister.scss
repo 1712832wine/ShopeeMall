@@ -36,7 +36,7 @@
   min-height: 26.6875rem;
 }
 
-.form-login {
+.form-register {
   &__title {
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -128,10 +128,18 @@
           font-size: 1.25rem;
           color: rgb(102, 204, 0);
         }
+        i.fa-exclamation {
+          stroke: currentColor;
+          fill: currentColor;
+          width: 1.25rem;
+          height: 1.25rem;
+          font-size: 1.25rem;
+          color: #ff424f;
+        }
       }
     }
   }
-  &__login-social-line {
+  &__register-social-line {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -160,7 +168,7 @@
       font-size: 0.75rem;
     }
   }
-  &__login-social-icon {
+  &__register-social-icon {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -248,29 +256,17 @@
       font-size: 0.875rem;
       color: rgba(0, 0, 0, 0.26);
     }
-    &--link-login {
+    &--link-register {
       font-size: 0.875rem;
       font-weight: 500;
       color: #ee4d2d;
     }
   }
-  &__options {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -moz-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    margin: 0.625rem 0;
-  }
-  &__option {
-    color: #05a;
-    font-size: 0.75rem;
-  }
+}
+
+.invalid-feedback {
+  font-size: 0.75rem;
+  color: #ff424f;
 }
 
 .icon {
@@ -362,11 +358,9 @@
   }
 }
 
-.invalid-feedback {
+.show-message {
   margin: 0;
   padding: 0.25rem 0 0;
-  font-size: 0.75rem;
-  color: #ff424f;
   min-height: 1rem;
 }
 
@@ -409,6 +403,7 @@
     min-width: 8.75rem;
     text-transform: uppercase;
     width: 100%;
+    margin-bottom: 1.875rem;
   }
   &__color {
     color: #fff;
