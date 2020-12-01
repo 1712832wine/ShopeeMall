@@ -8,7 +8,7 @@
           @click="handleRouter"
         >
           <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-          <span>Shoppe</span>
+          <span>Shopee</span>
         </a>
         <header-search :data="data" />
         <div class="navbar-shop__cart">
