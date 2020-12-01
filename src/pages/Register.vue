@@ -1,14 +1,14 @@
 <template>
   <div class="wrapper">
-    <!-- <main-register /> -->
+    <main-register />
   </div>
 </template>
 
 <script>
-// import MainRegister from "../components/Register/MainRegister";
+import MainRegister from "../components/Register/MainRegister";
 export default {
   components: {
-    // "main-register": MainRegister
+    "main-register": MainRegister
   }
 };
 </script>
