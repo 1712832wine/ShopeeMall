@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import PublicRouter from "./PublicRouter.vue";
+import PublicRouterVerification from "./PublicRouterVerification.vue";
 
 Vue.use(VueRouter);
 
@@ -12,6 +13,26 @@ const routes = [
       {
         path: "",
         component: () => import("../pages/Home.vue")
+      }
+    ]
+  },
+  {
+    component: PublicRouterVerification,
+    path: "/login",
+    children: [
+      {
+        path: "",
+        component: () => import("../pages/Login.vue")
+      }
+    ]
+  },
+  {
+    component: PublicRouterVerification,
+    path: "/register",
+    children: [
+      {
+        path: "",
+        component: () => import("../pages/Register.vue")
       }
     ]
   },
