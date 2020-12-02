@@ -33,7 +33,8 @@ export default {
   },
   methods: {
     Click: function(index) {
-      this.IsChecked = index;
+      if (this.IsChecked != index) this.IsChecked = index;
+      else this.IsChecked = -1;
     },
   },
 };

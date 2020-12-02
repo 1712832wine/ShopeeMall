@@ -62,6 +62,10 @@ export default {
       type: Number,
       default: 1,
     },
+    distance: {
+      type: Number,
+      default: 1,
+    },
   },
   data: function() {
     return {
@@ -72,25 +76,36 @@ export default {
     };
   },
   computed: {
+    final: function() {
+      let temp = this.content.items.length + this.seemore - this.item_per_slide;
+      return temp % this.distance;
+    },
     number_slide: function() {
-      return this.content.items.length + this.seemore + 1 - this.item_per_slide;
+      let temp = this.content.items.length + this.seemore - this.item_per_slide;
+      let temp2 = 0;
+      if (temp % this.distance != 0) temp2 = 1;
+      return Math.floor(temp / this.distance) + temp2 + 1;
     },
   },
   methods: {
     handlePrev: function() {
       if (this.currentslide > 0) {
-        this.currentslide -= 1;
-        this.translate -= this.size;
+        if (this.currentslide == 1 && this.final != 0)
+          this.translate -= this.size * this.final;
+        else this.translate -= this.size * this.distance;
         this.$refs.translate.style.transform =
           "translateX(-" + this.translate + "px)";
+        this.currentslide -= 1;
       }
     },
     handleNext: function() {
       if (this.currentslide < this.number_slide - 1) {
-        this.currentslide += 1;
-        this.translate += this.size;
+        if (this.currentslide == this.number_slide - 2 && this.final != 0)
+          this.translate += this.size * this.final;
+        else this.translate += this.size * this.distance;
         this.$refs.translate.style.transform =
           "translateX(-" + this.translate + "px)";
+        this.currentslide += 1;
       }
     },
   },

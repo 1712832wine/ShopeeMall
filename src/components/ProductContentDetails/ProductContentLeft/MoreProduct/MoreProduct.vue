@@ -1,7 +1,12 @@
 <template>
   <div class="more_product">
     <slider-heading :top="data.header" />
-    <slider-content :content="data.content" :size="159.17 * 5" :seemore="1">
+    <slider-content
+      :content="data.content"
+      :size="159.17"
+      :seemore="0"
+      :distance="5"
+    >
       <slider-item
         slot="items"
         v-for="item in data.content.items"

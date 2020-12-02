@@ -1,27 +1,26 @@
 <template>
   <div class="image-and-slider">
-    <!-- big image on the top -->
-    <slot name="big-image">
-      <div class="big-image-top">
+    <div class="big-image-top pointer">
+      <div
+        class="bg-image"
+        :style="'backgroundImage: url(' + this.current_img + ')'"
+      >
+        <!-- overlay -->
         <div
-          class="bg-image"
-          :style="'backgroundImage: url(' + this.current_img + ')'"
+          v-if="overlay.overlay == 1"
+          :style="'backgroundImage: url(' + image_and_slide.image_overlay + ')'"
+          class="bg-image overlay"
         ></div>
       </div>
-    </slot>
-    <!-- slot for title in subitem__carousel hidden -->
-    <!-- it didn't show in detail pages -->
-
-    <slot name="mytitle"></slot>
+    </div>
 
     <!-- slider -->
-    <slot name="slider">
-      <img-slider
-        :image_and_slide="image_and_slide"
-        @imgwaschanged="current_img = $event"
-        @hiddenchanged="hidden_carousel = $event"
-      />
-    </slot>
+    <img-slider
+      :image_and_slide="image_and_slide"
+      @overlay="changeOverlay($event)"
+      @imgwaschanged="ChangeImg($event)"
+      @number_item="CallHidden($event)"
+    />
   </div>
 </template>
 
@@ -31,47 +30,37 @@ import ImageSlider from "./SubItem__Slider.vue";
 export default {
   data: function() {
     return {
-      current_img: this.image_and_slide.image,
-      hidden_carousel: 0
+      overlay: { overlay: 1 },
+      current_img: this.image_and_slide.images[0],
     };
   },
 
   components: {
-    "img-slider": ImageSlider
+    "img-slider": ImageSlider,
   },
   props: {
     image_and_slide: {
       type: Object,
-      required: true
-    }
+      required: true,
+    },
   },
-  watch: {
-    hidden_carousel: function() {
-      this.$emit("hidden_carousel", this.hidden_carousel);
-      return this.hidden_carousel + 1;
-    }
-  },
+
   methods: {
-    changeImage: function(item) {
+    CallHidden: function(e) {
+      this.$emit("number_item", e);
+      return this.number_item + 1;
+    },
+    ChangeImg: function(item) {
       this.current_img = item;
     },
-    handlePrev: function() {
-      if (this.currentslide > 0) {
-        this.currentslide -= 1;
-        this.translate -= this.size;
-        this.$refs.translate.style.transform =
-          "translateX(-" + this.translate + "px)";
-      }
+
+    changeImg: function(e) {
+      this.current_img = e;
     },
-    handleNext: function() {
-      if (this.currentslide < this.number_slide - 1) {
-        this.currentslide += 1;
-        this.translate += this.size;
-        this.$refs.translate.style.transform =
-          "translateX(-" + this.translate + "px)";
-      }
-    }
-  }
+    changeOverlay: function(e) {
+      this.$set(this.overlay, "overlay", e);
+    },
+  },
 };
 </script>
 
@@ -82,5 +71,6 @@ export default {
   height: $size-component;
   width: $size-component;
 }
+
 //container of slider
 </style>

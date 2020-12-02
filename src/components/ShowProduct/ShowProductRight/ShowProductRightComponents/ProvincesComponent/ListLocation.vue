@@ -1,0 +1,43 @@
+<template>
+  <div>
+    <div
+      v-for="(item, index) in location"
+      :key="item.id"
+      class="pointer item"
+      @click="changeCountClick(index)"
+    >
+      {{ item.title }}
+    </div>
+  </div>
+</template>
+
+<script>
+// import Provinces from "./ProvincesComponent.vue";
+export default {
+  props: {
+    location: { type: Array, required: true },
+  },
+  data: function() {
+    return {
+      countClick: 0,
+    };
+  },
+  methods: {
+    changeCountClick: function(id) {
+      // console.log("Have click list");
+      // console.log("countClick", this.countClick);
+      this.$emit("mid", id);
+    },
+  },
+};
+</script>
+
+<style lang="scss" scoped>
+.item {
+  padding: 0.625rem;
+  font-size: 16px;
+}
+.pointer {
+  cursor: pointer;
+}
+</style>

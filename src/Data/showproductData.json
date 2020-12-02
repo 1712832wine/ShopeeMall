@@ -2,7 +2,6 @@
     "showproduct": {
         "left": {
             "image_and_slide": {
-                "image": "https://cf.shopee.vn/file/345416bea058bee08e689f6bb56805fc",
                 "image_overlay": "https://cf.shopee.vn/file/07417985b2b0867e29419f5a5dc62dc6",
                 "images": [
                     "https://cf.shopee.vn/file/94d23e9008f15fcf2ad8681ec0cae873",
@@ -23,8 +22,7 @@
                 "liked_text": "Đã thích",
                 "liked_count": 3700,
                 "icons_url": "https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/cf2cbea564f70cc2c1e293c629729b6a.png",
-                "list_icon": [
-                    {
+                "list_icon": [{
                         "myclass": "sprite-product-sharing-fm",
                         "href": "#"
                     },
@@ -90,471 +88,454 @@
                     "from": "Vận Chuyển Từ",
                     "place1": "Nước ngoài",
                     "to": "tới ",
-                    "default": "Huyện Ba Vì, Hà Nội",
-                    "dropdown_icon": "fa fa-caret-down",
+                    "default": {
+                        "province_name": "Hà Nội",
+                        "ward_name": "Huyện Ba Vì"
+                    },
+                    "dropdown_icon": "fa fa-angle-down",
+                    "dropup_icon": "fa fa-angle-up",
                     "fee": "Phí vận chuyển",
                     "fee_nums": 1000000000
                 },
-                "provinces": [
-                    {
+                "previous_icon": "fa fa-angle-left",
+                "provinces": [{
                         "id": 1,
-                        "name": "An Giang",
-                        "wards": [
-                            {
+                        "title": "An Giang",
+                        "wards": [{
                                 "id": 1,
-                                "name": "Cái Bè"
+                                "title": "Cái Bè"
                             },
                             {
                                 "id": 2,
-                                "name": "Cai Lậy"
+                                "title": "Cai Lậy"
                             },
                             {
                                 "id": 3,
-                                "name": "Mĩ Tho"
+                                "title": "Mĩ Tho"
                             },
                             {
                                 "id": 4,
-                                "name": "Chợ Mới"
+                                "title": "Chợ Mới"
                             }
                         ]
                     },
                     {
                         "id": 2,
-                        "name": "Rạch Giá",
-                        "wards": [
-                            {
+                        "title": "Rạch Giá",
+                        "wards": [{
                                 "id": 1,
-                                "name": "Cái Bè"
+                                "title": "Cái Bè"
                             },
                             {
                                 "id": 2,
-                                "name": "Cai Lậy"
+                                "title": "Cai Lậy"
                             },
                             {
                                 "id": 3,
-                                "name": "Mĩ Tho"
+                                "title": "Mĩ Tho"
                             },
                             {
                                 "id": 4,
-                                "name": "Chợ Mới"
+                                "title": "Chợ Mới"
                             }
                         ]
                     },
                     {
                         "id": 3,
-                        "name": "Phú Quốc",
-                        "wards": [
-                            {
+                        "title": "Phú Quốc",
+                        "wards": [{
                                 "id": 1,
-                                "name": "Cái Bè"
+                                "title": "Cái Bè"
                             },
                             {
                                 "id": 2,
-                                "name": "Cai Lậy"
+                                "title": "Cai Lậy"
                             },
                             {
                                 "id": 3,
-                                "name": "Mĩ Tho"
+                                "title": "Mĩ Tho"
                             },
                             {
                                 "id": 4,
-                                "name": "Chợ Mới"
+                                "title": "Chợ Mới"
                             }
                         ]
                     },
                     {
                         "id": 4,
-                        "name": "Kiên Giang",
-                        "wards": [
-                            {
+                        "title": "Kiên Giang",
+                        "wards": [{
                                 "id": 1,
-                                "name": "Cái Bè"
+                                "title": "Cái Bè"
                             },
                             {
                                 "id": 2,
-                                "name": "Cai Lậy"
+                                "title": "Cai Lậy"
                             },
                             {
                                 "id": 3,
-                                "name": "Mĩ Tho"
+                                "title": "Mĩ Tho"
                             },
                             {
                                 "id": 4,
-                                "name": "Chợ Mới"
+                                "title": "Chợ Mới"
                             }
                         ]
                     },
                     {
                         "id": 5,
-                        "name": "Tiền Giang",
-                        "wards": [
-                            {
+                        "title": "Tiền Giang",
+                        "wards": [{
                                 "id": 1,
-                                "name": "Cái Bè"
+                                "title": "Cái Bè"
                             },
                             {
                                 "id": 2,
-                                "name": "Cai Lậy"
+                                "title": "Cai Lậy"
                             },
                             {
                                 "id": 3,
-                                "name": "Mĩ Tho"
+                                "title": "Mĩ Tho"
                             },
                             {
                                 "id": 4,
-                                "name": "Chợ Mới"
+                                "title": "Chợ Mới"
                             }
                         ]
                     },
                     {
                         "id": 6,
-                        "name": "Hậu Giang",
-                        "wards": [
-                            {
+                        "title": "Hậu Giang",
+                        "wards": [{
                                 "id": 1,
-                                "name": "Cái Bè"
+                                "title": "Cái Bè"
                             },
                             {
                                 "id": 2,
-                                "name": "Cai Lậy"
+                                "title": "Cai Lậy"
                             },
                             {
                                 "id": 3,
-                                "name": "Mĩ Tho"
+                                "title": "Mĩ Tho"
                             },
                             {
                                 "id": 4,
-                                "name": "Chợ Mới"
+                                "title": "Chợ Mới"
                             }
                         ]
                     },
                     {
                         "id": 7,
-                        "name": "Bắc Giang",
-                        "wards": [
-                            {
+                        "title": "Bắc Giang",
+                        "wards": [{
                                 "id": 1,
-                                "name": "Cái Bè"
+                                "title": "Cái Bè"
                             },
                             {
                                 "id": 2,
-                                "name": "Cai Lậy"
+                                "title": "Cai Lậy"
                             },
                             {
                                 "id": 3,
-                                "name": "Mĩ Tho"
+                                "title": "Mĩ Tho"
                             },
                             {
                                 "id": 4,
-                                "name": "Chợ Mới"
+                                "title": "Chợ Mới"
                             }
                         ]
                     },
                     {
                         "id": 8,
-                        "name": "Tây Ninh",
-                        "wards": [
-                            {
+                        "title": "Tây Ninh",
+                        "wards": [{
                                 "id": 1,
-                                "name": "Cái Bè"
+                                "title": "Cái Bè"
                             },
                             {
                                 "id": 2,
-                                "name": "Cai Lậy"
+                                "title": "Cai Lậy"
                             },
                             {
                                 "id": 3,
-                                "name": "Mĩ Tho"
+                                "title": "Mĩ Tho"
                             },
                             {
                                 "id": 4,
-                                "name": "Chợ Mới"
+                                "title": "Chợ Mới"
                             }
                         ]
                     },
                     {
                         "id": 9,
-                        "name": "Lâm Đồng",
-                        "wards": [
-                            {
+                        "title": "Lâm Đồng",
+                        "wards": [{
                                 "id": 1,
-                                "name": "Cái Bè"
+                                "title": "Cái Bè"
                             },
                             {
                                 "id": 2,
-                                "name": "Cai Lậy"
+                                "title": "Cai Lậy"
                             },
                             {
                                 "id": 3,
-                                "name": "Mĩ Tho"
+                                "title": "Mĩ Tho"
                             },
                             {
                                 "id": 4,
-                                "name": "Chợ Mới"
+                                "title": "Chợ Mới"
                             }
                         ]
                     },
                     {
                         "id": 10,
-                        "name": "Rạch Giá",
-                        "wards": [
-                            {
+                        "title": "Rạch Giá",
+                        "wards": [{
                                 "id": 1,
-                                "name": "Cái Bè"
+                                "title": "Cái Bè"
                             },
                             {
                                 "id": 2,
-                                "name": "Cai Lậy"
+                                "title": "Cai Lậy"
                             },
                             {
                                 "id": 3,
-                                "name": "Mĩ Tho"
+                                "title": "Mĩ Tho"
                             },
                             {
                                 "id": 4,
-                                "name": "Chợ Mới"
+                                "title": "Chợ Mới"
                             }
                         ]
                     },
                     {
                         "id": 11,
-                        "name": "Hà Nội",
-                        "wards": [
-                            {
+                        "title": "Hà Nội",
+                        "wards": [{
                                 "id": 1,
-                                "name": "Cái Bè"
+                                "title": "Cái Bè"
                             },
                             {
                                 "id": 2,
-                                "name": "Cai Lậy"
+                                "title": "Cai Lậy"
                             },
                             {
                                 "id": 3,
-                                "name": "Mĩ Tho"
+                                "title": "Mĩ Tho"
                             },
                             {
                                 "id": 4,
-                                "name": "Chợ Mới"
+                                "title": "Chợ Mới"
                             }
                         ]
                     },
                     {
                         "id": 12,
-                        "name": "TP HCM",
-                        "wards": [
-                            {
+                        "title": "TP HCM",
+                        "wards": [{
                                 "id": 1,
-                                "name": "Cái Bè"
+                                "title": "Cái Bè"
                             },
                             {
                                 "id": 2,
-                                "name": "Cai Lậy"
+                                "title": "Cai Lậy"
                             },
                             {
                                 "id": 3,
-                                "name": "Mĩ Tho"
+                                "title": "Mĩ Tho"
                             },
                             {
                                 "id": 4,
-                                "name": "Chợ Mới"
+                                "title": "Chợ Mới"
                             }
                         ]
                     },
                     {
                         "id": 13,
-                        "name": "Long An",
-                        "wards": [
-                            {
+                        "title": "Long An",
+                        "wards": [{
                                 "id": 1,
-                                "name": "Cái Bè"
+                                "title": "Cái Bè"
                             },
                             {
                                 "id": 2,
-                                "name": "Cai Lậy"
+                                "title": "Cai Lậy"
                             },
                             {
                                 "id": 3,
-                                "name": "Mĩ Tho"
+                                "title": "Mĩ Tho"
                             },
                             {
                                 "id": 4,
-                                "name": "Chợ Mới"
+                                "title": "Chợ Mới"
                             }
                         ]
                     },
                     {
                         "id": 14,
-                        "name": "Bến Tre",
-                        "wards": [
-                            {
+                        "title": "Bến Tre",
+                        "wards": [{
                                 "id": 1,
-                                "name": "Cái Bè"
+                                "title": "Cái Bè"
                             },
                             {
                                 "id": 2,
-                                "name": "Cai Lậy"
+                                "title": "Cai Lậy"
                             },
                             {
                                 "id": 3,
-                                "name": "Mĩ Tho"
+                                "title": "Mĩ Tho"
                             },
                             {
                                 "id": 4,
-                                "name": "Chợ Mới"
+                                "title": "Chợ Mới"
                             }
                         ]
                     },
                     {
                         "id": 15,
-                        "name": "Kiến Ninh",
-                        "wards": [
-                            {
+                        "title": "Kiến Ninh",
+                        "wards": [{
                                 "id": 1,
-                                "name": "Cái Bè"
+                                "title": "Cái Bè"
                             },
                             {
                                 "id": 2,
-                                "name": "Cai Lậy"
+                                "title": "Cai Lậy"
                             },
                             {
                                 "id": 3,
-                                "name": "Mĩ Tho"
+                                "title": "Mĩ Tho"
                             },
                             {
                                 "id": 4,
-                                "name": "Chợ Mới"
+                                "title": "Chợ Mới"
                             }
                         ]
                     },
                     {
                         "id": 16,
-                        "name": "Hà Tĩnh",
-                        "wards": [
-                            {
+                        "title": "Hà Tĩnh",
+                        "wards": [{
                                 "id": 1,
-                                "name": "Cái Bè"
+                                "title": "Cái Bè"
                             },
                             {
                                 "id": 2,
-                                "name": "Cai Lậy"
+                                "title": "Cai Lậy"
                             },
                             {
                                 "id": 3,
-                                "name": "Mĩ Tho"
+                                "title": "Mĩ Tho"
                             },
                             {
                                 "id": 4,
-                                "name": "Chợ Mới"
+                                "title": "Chợ Mới"
                             }
                         ]
                     },
                     {
                         "id": 17,
-                        "name": "Hà Giang",
-                        "wards": [
-                            {
+                        "title": "Hà Giang",
+                        "wards": [{
                                 "id": 1,
-                                "name": "Cái Bè"
+                                "title": "Cái Bè"
                             },
                             {
                                 "id": 2,
-                                "name": "Cai Lậy"
+                                "title": "Cai Lậy"
                             },
                             {
                                 "id": 3,
-                                "name": "Mĩ Tho"
+                                "title": "Mĩ Tho"
                             },
                             {
                                 "id": 4,
-                                "name": "Chợ Mới"
+                                "title": "Chợ Mới"
                             }
                         ]
                     },
                     {
                         "id": 18,
-                        "name": "Hà Tiên",
-                        "wards": [
-                            {
+                        "title": "Hà Tiên",
+                        "wards": [{
                                 "id": 1,
-                                "name": "Cái Bè"
+                                "title": "Cái Bè"
                             },
                             {
                                 "id": 2,
-                                "name": "Cai Lậy"
+                                "title": "Cai Lậy"
                             },
                             {
                                 "id": 3,
-                                "name": "Mĩ Tho"
+                                "title": "Mĩ Tho"
                             },
                             {
                                 "id": 4,
-                                "name": "Chợ Mới"
+                                "title": "Chợ Mới"
                             }
                         ]
                     },
                     {
                         "id": 19,
-                        "name": "KonTum",
-                        "wards": [
-                            {
+                        "title": "KonTum",
+                        "wards": [{
                                 "id": 1,
-                                "name": "Cái Bè"
+                                "title": "Cái Bè"
                             },
                             {
                                 "id": 2,
-                                "name": "Cai Lậy"
+                                "title": "Cai Lậy"
                             },
                             {
                                 "id": 3,
-                                "name": "Mĩ Tho"
+                                "title": "Mĩ Tho"
                             },
                             {
                                 "id": 4,
-                                "name": "Chợ Mới"
+                                "title": "Chợ Mới"
                             }
                         ]
                     },
                     {
                         "id": 20,
-                        "name": "Đắc Lắc",
-                        "wards": [
-                            {
+                        "title": "Đắc Lắc",
+                        "wards": [{
                                 "id": 1,
-                                "name": "Cái Bè"
+                                "title": "Cái Bè"
                             },
                             {
                                 "id": 2,
-                                "name": "Cai Lậy"
+                                "title": "Cai Lậy"
                             },
                             {
                                 "id": 3,
-                                "name": "Mĩ Tho"
+                                "title": "Mĩ Tho"
                             },
                             {
                                 "id": 4,
-                                "name": "Chợ Mới"
+                                "title": "Chợ Mới"
                             }
                         ]
                     },
                     {
                         "id": 21,
-                        "name": "Phúc Kiến",
-                        "wards": [
-                            {
+                        "title": "Phúc Kiến",
+                        "wards": [{
                                 "id": 1,
-                                "name": "Cái Bè"
+                                "title": "Cái Bè"
                             },
                             {
                                 "id": 2,
-                                "name": "Cai Lậy"
+                                "title": "Cai Lậy"
                             },
                             {
                                 "id": 3,
-                                "name": "Mĩ Tho"
+                                "title": "Mĩ Tho"
                             },
                             {
                                 "id": 4,
-                                "name": "Chợ Mới"
+                                "title": "Chợ Mới"
                             }
                         ]
                     }

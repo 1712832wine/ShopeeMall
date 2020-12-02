@@ -4,16 +4,22 @@
       <div class="content__translate" ref="translate">
         <!-- items -->
         <div
-          class="slider__item"
-          v-for="item in image_and_slide.images"
+          class="slider__item pointer"
+          v-for="(item, index) in image_and_slide.images"
           :key="item.id"
         >
           <div
             :style="'backgroundImage: url(' + item + ')'"
             class="bg-image img"
-            @mouseover="changeImage(item)"
-            @click="callHidden()"
-          ></div>
+            @mouseover="changeImage(item, index)"
+            @click="callHidden(index)"
+          >
+            <div
+              v-if="index == 0"
+              :style="'backgroundImage: url(' + image_overlay + ')'"
+              class="bg-image overlay"
+            ></div>
+          </div>
         </div>
       </div>
     </div>
@@ -32,8 +38,13 @@ export default {
   props: {
     image_and_slide: {
       type: Object,
-      required: true
-    }
+      required: true,
+    },
+    image_overlay: {
+      type: String,
+      required: false,
+      default: "https://cf.shopee.vn/file/07417985b2b0867e29419f5a5dc62dc6",
+    },
   },
   data: function() {
     return {
@@ -41,23 +52,23 @@ export default {
       size: 92,
       translate: 0,
       item_per_slide: 5,
-      hidden_carousel: 0,
-      current_img: ""
+      current_img: "",
     };
   },
   computed: {
     number_slide: function() {
       return this.image_and_slide.images.length + 1 - this.item_per_slide;
-    }
+    },
   },
   methods: {
-    callHidden: function() {
-      this.hidden_carousel = 1;
-      this.$emit("hiddenchanged", this.hidden_carousel);
+    callHidden: function(index) {
+      this.$emit("number_item", index);
     },
-    changeImage: function(item) {
+    changeImage: function(item, index) {
       this.current_img = item;
       this.$emit("imgwaschanged", this.current_img);
+      if (index == 0) this.$emit("overlay", 1);
+      else this.$emit("overlay", 0);
     },
     handlePrev: function() {
       if (this.currentslide > 0) {
@@ -74,8 +85,8 @@ export default {
         this.$refs.translate.style.transform =
           "translateX(-" + this.translate + "px)";
       }
-    }
-  }
+    },
+  },
 };
 </script>
 

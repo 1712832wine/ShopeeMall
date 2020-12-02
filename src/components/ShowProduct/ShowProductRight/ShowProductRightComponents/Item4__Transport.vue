@@ -1,5 +1,5 @@
 <template>
-  <div class="mp-container flex">
+  <div class="mp-container flex" ref="ahihi">
     <!-- start vận chuyển -->
     <span class="title">{{ transport.title }}</span>
     <!-- end vận chuyển -->
@@ -39,12 +39,30 @@
               <div class="transport-item">{{ transport.inter.from }}</div>
               {{ transport.inter.place1 }}
               <p class="margin-5">{{ transport.inter.to }}</p>
-              <div name="dropdown" @click="ChangeClick()">
+              <div class="relative" name="dropdown" @click="ChangeClick()">
                 <span class="dropdown" style="fontSize:14px">
-                  {{ transport.inter.default }}
-                  <i :class="transport.inter.dropdown_icon" aria-hidden="true">
+                  <div class="inline mr">
+                    {{ NameLocation(transport.inter.default) }}
+                  </div>
+
+                  <i
+                    :class="transport.inter.dropdown_icon"
+                    aria-hidden="true"
+                    v-if="this.Isclick.isclick == 0"
+                  >
+                  </i>
+                  <i
+                    :class="transport.inter.dropdown_icon"
+                    aria-hidden="true"
+                    v-else
+                  >
                   </i>
                 </span>
+                <provinces-component
+                  v-if="Isclick.isclick"
+                  :provinces="transport.provinces"
+                  @Name="NameLocation($event)"
+                />
               </div>
             </div>
             <!-- end vận chuyển từ -->
@@ -52,12 +70,7 @@
             <!--start phí vận chuyển -->
             <div class="flex center" name="fee">
               <div class="transport-item">{{ transport.inter.fee }}</div>
-              <div
-                name="number"
-                class="dropdown"
-                @mouseover="ChangeHover()"
-                @mouseleave="ChangeHover()"
-              >
+              <div name="number" class="dropdown" @click="ChangeHover()">
                 {{ addcurrency(transport.inter.fee_nums) }}
                 <i :class="transport.inter.dropdown_icon" aria-hidden="true">
                 </i>
@@ -68,10 +81,6 @@
               </div>
             </div>
 
-            <provinces-component
-              v-if="this.Isclick.isclick"
-              :provinces="transport.provinces"
-            />
             <!-- end phí vận chuyển -->
           </div>
         </div>
@@ -100,15 +109,25 @@ export default {
     return {
       currency: "₫",
       Ishover: { ishover: false },
-      Isclick: { isclick: false },
+      Isclick: { isclick: 0 },
     };
   },
+  watch: {
+    Isclick: function() {},
+  },
   methods: {
+    NameLocation: function(name) {
+      console.log("ahi");
+      // this.$set(this.Isclick, "isclick", 0);
+      // this.$set(this.Isclick, "isclick", this.Isclick.isclick + 1);
+      return name.ward_name + ", " + name.province_name;
+    },
     ChangeHover: function() {
       this.$set(this.Ishover, "ishover", !this.Ishover.ishover);
     },
     ChangeClick: function() {
-      this.$set(this.Isclick, "isclick", !this.Isclick.isclick);
+      // console.log("click");
+      this.$set(this.Isclick, "isclick", this.Isclick.isclick + 1);
     },
   },
 };
@@ -144,10 +163,19 @@ p {
     padding: 2px;
   }
 }
+.dropdown {
+  position: relative;
+}
 .dropdown:hover {
   &:hover {
     color: #ee4d2d;
     cursor: pointer;
   }
+}
+.relative {
+  position: relative;
+}
+.inline {
+  display: inline;
 }
 </style>
