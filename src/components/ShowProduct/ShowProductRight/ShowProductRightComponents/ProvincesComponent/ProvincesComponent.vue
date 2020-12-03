@@ -77,6 +77,7 @@ export default {
         // gán id dể tìm tên tỉnh
         this.$set(this.Id, "id", myid);
         this.search = "";
+        console.log(this.Id.id);
         this.$set(
           this.Previous_Name,
           "previous_name",
