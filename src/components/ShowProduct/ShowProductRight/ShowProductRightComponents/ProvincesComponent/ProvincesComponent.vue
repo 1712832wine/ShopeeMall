@@ -15,14 +15,10 @@
     </div>
     <list-location
       v-if="IsClicked.isClicked == 0"
-      :location="provinces"
+      :location="FilteredList_Province"
       @mid="Next($event)"
     />
-    <list-location
-      v-else
-      :location="provinces[Id.id].wards"
-      @mid="Next($event)"
-    />
+    <list-location v-else :location="FilteredList_Ward" @mid="Next($event)" />
   </div>
 </template>
 
@@ -52,27 +48,35 @@ export default {
     };
   },
   computed: {
-    filteredList() {
-      let filter = new RegExp(this.search, "i");
-      return this.names.filter((el) => el.match(filter));
-      // return this.Location.filter((post) =>
-      //   post.title.toLowerCase().includes(this.search.toLowerCase())
-      // );
+    Location_ward() {
+      return this.provinces[this.Id.id].wards;
+    },
+    FilteredList_Province() {
+      return this.Location.filter((element) =>
+        element.title.toLowerCase().includes(this.search.toLowerCase())
+      );
+    },
+    FilteredList_Ward() {
+      return this.Location_ward.filter((element) =>
+        element.title.toLowerCase().includes(this.search.toLowerCase())
+      );
     },
   },
   methods: {
     Next: function(myid) {
       if (this.IsClicked.isClicked == 1) {
+        // thoát
         this.Name.province_name = this.Previous_Name.previous_name;
         this.Name.ward_name = this.provinces[this.Id.id].wards[myid].title;
+
         this.$emit("Name", this.Name);
       } else {
         //ngược lại chuyển đến trang huyện
         // tăng số lần bấm nút
         this.$set(this.IsClicked, "isClicked", 1);
-        console.log("Next", this.IsClicked.isClicked);
         // gán id dể tìm tên tỉnh
         this.$set(this.Id, "id", myid);
+        this.search = "";
         this.$set(
           this.Previous_Name,
           "previous_name",
@@ -85,6 +89,7 @@ export default {
       this.$set(this.IsClicked, "isClicked", 0);
       this.$set(this.Id, "id", -1);
       this.$set(this.Previous_Name, "previous_name", "");
+      this.search = "";
     },
   },
   components: { "list-location": Locations },
