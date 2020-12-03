@@ -24,9 +24,7 @@ export default {
   },
   methods: {
     changeCountClick: function(id) {
-      // console.log("Have click list");
-      // console.log("countClick", this.countClick);
-      this.$emit("mid", id);
+      this.$emit("myid", id);
     },
   },
 };
