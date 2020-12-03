@@ -3,8 +3,9 @@
     <div class="container">
       <div
         class="singleProduct"
-        v-for="item in ListProduct"
-        v-bind:key="item.tittleItem"
+        v-for="(item,index) in ListProduct"
+        v-bind:key="index"
+        v-show = " index < 20 "
       >
         <div class="imageSingleProduct">
           <ul>
