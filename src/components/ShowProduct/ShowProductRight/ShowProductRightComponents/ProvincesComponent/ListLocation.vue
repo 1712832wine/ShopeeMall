@@ -1,10 +1,10 @@
 <template>
   <div>
     <div
-      v-for="(item, index) in location"
+      v-for="item in location"
       :key="item.id"
       class="pointer item"
-      @click.stop="changeCountClick(index)"
+      @click.stop="changeCountClick(item.id - 1)"
     >
       {{ item.title }}
     </div>
@@ -24,9 +24,7 @@ export default {
   },
   methods: {
     changeCountClick: function(id) {
-      // console.log("Have click list");
-      // console.log("countClick", this.countClick);
-      this.$emit("mid", id);
+      this.$emit("myid", id);
     },
   },
 };

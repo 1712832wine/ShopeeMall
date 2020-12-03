@@ -16,9 +16,9 @@
     <list-location
       v-if="IsClicked.isClicked == 0"
       :location="FilteredList_Province"
-      @mid="Next($event)"
+      @myid="Next($event)"
     />
-    <list-location v-else :location="FilteredList_Ward" @mid="Next($event)" />
+    <list-location v-else :location="FilteredList_Ward" @myid="Next($event)" />
   </div>
 </template>
 
