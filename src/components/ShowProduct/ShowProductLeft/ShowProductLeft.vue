@@ -2,13 +2,15 @@
   <div id="showproduct__left">
     <image-and-slide
       :image_and_slide="left.image_and_slide"
-      @hidden_carousel="hidden_carousel = $event"
+      @number_item="CallHidden($event)"
     />
     <share-bottom :share="left.share" />
     <!-- carousel hidden -->
     <carousel-hidden
-      v-if="hidden_carousel"
+      v-if="number_item != -1"
       :image_and_slide="left.image_and_slide"
+      :number_item="number_item"
+      @Quit="CallHidden($event)"
     />
   </div>
 </template>
@@ -21,17 +23,23 @@ export default {
   props: {
     left: {
       type: Object,
-      required: true
-    }
+      required: true,
+    },
   },
   data: function() {
-    return { hidden_carousel: 0 };
+    return { number_item: -1 };
   },
   components: {
     "image-and-slide": ImageAndSlide,
     "share-bottom": Share,
-    "carousel-hidden": CarouselHidden
-  }
+    "carousel-hidden": CarouselHidden,
+  },
+  methods: {
+    CallHidden: function(e) {
+      this.number_item = e;
+      console.log("CallHidden__Root", this.number_item);
+    },
+  },
 };
 </script>
 

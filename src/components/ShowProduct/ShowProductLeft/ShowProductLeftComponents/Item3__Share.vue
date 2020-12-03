@@ -29,9 +29,9 @@ export default {
   props: {
     share: {
       type: Object,
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
 };
 </script>
 
@@ -44,6 +44,9 @@ a {
   &:hover {
     cursor: pointer;
   }
+}
+.share-item {
+  background: #fff;
 }
 .button {
   width: 25px;
