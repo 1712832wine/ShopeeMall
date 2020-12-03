@@ -14,12 +14,12 @@
             "
             class="bg-image overlay"
           ></div>
-          <!-- <div class="button button-prev" @click="handlePrev()" ref="prev">
+          <div class="button button-prev" @click.stop="handlePrev()" ref="prev">
             <i class="fa fa-chevron-left" aria-hidden="true"></i>
           </div>
-          <div class="button button-next" @click="handleNext()" ref="next">
+          <div class="button button-next" @click.stop="handleNext()" ref="next">
             <i class="fa fa-chevron-right" aria-hidden="true"></i>
-          </div> -->
+          </div>
         </div>
       </div>
     </div>
@@ -38,9 +38,19 @@
           <div
             :style="'backgroundImage: url(' + item + ')'"
             class="bg-image img"
-            @click="ChangeImg(item, index)"
+            @click.stop="Click(item, index)"
+            :class="{ active: IsActive(index) }"
           >
-            <div class="bg-image hover"></div>
+            <!-- hover -->
+            <div class="bg-image overlay"></div>
+            <!-- overlay -->
+            <div
+              v-if="index == 0"
+              :style="
+                'backgroundImage: url(' + image_and_slide.image_overlay + ')'
+              "
+              class="bg-image overlay"
+            ></div>
           </div>
         </div>
       </div>
@@ -62,11 +72,43 @@ export default {
   },
   data: function() {
     return {
+      index_img: this.number_item,
       current_img: this.image_and_slide.images[this.number_item],
       overlay: { overlay: this.number_item != 0 ? 0 : 1 },
     };
   },
   methods: {
+    IsActive: function(index) {
+      console.log(this.index_img == index);
+      return this.index_img == index;
+    },
+
+    Quit: function() {
+      console.log("out");
+      // this.$emit("Quit", 0);
+    },
+    handlePrev: function() {
+      if (this.index_img > 0) {
+        this.index_img -= 1;
+        this.ChangeImg(
+          this.image_and_slide.images[this.index_img],
+          this.index_img
+        );
+      }
+    },
+    handleNext: function() {
+      if (this.index_img < this.image_and_slide.images.length - 1) {
+        this.index_img += 1;
+        this.ChangeImg(
+          this.image_and_slide.images[this.index_img],
+          this.index_img
+        );
+      }
+    },
+    Click: function(item, index) {
+      this.index_img = index;
+      this.ChangeImg(item, index);
+    },
     ChangeImg: function(item, index) {
       this.current_img = item;
       if (index == 0) this.$set(this.overlay, "overlay", 1);
@@ -78,6 +120,9 @@ export default {
 
 <style lang="scss" scoped>
 @import "../Style/Style__ShowProductLeft.scss";
+.active {
+  border: 2px solid #ee4d2d;
+}
 .describe {
   overflow: hidden;
   font-size: 1.0625rem;
@@ -125,15 +170,23 @@ body {
   width: 100%;
 }
 .button {
-  align-items: center;
-  z-index: 200;
+  justify-content: center;
+  z-index: 2;
   width: 2.5rem;
   height: 5rem;
   position: absolute;
   top: 50%;
+  transform: translate3d(0, -2.5rem, 0);
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.54);
+  cursor: pointer;
+  color: #fff;
+  font-size: 2.1875rem;
   &-prev {
-    left: 0.75rem;
-    padding-right: 4px;
+    left: 0;
+  }
+  &-next {
+    right: 0;
   }
 }
 

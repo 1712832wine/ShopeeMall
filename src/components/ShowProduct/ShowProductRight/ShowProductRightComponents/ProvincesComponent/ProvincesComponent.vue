@@ -1,9 +1,15 @@
 <template>
   <div class="flex-col absolute provinces" name="provinces">
     <div class="find">
-      <input type="text" placeholder="Tìm" class="search" />
+      <input
+        type="text"
+        placeholder="Tìm"
+        class="search"
+        v-model="search"
+        @click.stop=""
+      />
     </div>
-    <div v-if="IsClicked.isClicked != 0" class="previous" @click="Prev()">
+    <div v-if="IsClicked.isClicked != 0" class="previous" @click.stop="Prev()">
       <i :class="previous_icon" aria-hidden="true"></i>
       {{ Previous_Name.previous_name }}
     </div>
@@ -33,6 +39,7 @@ export default {
   },
   data: function() {
     return {
+      search: "",
       IsClicked: { isClicked: 0 },
       Id: { id: -1 },
       Previous_Name: { previous_name: "" },
@@ -40,18 +47,24 @@ export default {
         province_name: "",
         ward_name: "",
       },
+      names: ["Evan You", "John Lindquist", "nht"],
+      Location: this.provinces,
     };
+  },
+  computed: {
+    filteredList() {
+      let filter = new RegExp(this.search, "i");
+      return this.names.filter((el) => el.match(filter));
+      // return this.Location.filter((post) =>
+      //   post.title.toLowerCase().includes(this.search.toLowerCase())
+      // );
+    },
   },
   methods: {
     Next: function(myid) {
-      // nếu ở trang huyện bấm next thì thoát ra
       if (this.IsClicked.isClicked == 1) {
-        console.log("Exit: ", this.IsClicked.isClicked);
         this.Name.province_name = this.Previous_Name.previous_name;
         this.Name.ward_name = this.provinces[this.Id.id].wards[myid].title;
-        // console.log(this.Previous_Name);
-        // console.log(this.Previous_Name.previous_name);
-        console.log(this.Name);
         this.$emit("Name", this.Name);
       } else {
         //ngược lại chuyển đến trang huyện
@@ -66,15 +79,12 @@ export default {
           this.provinces[this.Id.id].title
         );
       }
-
-      // console.log("isClicked", this.IsClicked.isClicked);
     },
+
     Prev: function() {
-      console.log("prev");
       this.$set(this.IsClicked, "isClicked", 0);
       this.$set(this.Id, "id", -1);
       this.$set(this.Previous_Name, "previous_name", "");
-      // console.log("isClicked", this.IsClicked.isClicked);
     },
   },
   components: { "list-location": Locations },

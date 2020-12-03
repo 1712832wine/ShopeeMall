@@ -39,10 +39,10 @@
               <div class="transport-item">{{ transport.inter.from }}</div>
               {{ transport.inter.place1 }}
               <p class="margin-5">{{ transport.inter.to }}</p>
-              <div class="relative" name="dropdown" @click="ChangeClick()">
+              <div class="relative" name="dropdown" @click.stop="ChangeClick()">
                 <span class="dropdown" style="fontSize:14px">
                   <div class="inline mr">
-                    {{ NameLocation(transport.inter.default) }}
+                    {{ NameLocation }}
                   </div>
 
                   <i
@@ -52,7 +52,7 @@
                   >
                   </i>
                   <i
-                    :class="transport.inter.dropdown_icon"
+                    :class="transport.inter.dropup_icon"
                     aria-hidden="true"
                     v-else
                   >
@@ -61,7 +61,7 @@
                 <provinces-component
                   v-if="Isclick.isclick"
                   :provinces="transport.provinces"
-                  @Name="NameLocation($event)"
+                  @Name="ChangeLocation($event)"
                 />
               </div>
             </div>
@@ -110,24 +110,35 @@ export default {
       currency: "₫",
       Ishover: { ishover: false },
       Isclick: { isclick: 0 },
+      Location: {
+        ward_name: this.transport.inter.default.ward_name,
+        province_name: this.transport.inter.default.province_name,
+      },
     };
   },
   watch: {
     Isclick: function() {},
   },
-  methods: {
-    NameLocation: function(name) {
-      console.log("ahi");
+  computed: {
+    NameLocation: function() {
+      console.log("ahi", this.Location);
       // this.$set(this.Isclick, "isclick", 0);
       // this.$set(this.Isclick, "isclick", this.Isclick.isclick + 1);
-      return name.ward_name + ", " + name.province_name;
+      return this.Location.ward_name + ", " + this.Location.province_name;
+    },
+  },
+  methods: {
+    ChangeLocation: function(e) {
+      this.Location.ward_name = e.ward_name;
+      this.Location.province_name = e.province_name;
+      this.$set(this.Isclick, "isclick", 0);
     },
     ChangeHover: function() {
       this.$set(this.Ishover, "ishover", !this.Ishover.ishover);
     },
     ChangeClick: function() {
-      // console.log("click");
-      this.$set(this.Isclick, "isclick", this.Isclick.isclick + 1);
+      console.log("click", this.Isclick.isclick);
+      this.$set(this.Isclick, "isclick", !this.Isclick.isclick);
     },
   },
 };

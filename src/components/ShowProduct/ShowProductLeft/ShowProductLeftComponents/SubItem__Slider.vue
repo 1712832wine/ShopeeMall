@@ -12,7 +12,7 @@
             :style="'backgroundImage: url(' + item + ')'"
             class="bg-image img"
             @mouseover="changeImage(item, index)"
-            @click="callHidden(index)"
+            @click.prevent="callHidden(index)"
           >
             <div
               v-if="index == 0"
@@ -24,10 +24,10 @@
       </div>
     </div>
     <!-- button controls -->
-    <div class="button button-prev" @click="handlePrev()" ref="prev">
+    <div class="button button-prev" @click.stop="handlePrev()" ref="prev">
       <i class="fa fa-chevron-left" aria-hidden="true"></i>
     </div>
-    <div class="button button-next" @click="handleNext()" ref="next">
+    <div class="button button-next" @click.stop="handleNext()" ref="next">
       <i class="fa fa-chevron-right" aria-hidden="true"></i>
     </div>
   </div>
@@ -62,7 +62,8 @@ export default {
   },
   methods: {
     callHidden: function(index) {
-      this.$emit("number_item", index);
+      console.log("callhidden__slider", index);
+      this.$emit("callhidden", index);
     },
     changeImage: function(item, index) {
       this.current_img = item;

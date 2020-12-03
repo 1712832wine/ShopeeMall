@@ -4,7 +4,7 @@
       v-for="(item, index) in location"
       :key="item.id"
       class="pointer item"
-      @click="changeCountClick(index)"
+      @click.stop="changeCountClick(index)"
     >
       {{ item.title }}
     </div>
