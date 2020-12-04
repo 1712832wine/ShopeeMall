@@ -6,7 +6,7 @@
       </div>
       <div class="title">{{ item.title }}</div>
       <div class="price">
-        <span>Từ</span>
+        <slot name="from"><span>Từ</span></slot>
         <!-- {{ item.price }} -->
         {{ addcurrency(item.price) }}
       </div>
