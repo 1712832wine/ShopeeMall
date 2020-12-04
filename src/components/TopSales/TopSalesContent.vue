@@ -147,6 +147,7 @@ a {
   text-decoration: none;
   .seemore {
     &__item {
+      background: #fff;
       display: flex;
       flex-direction: column;
       align-items: center;
