@@ -1,9 +1,12 @@
 <template>
-  <div class="page-product__content--right"></div>
+  <div class="page-product__content--right">
+    <topselling />
+  </div>
 </template>
 
 <script>
-export default {};
+import TopSellingProduct from "./TopSellingProduct/TopSellingProduct.vue";
+export default { components: { topselling: TopSellingProduct } };
 </script>
 
 <style lang="scss" scoped>
