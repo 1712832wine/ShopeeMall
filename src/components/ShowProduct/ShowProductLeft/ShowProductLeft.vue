@@ -1,5 +1,5 @@
 <template>
-  <div id="showproduct__left">
+  <div id="showproduct__left" ref="showproduct__left">
     <image-and-slide
       :image_and_slide="left.image_and_slide"
       @number_item="CallHidden($event)"
@@ -10,6 +10,7 @@
       v-if="number_item != -1"
       :image_and_slide="left.image_and_slide"
       :number_item="number_item"
+      @click.self.prevent
       @Quit="CallHidden($event)"
     />
   </div>
@@ -37,7 +38,6 @@ export default {
   methods: {
     CallHidden: function(e) {
       this.number_item = e;
-      console.log("CallHidden__Root", this.number_item);
     },
   },
 };

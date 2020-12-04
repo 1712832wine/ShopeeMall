@@ -121,9 +121,6 @@ export default {
   },
   computed: {
     NameLocation: function() {
-      console.log("ahi", this.Location);
-      // this.$set(this.Isclick, "isclick", 0);
-      // this.$set(this.Isclick, "isclick", this.Isclick.isclick + 1);
       return this.Location.ward_name + ", " + this.Location.province_name;
     },
   },
@@ -137,7 +134,6 @@ export default {
       this.$set(this.Ishover, "ishover", !this.Ishover.ishover);
     },
     ChangeClick: function() {
-      console.log("click", this.Isclick.isclick);
       this.$set(this.Isclick, "isclick", !this.Isclick.isclick);
     },
   },
