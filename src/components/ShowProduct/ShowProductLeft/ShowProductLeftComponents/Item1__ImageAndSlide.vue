@@ -4,7 +4,7 @@
       <div
         class="bg-image"
         :style="'backgroundImage: url(' + this.current_img + ')'"
-        @click="CallHidden(0)"
+        @click.self="CallHidden(0)"
       >
         <!-- overlay -->
         <div
@@ -18,9 +18,9 @@
     <!-- slider -->
     <img-slider
       :image_and_slide="image_and_slide"
-      @overlay="changeOverlay($event)"
-      @imgwaschanged="ChangeImg($event)"
-      @callhidden="CallHidden($event)"
+      @overlay.self="changeOverlay($event)"
+      @imgwaschanged.self="ChangeImg($event)"
+      @callhidden.self="CallHidden($event)"
     />
   </div>
 </template>
@@ -49,7 +49,6 @@ export default {
 
   methods: {
     CallHidden: function(e) {
-      console.log("callhidden__image", e);
       this.$emit("number_item", e);
     },
     ChangeImg: function(item) {

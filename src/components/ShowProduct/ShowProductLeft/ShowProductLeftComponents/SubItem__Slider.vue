@@ -11,8 +11,8 @@
           <div
             :style="'backgroundImage: url(' + item + ')'"
             class="bg-image img"
-            @mouseover="changeImage(item, index)"
-            @click.prevent="callHidden(index)"
+            @mouseover.self="changeImage(item, index)"
+            @click.self="callHidden(index)"
           >
             <div
               v-if="index == 0"
@@ -62,7 +62,6 @@ export default {
   },
   methods: {
     callHidden: function(index) {
-      console.log("callhidden__slider", index);
       this.$emit("callhidden", index);
     },
     changeImage: function(item, index) {

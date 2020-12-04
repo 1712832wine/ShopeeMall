@@ -28,6 +28,7 @@
       <div class="describe">
         {{ image_and_slide.describe }}
       </div>
+      <!--  -->
       <div class="flex-wrap imgs">
         <!-- items -->
         <div
@@ -54,6 +55,8 @@
           </div>
         </div>
       </div>
+      <!--  -->
+      <button class="button_type2" @click="Quit()">Trở về</button>
     </div>
   </div>
 </template>
@@ -78,14 +81,11 @@ export default {
     };
   },
   methods: {
-    IsActive: function(index) {
-      console.log(this.index_img == index);
-      return this.index_img == index;
+    Quit() {
+      this.$emit("Quit", -1);
     },
-
-    Quit: function() {
-      console.log("out");
-      // this.$emit("Quit", 0);
+    IsActive: function(index) {
+      return this.index_img == index;
     },
     handlePrev: function() {
       if (this.index_img > 0) {
@@ -202,6 +202,26 @@ body {
   height: 100%;
   &:hover {
     background: hsla(0, 0%, 100%, 0.26);
+  }
+}
+
+.button_type2 {
+  outline: none;
+  color: #fff;
+  background: #ee4d2d;
+  margin-right: 15px;
+  min-width: 11.25rem;
+  padding: 0 0.75rem;
+  font-size: 14px;
+  height: 48px;
+  border-radius: 2px;
+  box-sizing: border-box;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.09);
+  border-radius: 2px;
+  border: 0;
+  text-transform: capitalize;
+  &:hover {
+    background: #f05d40;
   }
 }
 </style>
