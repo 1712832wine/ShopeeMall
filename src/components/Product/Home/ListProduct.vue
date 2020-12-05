@@ -39,7 +39,7 @@
           class="product-recommended__list"
           :class="{ disable: isActive == true }"
         >
-          <div class="wrapper">
+          <div class="wrapper-product-list">
             <!-- Render recommended product list -->
             <product
               v-for="product in tab_one"
