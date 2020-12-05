@@ -22,8 +22,8 @@ export default {
     return Data.topselling_product;
   },
   components: {
-    "top-selling-item": TopSellingItem,
-  },
+    "top-selling-item": TopSellingItem
+  }
 };
 </script>
 

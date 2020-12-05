@@ -28,8 +28,12 @@
         >
       </div>
     </li>
-    <a href="#/" class="navbar-shop__link--register">Đăng Ký</a>
-    <a href="#/" class="navbar-shop__link--login">Đăng Nhập</a>
+    <router-link class="navbar-shop__link--register" tag="a" to="/register"
+      >Đăng Ký</router-link
+    >
+    <router-link class="navbar-shop__link--login" tag="a" to="/login"
+      >Đăng Nhập</router-link
+    >
   </ul>
 </template>
 

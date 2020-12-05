@@ -1,7 +1,7 @@
 <template>
   <div class="page-product__content--right">
     <discount-code />
-    <topselling />
+    <top-selling />
   </div>
 </template>
 
@@ -9,7 +9,10 @@
 import TopSellingProduct from "./TopSellingProduct/TopSellingProduct.vue";
 import DiscountCode from "./DiscountCode/DiscountCode.vue";
 export default {
-  components: { topselling: TopSellingProduct, "discount-code": DiscountCode },
+  components: {
+    "top-selling": TopSellingProduct,
+    "discount-code": DiscountCode
+  }
 };
 </script>
 
