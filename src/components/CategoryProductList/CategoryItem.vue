@@ -10,7 +10,7 @@
         <div class="imageSingleProduct">
           <ul>
             <li>
-              <router-link class="nav-link" tag="a" to="/HomeCatalog">
+              <router-link class="nav-link" tag="a" to="/product_of_category">
                 <img :src="item.src" /> {{ item.tittleItem }}</router-link
               >
             </li>

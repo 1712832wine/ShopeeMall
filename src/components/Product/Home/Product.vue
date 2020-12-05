@@ -1,7 +1,7 @@
 <template>
   <div class="product">
     <div class="product__wrapper">
-      <a :href="data.url">
+      <router-link tag="a" :to="`/product_details/${data.id}`">
         <div class="product__content hover-content">
           <div class="product__content--image">
             <img :src="data.image" alt="" />
@@ -49,9 +49,11 @@
               </div>
             </div>
           </div>
-          <div class="product__card-hover">Tìm sản phẩm tương tự</div>
+          <slot name="find">
+            <div class="product__card-hover">Tìm sản phẩm tương tự</div>
+          </slot>
         </div>
-      </a>
+      </router-link>
     </div>
   </div>
 </template>

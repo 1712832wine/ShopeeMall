@@ -1,23 +1,28 @@
 <template>
-  <div id="topsales-content">
+  <div id="topsales-content" ref="slide">
     <div class="content__wrap">
-      <div class="content__translate">
+      <div class="content__translate" ref="translate">
         <!-- items -->
-        <top-sales-item
-          v-for="item in content.items"
-          :key="item.id"
-          :item="item"
-        />
-        <!-- seemore -->
-        <a :href="content.seemore.href">
-          <div class="seemore__item">
-            <button class="seemore__icon">
-              <i class="fa fa-chevron-right" aria-hidden="true"></i>
-            </button>
+        <slot name="items">
+          <top-sales-item
+            v-for="item in content.items"
+            :key="item.id"
+            :item="item"
+          />
+        </slot>
 
-            <span>{{ content.seemore.text }}</span>
-          </div>
-        </a>
+        <!-- seemore -->
+        <slot name="seemore">
+          <a :href="content.seemore.href">
+            <div class="seemore__item">
+              <button class="seemore__icon">
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+              </button>
+
+              <span>{{ content.seemore.text }}</span>
+            </div>
+          </a>
+        </slot>
       </div>
     </div>
     <!-- button controls -->
@@ -31,7 +36,7 @@
     <div
       class="button button-next"
       @click="handleNext()"
-      v-show="this.currentslide < this.number_slide"
+      v-show="this.currentslide < this.number_slide - 1"
     >
       <i class="fa fa-chevron-right" aria-hidden="true"></i>
     </div>
@@ -49,42 +54,58 @@ export default {
       type: Object,
       required: true,
     },
-    id_component: {
+    size: {
       type: Number,
       required: true,
+    },
+    seemore: {
+      type: Number,
+      default: 1,
+    },
+    distance: {
+      type: Number,
+      default: 1,
     },
   },
   data: function() {
     return {
       currentslide: 0,
-      size: 198,
+      // size: 198,
       item_per_slide: 6,
+      translate: 0,
     };
   },
   computed: {
+    final: function() {
+      let temp = this.content.items.length + this.seemore - this.item_per_slide;
+      return temp % this.distance;
+    },
     number_slide: function() {
-      return this.content.items.length + 1 - this.item_per_slide;
+      let temp = this.content.items.length + this.seemore - this.item_per_slide;
+      let temp2 = 0;
+      if (temp % this.distance != 0) temp2 = 1;
+      return Math.floor(temp / this.distance) + temp2 + 1;
     },
   },
   methods: {
     handlePrev: function() {
       if (this.currentslide > 0) {
+        if (this.currentslide == 1 && this.final != 0)
+          this.translate -= this.size * this.final;
+        else this.translate -= this.size * this.distance;
+        this.$refs.translate.style.transform =
+          "translateX(-" + this.translate + "px)";
         this.currentslide -= 1;
-        var content = document.getElementsByClassName("content__translate")[
-          this.id_component
-        ];
-        content.style.transform =
-          "translateX(" + this.size * this.currentslide + "px)";
       }
     },
     handleNext: function() {
-      if (this.currentslide < this.number_slide) {
+      if (this.currentslide < this.number_slide - 1) {
+        if (this.currentslide == this.number_slide - 2 && this.final != 0)
+          this.translate += this.size * this.final;
+        else this.translate += this.size * this.distance;
+        this.$refs.translate.style.transform =
+          "translateX(-" + this.translate + "px)";
         this.currentslide += 1;
-        var content = document.getElementsByClassName("content__translate")[
-          this.id_component
-        ];
-        content.style.transform =
-          "translateX(-" + this.size * this.currentslide + "px)";
       }
     },
   },
@@ -126,6 +147,7 @@ a {
   text-decoration: none;
   .seemore {
     &__item {
+      background: #fff;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -180,7 +202,7 @@ a {
   transition: all 0.1s cubic-bezier(0.4, 0, 0.6, 1);
   justify-content: center;
   align-items: center;
-  z-index: 100;
+  z-index: 10;
   outline: 0;
   &-next {
     right: 0;
