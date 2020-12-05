@@ -1,10 +1,10 @@
 <template>
   <div class="contain-category-left">
     <div class="list-category">
-      <a class="list-category-header">
+      <router-link class="list-category-header" tag="a" to="/all_category">
         <i class="fa fa-list" aria-hidden="true"></i>
         Tất Cả Danh Mục
-      </a>
+      </router-link>
       <hr />
       <div
         class="list-category-body"
@@ -26,10 +26,12 @@
         <div class="list-category-dropdown" @click="Open">
           <div class="list-category-dropdown-header">
             Thêm
-            <a href="#dropdown" data-toggle="collapse" ><i class="fa fa-chevron-down"  aria-hidden="true"></i> </a>
+            <a href="#dropdown" data-toggle="collapse"
+              ><i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
           </div>
           <div id="dropdown" class="panel-collapse collapse">
-           Tueej ok
+            Tueej ok
           </div>
         </div>
       </div>
@@ -188,15 +190,15 @@ export default {
     }
   },
   methods: {
-    Open:function(){
-      var element=document.getElementsByClassName("list-category-dropdown");
+    Open: function() {
+      var element = document.getElementsByClassName("list-category-dropdown");
       // element.style.height="auto";
       // element.style.opacity="1";
-      element.style.color="red";
+      element.style.color = "red";
     }
   },
 
-  data: function () {
+  data: function() {
     return {};
   }
 };
