@@ -16,6 +16,7 @@
       />
       <div class="contain-product-right">
         <div class="shop-item-result">
+          <category-right/>
           <list-product-category />
         </div>
       </div>
@@ -30,6 +31,7 @@ import data from "../../data/ProductSingleCategory.json";
 import TopSales from "../TopSales/TopSales.vue";
 import ShoppeMall from "./ShoppeMall";
 import CategoryLeft from "./CategoryLeft";
+import CategoryRight from "./CategoryRight";
 import SaleFromRestaurant from "../SaleFromRestaurant/SaleFromRestaurant";
 import ListProductCategory from "../../components/Product/Category/ListProductCategory";
 import BrandRecommended from "../BrandRecommended/BrandRecommended.vue";
@@ -38,6 +40,7 @@ export default {
   components: {
     "shoppe-mall": ShoppeMall,
     "category-left": CategoryLeft,
+    "category-right":CategoryRight,
     "sale-from-restaurant": SaleFromRestaurant,
     "list-product-category": ListProductCategory,
     "top-sales": TopSales,

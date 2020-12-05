@@ -69,7 +69,12 @@
         { "nameSingleCategory": "Ăn vặt& Bánh kẹo" },
         { "nameSingleCategory": "Đồ uống" },
         { "nameSingleCategory": "Đồ hộp và Đóng gói" },
-        { "nameSingleCategory": "Nấu ăn & Làm bánh" }
+        { "nameSingleCategory": "Nấu ăn & Làm bánh" },
+        { "nameSingleCategory": "Đậu và hạt" },
+        { "nameSingleCategory": "Đặc sản việt" },
+        { "nameSingleCategory": "Quà biếu" },
+        { "nameSingleCategory": "Đồ uống có cồn" },
+        { "nameSingleCategory": "Sữa" }
       ]
     }
   ],
@@ -78,13 +83,35 @@
     { "nameLocation": "Hà Nội" },
     { "nameLocation": "Thái Nguyên" },
     { "nameLocation": "Vĩnh Phúc" },
-    { "nameLocation": "Hải Phòng" }
+    { "nameLocation": "Hải Phòng" },
+    { "nameLocation": "Đồng Nai" },
+    { "nameLocation": "Hưng Yên" },
+    { "nameLocation": "Bình Dương" },
+    { "nameLocation": "Bắc Ninh" },
+    { "nameLocation": "Đà Nẵng" },
+    { "nameLocation": "Quảng Ninh" },
+    { "nameLocation": "Hải Dương" },
+    { "nameLocation": "Nam Định" },
+    { "nameLocation": "Cần Thơ" },
+    { "nameLocation": "Phú Thọ" },
+    { "nameLocation": "Bà Rịa-Vũng Tàu" },
+    { "nameLocation": "Đăk-Lắk" },
+    { "nameLocation": "Thanh Hóa" },
+    { "nameLocation": "Thái Bình" },
+    { "nameLocation": "Nước Ngoài" }
   ],
   "ListUnitTransport": [
     { "nameUnitTransport": "Shopee Express" },
     { "nameUnitTransport": "NowShip" },
     { "nameUnitTransport": "Ninja Van" },
-    { "nameUnitTransport": "J&T Express" }
+    { "nameUnitTransport": "J&T Express" },
+    { "nameUnitTransport": "Giao hàng tiết kiệm" },
+    { "nameUnitTransport": "Giao hàng nhanh" },
+    { "nameUnitTransport": "BEST Express" },
+    { "nameUnitTransport": "Viettel Post" },
+    { "nameUnitTransport": "VNPost Nhanh" },
+    { "nameUnitTransport": "VNPost Tiết Kiệm" },
+    { "nameUnitTransport": "GrapExpress" }
   ],
   "ListTypeShop": [
     { "nameTypeShop": "Shopee Mall" },
@@ -99,6 +126,10 @@
     { "nameService": "Freeship Xtra" },
     { "nameService": "Hoàn xu Xtra" },
     { "nameService": "Đang giảm giá" },
-    { "nameService": "Miễn phí vận chuyển" }
+    { "nameService": "Miễn phí vận chuyển" },
+    { "nameService": "Rẻ vô địch" },
+    { "nameService": "Hàng có sẵn" },
+    { "nameService": "Mua giá bán sỉ/lẻ" },
+    { "nameService": "Có video" }
   ]
 }
