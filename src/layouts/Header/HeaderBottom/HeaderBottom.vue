@@ -2,14 +2,10 @@
   <div class="navbar-shop__bottom">
     <div class="container__nav navbar-shop__range">
       <div class="navbar-shop__search--wrapper">
-        <a
-          href="javascript:void(0)"
-          class="navbar-shop__logo"
-          @click="handleRouter"
-        >
+        <router-link class="navbar-shop__logo" tag="a" to="/">
           <i class="fa fa-shopping-bag" aria-hidden="true"></i>
           <span>Shopee</span>
-        </a>
+        </router-link>
         <header-search :data="data" />
         <div class="navbar-shop__cart">
           <div class="navbar-shop__cart--position">
