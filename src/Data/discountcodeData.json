@@ -1,0 +1,37 @@
+{
+    "discount_code": {
+        "title": "Mã giảm giá của Shop",
+        "href": "/logup",
+        "items": [{
+                "id": 1,
+                "reduce": "Giảm",
+                "price": 1000000000,
+                "min": "Đơn Tối Thiểu",
+                "bill": 98000000000,
+                "hsd": "HSD",
+                "date": "15-02-2021",
+                "button": "Lưu"
+            },
+            {
+                "id": 2,
+                "reduce": "Giảm",
+                "price": 1000000000,
+                "min": "Đơn Tối Thiểu",
+                "bill": 98000000000,
+                "hsd": "HSD",
+                "date": "15-02-2021",
+                "button": "Lưu"
+            },
+            {
+                "id": 3,
+                "reduce": "Giảm",
+                "price": 1000000000,
+                "min": "Đơn Tối Thiểu",
+                "bill": 98000000000,
+                "hsd": "HSD",
+                "date": "15-02-2021",
+                "button": "Lưu"
+            }
+        ]
+    }
+}

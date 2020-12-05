@@ -26,6 +26,14 @@ export default {
             });
             a = (a / 100000).toFixed(0).replace(".", ",");
             return numberFormat.format(a).replace(",", ".");
+        },
+        addcurrency_and_k: function(a) {
+            const numberFormat = new Intl.NumberFormat("en-US", {
+                style: "currency",
+                currency: "VND"
+            });
+            a = (a / 100000 / 1000).toFixed(0).replace(".", ",");
+            return numberFormat.format(a).replace(",", ".") + 'k';
         }
     }
 };
