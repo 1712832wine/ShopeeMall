@@ -142,14 +142,17 @@ export default {
   computed: {
     handleValidatePhone() {
       let vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
-      if (this.form.phone !== "") {
-        if (vnf_regex.test(this.form.phone) === false) {
-          return null;
-        } else {
+      if (this.form.phone == null) {
+        return null;
+      } else {
+        if (this.form.phone != null) {
+          if (vnf_regex.test(this.form.phone) === false) {
+            return false;
+          }
           return true;
         }
       }
-      return false;
+      return null;
     }
   }
 };

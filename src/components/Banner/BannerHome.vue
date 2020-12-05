@@ -5,13 +5,10 @@
         <div class="section-banner--full">
           <div class="container-banner">
             <div class="section-banner__wrapper">
-              <banner-slide />
+              <banner-slide :banners="banners" />
               <div class="home-banner__left">
-                <a v-for="i in 2" :key="`banner-left${i}`" href="#">
-                  <img
-                    :src="`/assets/images/banners/banner-left-${i}.jpg`"
-                    alt=""
-                  />
+                <a v-for="(banner, index) in banners" :key="banner.id" href="#">
+                  <img v-if="index > 13" :src="banner.banner_image" alt="" />
                 </a>
               </div>
             </div>
@@ -27,7 +24,13 @@
 <script>
 import BannerSlide from "./BannerSlide";
 import CampaignList from "../campaign/CampaignList";
+import bannerData from "../../data/bannerData.json";
 export default {
+  data() {
+    return {
+      banners: bannerData.banners
+    };
+  },
   components: {
     "banner-slide": BannerSlide,
     "campaign-list": CampaignList
