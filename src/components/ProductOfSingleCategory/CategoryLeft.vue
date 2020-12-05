@@ -20,18 +20,22 @@
             v-for="(item, index) in itemName.listNameCategory"
             v-bind:key="index"
           >
-            <a href="#"> {{ item.nameSingleCategory }}</a>
+            <a href="#" v-if="index < 4"> {{ item.nameSingleCategory }}</a>
+            <a href="#" v-else v-show="isActiveCategory == false">
+              {{ item.nameSingleCategory }}</a
+            >
           </li>
-        </ul>
-        <div class="list-category-dropdown" @click="Open">
-          <div class="list-category-dropdown-header">
+          <div class="list-category-dropdown-header " v-show="isActiveCategory == true">
             Thêm
-            <a href="#dropdown" data-toggle="collapse" ><i class="fa fa-chevron-down"  aria-hidden="true"></i> </a>
+            <a href="#">
+              <i
+                class="fa fa-chevron-down"
+                aria-hidden="true"
+                @click="isActiveCategory = !isActiveCategory"
+              ></i>
+            </a>
           </div>
-          <div id="dropdown" class="panel-collapse collapse">
-           Tueej ok
-          </div>
-        </div>
+        </ul>
       </div>
     </div>
 
@@ -49,13 +53,19 @@
             v-for="(item, index) in ListLocation"
             v-bind:key="index"
           >
-            <input type="checkbox" />
-            <span>{{ item.nameLocation }}</span>
+            <div v-if="index < 4">
+              <input type="checkbox" />
+              <span>{{ item.nameLocation }}</span>
+            </div>
+             <div v-else v-show=" isActiveLocation ==false">
+              <input type="checkbox" />
+              <span>{{ item.nameLocation }}</span>
+            </div>
           </div>
           <div class="search-fillter-location-dropdown">
             <div class="search-fillter-location-dropdown-header">
               Thêm
-              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+              <i class="fa fa-chevron-down" aria-hidden="true" @click="isActiveLocation=!isActiveLocation"></i>
             </div>
             <div class="list-location-dropdown-body"></div>
           </div>
@@ -71,13 +81,20 @@
             v-for="(item, index) in ListUnitTransport"
             v-bind:key="index"
           >
-            <input type="checkbox" />
-            <span>{{ item.nameUnitTransport }}</span>
+            <div v-if="index<4">
+              <input type="checkbox" />
+              <span>{{ item.nameUnitTransport }}</span>
+            </div>
+             <div v-else v-show="isActiveTransport==false">
+              <input type="checkbox" />
+              <span>{{ item.nameUnitTransport }}</span>
+            </div>
+            
           </div>
           <div class="unit-tranport-dropdown">
-            <div class="sunit-tranport-dropdown-header">
+            <div class="sunit-tranport-dropdown-header" v-show="isActiveTransport==true">
               Thêm
-              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+              <i class="fa fa-chevron-down" aria-hidden="true" @click="isActiveTransport=!isActiveTransport"></i>
             </div>
             <div class="list-unit-tranport-dropdown-body"></div>
           </div>
@@ -94,7 +111,7 @@
           <span class="character">-</span>
           <input type="text" class="price-distance-input" placeholder="đ ĐẾN" />
         </div>
-        <button class="price-distance-submit">ÁP DỤNG</button>
+        <button class="btn btn--price">ÁP DỤNG</button>
       </div>
       <hr />
       <!-- ======================================================= -->
@@ -136,6 +153,44 @@
         <div class="rate-header">
           Đánh giá
         </div>
+        <div class="rate-body">
+        <div class="rate-body__wrap ">
+            <span class="change-color"><i class="fa fa-star" aria-hidden="true"></i></span>
+            <span class="change-color"><i class="fa fa-star" aria-hidden="true"></i></span>
+            <span class="change-color"><i class="fa fa-star" aria-hidden="true"></i></span>
+            <span class="change-color"><i class="fa fa-star" aria-hidden="true"></i></span>
+            <span class="change-color"><i class="fa fa-star" aria-hidden="true"></i></span>
+  
+        </div>
+         <div class="rate-body__wrap ">
+            <span class="change-color"><i class="fa fa-star" aria-hidden="true"></i></span>
+            <span class="change-color"><i class="fa fa-star" aria-hidden="true"></i></span>
+            <span class="change-color"><i class="fa fa-star" aria-hidden="true"></i></span>
+            <span class="change-color"><i class="fa fa-star" aria-hidden="true"></i></span>
+            <span><i class="fa fa-star-o" > </i></span> <b> trở lên </b>
+        </div>
+       <div class="rate-body__wrap ">
+            <span class="change-color"><i class="fa fa-star" aria-hidden="true"></i></span>
+            <span class="change-color"><i class="fa fa-star" aria-hidden="true"></i></span>
+            <span class="change-color"><i class="fa fa-star" aria-hidden="true"></i></span>
+            <span class="change-color"><i class="fa fa-star-o" ></i></span>
+            <span><i class="fa fa-star-o" > </i></span>  <b> trở lên </b>
+        </div>
+        <div class="rate-body__wrap ">
+            <span class="change-color"><i class="fa fa-star" aria-hidden="true"></i></span>
+            <span class="change-color"><i class="fa fa-star" aria-hidden="true"></i></span>
+            <span class="change-color"><i class="fa fa-star-o" > </i></span>
+            <span class="change-color"><i class="fa fa-star-o" > </i></span>
+            <span><i class="fa fa-star-o" > </i></span>  <b> trở lên </b>
+        </div>
+        <div class="rate-body__wrap ">
+            <span class="change-color"><i class="fa fa-star" aria-hidden="true"></i></span>
+            <span class="change-color"><i class="fa fa-star-o" > </i></span>
+            <span class="change-color"><i class="fa fa-star-o" > </i></span>
+            <span class="change-color"><i class="fa fa-star-o" > </i></span>
+            <span><i class="fa fa-star-o" > </i></span> <b> trở lên </b>
+        </div>
+        </div>
       </div>
       <hr />
       <!-- ============================================================ -->
@@ -147,20 +202,31 @@
             v-for="(item, index) in ListService"
             v-bind:key="index"
           >
-            <input type="checkbox" />
-
+          <div v-if="index<4">
+             <input type="checkbox" />
             <span>{{ item.nameService }}</span>
           </div>
+          <div v-else v-show= "isActivePromotion==false">
+             <input type="checkbox" />
+            <span>{{ item.nameService }}</span>
+          </div>
+           
+          </div>
           <div class="servicePromotion-dropdown">
-            <div class="sservicePromotion-dropdown-header">
+            <div class="sservicePromotion-dropdown-header" v-show= "isActivePromotion==true">
               Thêm
-              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+              <i class="fa fa-chevron-down" aria-hidden="true" @click="isActivePromotion=!isActivePromotion"></i>
             </div>
             <div class="list-servicePromotion-dropdown-body"></div>
           </div>
         </div>
       </div>
       <hr />
+
+     <!-- ============================================================ -->
+      <div class="delete-filter">
+      <button class="btn btn--delete-filter">XÓA TẤT CẢ</button>
+      </div>
     </div>
   </div>
 </template>
@@ -169,40 +235,57 @@
 export default {
   props: {
     ListCategory: {
-      type: Array
+      type: Array,
     },
     ListLocation: {
-      type: Array
+      type: Array,
     },
     ListUnitTransport: {
-      type: Array
+      type: Array,
     },
     ListTypeShop: {
-      type: Array
+      type: Array,
     },
     ListActiveProduct: {
-      type: Array
+      type: Array,
     },
     ListService: {
-      type: Array
-    }
+      type: Array,
+    },
   },
   methods: {
-    Open:function(){
-      var element=document.getElementsByClassName("list-category-dropdown");
+    Open: function() {
+      var element = document.getElementsByClassName("list-category-dropdown");
       // element.style.height="auto";
       // element.style.opacity="1";
-      element.style.color="red";
-    }
+      element.style.color = "red";
+    },
   },
 
-  data: function () {
-    return {};
-  }
+  data: function() {
+    return {
+      isActiveCategory: true,
+      isActiveLocation:true,
+      isActiveTransport:true,
+      isActivePromotion:true
+    };
+  },
 };
 </script>
 >
 
 <style lang="scss" scoped>
 @import "./Style/style-CategoryLeft.scss";
+.btn {
+        width: 11.8rem;
+        height: 1.875rem;
+        margin-top: 0.8rem;
+        border: none;
+        background-color: #ee4d2d;
+        color: white;
+        font-size: 0.8rem;
+        &:focus {
+          border: none;
+        }
+      }
 </style>
