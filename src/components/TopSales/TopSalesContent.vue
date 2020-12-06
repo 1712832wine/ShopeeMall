@@ -18,7 +18,6 @@
               <button class="seemore__icon">
                 <i class="fa fa-chevron-right" aria-hidden="true"></i>
               </button>
-
               <span>{{ content.seemore.text }}</span>
             </div>
           </a>
@@ -47,32 +46,33 @@
 import TopSalesItem from "./TopSalesItem.vue";
 export default {
   components: {
-    "top-sales-item": TopSalesItem,
+    "top-sales-item": TopSalesItem
   },
   props: {
     content: {
       type: Object,
-      required: true,
+      required: true
     },
     size: {
       type: Number,
-      required: true,
+      required: false,
+      default: 200
     },
     seemore: {
       type: Number,
-      default: 1,
+      default: 1
     },
+    item_per_slide: { type: Number, default: 6 },
     distance: {
       type: Number,
-      default: 1,
-    },
+      default: 1
+    }
   },
   data: function() {
     return {
       currentslide: 0,
       // size: 198,
-      item_per_slide: 6,
-      translate: 0,
+      translate: 0
     };
   },
   computed: {
@@ -85,7 +85,7 @@ export default {
       let temp2 = 0;
       if (temp % this.distance != 0) temp2 = 1;
       return Math.floor(temp / this.distance) + temp2 + 1;
-    },
+    }
   },
   methods: {
     handlePrev: function() {
@@ -107,8 +107,8 @@ export default {
           "translateX(-" + this.translate + "px)";
         this.currentslide += 1;
       }
-    },
-  },
+    }
+  }
 };
 </script>
 
@@ -120,6 +120,7 @@ $size: 200px;
     .button {
       width: 50px;
       height: 50px;
+      z-index: 1;
       line-height: 50px;
       margin-top: -25px;
       &-next {
@@ -187,12 +188,12 @@ a {
 .button {
   width: 25px;
   height: 25px;
+  z-index: 1;
   line-height: 25px;
   margin-top: -12.5px;
   background-color: #fff;
   opacity: 1;
   visibility: visible;
-
   box-shadow: 0 1px 12px 0 rgba(0, 0, 0, 0.12);
   cursor: pointer;
   position: absolute;
@@ -202,7 +203,6 @@ a {
   transition: all 0.1s cubic-bezier(0.4, 0, 0.6, 1);
   justify-content: center;
   align-items: center;
-  z-index: 10;
   outline: 0;
   &-next {
     right: 0;

@@ -36,18 +36,18 @@ export default {
 
 <style lang="scss" scoped>
 .section_content_right {
-  padding-left: 6px;
+  // padding-left: 6px;
   padding-top: 10px;
-  height: 474px;
-  width: 806px;
+  height: 100%;
+  min-width: 800px;
 }
-#translate {
-  transform: translate(-120px, 40px);
-}
+// #translate {
+//   transform: translate(-120px, 40px);
+// }
 .flex {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  // justify-content: space-between;
   align-items: end;
   flex-wrap: wrap;
 }
@@ -55,7 +55,7 @@ export default {
 $width: 12.5rem;
 $height: 50%;
 .item {
-  padding: 0 10px 10px 0;
+  padding: 0 0 10px 10px;
   width: $width;
   height: $height;
   &__img {

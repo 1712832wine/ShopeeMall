@@ -42,6 +42,7 @@ $size__img2: 109.67px;
   padding: 30px 30px 25px;
   // width: 399.98px;
   height: 324px;
+  min-width: calc(100% / 3);
   box-sizing: border-box;
   border-right: 1px solid rgba(0, 0, 0, 0.05);
   flex-grow: 1;
