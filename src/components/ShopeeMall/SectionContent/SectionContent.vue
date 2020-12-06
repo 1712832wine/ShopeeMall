@@ -11,8 +11,8 @@
 </template>
 
 <script>
-import LeftCarousel from "./LeftCarousel.vue";
-import RightCarousel from "./RightCarousel.vue";
+import LeftCarousel from "./Item1__LeftCarousel.vue";
+import RightCarousel from "./Item2__RightCarousel.vue";
 export default {
   props: {
     bottom: {

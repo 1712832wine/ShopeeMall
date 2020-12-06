@@ -2,7 +2,7 @@
   <div>
     <div id="topsearch">
       <topsearch-header :top="top" />
-      <topsearch-content :slides="slides" />
+      <topsearch-content :content="content" />
     </div>
   </div>
 </template>
