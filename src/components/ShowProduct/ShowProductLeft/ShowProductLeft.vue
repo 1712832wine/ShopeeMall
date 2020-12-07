@@ -24,8 +24,8 @@ export default {
   props: {
     left: {
       type: Object,
-      required: true,
-    },
+      required: true
+    }
   },
   data: function() {
     return { number_item: -1 };
@@ -33,13 +33,13 @@ export default {
   components: {
     "image-and-slide": ImageAndSlide,
     "share-bottom": Share,
-    "carousel-hidden": CarouselHidden,
+    "carousel-hidden": CarouselHidden
   },
   methods: {
     CallHidden: function(e) {
       this.number_item = e;
-    },
-  },
+    }
+  }
 };
 </script>
 
