@@ -6,6 +6,7 @@
       </div>
 
       <div class="title">
+        <div v-if="item.badge != ''" class="badge">{{ item.badge }}</div>
         {{
           item.reduce +
             " " +
@@ -19,7 +20,9 @@
       <div class="usingdate">{{ item.hsd + ": " + item.date }}</div>
     </div>
     <div class="item-right">
-      <button class="button">{{ item.button }}</button>
+      <a :href="item.href">
+        <button class="button">{{ item.button }}</button>
+      </a>
     </div>
   </div>
 </template>
@@ -28,12 +31,28 @@
 import Help from "../../../../helpers/helpFunction.js";
 export default {
   mixins: [Help],
-  props: { item: { type: Object, required: true } },
+  props: {
+    item: { type: Object, required: true }
+  }
 };
 </script>
 
 <style lang="scss" scoped>
 $color: #fbc9c0;
+.badge {
+  background-color: #ffbf00;
+  color: #fff;
+  display: inline-flex;
+  margin-right: 0.25rem;
+  padding: 0 0.25rem;
+  height: 1rem;
+  line-height: 1rem;
+  text-transform: capitalize;
+  border-radius: 0.125rem;
+  font-weight: 400;
+  font-size: 0.625rem;
+  vertical-align: middle;
+}
 .discount-item {
   position: relative;
   box-shadow: 0.125rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.07);
@@ -64,10 +83,14 @@ $color: #fbc9c0;
     .title {
       color: #ee4d2d;
       overflow: hidden;
+      display: -webkit-box;
       text-overflow: ellipsis;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
       font-size: 0.75rem;
       line-height: 0.875rem;
       max-height: 1.875rem;
+      -webkit-box-orient: vertical;
       font-weight: 500;
       word-break: break-word;
     }
@@ -151,5 +174,8 @@ $color: #fbc9c0;
     left: 0;
     height: 100%;
   }
+}
+a:hover {
+  text-decoration: none;
 }
 </style>

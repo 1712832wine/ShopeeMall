@@ -66,18 +66,18 @@ export default {
   props: {
     image_and_slide: {
       type: Object,
-      required: true,
+      required: true
     },
     number_item: {
       type: Number,
-      required: true,
-    },
+      required: true
+    }
   },
   data: function() {
     return {
       index_img: this.number_item,
       current_img: this.image_and_slide.images[this.number_item],
-      overlay: { overlay: this.number_item != 0 ? 0 : 1 },
+      overlay: { overlay: this.number_item != 0 ? 0 : 1 }
     };
   },
   methods: {
@@ -113,8 +113,8 @@ export default {
       this.current_img = item;
       if (index == 0) this.$set(this.overlay, "overlay", 1);
       else this.$set(this.overlay, "overlay", 0);
-    },
-  },
+    }
+  }
 };
 </script>
 

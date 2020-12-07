@@ -4,7 +4,13 @@
     <right-rating :rating="right.rating" />
     <right-pricing :pricing="right.pricing" />
     <right-transport :transport="right.transport" />
-    <right-sizing :sizing="right.sizing" />
+    <!-- color -->
+    <right-sizing
+      v-if="right.coloring.items.length != 0"
+      :data="right.coloring"
+    />
+    <!-- size -->
+    <right-sizing v-if="right.sizing.items.length != 0" :data="right.sizing" />
     <right-numbers :numbers="right.numbers" />
     <right-footer :footer="right.footer" />
   </div>

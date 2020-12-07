@@ -103,6 +103,7 @@ $orange: #ee4d2d;
   font-size: 14px;
 }
 .button_type2 {
+  outline: none;
   margin-right: 15px;
   min-width: 11.25rem;
   padding: 0 0.75rem;
