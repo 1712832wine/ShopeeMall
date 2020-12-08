@@ -9,7 +9,7 @@
 export default {
   created() {
     // console.log(ProductSingleCategory);
-  },
+  }
 };
 </script>
 

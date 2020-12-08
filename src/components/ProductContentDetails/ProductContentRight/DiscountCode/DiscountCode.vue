@@ -1,5 +1,5 @@
 <template>
-  <div class="discount-code">
+  <div class="discount-code" v-if="items.length != 0">
     <div class="title">{{ title }}</div>
     <div>
       <discount-item v-for="item in items" :key="item.id" :item="item" />
@@ -15,8 +15,8 @@ export default {
     return Data.discount_code;
   },
   components: {
-    "discount-item": DiscountItem,
-  },
+    "discount-item": DiscountItem
+  }
 };
 </script>
 

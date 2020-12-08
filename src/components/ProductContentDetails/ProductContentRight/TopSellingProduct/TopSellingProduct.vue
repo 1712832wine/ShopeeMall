@@ -1,5 +1,5 @@
 <template>
-  <div class="top-selling-product">
+  <div class="top-selling-product" v-if="items.length != 0">
     <div class="title">{{ title }}</div>
     <div>
       <top-selling-item
