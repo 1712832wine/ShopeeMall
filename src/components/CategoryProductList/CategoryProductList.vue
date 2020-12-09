@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <div class="container">
-      <category-item v-bind:ListProduct="listProduct" />
+  <div class="wrap">
+    <div >
+      <category-item v-bind:ListProduct="listProduct" class="category"/>
       <category-pagination v-bind:ListAnphabetical="listData" />
     </div>
   </div>
@@ -25,9 +25,6 @@ export default {
 };
 </script>
 
-<style lang="scss">
-.container {
-  margin-top: 60px;
-  display: block;
-}
+<style lang="scss" scoped>
+
 </style>

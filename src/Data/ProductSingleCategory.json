@@ -65,71 +65,93 @@
   "ListCategory": [
     {
       "nameCategory": "Bách hóa online",
-      "listNameCategory": [
-        { "nameSingleCategory": "Ăn vặt& Bánh kẹo" },
-        { "nameSingleCategory": "Đồ uống" },
-        { "nameSingleCategory": "Đồ hộp và Đóng gói" },
-        { "nameSingleCategory": "Nấu ăn & Làm bánh" },
-        { "nameSingleCategory": "Đậu và hạt" },
-        { "nameSingleCategory": "Đặc sản việt" },
-        { "nameSingleCategory": "Quà biếu" },
-        { "nameSingleCategory": "Đồ uống có cồn" },
-        { "nameSingleCategory": "Sữa" }
+      "nameSingleCategory": [
+        "Ăn vặt& Bánh kẹo",
+        "Đồ uống",
+        "Đồ hộp và Đóng gói",
+        "Nấu ăn & Làm bánh",
+        "Đậu và hạt",
+        "Đặc sản việt",
+        "Quà biếu",
+        "Đồ uống có cồn",
+        "Sữa"
       ]
     }
   ],
   "ListLocation": [
-    { "nameLocation": "TP. Hồ Chí Minh" },
-    { "nameLocation": "Hà Nội" },
-    { "nameLocation": "Thái Nguyên" },
-    { "nameLocation": "Vĩnh Phúc" },
-    { "nameLocation": "Hải Phòng" },
-    { "nameLocation": "Đồng Nai" },
-    { "nameLocation": "Hưng Yên" },
-    { "nameLocation": "Bình Dương" },
-    { "nameLocation": "Bắc Ninh" },
-    { "nameLocation": "Đà Nẵng" },
-    { "nameLocation": "Quảng Ninh" },
-    { "nameLocation": "Hải Dương" },
-    { "nameLocation": "Nam Định" },
-    { "nameLocation": "Cần Thơ" },
-    { "nameLocation": "Phú Thọ" },
-    { "nameLocation": "Bà Rịa-Vũng Tàu" },
-    { "nameLocation": "Đăk-Lắk" },
-    { "nameLocation": "Thanh Hóa" },
-    { "nameLocation": "Thái Bình" },
-    { "nameLocation": "Nước Ngoài" }
+    {
+      "locationTitle": "Nơi bán",
+      "nameLocation": [
+        "TP. Hồ Chí Minh",
+        "Hà Nội",
+        "Thái Nguyên",
+        "Vĩnh Phúc",
+        "Hải Phòng",
+        "Đồng Nai",
+        "Hưng Yên",
+        "Bình Dương",
+        "Bắc Ninh",
+        "Đà Nẵng",
+        "Quảng Ninh",
+        "Hải Dương",
+        "Nam Định",
+        "Cần Thơ",
+        "Phú Thọ",
+        "Bà Rịa-Vũng Tàu",
+        "Đăk-Lắk",
+        "Thanh Hóa",
+        "Thái Bình",
+        "Nước Ngoài"
+      ]
+    }
   ],
   "ListUnitTransport": [
-    { "nameUnitTransport": "Shopee Express" },
-    { "nameUnitTransport": "NowShip" },
-    { "nameUnitTransport": "Ninja Van" },
-    { "nameUnitTransport": "J&T Express" },
-    { "nameUnitTransport": "Giao hàng tiết kiệm" },
-    { "nameUnitTransport": "Giao hàng nhanh" },
-    { "nameUnitTransport": "BEST Express" },
-    { "nameUnitTransport": "Viettel Post" },
-    { "nameUnitTransport": "VNPost Nhanh" },
-    { "nameUnitTransport": "VNPost Tiết Kiệm" },
-    { "nameUnitTransport": "GrapExpress" }
+    {
+      "unitTransportTitle": "Đơn vị vận chuyển",
+      "nameUnitTransport": [
+        "Shopee Express",
+        "NowShip",
+        "Ninja Van",
+        "J&T Express",
+        "Giao hàng tiết kiệm",
+        "Giao hàng nhanh",
+        "BEST Express",
+        "Viettel Post",
+        "VNPost Nhanh",
+        "VNPost Tiết Kiệm",
+        "GrapExpress"
+      ]
+    }
   ],
   "ListTypeShop": [
-    { "nameTypeShop": "Shopee Mall" },
-    { "nameTypeShop": "Shop yêu thích" },
-    { "nameTypeShop": "Xử lí đơn hàng bởi Shoppe" }
+    {
+      "typeShopTitle": "Loại Shop",
+      "nameTypeShop": [
+        "Shopee Mall",
+        "Shop yêu thích",
+        "Xử lí đơn hàng bởi Shoppe"
+      ]
+    }
   ],
   "ListActiveProduct": [
-    { "nameActiveProduct": "Sản phẩm mới" },
-    { "nameActiveProduct": "Sản phẩm dã dùng" }
+    {
+      "activeProductTitle": "Tình trạng ok",
+      "nameActiveProduct": ["Sản phẩm mới", "Sản phẩm dã dùng"]
+    }
   ],
   "ListService": [
-    { "nameService": "Freeship Xtra" },
-    { "nameService": "Hoàn xu Xtra" },
-    { "nameService": "Đang giảm giá" },
-    { "nameService": "Miễn phí vận chuyển" },
-    { "nameService": "Rẻ vô địch" },
-    { "nameService": "Hàng có sẵn" },
-    { "nameService": "Mua giá bán sỉ/lẻ" },
-    { "nameService": "Có video" }
+    {
+      "serviceTitle": "Dịch vụ và khuyến mãi",
+      "nameService": [
+        "Freeship Xtra",
+        "Hoàn xu Xtra",
+        "Hoàn xu Xtra",
+        "Miễn phí vận chuyển",
+        "Rẻ vô địch",
+        "Hàng có sẵn",
+        "Mua giá bán sỉ/lẻ",
+        "Có video"
+      ]
+    }
   ]
 }

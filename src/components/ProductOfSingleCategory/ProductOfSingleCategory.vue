@@ -6,14 +6,7 @@
     <brand-recommended />
     <one-day-one-style />
     <div class="contain">
-      <category-left
-        v-bind:ListCategory="listCategory"
-        v-bind:ListLocation="listLocation"
-        v-bind:ListUnitTransport="listUnitTransport"
-        v-bind:ListTypeShop="listTypeShop"
-        v-bind:ListActiveProduct="listActiveProduct"
-        v-bind:ListService="listService"
-      />
+      <category-left />
       <div class="contain-product-right">
         <div class="shop-item-result">
           <category-right/>
@@ -27,10 +20,10 @@
 <script>
 // data
 import data from "../../data/ProductSingleCategory.json";
-//component
+//components
 import TopSales from "../TopSales/TopSales.vue";
 import ShoppeMall from "./ShoppeMall";
-import CategoryLeft from "./CategoryLeft";
+import CategoryLeft from "./CategoryLeft/CategoryLeft";
 import CategoryRight from "./CategoryRight";
 import SaleFromRestaurant from "../SaleFromRestaurant/SaleFromRestaurant";
 import ListProductCategory from "../../components/Product/Category/ListProductCategory";
@@ -50,12 +43,12 @@ export default {
   data() {
     return {
       listShoppeMall: data.ListShoppeMall,
-      listCategory: data.ListCategory,
-      listLocation: data.ListLocation,
-      listUnitTransport: data.ListUnitTransport,
-      listTypeShop: data.ListTypeShop,
-      listActiveProduct: data.ListActiveProduct,
-      listService: data.ListService,
+      // listCategory: data.ListCategory,
+      // listLocation: data.ListLocation,
+      // listUnitTransport: data.ListUnitTransport,
+      // listTypeShop: data.ListTypeShop,
+      // listActiveProduct: data.ListActiveProduct,
+      // listService: data.ListService,
     };
   },
 };

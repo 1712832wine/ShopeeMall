@@ -3,7 +3,7 @@
     <banner-home />
     <div class="container-wrap">
       <div class="large-banner"></div>
-      <category-item :ListProduct="listProduct" />
+      <category-item :ListProduct="listProduct" class="fix-margin" />
       <list-flash-sale />
       <shopee-mall />
       <top-search />
@@ -41,6 +41,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.fix-margin{
+  /deep/ .mycontainer{
+    margin-top:0;
+    .singleProduct{
+      width: 10%;
+    }
+  }
+}
 #nav {
   padding: 30px;
 
