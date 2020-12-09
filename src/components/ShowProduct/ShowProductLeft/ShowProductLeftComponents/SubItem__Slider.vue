@@ -38,13 +38,13 @@ export default {
   props: {
     image_and_slide: {
       type: Object,
-      required: true,
+      required: true
     },
     image_overlay: {
       type: String,
       required: false,
-      default: "https://cf.shopee.vn/file/07417985b2b0867e29419f5a5dc62dc6",
-    },
+      default: "https://cf.shopee.vn/file/07417985b2b0867e29419f5a5dc62dc6"
+    }
   },
   data: function() {
     return {
@@ -52,13 +52,13 @@ export default {
       size: 92,
       translate: 0,
       item_per_slide: 5,
-      current_img: "",
+      current_img: ""
     };
   },
   computed: {
     number_slide: function() {
       return this.image_and_slide.images.length + 1 - this.item_per_slide;
-    },
+    }
   },
   methods: {
     callHidden: function(index) {
@@ -85,8 +85,8 @@ export default {
         this.$refs.translate.style.transform =
           "translateX(-" + this.translate + "px)";
       }
-    },
-  },
+    }
+  }
 };
 </script>
 

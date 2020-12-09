@@ -555,9 +555,28 @@
                     "end": ")"
                 }
             },
+            "coloring": {
+                "title": "Size",
+                "items": [
+                    "Trắng",
+                    "đỏ",
+                    "tím",
+                    "vàng",
+                    "Lục",
+                    "Lam",
+                    "Chàm",
+                    "Tím",
+                    "đỏ",
+                    "tím",
+                    "Trắng",
+                    "đỏ",
+                    "tím"
+                ],
+                "check_icon": "fa fa-check"
+            },
             "sizing": {
                 "title": "Size",
-                "sizes": [
+                "items": [
                     "size 6",
                     "size 7",
                     "size 8",
@@ -571,8 +590,8 @@
                 "icon_cart": "fa fa-cart-plus",
                 "add_to_cart": "Thêm vào giỏ hàng",
                 "buy": "Mua ngay",
-                "href_add": "#",
-                "href_buy": "#"
+                "href_add": "/login",
+                "href_buy": "/login"
             },
             "footer": {
                 "href": "#",

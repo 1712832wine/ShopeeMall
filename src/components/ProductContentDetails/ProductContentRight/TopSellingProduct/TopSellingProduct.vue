@@ -1,5 +1,5 @@
 <template>
-  <div class="top-selling-product">
+  <div class="top-selling-product" v-if="items.length != 0">
     <div class="title">{{ title }}</div>
     <div>
       <top-selling-item
@@ -18,11 +18,11 @@
 import TopSellingItem from "../../../TopSales/TopSalesItem.vue";
 import Data from "../../../../data/topsellingproductData.json";
 export default {
-  data: function() {
-    return Data.topselling_product;
-  },
   components: {
     "top-selling-item": TopSellingItem
+  },
+  data: function() {
+    return Data.topselling_product;
   }
 };
 </script>

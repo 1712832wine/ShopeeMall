@@ -7,6 +7,7 @@
 
 <script>
 // component
+
 import SectionHeader from "./SectionHeader/SectionHeader.vue";
 import SectionContent from "./SectionContent/SectionContent.vue";
 // data

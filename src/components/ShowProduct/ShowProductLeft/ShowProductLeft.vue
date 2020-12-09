@@ -21,25 +21,25 @@ import ImageAndSlide from "./ShowProductLeftComponents/Item1__ImageAndSlide.vue"
 import Share from "./ShowProductLeftComponents/Item3__Share.vue";
 import CarouselHidden from "./ShowProductLeftComponents/SubItem__CarouselHidden.vue";
 export default {
+  components: {
+    "image-and-slide": ImageAndSlide,
+    "share-bottom": Share,
+    "carousel-hidden": CarouselHidden
+  },
   props: {
     left: {
       type: Object,
-      required: true,
-    },
+      required: true
+    }
   },
   data: function() {
     return { number_item: -1 };
   },
-  components: {
-    "image-and-slide": ImageAndSlide,
-    "share-bottom": Share,
-    "carousel-hidden": CarouselHidden,
-  },
   methods: {
     CallHidden: function(e) {
       this.number_item = e;
-    },
-  },
+    }
+  }
 };
 </script>
 

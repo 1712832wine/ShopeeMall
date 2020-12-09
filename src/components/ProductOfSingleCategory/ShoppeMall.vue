@@ -59,7 +59,7 @@ export default {
       type: Array,
     },
   },
-  methods: {
+  methods:{
     Next: function () {
       var chuyen = 0;
       var chuyenSlide = document.getElementsByClassName(
@@ -83,9 +83,7 @@ export default {
       // chuyenSlide.style.li.display = "block";
     },
   },
-  data: function () {
-    return {};
-  },
+
 };
 </script>
 

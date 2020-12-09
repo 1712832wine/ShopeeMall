@@ -1,32 +1,34 @@
 <template>
-  <div class="mp-container flex center">
-    <span class="title">{{ sizing.title }}</span>
-    <button
-      v-for="(item, index) in sizing.sizes"
-      :key="item"
-      class="button"
-      @click="Click(index)"
-      :class="{ button_checked: index == IsChecked }"
-    >
-      {{ item }}
-      <div class="checked" v-if="index == IsChecked">
-        <i
-          :class="sizing.check_icon"
-          class="checked_icon"
-          aria-hidden="true"
-        ></i>
-      </div>
-    </button>
+  <div class="mp-container flex">
+    <span class="title">{{ data.title }}</span>
+    <div class="wrap flex">
+      <button
+        v-for="(item, index) in data.items"
+        :key="index"
+        class="button"
+        @click="Click(index)"
+        :class="{ button_checked: index == IsChecked }"
+      >
+        {{ item }}
+        <div class="checked" v-if="index == IsChecked">
+          <i
+            :class="data.check_icon"
+            class="checked_icon"
+            aria-hidden="true"
+          ></i>
+        </div>
+      </button>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
   props: {
-    sizing: {
+    data: {
       type: Object,
-      required: true,
-    },
+      required: true
+    }
   },
   data: function() {
     return { IsChecked: -1 };
@@ -35,21 +37,24 @@ export default {
     Click: function(index) {
       if (this.IsChecked != index) this.IsChecked = index;
       else this.IsChecked = -1;
-    },
-  },
+    }
+  }
 };
 </script>
 
 <style lang="scss" scoped>
 @import "../Style/Style__ShowProductRight.scss";
 $color: #ee4d2d;
+.title {
+  padding-top: 5px;
+}
 .button {
   cursor: pointer;
   min-width: 5rem;
   min-height: 2.125rem;
   box-sizing: border-box;
   padding: 0.25rem 0.75rem;
-  margin: 0 8px 0 0;
+  margin: 0 8px 8px 0;
   color: rgba(0, 0, 0, 0.8);
   border-radius: 2px;
   border: 1px solid rgba(0, 0, 0, 0.29);
@@ -95,5 +100,9 @@ $color: #ee4d2d;
     right: -0.9375rem;
     bottom: 0;
   }
+}
+.wrap {
+  width: 100%;
+  flex-wrap: wrap;
 }
 </style>

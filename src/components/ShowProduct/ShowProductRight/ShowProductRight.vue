@@ -4,7 +4,13 @@
     <right-rating :rating="right.rating" />
     <right-pricing :pricing="right.pricing" />
     <right-transport :transport="right.transport" />
-    <right-sizing :sizing="right.sizing" />
+    <!-- color -->
+    <right-sizing
+      v-if="right.coloring.items.length != 0"
+      :data="right.coloring"
+    />
+    <!-- size -->
+    <right-sizing v-if="right.sizing.items.length != 0" :data="right.sizing" />
     <right-numbers :numbers="right.numbers" />
     <right-footer :footer="right.footer" />
   </div>
@@ -20,13 +26,7 @@ import Sizing from "./ShowProductRightComponents/Item5__Sizing.vue";
 import Numbers from "./ShowProductRightComponents/Item6__Numbers.vue";
 import Footer from "./ShowProductRightComponents/Item7__Footer.vue";
 export default {
-  props: {
-    right: {
-      type: Object,
-      required: true
-    }
-  },
-  components: {
+   components: {
     "right-heading": Heading,
     "right-rating": Rating,
     "right-pricing": Pricing,
@@ -34,7 +34,14 @@ export default {
     "right-sizing": Sizing,
     "right-numbers": Numbers,
     "right-footer": Footer
-  }
+  },
+  props: {
+    right: {
+      type: Object,
+      required: true
+    }
+  },
+ 
 };
 </script>
 

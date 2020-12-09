@@ -76,6 +76,17 @@
 import FlashSaleItem from "./FlashSaleItem";
 import FlashSaleData from "../../data/FlashSaleData.json";
 export default {
+  components: {
+    "flash-sale-item": FlashSaleItem
+  },
+  filters: {
+    two_digits: function(value) {
+      if (value.toString().length <= 1) {
+        return "0" + value.toString();
+      }
+      return value.toString();
+    }
+  },
   data: function() {
     return {
       isHover: false,
@@ -85,8 +96,19 @@ export default {
       x: 0
     };
   },
-  components: {
-    "flash-sale-item": FlashSaleItem
+  computed: {
+    seconds() {
+      return Math.trunc(this.timer) % 60;
+    },
+    minutes() {
+      return Math.trunc(this.timer / 60) % 60;
+    },
+    hours() {
+      return Math.trunc(this.timer / 60 / 60) % 24;
+    },
+    days() {
+      return Math.trunc(this.timer / 60 / 60 / 24);
+    }
   },
   created() {
     this.timer = 120000;
@@ -120,28 +142,6 @@ export default {
           this.x = this.x + 1000;
         }
       }
-    }
-  },
-  computed: {
-    seconds() {
-      return Math.trunc(this.timer) % 60;
-    },
-    minutes() {
-      return Math.trunc(this.timer / 60) % 60;
-    },
-    hours() {
-      return Math.trunc(this.timer / 60 / 60) % 24;
-    },
-    days() {
-      return Math.trunc(this.timer / 60 / 60 / 24);
-    }
-  },
-  filters: {
-    two_digits: function(value) {
-      if (value.toString().length <= 1) {
-        return "0" + value.toString();
-      }
-      return value.toString();
     }
   }
 };

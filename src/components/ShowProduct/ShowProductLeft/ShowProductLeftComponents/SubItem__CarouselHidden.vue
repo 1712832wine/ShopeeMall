@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex carousel_hidden">
+  <div class="d-flex carousel_hidden" v-on-clickaway.prevent="away">
     <div class="size-100 ">
       <div class="big-image-top">
         <div
@@ -55,33 +55,33 @@
           </div>
         </div>
       </div>
-      <!--  -->
-      <button class="button_type2" @click="Quit()">Trở về</button>
     </div>
   </div>
 </template>
 
 <script>
+import { mixin as clickaway } from "vue-clickaway";
 export default {
+  mixins: [clickaway],
   props: {
     image_and_slide: {
       type: Object,
-      required: true,
+      required: true
     },
     number_item: {
       type: Number,
-      required: true,
-    },
+      required: true
+    }
   },
   data: function() {
     return {
       index_img: this.number_item,
       current_img: this.image_and_slide.images[this.number_item],
-      overlay: { overlay: this.number_item != 0 ? 0 : 1 },
+      overlay: { overlay: this.number_item != 0 ? 0 : 1 }
     };
   },
   methods: {
-    Quit() {
+    away: function() {
       this.$emit("Quit", -1);
     },
     IsActive: function(index) {
@@ -113,8 +113,8 @@ export default {
       this.current_img = item;
       if (index == 0) this.$set(this.overlay, "overlay", 1);
       else this.$set(this.overlay, "overlay", 0);
-    },
-  },
+    }
+  }
 };
 </script>
 
