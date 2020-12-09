@@ -26,13 +26,7 @@ import Sizing from "./ShowProductRightComponents/Item5__Sizing.vue";
 import Numbers from "./ShowProductRightComponents/Item6__Numbers.vue";
 import Footer from "./ShowProductRightComponents/Item7__Footer.vue";
 export default {
-  props: {
-    right: {
-      type: Object,
-      required: true
-    }
-  },
-  components: {
+   components: {
     "right-heading": Heading,
     "right-rating": Rating,
     "right-pricing": Pricing,
@@ -40,7 +34,14 @@ export default {
     "right-sizing": Sizing,
     "right-numbers": Numbers,
     "right-footer": Footer
-  }
+  },
+  props: {
+    right: {
+      type: Object,
+      required: true
+    }
+  },
+ 
 };
 </script>
 

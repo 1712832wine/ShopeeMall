@@ -19,7 +19,7 @@
               <div
                 class="icon-image"
                 v-bind:style="{
-                  'background-image': 'url(' + item.url_top + ')'
+                  'background-image': 'url(' + item.url_top + ')',
                 }"
               ></div>
             </a>
@@ -29,7 +29,7 @@
               <div
                 class="icon-image"
                 v-bind:style="{
-                  'background-image': 'url(' + item.url_bottom + ')'
+                  'background-image': 'url(' + item.url_bottom + ')',
                 }"
               ></div>
             </a>
@@ -56,11 +56,11 @@
 export default {
   props: {
     ListShoppeMall: {
-      type: Array
-    }
+      type: Array,
+    },
   },
-  methods: {
-    Next: function() {
+  methods:{
+    Next: function () {
       var chuyen = 0;
       var chuyenSlide = document.getElementsByClassName(
         "list-shoppeMall-row"
@@ -69,10 +69,10 @@ export default {
         .clientWidth;
       chuyen += kichThuoc;
       chuyenSlide.style.marginLeft = "-" + chuyen + "px";
-      chuyenSlide.style.li.display = "block";
+      // chuyenSlide.style.li.display = "block";
     },
-    Back: function() {
-      var chuyen = 0;
+    Back: function () {
+      var chuyen = 1200;
       var chuyenSlide = document.getElementsByClassName(
         "list-shoppeMall-row"
       )[0];
@@ -80,8 +80,10 @@ export default {
         .clientWidth;
       chuyen -= kichThuoc;
       chuyenSlide.style.marginLeft = "-" + chuyen + "px";
-    }
-  }
+      // chuyenSlide.style.li.display = "block";
+    },
+  },
+
 };
 </script>
 

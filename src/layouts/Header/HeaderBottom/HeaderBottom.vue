@@ -27,10 +27,10 @@
 <script>
 import HeaderSearch from "./HeaderSearch";
 export default {
-  props: ["data"],
   components: {
     "header-search": HeaderSearch
   },
+  props: ["data"],
   methods: {
     handleRouter: function() {
       this.$router.push("/");

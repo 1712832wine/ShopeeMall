@@ -10,11 +10,12 @@
 import Header from "../layouts/Header/HeaderHome";
 import Footer from "../layouts/Footer/FooterHome";
 export default {
+  name: "PublicRouter",
   components: {
     "header-home": Header,
     "footer-home": Footer
   },
-  name: "PublicRouter"
+  
 };
 </script>
 

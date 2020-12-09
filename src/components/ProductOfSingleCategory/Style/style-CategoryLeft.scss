@@ -175,3 +175,15 @@
     }
   }
 }
+.btn {
+  width: 11.8rem;
+  height: 1.875rem;
+  margin-top: 0.8rem;
+  border: none;
+  background-color: #ee4d2d;
+  color: white;
+  font-size: 0.8rem;
+  &:focus {
+    border: none;
+  }
+}

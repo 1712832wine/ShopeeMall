@@ -94,11 +94,11 @@ import Help from "../../../../helpers/helpFunction.js";
 import TransportComponent from "./TransportComponent/TransportComponent.vue";
 import ProvincesComponent from "./ProvincesComponent/ProvincesComponent.vue";
 export default {
-  mixins: [Help],
   components: {
     "transport-component": TransportComponent,
     "provinces-component": ProvincesComponent,
   },
+  mixins: [Help],
   props: {
     transport: {
       type: Object,
@@ -116,13 +116,13 @@ export default {
       },
     };
   },
-  watch: {
-    Isclick: function() {},
-  },
   computed: {
     NameLocation: function() {
       return this.Location.ward_name + ", " + this.Location.province_name;
     },
+  },
+  watch: {
+    Isclick: function() {},
   },
   methods: {
     ChangeLocation: function(e) {

@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div>
+  <div class="wrap">
+    <div >
       <ul class="anphabetical-wrap">
         <li
           class="anphabetical__letter-wrapp"
@@ -52,5 +52,10 @@ export default {
 >
 
 <style lang="scss" scoped>
+.wrap{
+      width: 1200px;
+    margin: auto;
+    background: white;
+}
 @import "./Style-CategoryProductList/Style-CategoryPagination.scss";
 </style>

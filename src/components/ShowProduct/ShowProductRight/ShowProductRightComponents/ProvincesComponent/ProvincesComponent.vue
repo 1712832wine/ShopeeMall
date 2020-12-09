@@ -25,6 +25,7 @@
 <script>
 import Locations from "./ListLocation.vue";
 export default {
+  components: { "list-location": Locations },
   props: {
     provinces: { type: Array, required: true },
     previous_icon: {
@@ -92,7 +93,7 @@ export default {
       this.search = "";
     },
   },
-  components: { "list-location": Locations },
+  
 };
 </script>
 

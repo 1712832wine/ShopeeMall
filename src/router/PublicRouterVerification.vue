@@ -10,11 +10,12 @@
 import HeaderVerification from "../layouts/Header/HeaderVerification/HeaderVerification";
 import FooterVerification from "../layouts/Footer/FooterVerification";
 export default {
+  name: "PublicRouter",
   components: {
     "header-verification": HeaderVerification,
     "footer-verification": FooterVerification
   },
-  name: "PublicRouter"
+  
 };
 </script>
 
