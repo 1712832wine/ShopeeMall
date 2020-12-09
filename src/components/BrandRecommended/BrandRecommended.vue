@@ -29,13 +29,13 @@ import SaleItem from "../SaleFromRestaurant/SaleItem.vue";
 import BrandRecommendedData from "../../data/brandrecommendedData.json";
 export default {
   components: {
-    "sale-item": SaleItem,
+    "sale-item": SaleItem
   },
   data: function() {
     return {
-      data: BrandRecommendedData.listSale,
+      data: BrandRecommendedData.listSale
     };
-  },
+  }
 };
 </script>
 

@@ -16,7 +16,7 @@
       />
       <div class="contain-product-right">
         <div class="shop-item-result">
-          <category-right/>
+          <category-right />
           <list-product-category />
         </div>
       </div>
@@ -40,12 +40,12 @@ export default {
   components: {
     "shoppe-mall": ShoppeMall,
     "category-left": CategoryLeft,
-    "category-right":CategoryRight,
+    "category-right": CategoryRight,
     "sale-from-restaurant": SaleFromRestaurant,
     "list-product-category": ListProductCategory,
     "top-sales": TopSales,
     "brand-recommended": BrandRecommended,
-    "one-day-one-style": OneDayOneStyle,
+    "one-day-one-style": OneDayOneStyle
   },
   data() {
     return {
@@ -55,9 +55,9 @@ export default {
       listUnitTransport: data.ListUnitTransport,
       listTypeShop: data.ListTypeShop,
       listActiveProduct: data.ListActiveProduct,
-      listService: data.ListService,
+      listService: data.ListService
     };
-  },
+  }
 };
 </script>
 
@@ -74,7 +74,7 @@ export default {
   margin: auto;
   display: flex;
   flex-direction: column;
-  margin-top:10rem;
+  margin-top: 10rem;
 }
 .contain {
   display: -webkit-box;

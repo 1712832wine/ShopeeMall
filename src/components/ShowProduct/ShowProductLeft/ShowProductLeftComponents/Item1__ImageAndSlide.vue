@@ -29,24 +29,22 @@
 import ImageSlider from "./SubItem__Slider.vue";
 
 export default {
-  data: function() {
-    return {
-      overlay: { overlay: 1 },
-      current_img_index: 0,
-      current_img: this.image_and_slide.images[0],
-    };
-  },
-
   components: {
-    "img-slider": ImageSlider,
+    "img-slider": ImageSlider
   },
   props: {
     image_and_slide: {
       type: Object,
-      required: true,
-    },
+      required: true
+    }
   },
-
+  data: function() {
+    return {
+      overlay: { overlay: 1 },
+      current_img_index: 0,
+      current_img: this.image_and_slide.images[0]
+    };
+  },
   methods: {
     CallHidden: function(e) {
       this.$emit("number_item", e);
@@ -60,8 +58,8 @@ export default {
     },
     changeOverlay: function(e) {
       this.$set(this.overlay, "overlay", e);
-    },
-  },
+    }
+  }
 };
 </script>
 
@@ -72,6 +70,5 @@ export default {
   height: $size-component;
   width: $size-component;
 }
-
 //container of slider
 </style>

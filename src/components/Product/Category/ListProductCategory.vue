@@ -12,13 +12,13 @@
 import ProductCategoryItem from "./ProductCategoryItem";
 import data from "../../../data/ProductCategoryData.json";
 export default {
+  components: {
+    "product-category-item": ProductCategoryItem
+  },
   data: function() {
     return {
       listProduct: data.listProduct
     };
-  },
-  components: {
-    "product-category-item": ProductCategoryItem
   }
 };
 </script>

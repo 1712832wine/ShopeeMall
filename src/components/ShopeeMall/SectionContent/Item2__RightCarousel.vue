@@ -21,16 +21,15 @@
 import Container from "../../TopSales/TopSalesContent.vue";
 import ItemOfSlider from "./ItemSub__ItemOfSlider.vue";
 export default {
+  components: {
+    "item-of-slider": ItemOfSlider,
+    "content-container": Container
+  },
   props: {
     carousel_right: {
       type: Object,
       required: true
     }
-  },
-
-  components: {
-    "item-of-slider": ItemOfSlider,
-    "content-container": Container
   }
 };
 </script>

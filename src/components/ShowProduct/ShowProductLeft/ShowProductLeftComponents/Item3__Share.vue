@@ -29,9 +29,9 @@ export default {
   props: {
     share: {
       type: Object,
-      required: true,
-    },
-  },
+      required: true
+    }
+  }
 };
 </script>
 

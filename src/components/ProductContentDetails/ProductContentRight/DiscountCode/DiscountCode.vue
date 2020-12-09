@@ -11,11 +11,11 @@
 import DiscountItem from "./DiscountItem.vue";
 import Data from "../../../../data/discountcodeData.json";
 export default {
-  data: function() {
-    return Data.discount_code;
-  },
   components: {
     "discount-item": DiscountItem
+  },
+  data: function() {
+    return Data.discount_code;
   }
 };
 </script>

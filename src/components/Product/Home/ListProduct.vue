@@ -55,7 +55,7 @@
           class="product-recommended__list disable"
           :class="{ active: isActive }"
         >
-          <div class="wrapper">
+          <div class="wrapper-product-list">
             <!-- Render super sale product list -->
             <product
               v-for="product in tab_two"
@@ -76,15 +76,15 @@
 import Product from "./Product";
 import ProductData from "../../../data/listProductData.json";
 export default {
+  components: {
+    product: Product
+  },
   data: function() {
     return {
       tab_one: ProductData.tab_one,
       tab_two: ProductData.tab_two,
       isActive: false
     };
-  },
-  components: {
-    product: Product
   }
 };
 </script>

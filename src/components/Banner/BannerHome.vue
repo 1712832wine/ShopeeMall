@@ -26,14 +26,14 @@ import BannerSlide from "./BannerSlide";
 import CampaignList from "../campaign/CampaignList";
 import bannerData from "../../data/bannerData.json";
 export default {
+  components: {
+    "banner-slide": BannerSlide,
+    "campaign-list": CampaignList
+  },
   data() {
     return {
       banners: bannerData.banners
     };
-  },
-  components: {
-    "banner-slide": BannerSlide,
-    "campaign-list": CampaignList
   }
 };
 </script>

@@ -59,13 +59,13 @@
 import BuyMoreItem from "./BuyMoreItem";
 import BuyItemData from "../../data/BuyItemData.json";
 export default {
+  components: {
+    "buy-more-item": BuyMoreItem
+  },
   data() {
     return {
       dataBuyMore: BuyItemData
     };
-  },
-  components: {
-    "buy-more-item": BuyMoreItem
   }
 };
 </script>

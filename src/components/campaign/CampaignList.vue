@@ -8,13 +8,13 @@
 import CampaignItem from "./CampaignItem";
 import campaign from "../../data/campaignData.json";
 export default {
+  components: {
+    "campaign-item": CampaignItem
+  },
   data: function() {
     return {
       listItem: campaign.items
     };
-  },
-  components: {
-    "campaign-item": CampaignItem
   }
 };
 </script>
