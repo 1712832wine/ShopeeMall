@@ -25,9 +25,6 @@
                 <div v-if="handleValidatePhone == true" class="checked">
                   <i class="fa fa-check-circle-o" aria-hidden="true"></i>
                 </div>
-                <!-- <div v-if="handleValidatePhone == false" class="checked">
-                  <i class="fa fa-exclamation" aria-hidden="true"></i>
-                </div> -->
               </div>
               <div class="show-message">
                 <b-form-invalid-feedback :state="handleValidatePhone">

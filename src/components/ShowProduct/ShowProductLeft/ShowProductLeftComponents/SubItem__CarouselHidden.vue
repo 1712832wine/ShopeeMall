@@ -61,11 +61,7 @@
 
 <script>
 import { mixin as clickaway } from "vue-clickaway";
-// import { directive as onClickaway } from "vue-clickaway";
 export default {
-  // directives: {
-  //   onClickaway: onClickaway
-  // },
   mixins: [clickaway],
   props: {
     image_and_slide: {
