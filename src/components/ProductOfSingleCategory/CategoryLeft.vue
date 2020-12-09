@@ -301,15 +301,6 @@ export default {
       type: Array
     }
   },
-  methods: {
-    Open: function() {
-      var element = document.getElementsByClassName("list-category-dropdown");
-      // element.style.height="auto";
-      // element.style.opacity="1";
-      element.style.color = "red";
-    }
-  },
-
   data: function() {
     return {
       isActiveCategory: true,
@@ -317,10 +308,17 @@ export default {
       isActiveTransport: true,
       isActivePromotion: true
     };
+  },
+  methods: {
+    Open: function() {
+      var element = document.getElementsByClassName("list-category-dropdown");
+      // element.style.height="auto";
+      // element.style.opacity="1";
+      element.style.color = "red";
+    }
   }
 };
 </script>
->
 
 <style lang="scss" scoped>
 @import "./Style/style-CategoryLeft.scss";

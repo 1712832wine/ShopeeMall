@@ -18,11 +18,11 @@
 import TopSellingItem from "../../../TopSales/TopSalesItem.vue";
 import Data from "../../../../data/topsellingproductData.json";
 export default {
-  data: function() {
-    return Data.topselling_product;
-  },
   components: {
     "top-selling-item": TopSellingItem
+  },
+  data: function() {
+    return Data.topselling_product;
   }
 };
 </script>

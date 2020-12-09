@@ -29,20 +29,20 @@ import Content from "../../../TopSales/TopSalesContent.vue";
 //using item from product
 import Item from "../../../Product/Home/Product.vue";
 export default {
-  props: { data: { type: Object, required: true } },
   components: {
     "slider-heading": Heading,
     "slider-content": Content,
-    "slider-item": Item,
+    "slider-item": Item
   },
+  props: { data: { type: Object, required: true } },
   data: function() {
     return {
       currentslide: 0,
       size: 10,
       item_per_slide: 6,
-      translate: 0,
+      translate: 0
     };
-  },
+  }
 };
 </script>
 

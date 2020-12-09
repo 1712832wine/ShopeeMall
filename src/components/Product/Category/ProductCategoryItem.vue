@@ -113,17 +113,6 @@ export default {
       labelStatus: false
     };
   },
-  methods: {
-    showLabel: function() {
-      if (this.data.add_on_deal_info) {
-        return this.data.add_on_deal_info.add_on_deal_label;
-      }
-      if (this.data.bundle_deal_info) {
-        return this.data.bundle_deal_info.bundle_deal_label;
-      }
-      return (this.labelStatus = true);
-    }
-  },
   computed: {
     historicalSold: function() {
       let sold = this.data.historical_sold;
@@ -133,6 +122,17 @@ export default {
         return Math.round(h_n * 100) / 100 + "K";
       }
       return sold;
+    }
+  },
+  methods: {
+    showLabel: function() {
+      if (this.data.add_on_deal_info) {
+        return this.data.add_on_deal_info.add_on_deal_label;
+      }
+      if (this.data.bundle_deal_info) {
+        return this.data.bundle_deal_info.bundle_deal_label;
+      }
+      return (this.labelStatus = true);
     }
   }
 };

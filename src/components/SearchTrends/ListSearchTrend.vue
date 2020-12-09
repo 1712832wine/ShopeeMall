@@ -26,13 +26,13 @@
 import SearchTrendItem from "./SearchTrendItem";
 import SearchTrendData from "../../data/SearchTrendData.json";
 export default {
+  components: {
+    "search-trend-item": SearchTrendItem
+  },
   data() {
     return {
       listSearch: SearchTrendData.listSearch
     };
-  },
-  components: {
-    "search-trend-item": SearchTrendItem
   }
 };
 </script>

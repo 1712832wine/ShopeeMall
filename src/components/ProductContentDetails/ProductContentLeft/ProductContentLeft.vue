@@ -31,7 +31,7 @@ export default {
     "product-details": ProductDetails,
     "product-description": ProductDescription,
     "product-assessment": ProductAssessment,
-    "more-product": MoreProduct,
+    "more-product": MoreProduct
   },
   data() {
     return {
@@ -39,9 +39,9 @@ export default {
       listDescription: ProductDetailsData.item.productDescription,
       shopproductData: ShopProductData.shopproduct,
       similar: SimilarData.similar,
-      maybeyoulike: MaybeYouLikeData.maybeyoulike,
+      maybeyoulike: MaybeYouLikeData.maybeyoulike
     };
-  },
+  }
 };
 </script>
 

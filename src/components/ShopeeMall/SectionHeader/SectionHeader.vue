@@ -27,14 +27,14 @@
 import ShopeeMall_TopList from "./SectionHeader_NavList.vue";
 
 export default {
+  components: {
+    "nav-top": ShopeeMall_TopList
+  },
   props: {
     top: {
       type: Object,
       required: true
     }
-  },
-  components: {
-    "nav-top": ShopeeMall_TopList
   }
 };
 </script>
