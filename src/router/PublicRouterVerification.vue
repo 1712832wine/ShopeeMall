@@ -14,8 +14,7 @@ export default {
   components: {
     "header-verification": HeaderVerification,
     "footer-verification": FooterVerification
-  },
-  
+  }
 };
 </script>
 

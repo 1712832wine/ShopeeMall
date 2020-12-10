@@ -42,8 +42,8 @@ export default {
   },
   data() {
     return {
-      listShoppeMall: data.ListShoppeMall,
-        };
+      listShoppeMall: data.ListShoppeMall
+    };
   }
 };
 </script>

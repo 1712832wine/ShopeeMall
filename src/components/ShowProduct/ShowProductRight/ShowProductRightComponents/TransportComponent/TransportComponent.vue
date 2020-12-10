@@ -36,9 +36,9 @@ export default {
   props: {
     transport_component: {
       type: Object,
-      required: true,
-    },
-  },
+      required: true
+    }
+  }
 };
 </script>
 

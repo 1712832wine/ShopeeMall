@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div class="search-fillter-location"
-     v-for="(location, index) in ListLocation"
-        :key="index"
+    <div
+      class="search-fillter-location"
+      v-for="(location, index) in ListLocation"
+      :key="index"
     >
-      <div
-        class="search-fillter-location-header">
+      <div class="search-fillter-location-header">
         {{ location.locationTitle }}
       </div>
       <div class="search-fillter-location-body">

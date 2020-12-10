@@ -14,7 +14,7 @@
 import LeftCarousel from "./Item1__LeftCarousel.vue";
 import RightCarousel from "./Item2__RightCarousel.vue";
 export default {
-   components: {
+  components: {
     "left-carousel": LeftCarousel,
     "right-carousel": RightCarousel
   },
@@ -23,8 +23,7 @@ export default {
       type: Object,
       required: true
     }
-  },
- 
+  }
 };
 </script>
 

@@ -21,8 +21,8 @@ export default {
   props: {
     item: {
       type: Object,
-      required: true,
-    },
+      required: true
+    }
   },
   data: function() {
     return {
@@ -33,21 +33,21 @@ export default {
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           width: "100%",
-          height: "100%",
+          height: "100%"
         };
-      },
+      }
     };
   },
   methods: {
     addcurrency: function(a) {
       const numberFormat = new Intl.NumberFormat("en-US", {
         style: "currency",
-        currency: "VND",
+        currency: "VND"
       });
       a = (a / 100000).toFixed(0).replace(".", ",");
       return numberFormat.format(a).replace(",", ".");
-    },
-  },
+    }
+  }
 };
 </script>
 

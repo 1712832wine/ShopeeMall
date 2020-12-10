@@ -13,12 +13,11 @@ import HeaderTopLeft from "./HeaderTopLeft";
 import HeaderTopRight from "./HeaderTopRight";
 
 export default {
-  
   components: {
     "header-top-left": HeaderTopLeft,
     "header-top-right": HeaderTopRight
   },
-  props: ["data"],
+  props: ["data"]
 };
 </script>
 

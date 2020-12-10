@@ -41,10 +41,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.fix-margin{
-  /deep/ .mycontainer{
-    margin-top:0;
-    .singleProduct{
+.fix-margin {
+  /deep/ .mycontainer {
+    margin-top: 0;
+    .singleProduct {
       width: 10%;
     }
   }

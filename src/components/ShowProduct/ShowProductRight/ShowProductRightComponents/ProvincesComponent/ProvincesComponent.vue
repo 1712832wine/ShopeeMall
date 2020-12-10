@@ -31,8 +31,8 @@ export default {
     previous_icon: {
       type: String,
       required: false,
-      default: "fa fa-angle-left",
-    },
+      default: "fa fa-angle-left"
+    }
   },
   data: function() {
     return {
@@ -42,10 +42,10 @@ export default {
       Previous_Name: { previous_name: "" },
       Name: {
         province_name: "",
-        ward_name: "",
+        ward_name: ""
       },
       names: ["Evan You", "John Lindquist", "nht"],
-      Location: this.provinces,
+      Location: this.provinces
     };
   },
   computed: {
@@ -53,15 +53,15 @@ export default {
       return this.provinces[this.Id.id].wards;
     },
     FilteredList_Province() {
-      return this.Location.filter((element) =>
+      return this.Location.filter(element =>
         element.title.toLowerCase().includes(this.search.toLowerCase())
       );
     },
     FilteredList_Ward() {
-      return this.Location_ward.filter((element) =>
+      return this.Location_ward.filter(element =>
         element.title.toLowerCase().includes(this.search.toLowerCase())
       );
-    },
+    }
   },
   methods: {
     Next: function(myid) {
@@ -91,9 +91,8 @@ export default {
       this.$set(this.Id, "id", -1);
       this.$set(this.Previous_Name, "previous_name", "");
       this.search = "";
-    },
-  },
-  
+    }
+  }
 };
 </script>
 

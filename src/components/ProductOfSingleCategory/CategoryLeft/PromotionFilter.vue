@@ -1,5 +1,5 @@
 <template>
-  <div class="servicePromotion" >
+  <div class="servicePromotion">
     <div class="servicePromotion-header">Dịch Vụ & Khuyến Mãi</div>
     <div class="servicePromotion-body">
       <div

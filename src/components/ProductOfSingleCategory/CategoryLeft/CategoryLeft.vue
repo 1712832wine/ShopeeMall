@@ -7,7 +7,7 @@
         <b>BỘ LỌC TÌM KIẾM</b>
       </div>
 
-      <location-filter v-bind:ListLocation="listLocation"/>
+      <location-filter v-bind:ListLocation="listLocation" />
       <transport-filter v-bind:ListUnitTransport="listUnitTransport" />
       <price-filter />
       <type-shop-filter v-bind:ListTypeShop="listTypeShop" />
