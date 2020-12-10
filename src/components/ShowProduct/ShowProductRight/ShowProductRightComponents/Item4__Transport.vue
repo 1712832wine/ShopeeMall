@@ -96,14 +96,14 @@ import ProvincesComponent from "./ProvincesComponent/ProvincesComponent.vue";
 export default {
   components: {
     "transport-component": TransportComponent,
-    "provinces-component": ProvincesComponent,
+    "provinces-component": ProvincesComponent
   },
   mixins: [Help],
   props: {
     transport: {
       type: Object,
-      required: true,
-    },
+      required: true
+    }
   },
   data: function() {
     return {
@@ -112,17 +112,17 @@ export default {
       Isclick: { isclick: 0 },
       Location: {
         ward_name: this.transport.inter.default.ward_name,
-        province_name: this.transport.inter.default.province_name,
-      },
+        province_name: this.transport.inter.default.province_name
+      }
     };
   },
   computed: {
     NameLocation: function() {
       return this.Location.ward_name + ", " + this.Location.province_name;
-    },
+    }
   },
   watch: {
-    Isclick: function() {},
+    Isclick: function() {}
   },
   methods: {
     ChangeLocation: function(e) {
@@ -135,8 +135,8 @@ export default {
     },
     ChangeClick: function() {
       this.$set(this.Isclick, "isclick", !this.Isclick.isclick);
-    },
-  },
+    }
+  }
 };
 </script>
 

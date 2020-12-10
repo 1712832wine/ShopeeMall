@@ -19,8 +19,7 @@ export default {
       dataTop: headerData.vn.top,
       dataBottom: headerData.vn.bottom
     };
-  },
-  
+  }
 };
 </script>
 

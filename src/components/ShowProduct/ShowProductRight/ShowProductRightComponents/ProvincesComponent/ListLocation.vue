@@ -15,18 +15,18 @@
 // import Provinces from "./ProvincesComponent.vue";
 export default {
   props: {
-    location: { type: Array, required: true },
+    location: { type: Array, required: true }
   },
   data: function() {
     return {
-      countClick: 0,
+      countClick: 0
     };
   },
   methods: {
     changeCountClick: function(id) {
       this.$emit("myid", id);
-    },
-  },
+    }
+  }
 };
 </script>
 

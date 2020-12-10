@@ -1,13 +1,16 @@
 <template>
   <div>
-    <div class="unit-tranport"
-    v-for="(transport,index) in ListUnitTransport"
+    <div
+      class="unit-tranport"
+      v-for="(transport, index) in ListUnitTransport"
       :key="index"
     >
       <div class="unit-tranport-header">
-      {{transport.unitTransportTitle}}</div>
+        {{ transport.unitTransportTitle }}
+      </div>
       <div class="unit-tranport-body">
-        <div class="checkbox-unit-tranport"
+        <div
+          class="checkbox-unit-tranport"
           v-for="(item, index) in transport.nameUnitTransport"
           v-bind:key="index"
         >

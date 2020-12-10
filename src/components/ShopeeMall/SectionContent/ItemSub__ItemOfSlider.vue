@@ -48,7 +48,7 @@ export default {
   display: flex;
   flex-direction: row;
   // justify-content: space-between;
-  align-items: end;
+  align-items: flex-end;
   flex-wrap: wrap;
 }
 

@@ -1,10 +1,11 @@
 <template>
   <div>
-    <div class="typeShop"
-    v-for="(typeShop,index) in ListTypeShop"
-    :key="index"
+    <div
+      class="typeShop"
+      v-for="(typeShop, index) in ListTypeShop"
+      :key="index"
     >
-      <div class="typeShop-header">{{typeShop.typeShopTitle}}</div>
+      <div class="typeShop-header">{{ typeShop.typeShopTitle }}</div>
       <div class="typeShop-body">
         <div
           class="checkbox-typeShop"
