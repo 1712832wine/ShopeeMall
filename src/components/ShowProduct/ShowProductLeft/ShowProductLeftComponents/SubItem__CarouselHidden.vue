@@ -1,6 +1,6 @@
 <template>
   <div class="d-flex carousel_hidden" v-on-clickaway.prevent="away">
-    <div class="size-100 ">
+    <div class="size-100">
       <div class="big-image-top">
         <div
           class="bg-image"
@@ -8,7 +8,7 @@
         >
           <!-- overlay -->
           <div
-            v-if="overlay.overlay == 1"
+            v-if="overlay.overlay === 1"
             :style="
               'backgroundImage: url(' + image_and_slide.image_overlay + ')'
             "
@@ -46,7 +46,7 @@
             <div class="bg-image overlay"></div>
             <!-- overlay -->
             <div
-              v-if="index == 0"
+              v-if="index === 0"
               :style="
                 'backgroundImage: url(' + image_and_slide.image_overlay + ')'
               "
@@ -85,7 +85,7 @@ export default {
       this.$emit("Quit", -1);
     },
     IsActive: function(index) {
-      return this.index_img == index;
+      return this.index_img === index;
     },
     handlePrev: function() {
       if (this.index_img > 0) {
@@ -111,7 +111,7 @@ export default {
     },
     ChangeImg: function(item, index) {
       this.current_img = item;
-      if (index == 0) this.$set(this.overlay, "overlay", 1);
+      if (index === 0) this.$set(this.overlay, "overlay", 1);
       else this.$set(this.overlay, "overlay", 0);
     }
   }

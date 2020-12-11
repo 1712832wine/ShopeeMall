@@ -8,9 +8,7 @@
       </div>
     </a>
     <div class="shop-product-rating__main">
-      <a href="" class="shop-product-rating__author-name">
-        sallyjelly
-      </a>
+      <a href="" class="shop-product-rating__author-name"> sallyjelly </a>
       <div class="shop-product-rating__rating">
         <i class="fa fa-star icon-rating-solid" aria-hidden="true"></i>
         <i class="fa fa-star icon-rating-solid" aria-hidden="true"></i>
@@ -67,7 +65,7 @@
           >
             <div
               class="rating-media-list-image-carousel"
-              style="transition: all 0ms ease 0s; width: 262.578px;"
+              style="transition: all 0ms ease 0s; width: 262.578px"
             >
               <div class="rating-media-list-image-carousel__item-list-wrapper">
                 <ul
@@ -77,7 +75,7 @@
                   "
                 >
                   <li
-                    style="padding: 0px 0.625rem;"
+                    style="padding: 0px 0.625rem"
                     class="rating-media-list-image-carousel__item rating-media-list-image-carousel__item--fluid"
                   >
                     <img
@@ -100,14 +98,22 @@
               <div
                 @click="handlePrev()"
                 class="rating-media-list-carousel-arrow rating-media-list-carousel-arrow--prev rating-media-list-carousel-arrow--hint"
-                style="opacity: 1; visibility: visible; transform: translateX(calc(-50% + 0px));"
+                style="
+                  opacity: 1;
+                  visibility: visible;
+                  transform: translateX(calc(-50% + 0px));
+                "
               >
                 <i class="fa fa-chevron-left" aria-hidden="true"></i>
               </div>
               <div
                 @click="handleNext()"
                 class="rating-media-list-carousel-arrow rating-media-list-carousel-arrow--next rating-media-list-carousel-arrow--hint"
-                style="opacity: 1; visibility: visible; transform: translateX(calc(50% - 0px));"
+                style="
+                  opacity: 1;
+                  visibility: visible;
+                  transform: translateX(calc(50% - 0px));
+                "
               >
                 <i class="fa fa-chevron-right" aria-hidden="true"></i>
               </div>
@@ -117,9 +123,7 @@
       </div>
       <div class="shop-product-rating__time">2020-11-21 23:39</div>
       <div class="feedback-from-seller">
-        <div class="feedback-from-seller__title">
-          phản hồi của Người Bán
-        </div>
+        <div class="feedback-from-seller__title">phản hồi của Người Bán</div>
         <div class="feedback-from-seller__content">
           FAVITI xin cảm ơn a/c đã ủng hộ sản phẩm của shop ạ. Thật tuyệt vời
           khi FAVITI đã làm anh/chị hài lòng. Shop sẽ luôn cố gắng làm anh/chị
@@ -170,12 +174,12 @@ export default {
   },
   methods: {
     handlePrev() {
-      if (this.x == -255.578) {
+      if (this.x === -255.578) {
         this.x = this.x + 255.578;
       }
     },
     handleNext() {
-      if (this.x == 0) {
+      if (this.x === 0) {
         this.x = this.x - 255.578;
       }
     }

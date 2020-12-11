@@ -37,7 +37,7 @@
       <div class="product-recommended__panels">
         <div
           class="product-recommended__list"
-          :class="{ disable: isActive == true }"
+          :class="{ disable: isActive === true }"
         >
           <div class="wrapper-product-list">
             <!-- Render recommended product list -->

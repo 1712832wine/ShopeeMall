@@ -2,10 +2,10 @@
   <div id="topsearch__content">
     <content-container
       :content="content"
-      :size="400"
-      :distance="3"
-      :item_per_slide="3"
-      :seemore="0"
+      :size="size"
+      :distance="distance"
+      :item_per_slide="item_per_slide"
+      :seemore="seemore"
       class="shopeemall__carousel-right"
     >
       <item-of-slider
@@ -26,9 +26,12 @@ import ItemOfSlider from "./ItemSub__TopSearchContentItem.vue";
 export default {
   components: {
     "item-of-slider": ItemOfSlider,
-    "content-container": Container
+    "content-container": Container,
   },
-  props: { content: { type: Object, required: true } }
+  props: { content: { type: Object, required: true } },
+  data: function () {
+    return { size: 400, distance: 3, item_per_slide: 3, seemore: 0 };
+  },
 };
 </script>
 

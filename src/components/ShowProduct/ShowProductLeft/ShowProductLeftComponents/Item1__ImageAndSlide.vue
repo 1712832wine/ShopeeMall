@@ -8,7 +8,7 @@
       >
         <!-- overlay -->
         <div
-          v-if="overlay.overlay == 1"
+          v-if="overlay.overlay === 1"
           :style="'backgroundImage: url(' + image_and_slide.image_overlay + ')'"
           class="bg-image overlay"
         ></div>

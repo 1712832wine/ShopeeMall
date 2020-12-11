@@ -3,9 +3,9 @@
     <slider-heading :top="data.header" />
     <slider-content
       :content="data.content"
-      :size="159.17"
-      :seemore="0"
-      :distance="5"
+      :size="size"
+      :seemore="seemore"
+      :distance="distance"
     >
       <slider-item
         slot="items"
@@ -37,10 +37,9 @@ export default {
   props: { data: { type: Object, required: true } },
   data: function() {
     return {
-      currentslide: 0,
-      size: 10,
-      item_per_slide: 6,
-      translate: 0
+      size: 159.17,
+      distance: 5,
+      seemore: 0
     };
   }
 };
