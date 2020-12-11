@@ -1,13 +1,13 @@
 <template>
   <div id="topsales">
     <div id="topsales__heading" class="flex-row">
-      <h2 class="title">{{ heading.title }}</h2>
-      <a :href="heading.seemore__href" class="seemore">
-        <span>{{ heading.seemore }}</span>
+      <h2 class="title">{{ Data.heading.title }}</h2>
+      <a :href="Data.heading.seemore__href" class="seemore">
+        <span>{{ Data.heading.seemore }}</span>
         <i class="fa fa-chevron-right icon" aria-hidden="true"></i>
       </a>
     </div>
-    <topsales-content :content="content" :size="198" />
+    <topsales-content :content="Data.content" :size="size" />
   </div>
 </template>
 
@@ -21,7 +21,10 @@ export default {
     "topsales-content": topsalescontent
   },
   data: function() {
-    return topsales_data.topsalesData;
+    return {
+      Data: topsales_data.topsalesData,
+      size: 198
+    };
   }
 };
 </script>

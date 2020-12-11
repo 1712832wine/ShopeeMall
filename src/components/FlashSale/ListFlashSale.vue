@@ -9,7 +9,7 @@
               <div class="flash-sale__section--countdown-text">
                 <div
                   class="countdown-timer"
-                  :class="{ timer_complete: timer == 0 }"
+                  :class="{ timer_complete: timer === 0 }"
                 >
                   <span class="countdown-timer__number">{{
                     days | two_digits
@@ -54,14 +54,14 @@
           <div
             @click="handlePrev"
             class="carousel-arrow carousel-arrow--prev carousel-arrow--hint"
-            :class="{ active: x != 0 }"
+            :class="{ active: x !== 0 }"
           >
             <i class="fa fa-chevron-left" aria-hidden="true"></i>
           </div>
           <div
             @click="handleNext"
             class="carousel-arrow carousel-arrow--next carousel-arrow--hint"
-            :class="{ disable: x == -1600 }"
+            :class="{ disable: x === -1600 }"
             style="opacity: 1"
           >
             <i class="fa fa-chevron-right" aria-hidden="true"></i>

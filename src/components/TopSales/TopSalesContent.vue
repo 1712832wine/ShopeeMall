@@ -90,7 +90,7 @@ export default {
   methods: {
     handlePrev: function() {
       if (this.currentslide > 0) {
-        if (this.currentslide == 1 && this.final != 0)
+        if (this.currentslide === 1 && this.final != 0)
           this.translate -= this.size * this.final;
         else this.translate -= this.size * this.distance;
         this.$refs.translate.style.transform =
@@ -100,7 +100,7 @@ export default {
     },
     handleNext: function() {
       if (this.currentslide < this.number_slide - 1) {
-        if (this.currentslide == this.number_slide - 2 && this.final != 0)
+        if (this.currentslide === this.number_slide - 2 && this.final != 0)
           this.translate += this.size * this.final;
         else this.translate += this.size * this.distance;
         this.$refs.translate.style.transform =

@@ -1,9 +1,9 @@
 <template>
   <content-container
     :content="carousel_right"
-    :size="800"
-    :item_per_slide="1"
-    :seemore="0"
+    :size="size"
+    :item_per_slide="item_per_slide"
+    :seemore="seemore"
     class="shopeemall__carousel-right"
   >
     <item-of-slider
@@ -30,6 +30,13 @@ export default {
       type: Object,
       required: true
     }
+  },
+  data: function() {
+    return {
+      size: 800,
+      item_per_slide: 1,
+      seemore: 0
+    };
   }
 };
 </script>

@@ -1,6 +1,6 @@
 <template>
   <div class="carousel_left">
-    <b-carousel :interval="5000" indicators>
+    <b-carousel :interval="interval" indicators>
       <b-carousel-slide
         v-for="item in carousel_left"
         :key="item.id"
@@ -19,6 +19,9 @@ export default {
       type: Array,
       required: true
     }
+  },
+  data: function() {
+    return { interval: 5000 };
   }
 };
 </script>
