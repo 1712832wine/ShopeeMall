@@ -14,7 +14,9 @@
 </template>
 
 <script>
+// data
 import data from "../data/ListCategoryProductData.json";
+// component
 import BannerHome from "../components/Banner/BannerHome";
 import ListFlashSale from "../components/FlashSale/ListFlashSale";
 import TopSearch from "../components/TopSearch/TopSearch.vue";
@@ -46,6 +48,7 @@ export default {
     margin-top: 0;
     .singleProduct {
       width: 10%;
+      height: 50%;
     }
   }
 }
