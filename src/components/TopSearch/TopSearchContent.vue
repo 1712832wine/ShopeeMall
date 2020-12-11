@@ -26,12 +26,12 @@ import ItemOfSlider from "./ItemSub__TopSearchContentItem.vue";
 export default {
   components: {
     "item-of-slider": ItemOfSlider,
-    "content-container": Container,
+    "content-container": Container
   },
   props: { content: { type: Object, required: true } },
-  data: function () {
+  data: function() {
     return { size: 400, distance: 3, item_per_slide: 3, seemore: 0 };
-  },
+  }
 };
 </script>
 
