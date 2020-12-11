@@ -11,8 +11,8 @@
           <ul>
             <li>
               <router-link class="nav-link" tag="a" to="/product_of_category">
-                <img :src="item.src" /> {{ item.tittleItem }}</router-link
-              >
+                <img :src="item.src" /> {{ item.tittleItem }}
+              </router-link>
             </li>
           </ul>
         </div>
@@ -26,14 +26,14 @@ import data from "../../data/ListCategoryProductData.json";
 export default {
   props: {
     ListProduct: {
-      type: Array
-    }
+      type: Array,
+    },
   },
-  data: function() {
+  data: function () {
     return {
-      listProduct: data.ListProduct
+      listProduct: data.ListProduct,
     };
-  }
+  },
 };
 </script>
 
