@@ -14,15 +14,19 @@ import data from "../../data/ListCategoryProductData.json";
 export default {
   components: {
     "category-item": CategoryItem,
-    "category-pagination": CategoryPagination
+    "category-pagination": CategoryPagination,
   },
   data() {
     return {
       listProduct: data.ListProduct,
-      listData: data.ListAnphabetical
+      listData: data.ListAnphabetical,
     };
-  }
+  },
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.wrap {
+  background-color: #fff;
+}
+</style>
