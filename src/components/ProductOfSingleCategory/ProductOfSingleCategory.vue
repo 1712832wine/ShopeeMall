@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <shoppe-mall v-bind:ListShoppeMall="listShoppeMall" />
+    <shoppe-mall />
     <top-sales />
     <sale-from-restaurant />
     <brand-recommended />
@@ -18,11 +18,9 @@
 </template>
 
 <script>
-// data
-import data from "../../data/ProductSingleCategory.json";
 //components
 import TopSales from "../TopSales/TopSales.vue";
-import ShoppeMall from "./ShoppeMall";
+import ShoppeMall from "./ShopeeMall/ShopeeMall.vue";
 import CategoryLeft from "./CategoryLeft/CategoryLeft";
 import CategoryRight from "./CategoryRight";
 import SaleFromRestaurant from "../SaleFromRestaurant/SaleFromRestaurant";
@@ -38,13 +36,8 @@ export default {
     "list-product-category": ListProductCategory,
     "top-sales": TopSales,
     "brand-recommended": BrandRecommended,
-    "one-day-one-style": OneDayOneStyle
+    "one-day-one-style": OneDayOneStyle,
   },
-  data() {
-    return {
-      listShoppeMall: data.ListShoppeMall
-    };
-  }
 };
 </script>
 

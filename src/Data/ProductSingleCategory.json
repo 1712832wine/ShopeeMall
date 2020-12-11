@@ -1,157 +1,85 @@
 {
-  "ListShoppeMall": [
-    {
-      "id": 1,
-      "url_top": "https://cf.shopee.vn/file/03b216ad2dfbb3d09c1776cdb88c01cd",
-      "url_bottom": "https://cf.shopee.vn/file/d98cd9c737f38f62d8e7da6cd4304fbf"
-    },
-    {
-      "id": 2,
-      "url_top": "https://cf.shopee.vn/file/29368cca19355bc62304bb0400b14af7",
-      "url_bottom": "https://cf.shopee.vn/file/5ea0a1db8923aa293c842e0a123c4490"
-    },
-    {
-      "id": 3,
-      "url_top": "https://cf.shopee.vn/file/d98cd9c737f38f62d8e7da6cd4304fbf",
-      "url_bottom": "https://cf.shopee.vn/file/452af176b0e56548a0a78104bfe64d48"
-    },
-    {
-      "id": 4,
-      "url_top": "https://cf.shopee.vn/file/bc305025e03be2fdf686388bd8215a5b",
-      "url_bottom": "https://cf.shopee.vn/file/4dc63f68f910f3fd51107912c2b8c852"
-    },
-    {
-      "id": 5,
-      "url_top": "https://cf.shopee.vn/file/fb5724fb8f8be4cdf6be45b8c1c01889",
-      "url_bottom": "https://cf.shopee.vn/file/7560b3127aebe77c3340bb85d0a628f3"
-    },
-    {
-      "id": 6,
-      "url_top": "https://cf.shopee.vn/file/6d90553d0565f9b6ce35fa487c73e64c",
-      "url_bottom": "https://cf.shopee.vn/file/b719dd5ac727046582ea0a36a3e65cdb"
-    },
-    {
-      "id": 7,
-      "url_top": "https://cf.shopee.vn/file/ee39f995ad6414cc6dc25b35de30eb9f",
-      "url_bottom": "https://cf.shopee.vn/file/6a7f8041304456669e173f4108d93ada"
-    },
-    {
-      "id": 8,
-      "url_top": "https://cf.shopee.vn/file/25425db5146c380b9a9a8851ecc1746f",
-      "url_bottom": "https://cf.shopee.vn/file/47befc7988bf420e7a32b3fb8bbbf27a"
-    },
-    {
-      "id": 9,
-      "url_top": "https://cf.shopee.vn/file/404be71e6b617f6bd9f3c3a4f187b455",
-      "url_bottom": "https://cf.shopee.vn/file/c422e8f7399025fee55c292a2d9df05d"
-    },
-    {
-      "id": 10,
-      "url_top": "https://cf.shopee.vn/file/1f735499892080ad5e66d220d939710a",
-      "url_bottom": "https://cf.shopee.vn/file/d7a479bfef4f0b4f478e31206b754b10"
-    },
-    {
-      "id": 11,
-      "url_top": "https://cf.shopee.vn/file/21508f8fd8aaf9465874045e15f1e8e0",
-      "url_bottom": "https://cf.shopee.vn/file/67afb2bc2714cbc6700d43b3684c65ce"
-    },
-    {
-      "id": 12,
-      "url_top": "https://cf.shopee.vn/file/b2f68e3ebfef7dfc64207538c75d404c",
-      "url_bottom": "https://cf.shopee.vn/file/b719dd5ac727046582ea0a36a3e65cdb"
-    }
-  ],
-
-  "ListCategory": [
-    {
-      "nameCategory": "Bách hóa online",
-      "nameSingleCategory": [
-        "Ăn vặt& Bánh kẹo",
-        "Đồ uống",
-        "Đồ hộp và Đóng gói",
-        "Nấu ăn & Làm bánh",
-        "Đậu và hạt",
-        "Đặc sản việt",
-        "Quà biếu",
-        "Đồ uống có cồn",
-        "Sữa"
-      ]
-    }
-  ],
-  "ListLocation": [
-    {
-      "locationTitle": "Nơi bán",
-      "nameLocation": [
-        "TP. Hồ Chí Minh",
-        "Hà Nội",
-        "Thái Nguyên",
-        "Vĩnh Phúc",
-        "Hải Phòng",
-        "Đồng Nai",
-        "Hưng Yên",
-        "Bình Dương",
-        "Bắc Ninh",
-        "Đà Nẵng",
-        "Quảng Ninh",
-        "Hải Dương",
-        "Nam Định",
-        "Cần Thơ",
-        "Phú Thọ",
-        "Bà Rịa-Vũng Tàu",
-        "Đăk-Lắk",
-        "Thanh Hóa",
-        "Thái Bình",
-        "Nước Ngoài"
-      ]
-    }
-  ],
-  "ListUnitTransport": [
-    {
-      "unitTransportTitle": "Đơn vị vận chuyển",
-      "nameUnitTransport": [
-        "Shopee Express",
-        "NowShip",
-        "Ninja Van",
-        "J&T Express",
-        "Giao hàng tiết kiệm",
-        "Giao hàng nhanh",
-        "BEST Express",
-        "Viettel Post",
-        "VNPost Nhanh",
-        "VNPost Tiết Kiệm",
-        "GrapExpress"
-      ]
-    }
-  ],
-  "ListTypeShop": [
-    {
-      "typeShopTitle": "Loại Shop",
-      "nameTypeShop": [
-        "Shopee Mall",
-        "Shop yêu thích",
-        "Xử lí đơn hàng bởi Shoppe"
-      ]
-    }
-  ],
-  "ListActiveProduct": [
-    {
-      "activeProductTitle": "Tình trạng ok",
-      "nameActiveProduct": ["Sản phẩm mới", "Sản phẩm dã dùng"]
-    }
-  ],
-  "ListService": [
-    {
-      "serviceTitle": "Dịch vụ và khuyến mãi",
-      "nameService": [
-        "Freeship Xtra",
-        "Hoàn xu Xtra",
-        "Hoàn xu Xtra",
-        "Miễn phí vận chuyển",
-        "Rẻ vô địch",
-        "Hàng có sẵn",
-        "Mua giá bán sỉ/lẻ",
-        "Có video"
-      ]
-    }
-  ]
+    "ListCategory": [{
+        "nameCategory": "Bách hóa online",
+        "nameSingleCategory": [
+            "Ăn vặt& Bánh kẹo",
+            "Đồ uống",
+            "Đồ hộp và Đóng gói",
+            "Nấu ăn & Làm bánh",
+            "Đậu và hạt",
+            "Đặc sản việt",
+            "Quà biếu",
+            "Đồ uống có cồn",
+            "Sữa"
+        ]
+    }],
+    "ListLocation": [{
+        "locationTitle": "Nơi bán",
+        "nameLocation": [
+            "TP. Hồ Chí Minh",
+            "Hà Nội",
+            "Thái Nguyên",
+            "Vĩnh Phúc",
+            "Hải Phòng",
+            "Đồng Nai",
+            "Hưng Yên",
+            "Bình Dương",
+            "Bắc Ninh",
+            "Đà Nẵng",
+            "Quảng Ninh",
+            "Hải Dương",
+            "Nam Định",
+            "Cần Thơ",
+            "Phú Thọ",
+            "Bà Rịa-Vũng Tàu",
+            "Đăk-Lắk",
+            "Thanh Hóa",
+            "Thái Bình",
+            "Nước Ngoài"
+        ]
+    }],
+    "ListUnitTransport": [{
+        "unitTransportTitle": "Đơn vị vận chuyển",
+        "nameUnitTransport": [
+            "Shopee Express",
+            "NowShip",
+            "Ninja Van",
+            "J&T Express",
+            "Giao hàng tiết kiệm",
+            "Giao hàng nhanh",
+            "BEST Express",
+            "Viettel Post",
+            "VNPost Nhanh",
+            "VNPost Tiết Kiệm",
+            "GrapExpress"
+        ]
+    }],
+    "ListTypeShop": [{
+        "typeShopTitle": "Loại Shop",
+        "nameTypeShop": [
+            "Shopee Mall",
+            "Shop yêu thích",
+            "Xử lí đơn hàng bởi Shoppe"
+        ]
+    }],
+    "ListActiveProduct": [{
+        "activeProductTitle": "Tình trạng ok",
+        "nameActiveProduct": [
+            "Sản phẩm mới",
+            "Sản phẩm dã dùng"
+        ]
+    }],
+    "ListService": [{
+        "serviceTitle": "Dịch vụ và khuyến mãi",
+        "nameService": [
+            "Freeship Xtra",
+            "Hoàn xu Xtra",
+            "Hoàn xu Xtra",
+            "Miễn phí vận chuyển",
+            "Rẻ vô địch",
+            "Hàng có sẵn",
+            "Mua giá bán sỉ/lẻ",
+            "Có video"
+        ]
+    }]
 }
