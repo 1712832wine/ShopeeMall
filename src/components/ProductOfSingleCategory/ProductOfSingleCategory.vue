@@ -36,8 +36,8 @@ export default {
     "list-product-category": ListProductCategory,
     "top-sales": TopSales,
     "brand-recommended": BrandRecommended,
-    "one-day-one-style": OneDayOneStyle,
-  },
+    "one-day-one-style": OneDayOneStyle
+  }
 };
 </script>
 

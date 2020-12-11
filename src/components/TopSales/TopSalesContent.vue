@@ -46,49 +46,49 @@
 import TopSalesItem from "./TopSalesItem.vue";
 export default {
   components: {
-    "top-sales-item": TopSalesItem,
+    "top-sales-item": TopSalesItem
   },
   props: {
     content: {
       type: Object,
-      required: true,
+      required: true
     },
     size: {
       type: Number,
       required: false,
-      default: 200,
+      default: 200
     },
     seemore: {
       type: Number,
-      default: 1,
+      default: 1
     },
     item_per_slide: { type: Number, default: 6 },
     distance: {
       type: Number,
-      default: 1,
-    },
+      default: 1
+    }
   },
-  data: function () {
+  data: function() {
     return {
       currentslide: 0,
       // size: 198,
-      translate: 0,
+      translate: 0
     };
   },
   computed: {
-    final: function () {
+    final: function() {
       let temp = this.content.items.length + this.seemore - this.item_per_slide;
       return temp % this.distance;
     },
-    number_slide: function () {
+    number_slide: function() {
       let temp = this.content.items.length + this.seemore - this.item_per_slide;
       let temp2 = 0;
       if (temp % this.distance != 0) temp2 = 1;
       return Math.floor(temp / this.distance) + temp2 + 1;
-    },
+    }
   },
   methods: {
-    handlePrev: function () {
+    handlePrev: function() {
       if (this.currentslide > 0) {
         if (this.currentslide === 1 && this.final != 0)
           this.translate -= this.size * this.final;
@@ -98,7 +98,7 @@ export default {
         this.currentslide -= 1;
       }
     },
-    handleNext: function () {
+    handleNext: function() {
       if (this.currentslide < this.number_slide - 1) {
         if (this.currentslide === this.number_slide - 2 && this.final != 0)
           this.translate += this.size * this.final;
@@ -107,8 +107,8 @@ export default {
           "translateX(-" + this.translate + "px)";
         this.currentslide += 1;
       }
-    },
-  },
+    }
+  }
 };
 </script>
 

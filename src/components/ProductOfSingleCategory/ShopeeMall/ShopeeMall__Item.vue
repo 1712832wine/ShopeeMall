@@ -5,7 +5,7 @@
         <div
           class="icon-image"
           :style="{
-            'background-image': 'url(' + item.url_top + ')',
+            'background-image': 'url(' + item.url_top + ')'
           }"
         ></div>
       </a>
@@ -15,7 +15,7 @@
         <div
           class="icon-image"
           v-bind:style="{
-            'background-image': 'url(' + item.url_bottom + ')',
+            'background-image': 'url(' + item.url_bottom + ')'
           }"
         ></div>
       </a>
@@ -25,7 +25,7 @@
 
 <script>
 export default {
-  props: { item: { type: Object, required: true } },
+  props: { item: { type: Object, required: true } }
 };
 </script>
 

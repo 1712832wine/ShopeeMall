@@ -18,14 +18,14 @@ import topsales_data from "../../data/topsalesData.json";
 import topsalescontent from "./TopSalesContent.vue";
 export default {
   components: {
-    "topsales-content": topsalescontent,
+    "topsales-content": topsalescontent
   },
-  data: function () {
+  data: function() {
     return {
       Data: topsales_data.topsalesData,
-      size: 198,
+      size: 198
     };
-  },
+  }
 };
 </script>
 

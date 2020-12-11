@@ -36,11 +36,11 @@ import TwoImageItem from "./ShopeeMall__Item.vue";
 export default {
   components: {
     "two-images-item": TwoImageItem,
-    "slider-content": SliderContent,
+    "slider-content": SliderContent
   },
-  data: function () {
+  data: function() {
     return { Data: ShoppeMallData.ShoppeMall, seemore: 0 };
-  },
+  }
 };
 </script>
 
