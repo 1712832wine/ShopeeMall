@@ -3,6 +3,7 @@
     <banner-home />
     <div class="container-wrap">
       <div class="large-banner"></div>
+      <list-category-item />
       <list-flash-sale />
       <shopee-mall />
       <top-search />
@@ -22,6 +23,7 @@ import TopSearch from "../components/TopSearch/TopSearch.vue";
 import ShopeeMall from "../components/ShopeeMall/ShopeeMall.vue";
 import ListSearchTrend from "../components/SearchTrends/ListSearchTrend";
 import ListProduct from "../components/Product/Home/ListProduct";
+import ListCategoryItem from "../components/CategoryProductList/ListCategoryItem.vue";
 export default {
   components: {
     "banner-home": BannerHome,
@@ -29,13 +31,14 @@ export default {
     "shopee-mall": ShopeeMall,
     "top-search": TopSearch,
     "list-search-trend": ListSearchTrend,
-    "list-product": ListProduct
+    "list-product": ListProduct,
+    "list-category-item": ListCategoryItem,
   },
-  data: function() {
+  data: function () {
     return {
-      listProduct: data.ListProduct
+      listProduct: data.ListProduct,
     };
-  }
+  },
 };
 </script>
 
