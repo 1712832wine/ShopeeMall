@@ -1,16 +1,18 @@
 .wrapper_container {
     margin-top: 1rem;
+    background-color: #f5f5f5;
     .mycontainer {
         display: block;
-        width: 1200px;
+        width: 100%;
         margin: auto;
-        margin-top: 130px;
+        background-color: #fff;
     }
     display: flex;
     flex-direction: column;
     .singleProduct {
         width: 14.28571%;
-        // height: 12.5rem;
+        cursor: pointer;
+        height: 12.5rem;
         border-right: 1px solid rgba(0, 0, 0, 0.05);
         border-bottom: 1px solid rgba(0, 0, 0, 0.05);
         text-align: center;

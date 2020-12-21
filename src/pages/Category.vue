@@ -13,4 +13,11 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+.text {
+  margin-top: 200px;
+}
+// .container-wrapper {
+//   position: static;
+// }
+</style>

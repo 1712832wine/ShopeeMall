@@ -3,7 +3,6 @@
     <banner-home />
     <div class="container-wrap">
       <div class="large-banner"></div>
-      <category-item :ListProduct="listProduct" class="fix-margin" />
       <list-flash-sale />
       <shopee-mall />
       <top-search />
@@ -14,14 +13,15 @@
 </template>
 
 <script>
+// data
 import data from "../data/ListCategoryProductData.json";
+// component
 import BannerHome from "../components/Banner/BannerHome";
 import ListFlashSale from "../components/FlashSale/ListFlashSale";
 import TopSearch from "../components/TopSearch/TopSearch.vue";
 import ShopeeMall from "../components/ShopeeMall/ShopeeMall.vue";
 import ListSearchTrend from "../components/SearchTrends/ListSearchTrend";
 import ListProduct from "../components/Product/Home/ListProduct";
-import CategoryItem from "../components/CategoryProductList/CategoryItem";
 export default {
   components: {
     "banner-home": BannerHome,
@@ -29,8 +29,7 @@ export default {
     "shopee-mall": ShopeeMall,
     "top-search": TopSearch,
     "list-search-trend": ListSearchTrend,
-    "list-product": ListProduct,
-    "category-item": CategoryItem
+    "list-product": ListProduct
   },
   data: function() {
     return {
@@ -46,6 +45,7 @@ export default {
     margin-top: 0;
     .singleProduct {
       width: 10%;
+      height: 50%;
     }
   }
 }

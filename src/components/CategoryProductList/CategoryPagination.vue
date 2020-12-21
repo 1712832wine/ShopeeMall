@@ -1,61 +1,60 @@
 <template>
-  <div class="wrap">
-    <div>
-      <ul class="anphabetical-wrap">
-        <li
-          class="anphabetical__letter-wrapp"
-          v-for="letter in ListAnphabetical"
-          v-bind:key="letter.id"
-        >
-          <span class="anphabetical__letter">
-            {{ letter.anphabetical__letter }}
-          </span>
-        </li>
-      </ul>
+  <div class="mywrap">
+    <div class="anphabetical-wrap">
+      <a
+        :href="item.href"
+        class="anphabetical__letter"
+        v-for="item in letters"
+        v-bind:key="item.id"
+        :class="CheckActive(item.categoryitems.length)"
+      >
+        {{ item.letter }}
+      </a>
     </div>
 
     <div class="alphabetical-list-of-category">
-      <div
+      <letter-item
         class="list-of-category-in-letter"
-        v-for="letter in ListAnphabetical"
+        v-for="letter in letters"
         v-bind:key="letter.id"
+        :content="letter"
       >
-        <h1>{{ letter.anphabetical__letter }}</h1>
-        <hr />
-        <a href="#" class="letter-categoryname">{{ letter.categoryName }} </a>
-        <div class="category-wrap">
-          <a
-            class="category-sub"
-            href="#"
-            v-for="(item, index) in letter.subCategoryProduct"
-            :key="index"
-            >{{ item.subCategoryDisplayName }}
-          </a>
-        </div>
-      </div>
+      </letter-item>
     </div>
   </div>
 </template>
 
 <script>
+//data
+import LetterData from "@/data/categoryletteritemData.json";
+//component
+import LetterItem from "./LetterItem.vue";
 export default {
-  props: {
-    ListAnphabetical: {
-      type: Array
-    }
+  components: {
+    "letter-item": LetterItem
   },
   data: function() {
-    return {};
+    return {
+      letters: LetterData.letters
+    };
+  },
+  methods: {
+    CheckActive(length) {
+      if (length !== 0) return "active";
+      else return "disable";
+    }
   }
 };
 </script>
 >
 
 <style lang="scss" scoped>
-.wrap {
+.mywrap {
+  padding-top: 2.5rem;
   width: 1200px;
   margin: auto;
   background: white;
 }
+
 @import "./Style-CategoryProductList/Style-CategoryPagination.scss";
 </style>

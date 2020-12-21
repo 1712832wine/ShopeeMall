@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import PublicRouter from "./PublicRouter.vue";
+import RouterCategory from "./RouterCategory.vue";
 import PublicRouterVerification from "./PublicRouterVerification.vue";
 
 Vue.use(VueRouter);
@@ -37,7 +38,7 @@ const routes = [
     ]
   },
   {
-    component: PublicRouter,
+    component: RouterCategory,
     path: "/all_category",
     children: [
       {

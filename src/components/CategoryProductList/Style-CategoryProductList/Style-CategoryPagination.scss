@@ -1,41 +1,50 @@
-.anphabetical-wrap{
-    color:red;
-    display:flex;
+.anphabetical-wrap {
+    display: flex;
+    padding: 0 6.25rem;
+    justify-content: space-around;
     flex-direction: row;
-        .anphabetical__letter-wrapp{
-            list-style: none;
-            margin:8px;
-            &:hover{
-                cursor: pointer;          
-        }
-        .anphabetical__letter{
-            padding:0.5rem;
-        }
+    .anphabetical__letter {
+        font-size: 14px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .active {
+        color: #ee4d2d;
+    }
+    .disable {
+        color: rgba(0, 0, 0, .14);
+        pointer-events: none;
     }
 }
 
-.alphabetical-list-of-category{
-    .list-of-category-in-letter{
-        &:hover a{
+.alphabetical-list-of-category {
+    padding: 0 34px;
+    padding-bottom: 34px;
+    .list-of-category-in-letter {
+        &:hover a {
             text-decoration: none;
             list-style: none;
         }
-        .letter-categoryname{
-             color:red;
+        .letter-categoryname {
+            color: #ee4d2d;
+            font-size: 1rem;
+            margin-top: .625rem;
+            margin-bottom: .625rem;
         }
-    .category-wrap {
-        display: flex;
-        flex-flow: wrap;
-        a{
-            color: #00000073;
-        }
-        .category-sub{
-            width: 25%;
-            color:#00000070;
-            &:hover{
-                text-decoration: none;
+        .category-wrap {
+            display: flex;
+            flex-flow: wrap;
+            a {
+                color: rgba(0, 0, 0, .54);
+                font-size: .875rem;
+            }
+            .category-sub {
+                width: 25%;
+                color: #00000070;
+                &:hover {
+                    text-decoration: none;
+                }
             }
         }
-    }
     }
 }

@@ -1,42 +1,25 @@
 <template>
-  <div class="wrapper_container">
-    <div class="mycontainer">
-      <div
-        class="singleProduct"
-        v-for="(item, index) in ListProduct"
-        v-bind:key="index"
-        v-show="index < 20"
-      >
-        <div class="imageSingleProduct">
-          <ul>
-            <li>
-              <router-link class="nav-link" tag="a" to="/product_of_category">
-                <img :src="item.src" /> {{ item.tittleItem }}</router-link
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+  <div class="imageSingleProduct">
+    <router-link class="nav-link" tag="a" to="/product_of_category">
+      <img :src="item.src" /> {{ item.tittleItem }}
+    </router-link>
   </div>
 </template>
 
 <script>
-import data from "../../data/ListCategoryProductData.json";
 export default {
-  props: {
-    ListProduct: {
-      type: Array
-    }
-  },
-  data: function() {
-    return {
-      listProduct: data.ListProduct
-    };
-  }
+  props: { item: { type: Object, required: true } }
 };
 </script>
 
 <style lang="scss" scoped>
+.nav-link {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 0.875rem;
+  text-decoration: none;
+  line-height: 1.25rem;
+  max-width: 90%;
+  margin: 0 auto;
+}
 @import "./Style-CategoryProductList/Style-CategoryItem.scss";
 </style>

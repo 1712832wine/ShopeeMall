@@ -1,0 +1,342 @@
+{
+    "letters": [{
+            "id": 1,
+            "letter": "A",
+            "href": "#A",
+            "categoryitems": []
+        },
+        {
+            "id": 2,
+            "letter": "B",
+            "href": "#B",
+            "categoryitems": [{
+                "id": 1,
+                "title": "Bách hóa Online",
+                "list_item": [{
+                        "item_title": "Ăn vặt và bánh kẹo",
+                        "href": "#"
+                    },
+                    {
+                        "item_title": "Đồ uống",
+                        "href": "#"
+                    },
+                    {
+                        "item_title": "Đồ hộp và đóng gói",
+                        "href": "#"
+                    },
+                    {
+                        "item_title": "Đậu và hạt",
+                        "href": "#"
+                    },
+                    {
+                        "item_title": "Đặc sản Việt",
+                        "href": "#"
+                    },
+                    {
+                        "item_title": "Quà biếu",
+                        "href": "#"
+                    },
+                    {
+                        "item_title": "Đồ uống có cồn",
+                        "href": "#"
+                    }
+                ]
+            }]
+        },
+        {
+            "id": 3,
+            "letter": "C",
+            "href": "#C",
+            "categoryitems": [{
+                "id": 1,
+                "title": "Chăm sóc thú cưng",
+                "list_item": [{
+                        "item_title": "Chó",
+                        "href": "#"
+                    },
+                    {
+                        "item_title": "Mèo",
+                        "href": "#"
+                    },
+                    {
+                        "item_title": "Fish",
+                        "href": "#"
+                    },
+                    {
+                        "item_title": "Chim",
+                        "href": "#"
+                    },
+                    {
+                        "item_title": "Hamster",
+                        "href": "#"
+                    },
+                    {
+                        "item_title": "Khác",
+                        "href": "#"
+                    }
+                ]
+            }]
+        },
+        {
+            "id": 4,
+            "letter": "D",
+            "href": "#D",
+            "categoryitems": [{
+                    "id": 1,
+                    "title": "Điện thoại & Phụ kiện",
+                    "list_item": [{
+                            "item_title": "Điện thoại",
+                            "href": "#"
+                        },
+                        {
+                            "item_title": "Máy tính bảng",
+                            "href": "#"
+                        },
+                        {
+                            "item_title": "Vỏ bao & Ốp lưng",
+                            "href": "#"
+                        },
+                        {
+                            "item_title": "Miếng dán màn hình",
+                            "href": "#"
+                        },
+                        {
+                            "item_title": "Pin sạc dự phòng",
+                            "href": "#"
+                        },
+                        {
+                            "item_title": "Pin, cáp& bộ sạc",
+                            "href": "#"
+                        },
+                        {
+                            "item_title": "Giá đỡ & kẹp",
+                            "href": "#"
+                        },
+                        {
+                            "item_title": "Gậy chụp hình",
+                            "href": "#"
+                        },
+                        {
+                            "item_title": "Sim",
+                            "href": "#"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "title": "Đồ chơi",
+                    "list_item": [{
+                            "item_title": "Điện thoại",
+                            "href": "#"
+                        },
+                        {
+                            "item_title": "Máy tính bảng",
+                            "href": "#"
+                        },
+                        {
+                            "item_title": "Vỏ bao & Ốp lưng",
+                            "href": "#"
+                        },
+                        {
+                            "item_title": "Miếng dán màn hình",
+                            "href": "#"
+                        },
+                        {
+                            "item_title": "Pin sạc dự phòng",
+                            "href": "#"
+                        },
+                        {
+                            "item_title": "Pin, cáp& bộ sạc",
+                            "href": "#"
+                        },
+                        {
+                            "item_title": "Giá đỡ & kẹp",
+                            "href": "#"
+                        },
+                        {
+                            "item_title": "Gậy chụp hình",
+                            "href": "#"
+                        },
+                        {
+                            "item_title": "Sim",
+                            "href": "#"
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "title": "Đồng hồ",
+                    "list_item": [{
+                            "item_title": "Điện thoại",
+                            "href": "#"
+                        },
+                        {
+                            "item_title": "Máy tính bảng",
+                            "href": "#"
+                        },
+                        {
+                            "item_title": "Vỏ bao & Ốp lưng",
+                            "href": "#"
+                        },
+                        {
+                            "item_title": "Miếng dán màn hình",
+                            "href": "#"
+                        },
+                        {
+                            "item_title": "Pin sạc dự phòng",
+                            "href": "#"
+                        },
+                        {
+                            "item_title": "Pin, cáp& bộ sạc",
+                            "href": "#"
+                        },
+                        {
+                            "item_title": "Giá đỡ & kẹp",
+                            "href": "#"
+                        },
+                        {
+                            "item_title": "Gậy chụp hình",
+                            "href": "#"
+                        },
+                        {
+                            "item_title": "Sim",
+                            "href": "#"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "letter": "E",
+            "href": "#E",
+            "categoryitems": []
+        },
+        {
+            "id": 6,
+            "letter": "F",
+            "href": "#F",
+            "categoryitems": []
+        },
+        {
+            "id": 7,
+            "letter": "G",
+            "href": "#G",
+            "categoryitems": []
+        },
+        {
+            "id": 8,
+            "letter": "H",
+            "href": "#H",
+            "categoryitems": []
+        },
+        {
+            "id": 9,
+            "letter": "I",
+            "href": "#I",
+            "categoryitems": []
+        },
+        {
+            "id": 10,
+            "letter": "G",
+            "href": "#G",
+            "categoryitems": []
+        },
+        {
+            "id": 11,
+            "letter": "K",
+            "href": "#K",
+            "categoryitems": []
+        },
+        {
+            "id": 12,
+            "letter": "L",
+            "href": "#L",
+            "categoryitems": []
+        },
+        {
+            "id": 13,
+            "letter": "M",
+            "href": "#M",
+            "categoryitems": []
+        },
+        {
+            "id": 14,
+            "letter": "N",
+            "href": "#N",
+            "categoryitems": []
+        },
+        {
+            "id": 15,
+            "letter": "O",
+            "href": "#O",
+            "categoryitems": []
+        },
+        {
+            "id": 16,
+            "letter": "P",
+            "href": "#P",
+            "categoryitems": []
+        },
+        {
+            "id": 17,
+            "letter": "Q",
+            "href": "#Q",
+            "categoryitems": []
+        },
+        {
+            "id": 18,
+            "letter": "R",
+            "href": "#R",
+            "categoryitems": []
+        },
+        {
+            "id": 19,
+            "letter": "S",
+            "href": "#S",
+            "categoryitems": []
+        },
+        {
+            "id": 20,
+            "letter": "T",
+            "href": "#T",
+            "categoryitems": []
+        },
+        {
+            "id": 21,
+            "letter": "U",
+            "href": "#U",
+            "categoryitems": []
+        },
+        {
+            "id": 22,
+            "letter": "V",
+            "href": "#V",
+            "categoryitems": []
+        },
+        {
+            "id": 23,
+            "letter": "W",
+            "href": "#W",
+            "categoryitems": []
+        },
+        {
+            "id": 24,
+            "letter": "S",
+            "href": "#S",
+            "categoryitems": []
+        },
+        {
+            "id": 25,
+            "letter": "R",
+            "href": "#R",
+            "categoryitems": []
+        },
+        {
+            "id": 26,
+            "letter": "Z",
+            "href": "#Z",
+            "categoryitems": []
+        }
+    ]
+}

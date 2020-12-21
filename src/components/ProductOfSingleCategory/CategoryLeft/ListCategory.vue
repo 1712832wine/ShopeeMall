@@ -1,9 +1,9 @@
 <template>
   <div class="list-category">
-    <a class="list-category-header">
+    <router-link tag="a" class="list-category-header" to="/all_category">
       <i class="fa fa-list" aria-hidden="true"></i>
       Tất Cả Danh Mục
-    </a>
+    </router-link>
     <hr />
     <div
       class="list-category-body"
