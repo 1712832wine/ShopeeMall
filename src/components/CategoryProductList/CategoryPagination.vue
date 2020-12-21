@@ -31,19 +31,19 @@ import LetterData from "@/data/categoryletteritemData.json";
 import LetterItem from "./LetterItem.vue";
 export default {
   components: {
-    "letter-item": LetterItem
+    "letter-item": LetterItem,
   },
-  data: function() {
+  data: function () {
     return {
-      letters: LetterData.letters
+      letters: LetterData.letters,
     };
   },
   methods: {
     CheckActive(length) {
       if (length !== 0) return "active";
       else return "disable";
-    }
-  }
+    },
+  },
 };
 </script>
 >

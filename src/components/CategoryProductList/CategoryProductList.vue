@@ -18,15 +18,15 @@ import CategoryPagination from "./CategoryPagination.vue";
 export default {
   components: {
     "list-category-item": ListCategoryItem,
-    "category-pagination": CategoryPagination
+    "category-pagination": CategoryPagination,
   },
-  data: function() {
+  data: function () {
     return {
       root: "Dạo",
       href: "/",
-      text: "   >   Tất cả danh mục"
+      text: "   >   Tất cả danh mục",
     };
-  }
+  },
 };
 </script>
 
