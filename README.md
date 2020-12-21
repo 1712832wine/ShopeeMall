@@ -1,6 +1,6 @@
 # Reup đồ án mô phỏng shopee, làm nhóm cùng 2 người khác
 
-
+## Cách chạy: Nhớ đổi tên thư mục Data -> data trong src
 
 ## Tác giả: 
 
