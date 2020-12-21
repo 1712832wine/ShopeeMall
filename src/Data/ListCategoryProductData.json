@@ -82,22 +82,6 @@
         {
             "src": "/assets/images/voucher-va-dich-vu.png",
             "tittleItem": "Voucher và dịch vụ"
-        },
-        {
-            "src": "/assets/images/oto-xe-may-xe-dap.png",
-            "tittleItem": "Ô tô- xe máy- xe đạp"
-        },
-        {
-            "src": "/assets/images/dien-thoai-va-phu-kien.png",
-            "tittleItem": "Điện thoại và phụ kiện"
-        },
-        {
-            "src": "/assets/images/do-choi.png",
-            "tittleItem": "Đồ chơi"
-        },
-        {
-            "src": "/assets/images/dong-ho.png",
-            "tittleItem": "Đồng hồ"
         }
     ]
 }
